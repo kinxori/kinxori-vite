@@ -24,7 +24,7 @@ export default function MobileNav(){
                             <i className="fa-solid fa-address-book"></i>
                         </button>
                     </Link>
-                    <Link to="aboutme">
+                    <Link to="about">
                         <button>
                             <i className="fa-solid fa-user"></i>
                         </button>

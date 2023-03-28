@@ -19,16 +19,12 @@ const router = createBrowserRouter([
     element: <Home/>,
     errorElement: <Error404/>,
     children: [
-      {
-      path: "/github",
-      element: <Github/>
-    },
     {
       path: "/projects",
       element: <Projects/>
     },
     {
-      path: "/aboutme",
+      path: "/about",
       element: <AboutMe/>
     },
     {
