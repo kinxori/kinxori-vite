@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import Home from "../routes/Home"
 import Error404 from '../components/Error404'
+import Github from '../routes/Github'
+import Projects from '../routes/Projects'
+import AboutMe from '../routes/AboutMe'
+
 import { 
   createBrowserRouter, 
   RouterProvider, 
@@ -12,7 +16,21 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
-    errorElement: <Error404/>
+    errorElement: <Error404/>,
+    children: [
+      {
+      path: "/github",
+      element: <Github/>
+    },
+    {
+      path: "/projects",
+      element: <Projects/>
+    },
+    {
+      path: "/aboutme",
+      element: <AboutMe/>
+    }
+  ],
   },
 ])
 

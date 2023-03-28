@@ -1,9 +1,13 @@
+import { Outlet } from "react-router-dom";
+import NavBar from "../components/NavBar/NavBar"
+
 export default function Home(){
     return (
-        <div>
-            <p>
-                Holaaa 🤯
-            </p>
-        </div>
+        <section>
+            <NavBar/>
+            <Outlet/>
+        </section>
+        
+
     )
 }
