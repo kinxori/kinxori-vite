@@ -14,7 +14,7 @@ export default function MobileNav(){
                             <i className="fa-solid fa-folder"></i>
                         </button>
                     </Link>
-                    <Link to="https://github.com/kinxori">
+                    <Link to="https://github.com/kinxori" target="_blank">
                         <button>
                             <i className="fa-brands fa-github"></i>
                         </button>
