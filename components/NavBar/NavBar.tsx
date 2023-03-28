@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import MobileNav from './MobileNav'
 import TableNav from './TabletNav'
 import DesktopNav from './DesktopNav'
+import './navBar.css'
 
 
 export default function NavBar(){
@@ -10,7 +11,7 @@ export default function NavBar(){
     useEffect(()=>{
         const handleRezise = ()=>{
             const screenWidth = window.innerWidth;
-            if(screenWidth <= 375){
+            if(screenWidth <= 425){
                 setIsNavComponent(<MobileNav/>);
             } else if (screenWidth <= 820){
                 setIsNavComponent(<TableNav/>);

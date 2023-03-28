@@ -6,6 +6,7 @@ import Error404 from '../components/Error404'
 import Github from '../routes/Github'
 import Projects from '../routes/Projects'
 import AboutMe from '../routes/AboutMe'
+import Contact from '../routes/Contact'
 
 import { 
   createBrowserRouter, 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
       path: "/aboutme",
       element: <AboutMe/>
+    },
+    {
+      path: "/contact",
+      element: <Contact/>
     }
   ],
   },

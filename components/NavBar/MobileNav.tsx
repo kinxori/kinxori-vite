@@ -2,30 +2,34 @@ import { Link } from "react-router-dom";
 
 export default function MobileNav(){
     return(
-            <nav>
-                <p>This is mobile</p>
-                <div>
+            <nav className="mobileNavBar">
+                <div className="mobileOptions" >
                     <Link to="">
                         <button>
-                            <img src=""/>
-                            Kinxori
+                            <i className="fa-solid fa-house"></i>
                         </button>
                     </Link>
                     <Link to="projects">
                         <button>
-                           Projects
+                            <i className="fa-solid fa-folder"></i>
                         </button>
                     </Link>
                     <Link to="https://github.com/kinxori">
                         <button>
-                                Github
+                            <i className="fa-brands fa-github"></i>
+                        </button>
+                    </Link>
+                    <Link to="contact">
+                        <button>
+                            <i className="fa-solid fa-address-book"></i>
                         </button>
                     </Link>
                     <Link to="aboutme">
                         <button>
-                           About Me
+                            <i className="fa-solid fa-user"></i>
                         </button>
                     </Link>
+                    
                 </div>
             </nav>
     )
