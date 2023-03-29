@@ -1,15 +1,20 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'RUBIK', system-ui, Avenir, Helvetica, sans-serif;
   color-scheme: light dark;
-  color: white;
-  background-color: #242424;
+  color: var(--textMainColor);
+  --textMainColor: #fff;
+  --textSecColor:#ffffffe0;
+  --secColor: #242424;
+  --mainColor: hsl(266deg, 100%, 60%);
 
+  background-color: var(--secColor);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -18,4 +23,5 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 

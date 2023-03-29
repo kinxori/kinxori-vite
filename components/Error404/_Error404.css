@@ -1,0 +1,19 @@
+#error-404{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center; 
+    align-items: center; 
+    gap: 2%;  
+}
+
+#error-404 img{
+    height: 30%;
+}
+
+#error-404 i{
+    font-size: 25px;
+    font-weight: bold;
+}
+

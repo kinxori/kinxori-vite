@@ -1,0 +1,66 @@
+.mainButton{
+    color: var(--textMainColor);
+    border: 1px solid white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    background: var(--mainColor);
+    transition: all .2s ease-in-out;
+}       
+
+.mainButton:hover{
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: .85;
+}
+
+
+.secButton{
+    color: var(--textMainColor);
+    border: 1px solid var(--mainColor);
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    background: none;
+} 
+
+.secButton:hover{
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: .85;
+}
+
+
+.ghostButton{
+    color: var(--textMainColor);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    background: none;
+}
+
+.ghostButton:hover{
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: .85;
+}
+
+.linkButton{
+    color: var(--textMainColor);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    background: none;
+    font-style: italic;
+    color: var(--mainColor);
+    text-decoration-line: underline;
+
+}
+
+.linkButton:hover{
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: .85;
+}

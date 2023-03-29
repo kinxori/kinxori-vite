@@ -1,6 +1,6 @@
 .mobileNavBar{
     height: 60px;
-    background-color: teal;
+    background-color: hsl(180deg 100% 25%);
     width: 100vw;
     position:absolute;
     bottom: 0;

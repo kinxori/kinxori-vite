@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import Home from "../routes/Home"
-import Error404 from '../components/Error404'
-import Github from '../routes/Github'
+import './_index.css'
+import Home from "../routes/Home/Home"
+import Error404 from '../components/Error404/Error404'
 import Projects from '../routes/Projects'
 import AboutMe from '../routes/AboutMe'
 import Contact from '../routes/Contact'
