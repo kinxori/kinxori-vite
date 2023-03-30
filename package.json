@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "-cdeploy": "npm-run-all --parallel push build deploy",
+    "-cdeploy": "npm run push && npm run build && firebase deploy",
     "push": "git push",
     "build": "npm run build",
     "deploy": "firebase deploy"
