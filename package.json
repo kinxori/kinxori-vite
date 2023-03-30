@@ -4,10 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "cdeploy": "npm run push && npm run build && firebase deploy",
+    "dev": "vite",
+    "preview": "vite preview",
+    "cdeploy": "npm run push && npm run build && npm run deploy",
     "push": "git push",
-    "build": "npm run build",
+    "build": "vite build",
     "deploy": "firebase deploy"
+    
   },
   "dependencies": {
     "firebase": "^9.18.0",
