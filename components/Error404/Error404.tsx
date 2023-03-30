@@ -8,8 +8,10 @@ export default function Error404(){
 
 return(
     <article id="error-404">
-        <img src="components/Error404/404Assets.png" alt="404error" />
-        <i> {error.message || error.statusText} 🥸 </i>
+        <img src="./components/Error404/404Assets.png" alt="404error" />
+        <span>
+            <i> {error.message || error.statusText}</i> 🥸
+        </span>     
         <Link to="/">
             <Button variant="mainButton">
                 Back home 

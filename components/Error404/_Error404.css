@@ -11,7 +11,9 @@
 #error-404 img{
     height: 30%;
 }
-
+#error-404 span{
+    font-size: 25px;
+}
 #error-404 i{
     font-size: 25px;
     font-weight: bold;
