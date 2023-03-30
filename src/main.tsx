@@ -10,7 +10,6 @@ import Contact from '../routes/Contact'
 import { 
   createBrowserRouter, 
   RouterProvider, 
-  HashRouter,
 } from 'react-router-dom'
 
 const router = createBrowserRouter([
