@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "-cdeploy": "npm run push && npm run build && firebase deploy",
+    "cdeploy": "npm run push && npm run build && firebase deploy",
     "push": "git push",
     "build": "npm run build",
     "deploy": "firebase deploy"
-    
   },
   "dependencies": {
     "firebase": "^9.18.0",
