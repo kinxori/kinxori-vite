@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "-cdeploy": "npm-run-all --parallel push build deploy",
+    "push": "git push",
+    "build": "npm run build",
+    "deploy": "firebase deploy"
+    
   },
   "dependencies": {
     "firebase": "^9.18.0",
@@ -18,7 +20,9 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "concurrently": "^8.0.1",
     "typescript": "^5.0.2",
     "vite": "^4.1.0"
   }
+  
 }

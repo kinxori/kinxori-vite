@@ -13,7 +13,7 @@ function PathIcon(props:any ){
 
     return (
         <Link to={to} onClick={handleClickWrapper}>
-            <button className={to === location.pathname ? "isActive" : "isIdle"}  >
+            <button className={to === location.pathname ? "isActive" : "isIdle"}>
                 {children}
             </button>
         </Link>
