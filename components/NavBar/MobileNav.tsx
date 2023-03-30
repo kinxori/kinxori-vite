@@ -1,35 +1,52 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./_navBar.css"
+
+
+function PathIcon(props:any ){
+    const {to, children, handleClick } = props;
+    const location = useLocation();
+
+    const handleClickWrapper = () => {
+        handleClick(location);
+      };
+
+    return (
+        <Link to={to} onClick={handleClickWrapper}>
+            <button className={to === location.pathname ? "isActive" : "isIdle"}  >
+                {children}
+            </button>
+        </Link>
+    )
+}
 
 export default function MobileNav(){
+
+    const [isPath, setIsPath] = useState("/")
+
+    const handleClick = (location:any) => {
+        const path = location.pathname
+        setIsPath(path);
+    };
+
     return(
             <nav className="mobileNavBar">
                 <div className="mobileOptions" >
-                    <Link to="">
-                        <button>
+                    <PathIcon to="/" handleClick={handleClick}>                      
                             <i className="fa-solid fa-house"></i>
-                        </button>
-                    </Link>
-                    <Link to="projects">
-                        <button>
+                    </PathIcon>
+                    <PathIcon  to="/projects" handleClick={handleClick}>                   
                             <i className="fa-solid fa-folder"></i>
-                        </button>
-                    </Link>
-                    <Link to="https://github.com/kinxori" target="_blank">
-                        <button>
+                    </PathIcon >
+                    <PathIcon  to="https://github.com/kinxori" target="_blank" handleClick={handleClick}>
                             <i className="fa-brands fa-github"></i>
-                        </button>
-                    </Link>
-                    <Link to="contact">
-                        <button>
+                    </PathIcon >
+                    <PathIcon  to="/contact" handleClick={handleClick}>
                             <i className="fa-solid fa-address-book"></i>
-                        </button>
-                    </Link>
-                    <Link to="about">
-                        <button>
+                    </PathIcon >
+                    <PathIcon  to="/about"  handleClick={handleClick}>
                             <i className="fa-solid fa-user"></i>
-                        </button>
-                    </Link>
-                    
+                    </PathIcon >
                 </div>
             </nav>
     )

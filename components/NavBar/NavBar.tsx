@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import MobileNav from './MobileNav'
 import TableNav from './TabletNav'
 import DesktopNav from './DesktopNav'
-import './navBar.css'
+
 
 
 export default function NavBar(){

@@ -1,6 +1,7 @@
+
 .mobileNavBar{
     height: 60px;
-    background-color: hsl(180deg 100% 25%);
+    background-color: var(--mainColor);
     width: 100vw;
     position:absolute;
     bottom: 0;
@@ -16,9 +17,18 @@
     transform: translateY(-50%);
 }
 
-.mobileNavBar .mobileOptions button{
+.isActive{
+    color: var(--textMainColor);
     border: none;
     background: none;
     font-size: 20px;
 }
+
+.isIdle{
+    color: var(--textSecColor);
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
 
