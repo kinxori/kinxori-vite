@@ -25,8 +25,8 @@ export default function NavBar(){
     },[]);
 
     return(
-        <section>
+        <>
             {navComponent}
-        </section>
+        </>
     )
 }

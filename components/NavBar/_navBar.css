@@ -2,11 +2,12 @@
 .mobileNavBar{
     height: 60px;
     background-color: var(--mainColor);
-    width: 100vw;
-    position:absolute;
-    bottom: 0;
+    width: 100%;
+    position:fixed ;
+    bottom:0 ;
     box-shadow: 0px 0px 10px 0px hsla(0, 0%, 20%, .3);
     z-index: 100;
+    border-top: 1px solid var(--textSecColor);
 }
 
 .mobileNavBar .mobileOptions {

@@ -4,7 +4,7 @@ import "./_navBar.css"
 
 
 function PathIcon(props:any ){
-    const {to, children, handleClick } = props;
+    const {to, children, handleClick, target } = props;
     const location = useLocation();
 
     const handleClickWrapper = () => {
@@ -12,7 +12,7 @@ function PathIcon(props:any ){
       };
 
     return (
-        <Link to={to} onClick={handleClickWrapper}>
+        <Link to={to} onClick={handleClickWrapper} target={target}>
             <button className={to === location.pathname ? "isActive" : "isIdle"}>
                 {children}
             </button>

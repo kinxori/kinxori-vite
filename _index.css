@@ -7,7 +7,8 @@
   --secColor: #242424;
   --mainColor: hsl(266deg, 100%, 60%);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  position: relative;
 
   background-color: var(--secColor);
   font-synthesis: none;

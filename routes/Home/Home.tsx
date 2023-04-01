@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 import NavBar from "../../components/NavBar/NavBar"
-import LandingPage from '../LandingPage'
+import LandingPage from '../LandingPage/LandingPage'
 
 import './_home.css'
 
