@@ -14,11 +14,9 @@ return(
         <span>
             <i> {error.message || error.statusText}</i> 🥸
         </span>     
-        <Link to="/">
-            <Button variant="mainButton">
-                Back home 
-            </Button>
-        </Link>
+        <Button variant="mainButton" to="/" className="error404-btn">
+            Back home 
+        </Button>
     </article>
 )
 }

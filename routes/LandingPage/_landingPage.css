@@ -1,3 +1,32 @@
-article{
-    overflow: scroll;
+.landingPage-root{
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+}
+.landingPage-root .landingPage-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 20%;
+}
+
+.landingPage-root .astroBoy{
+    height: 40%;
+}
+
+.landingPage-root .landingPage-content .landingPage-copy{
+    padding-top: 20%;
+    font-size: 14px;
+    text-align:left;
+}
+
+.landingPage-root .landingPage-content .landingPage-copy b{
+    color: var(--mainColor);
+}
+
+.landingPage-CTA{
+    margin-top: 16%;
 }
