@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "cdeploy": "npm run push && npm run build && npm run deploy",
+    "cdep": "npm run push && npm run build && npm run deploy",
     "push": "git push",
     "build": "vite build",
     "deploy": "firebase deploy"
