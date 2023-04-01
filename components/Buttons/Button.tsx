@@ -6,6 +6,7 @@ export default function Button({
     className,
     to,
     onClick,
+    target,
     variant = "mainButton",
 }: any){
 
@@ -18,8 +19,8 @@ export default function Button({
 
     return(
         <div className={className}> 
-            <Link to={to}  >
-                <button className={classes[variant]} onClick={onClick}>
+            <Link to={to} target={target}>
+                <button className={classes[variant]} onClick={onClick} >
                     {children}
                 </button>
             </Link>

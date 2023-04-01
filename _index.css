@@ -1,4 +1,4 @@
-#root {
+:root {
   font-family: 'RUBIK', system-ui, Avenir, Helvetica, sans-serif;
   color-scheme: light dark;
   color: var(--textMainColor);
@@ -6,9 +6,6 @@
   --textSecColor:#ffffffb1;
   --secColor: #242424;
   --mainColor: hsl(266deg, 100%, 60%);
-  height: 100vh;
-  width: 100%;
-  position: relative;
 
   background-color: var(--secColor);
   font-synthesis: none;
