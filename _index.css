@@ -8,7 +8,6 @@
   --mainColor: hsl(266deg, 100%, 60%);
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
 
   background-color: var(--secColor);
   font-synthesis: none;
