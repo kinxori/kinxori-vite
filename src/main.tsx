@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './_index.css'
+import './../_index.css'
 import Home from "../routes/Home/Home"
 import Error404 from '../components/Error404/Error404'
 import Projects from '../routes/Projects'
