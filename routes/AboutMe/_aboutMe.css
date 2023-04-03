@@ -18,11 +18,13 @@ b{
     font-weight: inherit;
 }
 .aboutMe-root .aboutMe-content .ab-div{
-    height: auto;
+    height:fit-content;
 }
 
 .aboutMe-root .aboutMe-content .aboutMe-copy{
     position: relative;
+    height:fit-content;
+
 }
 
 .aboutMe-root .aboutMe-content img{
