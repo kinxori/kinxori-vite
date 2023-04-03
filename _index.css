@@ -23,5 +23,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+h2{
+  font-size: inherit;
+  font-weight: inherit;
+}
+p{
+  font-size: inherit;
+  font-weight: inherit;
+}
 

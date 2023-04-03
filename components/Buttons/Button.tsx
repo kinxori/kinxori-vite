@@ -18,12 +18,12 @@ export default function Button({
     }
 
     return(
-        <div className={className}> 
+        <span className={className}> 
             <Link to={to} target={target}>
                 <button className={classes[variant]} onClick={onClick} >
                     {children}
                 </button>
             </Link>
-        </div>
+        </span>
     )
 }
