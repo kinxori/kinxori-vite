@@ -24,11 +24,10 @@ b{
 .aboutMe-root .aboutMe-content .aboutMe-copy{
     position: relative;
     height:fit-content;
-
 }
 
 .aboutMe-root .aboutMe-content img{
-    height: 40%;
+    height: 250px;
     margin-top: 20%;
     margin-bottom: 20%;
 }
