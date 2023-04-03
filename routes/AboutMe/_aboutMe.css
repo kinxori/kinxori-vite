@@ -1,0 +1,62 @@
+.aboutMe-root{
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+
+}
+.aboutMe-root .aboutMe-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    height: 100%;
+}
+
+b{
+    color: var(--mainColor);
+    font-weight: inherit;
+}
+.aboutMe-root .aboutMe-content .ab-div{
+    height: auto;
+}
+
+.aboutMe-root .aboutMe-content .aboutMe-copy{
+    position: relative;
+}
+
+.aboutMe-root .aboutMe-content img{
+    height: 40%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.aboutMe-root .aboutMe-content h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.aboutMe-root .aboutMe-content .copyIsClose{
+    font-size: 16px;
+    padding-top: 6%;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.aboutMe-root .aboutMe-content .copyIsOpen{
+    font-size: 16px;
+    padding-top: 6%;
+    text-align: justify;
+}
+
+.aboutMe-readMore {
+    position: absolute;
+    right: 0%;
+}
+.aboutMe-readMore button{
+    padding: 0px;
+}
+.aboutMe-CTA button{
+    margin-top: 16%;
+    margin-bottom: 40%;
+}
