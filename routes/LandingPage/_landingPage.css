@@ -23,7 +23,9 @@
     font-size: 24px;
     text-align:left;
     font-weight: 700;
-    text-align: justify;
+    text-align: left;
+    width: 100%;
+
 }
 
 b{
@@ -31,6 +33,8 @@ b{
 }
 
 .landingPage-CTA button{ 
+    display: flex;
+    margin-left: auto;
     margin-top: 16%;
     margin-bottom: 40%;
 }

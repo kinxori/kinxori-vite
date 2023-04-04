@@ -1,0 +1,62 @@
+.contact-root{
+    height: 90%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto;
+    
+}
+b{
+    color: var(--mainColor);
+    font-weight: inherit;
+
+}
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    width: 100%;
+
+}
+
+.contact-content img{
+    height: 250px;
+    object-fit: contain;
+}
+.contact-btn-form{
+    width: 100%;
+
+}
+.contact-btn-form button{
+    margin-top: 16%;
+    margin-left: auto;
+    display: flex;
+}
+
+.contact-copy{
+    margin-top: 8%;
+    margin-bottom: 40%;
+}
+.contact-copy h2{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+
+}
+.contact-copy p{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+    margin-top: 8%;
+}
+
+.contact-form{
+    margin-top: 10%;
+    height: 500px;
+    width: 100%;
+    border: 3px solid var(--mainColor);
+    border-radius: 9px;
+    margin-bottom: 40%;
+}

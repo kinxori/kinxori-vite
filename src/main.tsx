@@ -5,7 +5,7 @@ import Home from "../routes/Home/Home"
 import Error404 from '../components/Error404/Error404'
 import Projects from '../routes/Projects'
 import AboutMe from '../routes/AboutMe/AboutMe'
-import Contact from '../routes/Contact'
+import Contact from '../routes/Contact/contact'
 
 import { 
   createBrowserRouter, 

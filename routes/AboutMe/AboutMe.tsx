@@ -14,7 +14,7 @@ export default function AboutMe(){
             <div className="aboutMe-content">
                 <img src="/AboutmeAsset.png" alt="about me asset" />
                 <h2>
-                    About me
+                    About me 👽
                 </h2>
                 <div className="ab-div">
                     <div className="aboutMe-copy">
@@ -25,7 +25,7 @@ export default function AboutMe(){
                             <br/>
                             As a web developer, I get to combine my love for <b>creating</b> with my passion for <b>problem-solving.</b> 
                             <br/>
-                            Feel free to explore <b>my portfolio</b> and reach out by clicking the button below to <b>connect</b> with me. 
+                            Feel free to explore <b>my portfolio</b> and reach out by clicking the button below to <b>connect</b> with me.
                         </p> 
                         <Button variant="linkButton" className="aboutMe-readMore" onClick={handleClick}>{isOpen? "read less" : "read more"}</Button>
                     </div>
