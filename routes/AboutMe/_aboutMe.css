@@ -1,7 +1,9 @@
 .aboutMe-root{
     width: 80%;
-    height: 90%;
+    height: auto;
     margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 40%;
 
 }
 .aboutMe-root .aboutMe-content{
@@ -29,7 +31,6 @@ b{
 
 .aboutMe-root .aboutMe-content img{
     height: 250px;
-    margin-top: 20%;
     margin-bottom: 20%;
 }
 
@@ -63,7 +64,6 @@ b{
 }
 .aboutMe-CTA button{
     margin-top: 16%;
-    margin-bottom: 40%;
     display: flex;
     margin-left: auto;
 }

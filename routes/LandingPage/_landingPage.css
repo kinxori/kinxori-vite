@@ -1,7 +1,10 @@
 .landingPage-root{
     width: 80%;
-    height: 90%;
+    height: auto;
     margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 40%;
+
 }
 .landingPage-root .landingPage-content{
     display: flex;
@@ -14,9 +17,7 @@
 
 .landingPage-root .astroBoy{
     height: 250px;
-    margin-top: 20%;
     margin-bottom: 20%;
-
 }
 
 .landingPage-root .landingPage-content .landingPage-copy{
@@ -36,5 +37,4 @@ b{
     display: flex;
     margin-left: auto;
     margin-top: 16%;
-    margin-bottom: 40%;
 }

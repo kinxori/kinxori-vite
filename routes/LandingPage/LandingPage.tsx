@@ -15,12 +15,12 @@ export default function LandingPage(){
                     <h2>
                         Check out my portfolio and <b>say hello!</b> 👋
                     </h2>
-                    <Button variant="secButton" to="/projects" className='landingPage-CTA'>
-                        Go projects
-                    </Button>
+                    
                 </div>
             </div>
-            
+            <Button variant="secButton" to="/projects" className='landingPage-CTA'>
+                Go projects
+            </Button>
         </article>
     )
 }

@@ -1,8 +1,9 @@
 b{
     color: var(--mainColor);
     font-weight: inherit;
+
 }
-.contact-root{
+.projects-root{
     height: auto;
     width: 80%;
     position: relative;
@@ -14,44 +15,50 @@ b{
     margin-bottom: 40%;
     margin-top: 20%;
 }
-
-.contact-content{
+.projects-content{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
-    width: 100%;
+
 }
 
-.contact-content img{
+.projects-content img{
     height: 250px;
     object-fit: contain;
-}
 
-.contact-copy{
+}
+.projects-copy{
     margin-top: 20%;
 }
-.contact-copy h2{
+
+.projects-copy h2{
     font-size: 24px;
     font-weight: 700;
     text-align: left;
 }
-.contact-copy p{
+.projects-copy p{
     font-size: 16px;
     font-weight: normal;
     text-align: justify;
     margin-top: 8%;
 }
-.contact-btn-form{
+
+.projects-btn-form{
     width: 100%;
 }
-.contact-btn-form button{
+
+.projects-btn-form button{
     margin-top: 16%;
     margin-left: auto;
     display: flex;
 }
-.contact-form{
-    margin-top: 10%;
-    height: 500px;
+
+.display-projects{
+    display: flex;
     width: 100%;
-    border: 3px solid var(--mainColor);
-    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+
 }
