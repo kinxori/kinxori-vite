@@ -27,6 +27,7 @@ b{
 .aboutMe-root .aboutMe-content .aboutMe-copy{
     position: relative;
     height:fit-content;
+    width: 100%;
 }
 
 .aboutMe-root .aboutMe-content img{
@@ -56,11 +57,12 @@ b{
 }
 
 .aboutMe-readMore {
-    position: absolute;
-    right: 0%;
+    width: 100%;
 }
 .aboutMe-readMore button{
     padding: 0px;
+    display: flex;
+    margin-left: auto;
 }
 .aboutMe-CTA button{
     margin-top: 16%;
