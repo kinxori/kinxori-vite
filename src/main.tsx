@@ -5,7 +5,8 @@ import Home from "../routes/Home/Home"
 import Error404 from '../components/Error404/Error404'
 import Projects from '../routes/Projects/Projects'
 import AboutMe from '../routes/AboutMe/AboutMe'
-import Contact from '../routes/Contact/contact'
+import Contact from '../routes/Contact/Contact'
+import Demo1 from '../routes/Projects/demos/demo1/Demo1'
 
 import { 
   createBrowserRouter, 
@@ -29,8 +30,12 @@ const router = createBrowserRouter([
     {
       path: "/contact",
       element: <Contact/>
-    }
+    },
   ],
+  },
+  {
+    path: "/projects/demo1",
+    element: <Demo1/>,
   },
 ])
 
