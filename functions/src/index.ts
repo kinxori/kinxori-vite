@@ -23,7 +23,7 @@ export const sendEmail = functions.https.onCall(async (data, context) => {
   }
 
   // Extract the data from the request
-  const { name, email, message } = data;
+  const {name, email, message} = data;
 
   try {
     // Send the email
@@ -35,7 +35,7 @@ export const sendEmail = functions.https.onCall(async (data, context) => {
     });
 
     // Return a success message
-    return { message: "Email sent successfully!" };
+    return {message: "Email sent successfully!"};
   } catch (error) {
     // Return an error message
     throw new functions.https.HttpsError(
