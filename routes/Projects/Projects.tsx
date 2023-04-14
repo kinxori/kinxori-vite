@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Button from "../../components/Buttons/Button"
 import "./_projects.css"
 import DemoCard from '../../components/DemoCard/DemoCard'
@@ -6,7 +6,15 @@ import { Outlet } from "react-router-dom"
 
 export default function Projects(){
 
-    const [isActive, setIsActive] = useState(false)
+    const [isActive, setIsActive] = useState(() => {
+        const storedState = localStorage.getItem("isActive");
+        return storedState ? storedState === "true" : false;
+      })
+    
+    useEffect(() => {
+        localStorage.setItem("isActive", isActive.toString())
+    }, [isActive]);
+
     const handleClick = ( )=>{
         setIsActive(!isActive)
     }

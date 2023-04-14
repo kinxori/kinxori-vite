@@ -36,7 +36,7 @@ export default function MobileNav(){
                             <i className="fa-solid fa-house"></i>
                     </PathIcon>
                     <PathIcon  to="/projects" handleClick={handleClick}>                   
-                            <i className="fa-solid fa-folder"></i>
+                             <i className="fa-solid fa-briefcase"></i>
                     </PathIcon >
                     <PathIcon  to="https://github.com/kinxori" target="_blank" handleClick={handleClick}>
                             <i className="fa-brands fa-github"></i>
