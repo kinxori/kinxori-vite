@@ -10,7 +10,7 @@
     "push": "git push",
     "build": "vite build",
     "deploy": "firebase deploy"
-  },
+    },
   "dependencies": {
     "firebase": "^9.19.1",
     "firebase-admin": "^11.6.0",

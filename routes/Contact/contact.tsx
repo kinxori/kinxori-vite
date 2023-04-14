@@ -30,14 +30,13 @@ export default function Contact(){
             </div>
             <div className='contact-btn-form'>
                 <Button onClick={handleClick} variant="secButton">
-                    {isActive === false ? "Open Form" : "Close Form"}
+                    {isActive === false ? "Open Options" : "Close Options"}
                 </Button>
                 {isActive === true &&
                     // <iframe className="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfCxMZviCUWi-YaxLzbgRNyV6vpYuAUkSTAKlKXU6LBbDAC_g/viewform?embedded=true">
                     //     Loading…
                     // </iframe>
                  <InputForm/>
-                    // <p>Hola</p>
                 }  
             </div>
         </article>

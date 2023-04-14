@@ -60,7 +60,9 @@ export default function InputForm (){
         />
       </label>
       <br />
-      <button type="submit">Submit</button>
+        <button type="submit" className="mainButton">
+            Send
+        </button>
     </form>
   );
 };

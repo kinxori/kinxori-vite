@@ -8,6 +8,7 @@ export default function Button({
     onClick,
     target,
     variant = "mainButton",
+    type,
 }: any){
 
     const classes: any = {
@@ -19,8 +20,8 @@ export default function Button({
 
     return(
         <span className={className}> 
-            <Link to={to} target={target}>
-                <button className={classes[variant]} onClick={onClick} >
+            <Link to={to} target={target} >
+                <button className={classes[variant]} onClick={onClick} type={type}>
                     {children}
                 </button>
             </Link>

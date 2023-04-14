@@ -1,15 +1,16 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 import * as functions from "firebase-functions";
 import * as nodemailer from "nodemailer";
 import * as admin from "firebase-admin";
-
-const serviceAccount = require("../../myportfolio-70cb1-firebase-adminsdk-93t0f-4714f47806.json");
-
+import * as serviceAccount from
+  "../../myportfolio-70cb1-firebase-adminsdk-93t0f-4714f47806.json";
 
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://myportfolio-70cb1-default-rtdb.firebaseio.com/"
-  });
-
+  credential: admin.credential.cert(
+      serviceAccount as admin.ServiceAccount
+  ),
+  databaseURL: "https://myportfolio-70cb1-default-rtdb.firebaseio.com/",
+});
 
 // Set up a transporter with your email provider
 const transporter = nodemailer.createTransport({
