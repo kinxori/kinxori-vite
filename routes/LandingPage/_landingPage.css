@@ -20,13 +20,12 @@
     margin-bottom: 20%;
 }
 
-.landingPage-root .landingPage-content .landingPage-copy{
+.landingPage-copy h2{
     font-size: 24px;
     text-align:left;
     font-weight: 700;
     text-align: left;
     width: 100%;
-
 }
 
 b{

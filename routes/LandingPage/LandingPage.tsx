@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import Button from '../../components/Buttons/Button'
 import './_landingPage.css'
 
@@ -12,10 +11,9 @@ export default function LandingPage(){
                         Combining <b>creativity, numbers,</b> and <b>code</b> to make things happen. 
                     </h2>
                     <br/>
-                    <h2>
-                        Check out my portfolio and <b>say hello!</b> 👋
-                    </h2>
-                    
+                    <p>
+                        Check out my portfolio and <b>say hello!</b> 👇
+                    </p>
                 </div>
             </div>
             <Button variant="secButton" to="/projects" className='landingPage-CTA'>

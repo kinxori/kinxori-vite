@@ -12,7 +12,7 @@
     "deploy": "firebase deploy"
   },
   "dependencies": {
-    "firebase": "^9.18.0",
+    "firebase": "^9.19.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0"
@@ -25,5 +25,4 @@
     "typescript": "^5.0.2",
     "vite": "^4.1.0"
   }
-  
 }

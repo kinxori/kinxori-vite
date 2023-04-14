@@ -35,15 +35,18 @@ export default function Projects(){
                 </Button>
                 {isActive === true &&
                     <section className="display-projects">
-                        <DemoCard header="Hola homelo chino" to="demo1">
-                            Soy homelo chino
+                        <DemoCard header="Shopping Cart" to="demo1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>
                             <img src="./404Assets.png" alt="" />
                         </DemoCard>
-                        <DemoCard header="Aqui voy a meter" to="projects/demo1">
-                            
+                        <DemoCard header="Search Bar" to="demo1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>
                             <img src="./404Assets.png" alt="" />
                         </DemoCard>
-                        <Outlet/>
+                        <DemoCard header="Fetch API" to="demo1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>
+                            <img src="./404Assets.png" alt="" />
+                        </DemoCard>
                     </section>
                 } 
             </div>

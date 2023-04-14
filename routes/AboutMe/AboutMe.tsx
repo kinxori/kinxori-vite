@@ -1,12 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../../components/Buttons/Button";
 import "./_aboutMe.css"
 
 export default function AboutMe(){
 
-    const [isOpen, setIsOpen] = useState(false)
-    const handleClick = ()=>{
-        setIsOpen(!isOpen)
+    const [isOpen, setisOpen] = useState(() => {
+        const storedState = localStorage.getItem("isOpen");
+        return storedState ? storedState === "true" : false;
+      })
+    
+    useEffect(() => {
+        localStorage.setItem("isOpen", isOpen.toString())
+    }, [isOpen]);
+
+    const handleClick = ( )=>{
+        setisOpen(!isOpen)
     }
     
     return(
