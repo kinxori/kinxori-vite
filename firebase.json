@@ -29,8 +29,7 @@
       ]
     },
     {
-      "source": "send-emails-function",
-      "codebase": "send-emails-function",
+      "source": "functions",
       "ignore": [
         "node_modules",
         ".git",
