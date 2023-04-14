@@ -2,7 +2,7 @@ import * as functions from "firebase-functions";
 import * as nodemailer from "nodemailer";
 import * as admin from "firebase-admin";
 
-const serviceAccount = require("./myportfolio-70cb1-firebase-adminsdk-93t0f-4714f47806.json");
+const serviceAccount = require("../../myportfolio-70cb1-firebase-adminsdk-93t0f-4714f47806.json");
 
 
 admin.initializeApp({
