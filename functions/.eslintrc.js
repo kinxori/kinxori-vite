@@ -23,6 +23,7 @@ module.exports = {
   plugins: [
     "@typescript-eslint",
     "import",
+    "eslint-plugin-import",
   ],
   rules: {
     "quotes": ["error", "double"],
