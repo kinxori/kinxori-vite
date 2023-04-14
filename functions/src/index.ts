@@ -24,35 +24,33 @@ const transporter = nodemailer.createTransport({
 });
 
 // Define your Cloud Function
-export const sendEmail = functions.https.onCall(async (data, context) => {
+export const sendEmail = functions
+  .database
+  .ref("/contacts")
+  .onCreate(async (snapshot, context) => {
   // Check if the user is authenticated
-  if (!context.auth) {
-    throw new functions.https.HttpsError(
-      "unauthenticated",
-      "You must be authenticated to call this function."
-    );
-  }
+    // if (!context.auth) {
+    //   throw alert(
+    //     "unauthenticated",
+    //   );
+    // }
 
-  // Extract the data from the request
-  const {name, email, message} = data;
+    // Extract the data from the request
+    const {email, message} = snapshot.val();
 
-  try {
+    try {
     // Send the email
-    await transporter.sendMail({
-      from: "gustavoq26@gmail.com",
-      to: "gustavoq26@gmail.com",
-      subject: "New message from your portfolio website",
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-    });
+      await transporter.sendMail({
+        from: "gustavoq26@gmail.com",
+        to: "gustavoq26@gmail.com",
+        subject: "New message from your portfolio website",
+        text: `Email: ${email}\nMessage: ${message}`,
+      });
 
-    // Return a success message
-    return {message: "Email sent successfully!"};
-  } catch (error) {
+      // Return a success message
+      return console.log("Email sent successfully!");
+    } catch (error) {
     // Return an error message
-    throw new functions.https.HttpsError(
-      "unknown",
-      "Failed to send email.",
-      error
-    );
-  }
-});
+      return console.error("Failed to send email.", error);
+    }
+  });
