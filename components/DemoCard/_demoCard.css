@@ -1,4 +1,4 @@
-.card-root{
+.card-root-open{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -9,7 +9,7 @@
     border-radius: 9px;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 20px 0px;
     background-color: none;
 }
 
@@ -26,7 +26,7 @@
     font-weight: 700;
     font-size: 24px;
 }
-.card-title button{
+.card-root-open .card-title button{
     height: 30px;
     width: 30px;
     border-radius: 100%;
@@ -37,11 +37,13 @@
     margin-left: auto;
     background-color: var(--textMainColor);
     color: var(--mainColor);
+    transform:rotate(90deg);
+    transition: all .3s ease-in-out;
 }
-.card-body{
+.card-root-open .card-body{
     display: flex;
     flex-direction: column;
-    min-height: 150px;
+    max-height: 2000px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -50,6 +52,10 @@
     padding: 20px;
     box-sizing: border-box;
     text-align: justify;
+    transition: max-height 1s ease-in-out, padding .9s ease-in-out;
+    z-index: -999;
+
+
 }
 .card-body img{
     max-height:200px;
@@ -58,3 +64,51 @@
     margin-bottom: 20px;
 }
 
+
+/*  -------------- CLOSED  -------------- */
+
+.card-root-close{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--mainColor);
+    border-radius: 9px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0px;
+    background-color: none;
+}
+
+.card-root-close .card-title button{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    background-color: var(--textMainColor);
+    color: var(--mainColor);
+    transform:rotate(0deg);
+    transition: all .3s ease-in-out;
+
+}
+.card-root-close .card-body{
+    display: flex;
+    flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secColor);
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: justify;
+    transition: max-height .7s ease-in-out, padding .7s ease-in-out;
+    z-index: -999;
+}

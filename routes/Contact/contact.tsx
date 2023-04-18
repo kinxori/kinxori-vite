@@ -2,10 +2,14 @@ import { useEffect, useState } from 'react'
 import Button from '../../components/Buttons/Button'
 import './_contact.css'
 import InputForm from "../../components/InputForm/InputForm"
+import DemoCard from '../../components/DemoCard/DemoCard'
+
 
 export default function Contact(){
     
-    const [isActive, setIsActive] = useState(() => {
+    const [isClicked, setIsClicked] = useState(false);
+
+    const [isActive, setisActive] = useState(() => {
         const storedState = localStorage.getItem("isActive");
         return storedState ? storedState === "true" : false;
       })
@@ -14,9 +18,13 @@ export default function Contact(){
         localStorage.setItem("isActive", isActive.toString())
     }, [isActive]);
 
-    const handleClick = ( )=>{
-        setIsActive(!isActive)
-    }
+    const handleClick = ()=>{
+        setisActive(!isActive)
+    };
+    const handleCard = ()=>{
+        setIsClicked(!isClicked)
+    };
+
     return(
         <article className="contact-root">
             <div className="contact-content">
@@ -32,12 +40,18 @@ export default function Contact(){
                 <Button onClick={handleClick} variant="secButton">
                     {isActive === false ? "Open Options" : "Close Options"}
                 </Button>
-                {isActive === true &&
-                    // <iframe className="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfCxMZviCUWi-YaxLzbgRNyV6vpYuAUkSTAKlKXU6LBbDAC_g/viewform?embedded=true">
-                    //     Loading…
-                    // </iframe>
-                 <InputForm/>
-                }  
+                {isActive === true && 
+                <>
+                    <DemoCard header="Email! 📧" isActive={isClicked} onClick={handleCard} >
+                        <InputForm/>
+                    </DemoCard>
+                    <DemoCard header="What's App! 🖁" isActive={isClicked} onClick={handleCard} >
+                        <p>HOla</p>
+                    </DemoCard>
+                    <DemoCard header="Twitter 🐦" isActive={isClicked} onClick={handleCard} >
+                        <p>HOla</p>
+                    </DemoCard>
+                </>}
             </div>
         </article>
     )

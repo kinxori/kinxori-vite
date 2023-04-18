@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import './_demoCard.css'
 
-export default function DemoCard ({header, to, children}: any){
+export default function DemoCard ({header, to, children, isActive, onClick, }: any){
+
     return(
-        <div className="card-root">
+        <div className={isActive === true ? "card-root-open" : "card-root-close"}>
             <div className="card-title">
                 {header}
                 <Link to={to}>
-                    <button>
+                    <button onClick={onClick} >
                        <i className="fa-solid fa-chevron-right"></i>
                     </button>
                 </Link>

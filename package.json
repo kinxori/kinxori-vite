@@ -10,7 +10,7 @@
     "push": "git push",
     "build": "vite build",
     "deploy": "firebase deploy"
-    },
+  },
   "dependencies": {
     "firebase": "^9.19.1",
     "firebase-admin": "^11.6.0",
@@ -20,12 +20,14 @@
     "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
+    "@rollup/plugin-replace": "^5.0.2",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3",
     "eslint-plugin-import": "^2.27.5",
     "typescript": "^5.0.2",
-    "vite": "^4.1.0"
+    "vite": "^4.2.1"
   }
 }
