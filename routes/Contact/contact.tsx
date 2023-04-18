@@ -7,7 +7,7 @@ import DemoCard from '../../components/DemoCard/DemoCard'
 
 export default function Contact(){
     
-    const [isClicked, setIsClicked] = useState(false);
+    const [isClicked, setIsClicked] = useState(null);
 
     const [isActive, setisActive] = useState(() => {
         const storedState = localStorage.getItem("isActive");
@@ -21,8 +21,8 @@ export default function Contact(){
     const handleClick = ()=>{
         setisActive(!isActive)
     };
-    const handleCard = ()=>{
-        setIsClicked(!isClicked)
+    const handleCard = (id:any)=>{
+        setIsClicked((currentValue : any) => currentValue !== id ? id : false)
     };
 
     return(
@@ -37,21 +37,27 @@ export default function Contact(){
                 </div>
             </div>
             <div className='contact-btn-form'>
-                <Button onClick={handleClick} variant="secButton">
+                <Button onClick={handleClick} variant="secButton" className="Contact-CTA">
                     {isActive === false ? "Open Options" : "Close Options"}
                 </Button>
                 {isActive === true && 
-                <>
-                    <DemoCard header="Email! 📧" isActive={isClicked} onClick={handleCard} >
+                <div>
+                    <DemoCard header="Email 📧" isActive={isClicked === "card1"} onClick={() => handleCard("card1")}>
                         <InputForm/>
                     </DemoCard>
-                    <DemoCard header="What's App! 🖁" isActive={isClicked} onClick={handleCard} >
-                        <p>HOla</p>
+                    <DemoCard header="What's App 🖁" isActive={isClicked === "card2"} onClick={() => handleCard("card2")}>
+                        <h3>Click the button below to send me a What's App message.</h3>
+                         <Button to="https://api.whatsapp.com/send/?phone=527713168861&text&type=phone_number&app_absent=0" target="_blank" variant="mainButton">
+                            Send a What's App!
+                        </Button>
                     </DemoCard>
-                    <DemoCard header="Twitter 🐦" isActive={isClicked} onClick={handleCard} >
-                        <p>HOla</p>
+                    <DemoCard header="Twitter 🐦" isActive={isClicked === "card3"} onClick={() => handleCard("card3")}>
+                        <Button to="https://facebook.com" target="_blank" variant="mainButton">
+                           Facebook
+                        </Button>
                     </DemoCard>
-                </>}
+                </div>
+                }
             </div>
         </article>
     )

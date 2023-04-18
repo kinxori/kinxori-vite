@@ -1,3 +1,8 @@
+h3{
+    text-align: left;
+    font-size: 16px;
+}
+
 .card-root-open{
     width: 100%;
     height: fit-content;
@@ -9,7 +14,7 @@
     border-radius: 9px;
     position: relative;
     overflow: hidden;
-    margin: 20px 0px;
+    margin: 10px 0px;
     background-color: none;
 }
 
@@ -49,10 +54,10 @@
     align-items: center;
     background-color: var(--secColor);
     overflow: hidden;
-    padding: 20px;
+    padding: 20px 20px;
     box-sizing: border-box;
     text-align: justify;
-    transition: max-height 1s ease-in-out, padding .9s ease-in-out;
+    transition: all .3s ease-in-out;
     z-index: -999;
 
 
@@ -78,7 +83,7 @@
     border-radius: 9px;
     position: relative;
     overflow: hidden;
-    margin: 20px 0px;
+    margin: 10px 0px;
     background-color: none;
 }
 
@@ -106,9 +111,9 @@
     justify-content: center;
     align-items: center;
     background-color: var(--secColor);
-    padding: 0px;
+    padding: 0px 20px;
     box-sizing: border-box;
     text-align: justify;
-    transition: max-height .7s ease-in-out, padding .7s ease-in-out;
+    transition: all .6s ease-in-out;
     z-index: -999;
 }
