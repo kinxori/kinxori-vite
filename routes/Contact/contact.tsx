@@ -30,9 +30,9 @@ export default function Contact(){
             <div className="contact-content">
                 <img src="./contact-asset.png" alt="contact-asset.png" />
                 <div className='contact-copy'>
-                    <h2>Hey there! <b>Thanks</b> for stopping by 🤝 </h2>
+                    <h2><b>Hey there!</b> Thanks for stopping by ☕️ </h2>
                     <p>
-                        Let's chat about <b>web dev</b> or <b>motion graphics,</b> or just connect as friends! <b>Send me a message</b> and let's grab a virtual coffee! 
+                        Let's chat about <b>web development</b> or <b>motion graphics,</b> or just connect as friends! <b>Send me a message</b> and let's grab a virtual coffee! 
                     </p>
                 </div>
             </div>

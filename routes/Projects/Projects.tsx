@@ -30,7 +30,7 @@ export default function Projects(){
                 <div className="projects-copy">
                     <h2>Check out my projects to see my <b>skills in action!</b> ✍️</h2>
                     <p>
-                        Take a look around and feel free to <b>reach out</b> if you have any <b>questions or comments.</b>
+                        Take a look around to some of my <b>features</b> I've been learning and <b>improving</b> along my <b>web developer career.</b>
                     </p>
                 </div>
             </div>
