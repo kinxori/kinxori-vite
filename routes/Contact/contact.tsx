@@ -48,12 +48,13 @@ export default function Contact(){
                     <DemoCard header="What's App 📱" isActive={isClicked === "card2"} onClick={() => handleCard("card2")}>
                         <h3>Click the button below to send me a What's App message.</h3>
                          <Button to="https://api.whatsapp.com/send/?phone=527713168861&text&type=phone_number&app_absent=0" target="_blank" variant="mainButton">
-                            Send a What's App!
+                            Send a What's App
                         </Button>
                     </DemoCard>
                     <DemoCard header="Twitter 🐦" isActive={isClicked === "card3"} onClick={() => handleCard("card3")}>
-                        <Button to="https://facebook.com" target="_blank" variant="mainButton">
-                           Facebook
+                        <h3>Follow me on Twitter and let's share thoughts!</h3>
+                        <Button to="https://twitter.com/kinxori" target="_blank" variant="mainButton">
+                            Go Twitter
                         </Button>
                     </DemoCard>
                 </div>

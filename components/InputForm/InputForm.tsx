@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './_inputForm.css'
 
 export default function InputForm (){
 
@@ -26,6 +27,7 @@ export default function InputForm (){
     const data = await result.json();
     console.log()
 
+    // MODIFICAR ALERT PARA QUE SEA UN POP-UP 
     alert("Correo Enviado")
     target.reset();
     setEmail("");
@@ -33,29 +35,36 @@ export default function InputForm (){
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>Email:</h3>
-      <label>
-        <input
-          type="email"
-          value={isEmail}
-          name="email"
-          onChange={(event) => setEmail(event.target.value)}
-        />
-      </label>
-      <br />
-      <h3>Message:</h3>
-      <label>
-        <textarea
-          value={isMessage}
-          name="message"
-          onChange={(event) => setMessage(event.target.value)}
-        />
-      </label>
-      <br />
-        <button type="submit" className="mainButton">
-            Send
-        </button>
+    <form onSubmit={handleSubmit} className="form-root">
+      <div className="form-body">
+        <h3>Email:</h3>
+        <label>
+          <input
+            type="email"
+            value={isEmail}
+            name="email"
+            onChange={(event) => setEmail(event.target.value)}
+            className="email-input-box"
+            required
+            placeholder="email@example.com"
+          />
+        </label>
+        <h3>Message:</h3>
+        <label>
+          <input
+            required
+            type="text"
+            value={isMessage}
+            name="message"
+            onChange={(event) => setMessage(event.target.value)}
+            className="message-input-box"
+            placeholder="Enter your message here"
+          />
+        </label>
+      </div>
+      <button type="submit" className="mainButton submit-button-CTA">
+          Submit
+      </button>
     </form>
   );
 };
