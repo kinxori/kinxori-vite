@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import './_demoCard.css'
 
-export default function DemoCard ({header, to, children, isActive, onClick, id, }: any){
+export default function DemoCard ({
+        header, 
+        to, 
+        children, 
+        isActive, 
+        onClick, 
+        id, 
+    }: any){
 
     return(
         <div className={isActive === true ? "card-root-open" : "card-root-close"}>

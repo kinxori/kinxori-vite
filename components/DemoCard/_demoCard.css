@@ -2,13 +2,18 @@ h3{
     text-align: left;
     font-size: 16px;
     padding-bottom: 20px;
+    margin: 0;
 }
 h2{
     font-size: 24px;
+    margin: 0;
+
 }
 p{
     text-align: left;
     font-size: 16px;
+    margin: 0;
+
 }
 
 .card-root-open{
@@ -22,7 +27,7 @@ p{
     border-radius: 9px;
     position: relative;
     overflow: hidden;
-    margin: 10px 0px;
+    margin: 5px 0px;
     background-color: none;
 }
 
@@ -91,7 +96,7 @@ p{
     border-radius: 9px;
     position: relative;
     overflow: hidden;
-    margin: 10px 0px;
+    margin: 5px 0px;
     background-color: none;
 }
 

@@ -44,21 +44,22 @@ b{
     margin-top: 8%;
 }
 
-.projects-btn-form{
+.projects-btn-display{
     width: 100%;
+    height: auto;
 }
 
-.Projects-CTA button{
+.projects-CTA button{
     margin-top: 16%;
     margin-left: auto;
     display: flex;
 }
 
-.display-projects{
+.projects-display-features{
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 20%;
 }

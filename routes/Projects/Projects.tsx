@@ -34,12 +34,12 @@ export default function Projects(){
                     </p>
                 </div>
             </div>
-            <div className="projects-btn-form">
-                <Button onClick={handleClick} variant="secButton" className="Projects-CTA">
+            <div className="projects-btn-display">
+                <Button onClick={handleClick} variant="secButton" className="projects-CTA">
                         {isActive === false ? "Open Projects" : "Close Projects"}
                 </Button>
                 {isActive === true &&
-                    <section className="display-projects">
+                    <section className="projects-display-features">
                         <DemoCard header="Shopping Cart" isActive={isClicked === "card1"} onClick={() => handleCard("card1")} >
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>
                             <img src="./404Assets.png" alt="" />

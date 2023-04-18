@@ -40,8 +40,9 @@ b{
     text-align: justify;
     margin-top: 8%;
 }
-.contact-btn-form{
+.contact-btn-options{
     width: 100%;
+    height: auto;
 }
 .Contact-CTA button{
     margin-top: 16%;
@@ -55,4 +56,12 @@ b{
     width: 100%;
     border: 3px solid var(--mainColor);
     border-radius: 9px;
+}
+.contact-options-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
 }

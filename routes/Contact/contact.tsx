@@ -36,12 +36,12 @@ export default function Contact(){
                     </p>
                 </div>
             </div>
-            <div className='contact-btn-form'>
+            <div className='contact-btn-options'>
                 <Button onClick={handleClick} variant="secButton" className="Contact-CTA">
                     {isActive === false ? "Open Options" : "Close Options"}
                 </Button>
                 {isActive === true && 
-                <div>
+                <section className='contact-options-cards'>
                     <DemoCard header="Email 📧" isActive={isClicked === "card1"} onClick={() => handleCard("card1")}>
                         <InputForm/>
                     </DemoCard>
@@ -57,7 +57,7 @@ export default function Contact(){
                             Go Twitter
                         </Button>
                     </DemoCard>
-                </div>
+                </section>
                 }
             </div>
         </article>
