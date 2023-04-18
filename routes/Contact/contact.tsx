@@ -45,7 +45,7 @@ export default function Contact(){
                     <DemoCard header="Email 📧" isActive={isClicked === "card1"} onClick={() => handleCard("card1")}>
                         <InputForm/>
                     </DemoCard>
-                    <DemoCard header="What's App 🖁" isActive={isClicked === "card2"} onClick={() => handleCard("card2")}>
+                    <DemoCard header="What's App 📱" isActive={isClicked === "card2"} onClick={() => handleCard("card2")}>
                         <h3>Click the button below to send me a What's App message.</h3>
                          <Button to="https://api.whatsapp.com/send/?phone=527713168861&text&type=phone_number&app_absent=0" target="_blank" variant="mainButton">
                             Send a What's App!

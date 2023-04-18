@@ -6,7 +6,7 @@ export default function DemoCard ({header, to, children, isActive, onClick, id, 
     return(
         <div className={isActive === true ? "card-root-open" : "card-root-close"}>
             <div className="card-title">
-                {header}
+                <h2>{header}</h2>
                 <Link to={to}>
                     <button onClick={onClick} id={id}>
                        <i className="fa-solid fa-chevron-right"></i>
