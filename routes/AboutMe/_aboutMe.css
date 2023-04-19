@@ -1,3 +1,7 @@
+b{
+    color: var(--mainColor);
+    font-weight: inherit;
+}
 .aboutMe-root{
     width: 80%;
     height: auto;
@@ -15,45 +19,85 @@
     position: relative;
 }
 
-b{
-    color: var(--mainColor);
-    font-weight: inherit;
-}
-.aboutMe-root .aboutMe-content .ab-div{
-    height:fit-content;
-    width: 100%;
-}
-
-.aboutMe-root .aboutMe-content .aboutMe-copy{
-    position: relative;
-    height:fit-content;
-    width: 100%;
-}
-
-.aboutMe-root .aboutMe-content img{
+.about-me-asset{
     height: 250px;
     margin-bottom: 20%;
 }
 
-.aboutMe-root .aboutMe-content h2{
+.aboutMe-body h2{
     font-size: 24px;
     font-weight: 700;
     text-align: left;
     margin-right: auto;
 }
-.aboutMe-root .aboutMe-content .copyIsClose{
-    font-size: 16px;
-    padding-top: 6%;
-    text-align: justify;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+
+.aboutMe-body{
+    position: relative;
+    height:fit-content;
+    width: 100%;
 }
-.aboutMe-root .aboutMe-content .copyIsOpen{
-    font-size: 16px;
-    padding-top: 6%;
+.aboutMe-copy{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.aboutMe-copy p{
     text-align: justify;
+    margin-bottom: 10%;
+    font-size: 16px;
+}
+.aboutme-copy-PFP{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    border: 2px solid white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutme-copy-PFP img{
+    height: 800px;
+    object-fit:cover;
+    position: relative;
+    top: 70%;
+}
+
+ .copyIsClose{
+    padding-top: 6%;
+    overflow: hidden;
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:115px;
+    position: relative;
+}
+
+.copyIsClose .contact-copy-blur {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    bottom: -50%;
+    left: -50%;
+    background-color: var(--secColor);
+    display: flex;
+    filter: blur(25px);
+    
+}
+
+ .copyIsOpen{
+    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    position: relative;
 }
 
 .aboutMe-readMore {
