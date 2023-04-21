@@ -25,16 +25,16 @@ transport.verify()
 const sendContactForm = (form:any)=>{
     return transport
     .sendMail({
-        subject: "Te ha llegado un correo 👺",
+        subject: `${String.fromCodePoint(parseInt(form.emoji, 16))} You got mail!`,
         bcc: "gustavoq26@gmail.com",
-        html: `<h3>Te llegó un correo</h3>
+        html: `<h3>This person has sent you an email, reply ASAP! 😵</h3>
         <p> From: ${form.email} </p>
         <p> Message: ${form.message} </p>
         `,
     })
     .then((r:any) =>{
-        console.log("accepted🤝", r.accepted)
-        console.log("rejected👺", r.rejected)
+        console.log("Sender Function Working 🤝", r.accepted)
+        console.log("Sender Function Rejected👺", r.rejected)
     })
     .catch((e:any)=>console.log("If you see this, sender function is not working 🥲",e))
 }
@@ -45,14 +45,14 @@ exports.formFunction = functions.https.onRequest((request:any, response:any)=>{
     response.set('Access-Control-Allow-Methods', 'POST');
     response.set('Access-Control-Allow-Headers', 'Content-Type');
 
-    console.log("body 👀", request.body)
+    console.log("body 🤪", request.body)
 
     if (request.method === "OPTIONS"){
         response.status(204).send("");
     }
-    else if(request.body.secret !== "homelo") {
-        response.json({ message:"Secret failed 👺" });
-    }
+    // else if(request.body.secret !== "homelo") {
+    //     response.json({ message:"Secret failed 👺" });
+    // }
      else  { 
         sendContactForm(request.body);
         return response.json({ message:"Email sent! 🛐" });

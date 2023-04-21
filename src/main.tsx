@@ -8,6 +8,7 @@ import AboutMe from '../routes/AboutMe/AboutMe'
 import Contact from '../routes/Contact/Contact'
 import Demo1 from '../routes/Projects/demos/demo1/Demo1'
 
+const EmojiAPI = "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72"
 import { 
   createBrowserRouter, 
   RouterProvider, 
@@ -29,7 +30,8 @@ const router = createBrowserRouter([
     },
     {
       path: "/contact",
-      element: <Contact/>
+      element: <Contact/>,
+      loader: async()=>await((await fetch(EmojiAPI)).json()),
     },
   ],
   },

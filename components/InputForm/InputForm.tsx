@@ -1,17 +1,20 @@
 import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import './_inputForm.css'
+
 
 export default function InputForm (){
 
     const [isEmail, setEmail] = useState("");
     const [isMessage, setMessage] = useState("");
-
+ 
   const handleSubmit = async (event:any) => {
     event.preventDefault();
     const { target } = event;
     const form = {
       email: target.email.value,
       message: target.message.value,
+      emoji: randomEmoji.codePoint,
     };
     
     const result = await fetch(
@@ -24,8 +27,6 @@ export default function InputForm (){
         body: JSON.stringify({ ...form, secret:"homelo" }),
       }
     )
-    const data = await result.json();
-    console.log()
 
     // MODIFICAR ALERT PARA QUE SEA UN POP-UP 
     alert("Correo Enviado")
@@ -34,10 +35,14 @@ export default function InputForm (){
     setMessage("");
   };
 
+  const emojiData:any = useLoaderData();
+  const randomEmojiIndex = Math.floor(Math.random()* emojiData.length);
+  const randomEmoji = emojiData[randomEmojiIndex]
+
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-body">
-        <h3>Email:</h3>
+        <h3>Email: </h3>
         <label>
           <input
             type="email"
