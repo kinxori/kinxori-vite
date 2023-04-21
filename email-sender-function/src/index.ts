@@ -5,14 +5,10 @@ const nodemailer = require("nodemailer");
 
 const transport = nodemailer.createTransport({
 
-    // host: "smtp.gmail.com",
-    // port: 465,
-    // secure: true,
-
     service: "Gmail",
     auth: {
-        email: "quirozocampog@gmail.com",
-        pass: "kvbttithyjltexfl",
+        user: "quirozocampog@gmail.com",
+        pass: "zmcqndjovbdkxecw",
     },
 });
 
@@ -20,10 +16,10 @@ const transport = nodemailer.createTransport({
 
 transport.verify()
     .then(() => {
-        console.log("💋SMTP server connection successful");
+        console.log("SMTP server connection successful 🚀");
     })
     .catch((error:any)=> {
-        console.error("🛐SMTP server connection error:", error);
+        console.error("SMTP server connection error 🥺:", error);
     });
 
 const sendContactForm = (form:any)=>{
@@ -40,22 +36,25 @@ const sendContactForm = (form:any)=>{
         console.log("accepted🤝", r.accepted)
         console.log("rejected👺", r.rejected)
     })
-    .catch((e:any)=>console.log("IF you see this theres an error 🥲",e))
+    .catch((e:any)=>console.log("If you see this, sender function is not working 🥲",e))
 }
 
 exports.formFunction = functions.https.onRequest((request:any, response:any)=>{
 
     response.set('Access-Control-Allow-Origin', '*');
-    response.set('Access-Control-Allow-Methods', 'GET, POST');
+    response.set('Access-Control-Allow-Methods', 'POST');
     response.set('Access-Control-Allow-Headers', 'Content-Type');
 
-    console.log("body🍿", request.body)
+    console.log("body 👀", request.body)
 
     if (request.method === "OPTIONS"){
         response.status(204).send("");
     }
-    else if(request.body.secret !== "homelo")
-        return response.json({ message:"Wrong secret 👺" });
+    else if(request.body.secret !== "homelo") {
+        response.json({ message:"Secret failed 👺" });
+    }
+     else  { 
         sendContactForm(request.body);
-        return response.json({ message:"Sending Email 🛐" });
+        return response.json({ message:"Email sent! 🛐" });
+    }
 });

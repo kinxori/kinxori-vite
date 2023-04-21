@@ -71,7 +71,7 @@ p{
     box-sizing: border-box;
     text-align: justify;
     transition: all .3s ease-in-out;
-    z-index: -999;
+    /* z-index: -999; */
 
 
 }
