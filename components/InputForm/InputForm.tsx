@@ -56,9 +56,9 @@ export default function InputForm (){
         </label>
         <h3>Message:</h3>
         <label>
-          <input
+          <textarea
             required
-            type="text"
+            // type="text"
             value={isMessage}
             name="message"
             onChange={(event) => setMessage(event.target.value)}

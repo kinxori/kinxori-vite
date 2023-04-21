@@ -14,7 +14,6 @@
     flex-direction: column;
     gap: 10px;
     padding-bottom: 20px;
-    
 }
 
 .form-body h3{
@@ -24,28 +23,30 @@
 }
 
 .form-body .email-input-box{
-    height: 30px;
+    height: 40px;
     width: 100%;
     text-align: start;
     font-size: 16px;
+    padding: 10px 10px;
+    box-sizing: border-box;
 }
 
-.form-body .email-input-box::placeholder{
-    top: 5px;
-    left: 8px;
-    position: absolute;
-    font-size: 16px;
+.email-input-box:focus{
+    border: 2px solid var(--mainColor);
 }
 
 .form-body .message-input-box{
-    min-height: 60px;
+    min-height: 100px;
     width: 100%;
     font-size: 16px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align:left;
+    border-radius: 4px;
+    font-family: var(--mainFont);
+    resize: none;
+}
+.message-input-box:focus{
+    border: 2px solid var(--mainColor);
 }
 
-.form-body .message-input-box::placeholder{
-    top: 5px;
-    left: 8px;
-    position: absolute;
-    font-size: 16px;
-}

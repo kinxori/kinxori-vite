@@ -1,7 +1,9 @@
 :root {
-  font-family: 'RUBIK', system-ui, Avenir, Helvetica, sans-serif;
+  
+  font-family: var(--mainFont);
   color-scheme: light dark;
   color: var(--textMainColor);
+  --mainFont:'RUBIK', system-ui, Avenir, Helvetica, sans-serif;
   --textMainColor: #fff;
   --textSecColor:hsla(106deg, 0%, 73%, 1);
   --secColor: #242424;
