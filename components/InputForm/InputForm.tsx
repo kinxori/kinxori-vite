@@ -1,13 +1,23 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import './_inputForm.css'
+import Button from "../Buttons/Button";
 
 
 export default function InputForm (){
 
-    const [isEmail, setEmail] = useState("");
-    const [isMessage, setMessage] = useState("");
+  const [isEmail, setEmail] = useState("");
+  const [isMessage, setMessage] = useState("");
+  const [popUp, setPopUp] = useState("")
+
+  const emojiData:any = useLoaderData();
+  const randomEmojiIndex = Math.floor(Math.random()* emojiData.length);
+  const randomEmoji = emojiData[randomEmojiIndex]
  
+  const handlePopUp = () => {
+      setPopUp("")
+    }
+
   const handleSubmit = async (event:any) => {
     event.preventDefault();
     const { target } = event;
@@ -27,17 +37,14 @@ export default function InputForm (){
         body: JSON.stringify({ ...form, secret:"homelo" }),
       }
     )
-
-    // MODIFICAR ALERT PARA QUE SEA UN POP-UP 
-    alert("Correo Enviado")
-    target.reset();
+    setPopUp("isShown")
+    setTimeout(()=>{
+      setPopUp("");
+    }, 3000)
     setEmail("");
     setMessage("");
   };
 
-  const emojiData:any = useLoaderData();
-  const randomEmojiIndex = Math.floor(Math.random()* emojiData.length);
-  const randomEmoji = emojiData[randomEmojiIndex]
 
   return (
     <form onSubmit={handleSubmit} className="form-root">
@@ -70,6 +77,17 @@ export default function InputForm (){
       <button type="submit" className="mainButton submit-button-CTA">
           Submit
       </button>
+      {popUp === "isShown" && 
+        <div className="email-form-send-pop-up">
+          <div className="email-pop-up-body">
+            <h2>Email sent! 👨‍💻</h2>
+            <Button variant="mainButton" onClick={handlePopUp}>
+              Ok
+            </Button>
+          </div>
+          <div className="email-pop-up-background"></div>
+        </div> 
+        }
     </form>
   );
 };

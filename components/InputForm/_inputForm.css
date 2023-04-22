@@ -59,3 +59,46 @@
     font-family: var(--mainFont);
 }
 
+.email-form-send-pop-up{
+    position: fixed;
+    z-index: 2000;
+    transform: translateY(-50%);
+    top: 50%; 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+.email-pop-up-body{
+    position:fixed;
+    height: 150px;
+    width: 250px;
+    background-color: var(--secColor);
+    border-radius: 12px;
+    border: 1px solid var(--mainColor);
+    gap: 12%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    transform: translateY(-50%);
+    top: 50%; 
+    margin: 0 auto;
+    font-size: 24;
+    font-weight: 700;
+}
+.email-pop-up-background{
+    position: fixed;
+    z-index: 2500;
+    background-color: var(--secColor);
+    height: 100vh;
+    width: 100vw;
+    opacity: .9;
+    transition: opacity .5s ease-in-out;
+}
