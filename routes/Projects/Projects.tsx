@@ -41,8 +41,8 @@ export default function Projects(){
                 {isActive === true &&
                     <section className="projects-display-features">
                         <DemoCard header="Shopping Cart" isActive={isClicked === "card1"} onClick={() => handleCard("card1")} >
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>
                             <img src="./404Assets.png" alt="" />
+                            <p>This feature updates the shopping cart's total price based on user input quantity and removes items from the cart.</p>
                         </DemoCard>
                         <DemoCard header="Search Bar" isActive={isClicked === "card2"} onClick={() => handleCard("card2")}  >
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>

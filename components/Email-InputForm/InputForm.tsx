@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import './_inputForm.css'
 import Button from "../Buttons/Button";
@@ -9,11 +9,23 @@ export default function InputForm (){
   const [isEmail, setEmail] = useState("");
   const [isMessage, setMessage] = useState("");
   const [popUp, setPopUp] = useState("")
+  const [emojiData, setEmojiData] = useState([]); // State variable to store the emoji data
 
-  const emojiData:any = useLoaderData();
-  const randomEmojiIndex = Math.floor(Math.random()* emojiData.length);
-  const randomEmoji = emojiData[randomEmojiIndex]
- 
+  const EmojiAPI = "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72"
+
+  useEffect(() => {
+    const fetchEmojiData = async () => {
+      const response = await fetch(EmojiAPI)
+      const emojiData = await response.json()
+      setEmojiData(emojiData)
+    };
+    fetchEmojiData()
+  }, []);
+
+  const cachedEmojiData = useMemo(()=> emojiData, [emojiData])
+  const randomEmojiIndex = Math.floor(Math.random()* cachedEmojiData.length);
+  const randomEmoji = cachedEmojiData[randomEmojiIndex]
+
   const handlePopUp = () => {
       setPopUp("")
     }
@@ -40,11 +52,10 @@ export default function InputForm (){
     setPopUp("isShown")
     setTimeout(()=>{
       setPopUp("");
-    }, 3000)
+    }, 5000)
     setEmail("");
     setMessage("");
   };
-
 
   return (
     <form onSubmit={handleSubmit} className="form-root">

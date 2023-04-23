@@ -1,6 +1,6 @@
 import Button from "../../../../components/Buttons/Button";
 
-export default function Demo1(){
+export default function ShoppingCartFeature(){
     return (
         <article>
             <div>Hola mundo</div>
