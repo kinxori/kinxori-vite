@@ -2,27 +2,36 @@ import { useEffect, useState } from "react"
 import Button from "../../components/Buttons/Button"
 import "./_projects.css"
 import DemoCard from '../../components/DemoCard/DemoCard'
-import { Outlet } from "react-router-dom"
 
 export default function Projects(){
 
-    const [isClicked, setIsClicked] = useState(null);
+    const [isClicked, setIsClicked] = useState(() => {
+        const storedState = localStorage.getItem("isClicked");
+        return storedState || null;
+      });
+
     const [isActive, setIsActive] = useState(() => {
         const storedState = localStorage.getItem("isActive");
         return storedState ? storedState === "true" : false;
       })
-    
+    useEffect(() => {
+        if (isClicked !== null){
+            localStorage.setItem("isClicked", isClicked);
+        }
+    }, [isClicked]);
+
     useEffect(() => {
         localStorage.setItem("isActive", isActive.toString())
     }, [isActive]);
 
-    const handleClick = ( )=>{
+    const handleCardClick = (id:any)=>{
+        setIsClicked((currentValue : any) => currentValue !== id ? id : false)
+    };
+
+    const handleProjectsButton = ( )=>{
         setIsActive(!isActive)
     }
 
-    const handleCard = (id:any)=>{
-        setIsClicked((currentValue : any) => currentValue !== id ? id : false)
-    };
     return(
         <article className="projects-root">
             <div className="projects-content">
@@ -35,20 +44,20 @@ export default function Projects(){
                 </div>
             </div>
             <div className="projects-btn-display">
-                <Button onClick={handleClick} variant="secButton" className="projects-CTA">
+                <Button onClick={handleProjectsButton} variant="secButton" className="projects-CTA">
                         {isActive === false ? "Open Projects" : "Close Projects"}
                 </Button>
                 {isActive === true &&
                     <section className="projects-display-features">
-                        <DemoCard header="Shopping Cart" isActive={isClicked === "card1"} onClick={() => handleCard("card1")} >
+                        <DemoCard header="Shopping Cart" isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")} >
                             <img src="./404Assets.png" alt="" />
                             <p>This feature updates the shopping cart's total price based on user input quantity and removes items from the cart.</p>
                         </DemoCard>
-                        <DemoCard header="Search Bar" isActive={isClicked === "card2"} onClick={() => handleCard("card2")}  >
+                        <DemoCard header="Search Bar" isActive={isClicked === "card2"} onClick={() => handleCardClick("card2")}  >
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>
                             <img src="./404Assets.png" alt="" />
                         </DemoCard>
-                        <DemoCard header="Fetch API" isActive={isClicked === "card3"} onClick={() => handleCard("card3")} >
+                        <DemoCard header="Fetch API" isActive={isClicked === "card3"} onClick={() => handleCardClick("card3")} >
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>
                             <img src="./404Assets.png" alt="" />
                         </DemoCard>

@@ -6,7 +6,7 @@ import Error404 from '../components/Error404/Error404'
 import Projects from '../routes/Projects/Projects'
 import AboutMe from '../routes/AboutMe/AboutMe'
 import Contact from '../routes/Contact/Contact'
-import ShoppingCartFeature from '../routes/Projects/demos/demo1/ShoppingCartFeature'
+import ShoppingCartFeature from '../routes/Projects/demos/Shoppping-cart/ShoppingCartFeature'
 import { 
   createBrowserRouter, 
   RouterProvider, 
