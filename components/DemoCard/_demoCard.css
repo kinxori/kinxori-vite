@@ -1,17 +1,26 @@
-h3{
-    text-align: left;
-    font-size: 16px;
-    padding-bottom: 20px;
-    margin: 0;
-}
 h2{
     font-size: 24px;
     margin: 0;
-
+    text-align: left;
+    width: 100%;
+    font-weight: 700;
+}
+h3{
+    font-size: 20px;
+    text-align: left;
+    font-weight: 700;
+    margin: 0;
+    width: 100%;
 }
 p{
-    text-align: left;
+    text-align: justify;
     font-size: 16px;
+    margin: 0;
+    width: 100%;
+}
+img{
+    width: 100%;
+    object-fit: contain;
     margin: 0;
 
 }
@@ -38,11 +47,11 @@ p{
     justify-content:space-between;
     align-items: center;
     background-color: var(--mainColor);
-    text-align: left;
     padding: 0px 20px;
     box-sizing: border-box;
     font-weight: 700;
     font-size: 24px;
+    text-align: left;
 }
 .card-root-open .card-title button{
     height: 30px;
@@ -61,29 +70,25 @@ p{
 .card-root-open .card-body{
     display: flex;
     flex-direction: column;
-    max-height: 2000px;
-    width: 100%;
-    justify-content: center;
+    max-height: 400px;
+    width: 90%;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--secColor);
     overflow: hidden;
-    padding: 20px 20px;
+    padding: 20px 0px;
     box-sizing: border-box;
-    text-align: justify;
     transition: all .3s ease-in-out;
-    /* z-index: -999; */
-
-
+    gap: 15px;
+    overflow: scroll;
+    scroll-behavior: smooth;
 }
-.card-body img{
-    max-height:200px;
-}   
-.card-body p{
-    margin-bottom: 20px;
-}
+.card-root-open .card-body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
 
-
-/*  -------------- CLOSED  -------------- */
+/*  ----------------------------------- CLOSED  ------------------------------------ */
 
 .card-root-close{
     width: 100%;
@@ -120,13 +125,13 @@ p{
     flex-direction: column;
     max-height: 0px;
     overflow: hidden;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
     background-color: var(--secColor);
-    padding: 0px 20px;
+    padding: 0px 00px;
     box-sizing: border-box;
     text-align: justify;
     transition: all .4s ease;
-    z-index: -999;
+    gap: 20px;
 }
