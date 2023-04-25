@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import Button from "../../components/Buttons/Button"
 import "./_projects.css"
 import DemoCard from '../../components/DemoCard/DemoCard'
+import ButtonAnchor from "../../components/Buttons/ButtonAnchor"
+
 
 export default function Projects(){
 
@@ -57,7 +59,7 @@ export default function Projects(){
                 </Button>
                 {isActive === true &&
                     <section className="projects-display-features">
-                        <DemoCard header="Shopping Cart" isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")} >
+                        <DemoCard header={<><i className="fa-solid fa-cart-shopping"></i> Shopping Cart</>} isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")} >
                             <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
                                 <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
                                 <img src="./shopping-cart.gif" alt="shopping-cart-feature"  />
@@ -89,8 +91,16 @@ export default function Projects(){
                                 <li>Improve user experience with better organization of information</li>
                                 <li>Integratation with external APIs to retrieve and update product information</li>
                             </ul>
+                            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "20px 0px", gap:"20px" }}>
+                                <Button to="/contact">
+                                    Contact me!
+                                </Button>
+                                <ButtonAnchor variant="secButton" href="/404Assets.png" download>
+                                    Download Resume
+                                </ButtonAnchor>
+                            </div>
                         </DemoCard>
-                        <DemoCard header="Search Bar" isActive={isClicked === "card2"} onClick={() => handleCardClick("card2")}  >
+                        <DemoCard header={<><i className="fa-solid fa-magnifying-glass"></i> Search Bar</>} isActive={isClicked === "card2"} onClick={() => handleCardClick("card2")}  >
                             <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
                                 <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
                                 <img src="./search-bar.gif" alt="search-bar-feature"  />
@@ -118,8 +128,16 @@ export default function Projects(){
                                 <li>Handling large datasets</li>
                                 <li>Accessibility</li>
                             </ul>
+                            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "20px 0px", gap:"20px" }}>
+                                <Button to="/contact">
+                                    Contact me!
+                                </Button>
+                                <ButtonAnchor variant="secButton" href="/404Assets.png" download>
+                                    Download Resume
+                                </ButtonAnchor>
+                            </div>
                         </DemoCard>
-                        <DemoCard header="Fetch API" isActive={isClicked === "card3"} onClick={() => handleCardClick("card3")} >
+                        <DemoCard header={<><i className="fa-solid fa-server"></i> Fetch API </>} isActive={isClicked === "card3"} onClick={() => handleCardClick("card3")} >
                             <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
                                 <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
                                 <img src="./fetch-api.gif" alt="fetch-api-feature"  />
@@ -151,6 +169,14 @@ export default function Projects(){
                                 <li>Working with external APIs and handling response data</li>
                                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
                             </ul>
+                            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "20px 0px", gap:"20px" }}>
+                                <Button to="/contact">
+                                    Contact me!
+                                </Button>
+                                <ButtonAnchor variant="secButton" href="/404Assets.png" download>
+                                    Download Resume
+                                </ButtonAnchor>
+                            </div>
                         </DemoCard>
                     </section>
                 } 

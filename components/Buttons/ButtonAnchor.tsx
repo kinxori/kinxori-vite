@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom"
 import "./_button.css"
 
-export default function Button({
+export default function ButtonAnchor({
     children, 
     className,
-    to,
     onClick,
     target,
     variant = "mainButton",
     type,
+    download,
+    href,
 }: any){
 
     const classes: any = {
@@ -18,14 +18,15 @@ export default function Button({
         linkButton: "linkButton"
     }
 
+
         return(
-            <span className={className}> 
-                <Link to={to} target={target}>
-                    <button className={classes[variant]} onClick={onClick} type={type}>
+            <span className={className}>
+                <a href={href} download={download} onClick={onClick} target={target}>
+                    <button className={classes[variant]} type={type}>
                         {children}
                     </button>
-                </Link>
+                </a>
             </span>
         );
-  
+
 }

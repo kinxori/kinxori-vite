@@ -6,9 +6,9 @@ h2{
     font-weight: 700;
 }
 h3{
-    font-size: 20px;
-    text-align: left;
-    font-weight: 700;
+    font-size: inherit;
+    text-align: inherit;
+    font-weight: inherit;
     margin: 0;
     width: 100%;
 }
@@ -30,6 +30,11 @@ ul{
     padding-left: 20px;
 
 }
+
+span{
+    padding: 0px 0px;
+}
+
 .card-root-open{
     width: 100%;
     height: fit-content;
@@ -136,7 +141,6 @@ ul{
     background-color: var(--secColor);
     padding: 0px 00px;
     box-sizing: border-box;
-    text-align: justify;
     transition: all .4s ease;
     gap: 20px;
 }

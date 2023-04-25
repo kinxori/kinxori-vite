@@ -12,15 +12,18 @@
         "destination": "/index.html"
       },
       {
-        "source":"/formFunction",
+        "source": "/formFunction",
         "function": "formFunction"
+      },
+      {
+        "source": "/downloadFileFunction",
+        "function": "downloadFileFunction"
       }
     ]
   },
   "functions": [
     {
-      "source": "email-sender-function",
-      "codebase": "email-sender-function",
+      "source": "functions",
       "ignore": [
         "node_modules",
         ".git",
@@ -29,7 +32,8 @@
       ],
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run build"
-      ]
+      ],
+      "codebase": "default"
     }
   ]
 }

@@ -17,7 +17,7 @@
 }
 
 .form-body h3{
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
     padding: 0;
 }
@@ -51,13 +51,14 @@
     font-family: var(--mainFont);
     resize: none;
     border: none;
-
 }
 .message-input-box:focus{
     border: 1px solid var(--mainColor);
     border-radius: 4px;
     font-family: var(--mainFont);
 }
+
+
 
 .email-form-send-pop-up{
     position: fixed;
@@ -80,7 +81,6 @@
     background-color: var(--secColor);
     border-radius: 12px;
     border: 1px solid var(--mainColor);
-    gap: 12%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -90,8 +90,18 @@
     transform: translateY(-50%);
     top: 50%; 
     margin: 0 auto;
+    gap: 10%;
+}
+.email-pop-up-body h2{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
     font-size: 24;
     font-weight: 700;
+}
+.email-pop-up-body span{
+    margin: 0px;
+    padding: 0px;
 }
 .email-pop-up-background{
     position: fixed;
