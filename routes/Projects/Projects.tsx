@@ -67,6 +67,7 @@ export default function Projects(){
                             <p>This feature updates the shopping cart's total price based on user input quantity and removes items from the cart.</p>
                             <h3>Skills 🛠</h3>
                             <ul>
+                                <li>React.js</li>
                                 <li>State management</li>
                                 <li>React component architecture</li>
                                 <li>User experience and interactivity</li>
@@ -83,54 +84,52 @@ export default function Projects(){
                             </ul>
                             <h3>Difficulties 🧠</h3>
                             <ul>
-                                <li>State management and data flow.</li>
-                                <li>Improve user experience with better organization of information.</li>
-                                <li>Handle user input and form data. </li>
-                                <li>Integratation with external APIs to retrieve and update product information.</li>
+                                <li>State management and data flow</li>
+                                <li>Handle user input and form data </li>
+                                <li>Improve user experience with better organization of information</li>
+                                <li>Integratation with external APIs to retrieve and update product information</li>
                             </ul>
                         </DemoCard>
                         <DemoCard header="Search Bar" isActive={isClicked === "card2"} onClick={() => handleCardClick("card2")}  >
                             <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
                                 <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
-                                <img src="./fetch-api.gif" alt="shopping-cart-feature"  />
+                                <img src="./search-bar.gif" alt="search-bar-feature"  />
                                 <div></div>
                             </div>
                             <h3>How does this work? 🤔</h3>
-                            <p>This feature updates the shopping cart's total price based on user input quantity and removes items from the cart.</p>
+                            <p>This is a search bar component that filters and displays data in a table based on user input.</p>
                             <h3>Skills 🛠</h3>
                             <ul>
-                                <li>State management</li>
-                                <li>React component architecture</li>
-                                <li>User experience and interactivity</li>
-                                <li>Testing and debugging</li>
+                                <li>Filtering and searching data</li>
+                                <li>Componentization and modularity</li>
+                                <li>Handling events and state changes</li>
+                                <li>React.js</li>
                             </ul>
                             <h3>Advantages 🦾</h3>
                             <ul>
-                                <li>Improved user experience</li>
-                                <li>Increased sales</li>
-                                <li>Customizable</li>
-                                <li>Easy integration</li>
-                                <li>Reusability</li>
-                                <li>Analytics</li>
+                                <li>Allows users to easily search and filter large datasets</li>
+                                <li>Provides real-time search results as users type</li>
+                                <li>Improves user experience by reducing the need to manually search and sort through data</li>
                             </ul>
                             <h3>Difficulties 🧠</h3>
                             <ul>
-                                <li>State management and data flow.</li>
-                                <li>Improve user experience with better organization of information.</li>
-                                <li>Handle user input and form data. </li>
-                                <li>Integratation with external APIs to retrieve and update product information.</li>
+                                <li>Managing state</li>
+                                <li>Filtering logic</li>
+                                <li>Handling large datasets</li>
+                                <li>Accessibility</li>
                             </ul>
                         </DemoCard>
                         <DemoCard header="Fetch API" isActive={isClicked === "card3"} onClick={() => handleCardClick("card3")} >
                             <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
                                 <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
-                                <img src="./fetch-api.gif" alt="shopping-cart-feature"  />
+                                <img src="./fetch-api.gif" alt="fetch-api-feature"  />
                                 <div></div>
                             </div>
                             <h3>How does this work? 🤔</h3>
                             <p>The code fetches data from the Rick & Morty API and displays characters' information. Clicking on a character's image shows their details.</p>
                             <h3>Skills 🛠</h3>
                             <ul>
+                                <li>React.js</li>
                                 <li>Fetching data from APIs</li>
                                 <li>Event handling</li>
                                 <li>Conditional rendering</li>
@@ -138,7 +137,7 @@ export default function Projects(){
                             </ul>
                             <h3>Advantages 🦾</h3>
                             <ul>
-                                <li>Streamlined data manipulation.</li>
+                                <li>Streamlined data manipulation</li>
                                 <li>Greater efficiency</li>
                                 <li>Simplified data retrieval</li>
                                 <li>Improved data organization</li>
@@ -147,9 +146,9 @@ export default function Projects(){
                             </ul>
                             <h3>Difficulties 🧠</h3>
                             <ul>
-                                <li>Handling multiple states and data flow.</li>
-                                <li>Managing complex user interactions and events.</li>
-                                <li>Working with external APIs and handling response data.</li>
+                                <li>Handling multiple states and data flow</li>
+                                <li>Managing complex user interactions and events</li>
+                                <li>Working with external APIs and handling response data</li>
                                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
                             </ul>
                         </DemoCard>
