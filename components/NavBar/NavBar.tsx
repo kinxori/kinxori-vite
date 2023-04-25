@@ -11,9 +11,9 @@ export default function NavBar(){
     useEffect(()=>{
         const handleRezise = ()=>{
             const screenWidth = window.innerWidth;
-            if(screenWidth <= 425){
+            if(screenWidth <= 600){
                 setIsNavComponent(<MobileNav/>);
-            } else if (screenWidth <= 820){
+            } else if (screenWidth <= 1200){
                 setIsNavComponent(<TableNav/>);
             } else {
                 setIsNavComponent(<DesktopNav/>);

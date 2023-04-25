@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./_navBar.css"
+import "./_NavBar.css"
 
 
 function PathIcon(props:any ){

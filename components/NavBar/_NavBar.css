@@ -1,0 +1,81 @@
+
+.mobileNavBar{
+    height: 60px;
+    background-color: var(--mainColor);
+    width: 100%;
+    position:fixed ;
+    bottom:0 ;
+    box-shadow: 0px 0px 10px 0px hsla(0, 0%, 20%, .3);
+    z-index: 100;
+    border-top: 1px solid var(--textSecColor);
+}
+
+.mobileNavBar .mobileOptions {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.isActive{
+    color: var(--textMainColor);
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+.isIdle{
+    color: var(--textSecColor);
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+
+
+
+@media (min-width: 600px){
+
+
+    .tabletNavBar{
+        height: 80px;
+        background-color: var(--mainColor);
+        width: 100%;
+        position:fixed ;
+        bottom:0 ;
+        box-shadow: 0px 0px 10px 0px hsla(0, 0%, 20%, .3);
+        z-index: 100;
+        border-top: 1px solid var(--textSecColor);
+    }
+
+    .tabletNavBar .tabletOptions {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .isActive{
+        color: var(--textMainColor);
+        border: none;
+        background: none;
+        font-size: 30px;
+    }
+
+    .isIdle{
+        color: var(--textSecColor);
+        border: none;
+        background: none;
+        font-size: 30px;
+    }
+
+}
+
+
+

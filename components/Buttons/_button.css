@@ -64,3 +64,48 @@
     transform: scale(1.015);
     opacity: .85;
 }
+
+
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+
+
+@media (min-width: 600px){
+
+    .mainButton{
+        
+        padding: 22px 30px;
+        border-radius: 22px;
+        font-size: 26px;
+        
+    }       
+    
+ 
+    
+    .secButton{
+        
+        padding: 22px 30px;
+        border-radius: 22px;
+        font-size: 26px;
+       
+    } 
+    
+ 
+    .ghostButton{
+        padding: 22px 30px;
+        border-radius: 22px;
+        font-size: 26px;
+    }
+    
+
+    .linkButton{
+        padding: 22px 30px;
+        border-radius: 22px;
+        font-size: 26px;
+
+    }
+    
+ 
+
+}

@@ -1,3 +1,8 @@
+
+b{
+    color: var(--mainColor);
+}
+
 .landingPage-root{
     width: 80%;
     height: auto;
@@ -24,16 +29,50 @@
     font-size: 24px;
     text-align:left;
     font-weight: 700;
-    text-align: left;
     width: 100%;
 }
 
-b{
-    color: var(--mainColor);
-}
 
 .landingPage-CTA button{ 
     display: flex;
     margin-left: auto;
     margin-top: 16%;
+}
+
+
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+
+
+@media (min-width: 600px){
+    
+    .landingPage-root{
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    
+    .landingPage-root .astroBoy{
+        height: 450px;
+        margin-bottom: 10%;
+    }
+    
+    .landingPage-copy h2{
+        font-size: 34px;
+        
+        font-weight: 700;
+        width: 100%;
+    }
+
+    .landingPage-copy p{
+        font-size: 26px;
+        text-align:left;
+        width: 100%;
+    }
+    
+    .landingPage-CTA button{ 
+        display: flex;
+        margin-left: auto;
+        margin-top: 12%;
+    }
 }
