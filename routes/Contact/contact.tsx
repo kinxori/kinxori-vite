@@ -1,7 +1,7 @@
 import { useEffect, useState, lazy, Suspense } from 'react'
 import Button from '../../components/Buttons/Button'
 import './_contact.css'
-// import InputForm from "../../components/InputForm/InputForm"
+import InputForm from "../../components/Email-InputForm/InputForm"
 import DemoCard from '../../components/DemoCard/DemoCard'
 
 
@@ -35,9 +35,6 @@ export default function Contact(){
         setisActive(!isActive)
     };
    
-
-    const EmailInputForm = lazy(()=> import("../../components/Email-InputForm/InputForm"));
-
     return(
         <article className="contact-root">
             <div className="contact-content">
@@ -54,10 +51,9 @@ export default function Contact(){
                     {isActive === false ? "Open Options" : "Close Options"}
                 </Button>
                 {isActive === true &&
-                <Suspense fallback={<h2>Loading options...</h2>}>
                     <section className='contact-options-cards'>
                         <DemoCard header="Email 📧" isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")}>
-                            {isClicked === "card1" && <EmailInputForm/>}
+                            <InputForm/>
                         </DemoCard>
                         <DemoCard header="What's App 📱" isActive={isClicked === "card2"} onClick={() => handleCardClick("card2")}>
                             <h3>Click the button below to send me a What's App message.</h3>
@@ -72,7 +68,6 @@ export default function Contact(){
                             </Button>
                         </DemoCard>
                     </section>
-                </Suspense>
                 }
             </div>
         </article>

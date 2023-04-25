@@ -1,8 +1,8 @@
 b{
     color: var(--mainColor);
     font-weight: inherit;
-
 }
+
 .projects-root{
     height: auto;
     width: 80%;
@@ -62,4 +62,49 @@ b{
     justify-content: center;
     align-items: center;
     margin-top: 20%;
+}
+
+/* ------------------------------------------------------------------ Shopping cart styles ----------------------------------------------------------------*/
+
+.projects-full-screen-img-open span{
+    width: 20%;
+    display: flex;
+    margin-left: auto;
+}
+.projects-full-screen-img-open{
+    position: fixed;
+    width: 100vw;
+    object-fit: contain;
+    margin: 0 auto;
+    height:fit-content ;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+}
+
+.projects-full-screen-img-open div{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secColor);
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+/* ------- full screen img closed ------ */
+
+
+.projects-full-screen-img-close span{
+    width: 20%;
+    display: flex;
+    margin-left: auto;
+    display: none;
+}
+.projects-full-screen-img-close{
+    display: block;
+}
+.projects-full-screen-img-close div{
+    display: none;
 }

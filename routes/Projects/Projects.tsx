@@ -14,6 +14,9 @@ export default function Projects(){
         const storedState = localStorage.getItem("isActive");
         return storedState ? storedState === "true" : false;
       })
+
+    const [isFullScreen, setIsFullScreen] = useState(false)
+
     useEffect(() => {
         if (isClicked !== null){
             localStorage.setItem("isClicked", isClicked);
@@ -31,6 +34,11 @@ export default function Projects(){
     const handleProjectsButton = ( )=>{
         setIsActive(!isActive)
     }
+
+    const handleFullScreen = ()=>{
+        setIsFullScreen(!isFullScreen)
+    }
+
 
     return(
         <article className="projects-root">
@@ -50,17 +58,100 @@ export default function Projects(){
                 {isActive === true &&
                     <section className="projects-display-features">
                         <DemoCard header="Shopping Cart" isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")} >
-                            <img src="./shopping-cart.gif" alt="" />
-                            <h3>What does it do? 🤔</h3>
+                            <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
+                                <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
+                                <img src="./shopping-cart.gif" alt="shopping-cart-feature"  />
+                                <div></div>
+                            </div>
+                            <h3>How does this work? 🤔</h3>
                             <p>This feature updates the shopping cart's total price based on user input quantity and removes items from the cart.</p>
+                            <h3>Skills 🛠</h3>
+                            <ul>
+                                <li>State management</li>
+                                <li>React component architecture</li>
+                                <li>User experience and interactivity</li>
+                                <li>Testing and debugging</li>
+                            </ul>
+                            <h3>Advantages 🦾</h3>
+                            <ul>
+                                <li>Improved user experience</li>
+                                <li>Increased sales</li>
+                                <li>Customizable</li>
+                                <li>Easy integration</li>
+                                <li>Reusability</li>
+                                <li>Analytics</li>
+                            </ul>
+                            <h3>Difficulties 🧠</h3>
+                            <ul>
+                                <li>State management and data flow.</li>
+                                <li>Improve user experience with better organization of information.</li>
+                                <li>Handle user input and form data. </li>
+                                <li>Integratation with external APIs to retrieve and update product information.</li>
+                            </ul>
                         </DemoCard>
                         <DemoCard header="Search Bar" isActive={isClicked === "card2"} onClick={() => handleCardClick("card2")}  >
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>
-                            <img src="./404Assets.png" alt="" />
+                            <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
+                                <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
+                                <img src="./fetch-api.gif" alt="shopping-cart-feature"  />
+                                <div></div>
+                            </div>
+                            <h3>How does this work? 🤔</h3>
+                            <p>This feature updates the shopping cart's total price based on user input quantity and removes items from the cart.</p>
+                            <h3>Skills 🛠</h3>
+                            <ul>
+                                <li>State management</li>
+                                <li>React component architecture</li>
+                                <li>User experience and interactivity</li>
+                                <li>Testing and debugging</li>
+                            </ul>
+                            <h3>Advantages 🦾</h3>
+                            <ul>
+                                <li>Improved user experience</li>
+                                <li>Increased sales</li>
+                                <li>Customizable</li>
+                                <li>Easy integration</li>
+                                <li>Reusability</li>
+                                <li>Analytics</li>
+                            </ul>
+                            <h3>Difficulties 🧠</h3>
+                            <ul>
+                                <li>State management and data flow.</li>
+                                <li>Improve user experience with better organization of information.</li>
+                                <li>Handle user input and form data. </li>
+                                <li>Integratation with external APIs to retrieve and update product information.</li>
+                            </ul>
                         </DemoCard>
                         <DemoCard header="Fetch API" isActive={isClicked === "card3"} onClick={() => handleCardClick("card3")} >
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae beatae enim, sed voluptatum deleniti, cupiditate corrupti, molestiae perferendis sint quia ullam obcaecati neque ea natus placeat recusandae corporis modi.</p>
-                            <img src="./404Assets.png" alt="" />
+                            <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
+                                <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
+                                <img src="./fetch-api.gif" alt="shopping-cart-feature"  />
+                                <div></div>
+                            </div>
+                            <h3>How does this work? 🤔</h3>
+                            <p>The code fetches data from the Rick & Morty API and displays characters' information. Clicking on a character's image shows their details.</p>
+                            <h3>Skills 🛠</h3>
+                            <ul>
+                                <li>Fetching data from APIs</li>
+                                <li>Event handling</li>
+                                <li>Conditional rendering</li>
+                                <li>Handling and displaying dynamic data</li>
+                            </ul>
+                            <h3>Advantages 🦾</h3>
+                            <ul>
+                                <li>Streamlined data manipulation.</li>
+                                <li>Greater efficiency</li>
+                                <li>Simplified data retrieval</li>
+                                <li>Improved data organization</li>
+                                <li>Enhanced user experience</li>
+                                <li>More effective information display</li>
+                            </ul>
+                            <h3>Difficulties 🧠</h3>
+                            <ul>
+                                <li>Handling multiple states and data flow.</li>
+                                <li>Managing complex user interactions and events.</li>
+                                <li>Working with external APIs and handling response data.</li>
+                                <li>Implementing efficient and performant rendering and updating of UI elements</li>
+                            </ul>
                         </DemoCard>
                     </section>
                 } 
