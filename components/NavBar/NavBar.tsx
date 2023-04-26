@@ -13,7 +13,7 @@ export default function NavBar(){
             const screenWidth = window.innerWidth;
             if(screenWidth <= 600){
                 setIsNavComponent(<MobileNav/>);
-            } else if (screenWidth <= 1200){
+            } else if (screenWidth <= 1180){
                 setIsNavComponent(<TableNav/>);
             } else {
                 setIsNavComponent(<DesktopNav/>);
