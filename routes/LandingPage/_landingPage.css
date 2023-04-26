@@ -20,23 +20,33 @@ b{
     width: 100%;
 }
 
-.landingPage-root .astroBoy{
+.landingPage-content .astroBoy{
     height: 250px;
-    margin-bottom: 20%;
-}
+    object-fit: contain;
 
+}
+.landingPage-copy{
+    margin-top: 20%;
+}
 .landingPage-copy h2{
     font-size: 24px;
     text-align:left;
     font-weight: 700;
     width: 100%;
+    margin: 0;
 }
 
+.landingPage-copy p{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+}
 
 .landingPage-CTA button{ 
     display: flex;
     margin-left: auto;
     margin-top: 16%;
+    margin-bottom: 20%;
 }
 
 
@@ -52,27 +62,23 @@ b{
         margin-bottom: 20%;
     }
     
-    .landingPage-root .astroBoy{
+    .landingPage-content  .astroBoy{
         height: 450px;
-        margin-bottom: 10%;
+       
     }
-    
+    .landingPage-copy{
+        margin-top: 10%;
+    }
     .landingPage-copy h2{
         font-size: 34px;
-        
-        font-weight: 700;
-        width: 100%;
     }
 
     .landingPage-copy p{
         font-size: 26px;
-        text-align:left;
-        width: 100%;
     }
     
     .landingPage-CTA button{ 
-        display: flex;
-        margin-left: auto;
         margin-top: 12%;
+        margin-bottom: 16%;
     }
 }

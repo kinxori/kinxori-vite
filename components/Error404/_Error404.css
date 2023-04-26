@@ -9,13 +9,11 @@
 }
 
 #error-404 img{
-    height: 30%;
+    height: 250px;
+    object-fit: contain;
 }
 #error-404 span{
-    font-size: 25px;
-}
-#error-404 i{
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -23,3 +21,26 @@
     padding-top: 10%;
 }
 
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+
+@media (min-width: 600px){
+    #error-404{
+        gap: 2%;  
+    }
+    
+    #error-404 img{
+        height: 450px;
+        object-fit: contain;
+    }
+    #error-404 span{
+        font-size: 25px;
+    }
+    #error-404 span{
+        font-size: 34px;
+        font-weight: bold;
+    }
+    .error404-btn{
+        padding-top: 10%;
+    }
+}

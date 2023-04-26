@@ -96,7 +96,7 @@
     text-align: center;
     margin: 0px;
     padding: 0px;
-    font-size: 24;
+    font-size: 24px;
     font-weight: 700;
 }
 .email-pop-up-body span{
@@ -111,4 +111,66 @@
     width: 100vw;
     opacity: .9;
     transition: opacity .5s ease-in-out;
+}
+
+
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+@media (min-width: 600px){
+
+
+
+.form-body{
+   
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.form-body h3{
+    font-size: 30px;
+  
+}
+
+.form-body .email-input-box{
+    height: 60px;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.email-input-box:focus{
+    border: 2px solid var(--mainColor);
+    border-radius: 8px;
+}
+
+.form-body .message-input-box{
+    min-height: 200px; 
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+.message-input-box:focus{
+    border: 2px solid var(--mainColor);
+    border-radius: 8px;
+}
+
+
+
+
+.email-pop-up-body{
+   
+    height: 250px;
+    width: 350px;   
+    border-radius: 22px;
+    border: 2px solid var(--mainColor);
+}
+.email-pop-up-body h2{
+ 
+    font-size: 34px;
+
+}
+
+
 }

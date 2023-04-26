@@ -71,6 +71,7 @@ export default function Contact(){
                 <img src="./contact-asset.png" alt="contact-asset.png" />
                 <div className='contact-copy'>
                     <h2><b>Hey there!</b> Thanks for stopping by ☕️ </h2>
+                    <br/>
                     <p>
                         Let's chat about <b>web development</b> or <b>motion graphics,</b> or just connect as friends! <b>Send me a message</b> and let's grab a virtual coffee! 
                     </p>

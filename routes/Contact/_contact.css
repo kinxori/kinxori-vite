@@ -44,7 +44,6 @@ h3{
     font-size: 16px;
     font-weight: normal;
     text-align: justify;
-    margin-top: 8%;
 }
 .contact-btn-options{
     width: 100%;
@@ -56,18 +55,50 @@ h3{
     display: flex;
     margin-bottom: 20%;
 }
-.contact-form{
-    margin-top: 10%;
-    height: 500px;
-    width: 100%;
-    border: 3px solid var(--mainColor);
-    border-radius: 9px;
-}
+
 .contact-options-cards{
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 20%;
+}
+
+
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+@media (min-width: 600px){
+
+     
+    h3{
+        font-size: 30px;
+    }
+    .contact-root{
+ 
+        margin-bottom: 20%;
+        margin-top: 10%;
+    }
+    
+    
+    .contact-content img{
+        height: 450px;
+    }
+    
+    .contact-copy{
+        margin-top: 10%;
+    }
+    .contact-copy h2{
+        font-size: 34px;
+    }
+    .contact-copy p{
+        font-size: 26px;
+    }
+
+    .Contact-CTA button{
+        margin-top: 12%;
+        margin-bottom: 16%;
+    }
+   
+
 }

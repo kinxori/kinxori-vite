@@ -21,9 +21,12 @@ b{
 
 .about-me-asset{
     height: 250px;
-    margin-bottom: 20%;
+    object-fit: contain;
 }
+.aboutMe-body{
+    margin-top: 20%;
 
+}
 .aboutMe-body h2{
     font-size: 24px;
     font-weight: 700;
@@ -67,31 +70,31 @@ b{
     top: 100%;
 }
 
+
+/* -------------------- Copy blur ------------------------*/
+
  .copyIsClose{
-    padding-top: 6%;
     overflow: hidden;
     margin-bottom: 6%;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:115px;
+    height:100px;
     position: relative;
 }
 
 .copyIsClose .contact-copy-blur {
     position: absolute;
     width: 200%;
-    height: 100%;
-    bottom: -50%;
+    height: 200%;
+    bottom: -150%;
     left: -50%;
     background-color: var(--secColor);
     display: flex;
-    filter: blur(25px);
-    
+    filter: blur(20px);
 }
 
  .copyIsOpen{
-    padding-top: 6%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -112,4 +115,70 @@ b{
     margin-top: 16%;
     display: flex;
     margin-left: auto;
+}
+
+
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+@media (min-width: 600px){
+
+ 
+    .aboutMe-root{
+
+        margin-top: 10%;
+        margin-bottom: 20%;
+    
+    }
+
+    
+    .about-me-asset{
+        height: 450px;
+    }
+    
+    .aboutMe-body{
+        margin-top: 10%;
+    }
+    .aboutMe-body h2{
+        font-size: 34px;
+    }
+    
+    
+    .aboutMe-copy p{
+        margin-bottom: 10%;
+        font-size: 26px;
+    }
+    .aboutme-copy-PFP{
+        height: 250px;
+        width: 250px; 
+        margin-bottom: 10%;
+        border: 4px solid white;
+
+    }
+    .aboutme-copy-PFP img{
+        height: 1300px;
+        object-fit:cover;
+        position: relative;
+        top: 100%;
+    }
+    
+    
+    /* -------------------- Copy blur ------------------------*/
+    .copyIsClose{
+        margin-bottom: 10%;
+        height:120px;
+      
+    }
+    
+    .copyIsClose .contact-copy-blur {
+        bottom: -150%;
+        filter: blur(20px);
+    }
+    
+    .aboutMe-CTA button{
+        margin-top: 12%;
+
+    }
+    
+
 }

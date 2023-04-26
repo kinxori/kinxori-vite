@@ -23,10 +23,11 @@ export default function AboutMe(){
                 <img src="/AboutmeAsset.png" alt="about me asset" className="about-me-asset"/>
                 <div className="aboutMe-body">
                     <h2>
-                        About me 🤪
+                        But... Who am I? 🤪
                     </h2>
+                    <br/>
                     <div className="aboutMe-copy">
-                         <span className={isOpen === false ? "copyIsClose" : "copyIsOpen"} >
+                         <span className={isOpen === false ? "copyIsClose" : "copyIsOpen"} onClick={handleClick}>
                             <p>
                                 Hi! I am Gustavo Quiroz, a <b>front-end</b> web developer with a passion for creating things. 
                                 <br/>

@@ -17,7 +17,7 @@ export default function Projects(){
         return storedState ? storedState === "true" : false;
       })
 
-    const [isFullScreen, setIsFullScreen] = useState(false)
+    const [isFullScreen, setIsFullScreen] = useState("")
 
     useEffect(() => {
         if (isClicked !== null){
@@ -37,8 +37,8 @@ export default function Projects(){
         setIsActive(!isActive)
     }
 
-    const handleFullScreen = ()=>{
-        setIsFullScreen(!isFullScreen)
+    const handleFullScreen = (id:any)=>{
+        setIsFullScreen((currenValue)=>currenValue !== id ? id : "")
     }
 
 
@@ -48,6 +48,7 @@ export default function Projects(){
                 <img src="/projects-asset.png" alt="project-asset" />
                 <div className="projects-copy">
                     <h2>Check out my projects to see my <b>skills in action!</b> ✍️</h2>
+                    <br/>
                     <p>
                         Take a look around to some of my <b>features</b> I've been learning and <b>improving</b> along my <b>web developer career.</b>
                     </p>
@@ -60,9 +61,9 @@ export default function Projects(){
                 {isActive === true &&
                     <section className="projects-display-features">
                         <DemoCard header={<><i className="fa-solid fa-cart-shopping"></i> Shopping Cart</>} isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")} >
-                            <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
-                                <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
-                                <img src="./shopping-cart.gif" alt="shopping-cart-feature"  />
+                            <div className={isFullScreen === "1" ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={(()=>handleFullScreen("1"))} >
+                                <Button variant="ghostButton" onClick={(()=>handleFullScreen("1"))}>Close</Button>
+                                <img src="./shopping-cart.gif" alt="shopping-cart-feature"/>
                                 <div></div>
                             </div>
                             <h3>How does this work? 🤔</h3>
@@ -91,7 +92,7 @@ export default function Projects(){
                                 <li>Improve user experience with better organization of information</li>
                                 <li>Integratation with external APIs to retrieve and update product information</li>
                             </ul>
-                            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "20px 0px", gap:"20px" }}>
+                            <div className="projects-display-features-buttons-CTA">
                                 <Button to="/contact">
                                     Contact me!
                                 </Button>
@@ -101,9 +102,9 @@ export default function Projects(){
                             </div>
                         </DemoCard>
                         <DemoCard header={<><i className="fa-solid fa-magnifying-glass"></i> Search Bar</>} isActive={isClicked === "card2"} onClick={() => handleCardClick("card2")}  >
-                            <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
-                                <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
-                                <img src="./search-bar.gif" alt="search-bar-feature"  />
+                            <div className={isFullScreen === "2" ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={(()=>handleFullScreen("2"))}>
+                                <Button variant="ghostButton" onClick={(()=>handleFullScreen("2"))}>Close</Button>
+                                <img src="./search-bar.gif" alt="search-bar-feature" />
                                 <div></div>
                             </div>
                             <h3>How does this work? 🤔</h3>
@@ -128,7 +129,7 @@ export default function Projects(){
                                 <li>Handling large datasets</li>
                                 <li>Accessibility</li>
                             </ul>
-                            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "20px 0px", gap:"20px" }}>
+                            <div className="projects-display-features-buttons-CTA">
                                 <Button to="/contact">
                                     Contact me!
                                 </Button>
@@ -138,8 +139,8 @@ export default function Projects(){
                             </div>
                         </DemoCard>
                         <DemoCard header={<><i className="fa-solid fa-server"></i> Fetch API </>} isActive={isClicked === "card3"} onClick={() => handleCardClick("card3")} >
-                            <div className={isFullScreen ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={handleFullScreen}>
-                                <Button variant="ghostButton" onClick={handleFullScreen}>Close</Button>
+                            <div className={isFullScreen === "3" ? "projects-full-screen-img-open" : "projects-full-screen-img-close"} onClick={(()=>handleFullScreen("3"))} >
+                                <Button variant="ghostButton" onClick={(()=>handleFullScreen("3"))}>Close</Button>
                                 <img src="./fetch-api.gif" alt="fetch-api-feature"  />
                                 <div></div>
                             </div>
@@ -169,7 +170,7 @@ export default function Projects(){
                                 <li>Working with external APIs and handling response data</li>
                                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
                             </ul>
-                            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "20px 0px", gap:"20px" }}>
+                            <div className="projects-display-features-buttons-CTA">
                                 <Button to="/contact">
                                     Contact me!
                                 </Button>

@@ -78,7 +78,8 @@
         padding: 22px 30px;
         border-radius: 22px;
         font-size: 26px;
-        
+        border: 2px solid white;
+
     }       
     
  
@@ -88,7 +89,8 @@
         padding: 22px 30px;
         border-radius: 22px;
         font-size: 26px;
-       
+        border: 2px solid var(--mainColor);
+
     } 
     
  

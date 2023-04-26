@@ -3,11 +3,6 @@ b{
     font-weight: inherit;
 }
 
-.projects-display-features h3{
-    font-size: 20px;
-    text-align: left;
-    font-weight: 700;
-}
 
 .projects-root{
     height: auto;
@@ -26,13 +21,11 @@ b{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
 }
 
 .projects-content img{
     height: 250px;
     object-fit: contain;
-
 }
 .projects-copy{
     margin-top: 20%;
@@ -42,12 +35,12 @@ b{
     font-size: 24px;
     font-weight: 700;
     text-align: left;
+    width: 100%;
 }
 .projects-copy p{
     font-size: 16px;
     font-weight: normal;
     text-align: justify;
-    margin-top: 8%;
 }
 
 .projects-btn-display{
@@ -59,6 +52,7 @@ b{
     margin-top: 16%;
     margin-left: auto;
     display: flex;
+    margin-bottom: 20%;
 }
 
 .projects-display-features{
@@ -67,10 +61,15 @@ b{
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 20%;
+    
+}
+.projects-display-features h3{
+    font-size: 20px;
+    text-align: left;
+    font-weight: 700;
 }
 
-/* ------------------------------------------------------------------ Projects card styles for img ----------------------------------------------------------------*/
+/* -------------------- Projects card styles for img ---------------*/
 
 
 .projects-full-screen-img-open span{
@@ -117,3 +116,68 @@ b{
 }
 
 
+.projects-display-features-buttons-CTA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+
+
+@media (min-width: 600px){
+
+       
+  
+    
+    .projects-root{
+        
+        margin-bottom: 20%;
+        margin-top: 10%;
+    }
+
+    
+    .projects-content img{
+        height: 450px;
+        object-fit: contain;
+    }
+ 
+    .projects-copy{
+        margin-top: 10%;
+    }
+    
+
+    .projects-copy h2{
+        font-size: 34px;
+        
+    }
+    .projects-copy p{
+        font-size: 26px;
+    
+    }
+    
+    .projects-CTA button{
+        margin-top: 12%;
+        margin-bottom: 16%;
+    }
+    
+    .projects-display-features h3{
+        font-size: 30px;
+       
+    }
+ 
+
+    .projects-display-features-buttons-CTA{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+        gap: 30px;
+    }
+    
+}
