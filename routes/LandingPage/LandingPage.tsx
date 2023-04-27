@@ -14,11 +14,12 @@ export default function LandingPage(){
                     <p>
                         Hi and <b>welcome to my website!</b> Take a deep dive into my work as a <b>web developer,</b> as a <b>motion graphic artist</b> or as an <b>internaut.</b> 
                     </p>
+                    <Button variant="secButton" to="/projects" className='landingPage-CTA'>
+                         Go projects
+                    </Button>
                 </div>
             </div>
-            <Button variant="secButton" to="/projects" className='landingPage-CTA'>
-                Go projects
-            </Button>
+            
         </article>
     )
 }

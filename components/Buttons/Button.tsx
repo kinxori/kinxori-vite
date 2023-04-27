@@ -15,7 +15,9 @@ export default function Button({
         mainButton: "mainButton",
         secButton: "secButton",
         ghostButton: "ghostButton",
-        linkButton: "linkButton"
+        linkButton: "linkButton",
+        desktopMainButton: "desktopMainButton",
+        desktopSecButton: "desktopSecButton"
     }
 
         return(

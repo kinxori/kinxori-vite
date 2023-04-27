@@ -87,6 +87,9 @@ b{
     transform: translateY(-50%);
     z-index: 200;
 }
+.projects-full-screen-img-open:hover{
+    cursor: pointer;
+}
 
 .projects-full-screen-img-open div{
     position: fixed;
@@ -129,7 +132,7 @@ b{
 
 
 
-@media (min-width: 600px){
+@media (min-width: 601px){
 
        
   
@@ -180,4 +183,125 @@ b{
         gap: 30px;
     }
     
+}
+
+
+/* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
+
+
+@media (min-width: 1181px){
+
+    .projects-root{
+        margin-bottom: 20%;
+        margin-top: 10%;
+    }
+    .projects-content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .projects-content img{
+        height: 450px;
+        object-fit: contain;
+    }
+    .projects-copy{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .projects-copy h2{
+        font-size: 30px;
+        margin: 0;
+    }
+    .projects-copy p{
+        font-size: 20px;
+        
+    }
+    .projects-CTA{
+        display: flex;
+        margin-right: auto;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 10%;
+    }
+    .projects-CTA button{
+        margin: 0px;
+        display: flex;
+        margin: 0px 0px;
+        height: fit-content;
+        width: fit-content;
+    }
+    .projects-btn-display{
+        width: 80%;
+        height: auto;
+        margin-top: 10%;
+    }
+    
+    .projects-display-features h3{
+        font-size: 25px;
+
+    }
+    
+    /* -------------------- Projects card styles for img ---------------*/
+    
+    
+    .projects-full-screen-img-open{
+        position: fixed;
+        object-fit: contain;
+        margin: 0 auto;
+        height:100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 200;
+    }
+    
+    .projects-full-screen-img-open span{
+        width: fit-content;
+        display: flex;
+        margin-left: auto;
+        z-index: 300;
+        position: absolute;
+        right: 0;
+        margin: 20px;
+    }
+    .projects-full-screen-img-open div{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--secColor);
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+    
+    /* ------- full screen img closed ------ */
+    
+    
+    .projects-full-screen-img-close{
+        display: block;
+        width: 100%;
+    }
+    .projects-full-screen-img-close span{
+        width: fit-content;
+        display: none;
+    }
+    .projects-full-screen-img-close div{
+        display: none;
+    }
+    
+    .projects-display-features-buttons-CTA{
+        flex-direction: row;
+        margin: 20px 0;
+        gap: 20px;
+    }
+
 }

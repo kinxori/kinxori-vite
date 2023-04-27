@@ -75,12 +75,12 @@ export default function Contact(){
                     <p>
                         Let's chat about <b>web development</b> or <b>motion graphics,</b> or just connect as friends! <b>Send me a message</b> and let's grab a virtual coffee! 
                     </p>
+                    <Button onClick={handleOptionsButton} variant="secButton" className="Contact-CTA">
+                        {isActive === false ? "Open Options" : "Close Options"}
+                    </Button>
                 </div>
             </div>
             <div className='contact-btn-options'>
-                <Button onClick={handleOptionsButton} variant="secButton" className="Contact-CTA">
-                    {isActive === false ? "Open Options" : "Close Options"}
-                </Button>
                 {isActive === true &&
                     <section className='contact-options-cards'>
                         <DemoCard header={<> <i className="fa-regular fa-envelope"></i> Email</>} isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")}>

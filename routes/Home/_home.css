@@ -4,3 +4,24 @@
     position: relative;
     overflow: hidden scroll;
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+@media (min-width: 1181px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .rootHome{
+        height: auto;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+    }
+}

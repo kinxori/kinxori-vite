@@ -117,7 +117,7 @@
 
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
-@media (min-width: 600px){
+@media (min-width: 601px){
 
 
 
@@ -170,6 +170,66 @@
  
     font-size: 34px;
 
+}
+
+
+}
+
+
+/* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
+
+
+@media (min-width: 1181px){
+
+
+
+.form-body{
+   
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.form-body h3{
+    font-size: 25px;
+}
+
+.form-body .email-input-box{
+    height: 40px;
+    font-size: 16px;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+
+.email-input-box:focus{
+    border: 2px solid var(--mainColor);
+    border-radius: 8px;
+}
+
+.form-body .message-input-box{
+    min-height: 150px;  
+    font-size: 16px;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+.message-input-box:focus{
+    border: 2px solid var(--mainColor);
+    border-radius: 8px;
+}
+
+
+
+
+.email-pop-up-body{
+    position:fixed;
+    height: 200px;
+    width: 300px;
+    border-radius: 18px;
+    border: 2px solid var(--mainColor);
+    gap: 10%;
+}
+.email-pop-up-body h2{
+    font-size: 30px;
+  
 }
 
 

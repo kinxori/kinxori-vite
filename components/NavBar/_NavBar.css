@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .mobileNavBar{
     height: 60px;
@@ -5,7 +9,7 @@
     width: 100%;
     position:fixed ;
     bottom:0 ;
-    box-shadow: 0px 0px 10px 0px hsla(0, 0%, 20%, .3);
+    box-shadow: 0px 0px 10px 10px hsla(0, 0%, 20%, .3);
     z-index: 100;
     border-top: 1px solid var(--textSecColor);
 }
@@ -39,7 +43,7 @@
 
 
 
-@media (min-width: 600px){
+@media (min-width: 601px){
 
 
     .tabletNavBar{
@@ -48,7 +52,7 @@
         width: 100%;
         position:fixed ;
         bottom:0 ;
-        box-shadow: 0px 0px 10px 0px hsla(0, 0%, 20%, .3);
+        box-shadow: 0px 0px 10px 10px hsla(0, 0%, 20%, .3);
         z-index: 100;
         border-top: 1px solid var(--textSecColor);
     }
@@ -78,4 +82,138 @@
 }
 
 
+/* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
+
+@media (min-width: 1181px){
+
+    button:hover{
+        cursor: pointer;
+        transform: scale(1.015);
+        opacity: .9;
+    }
+
+    i:hover{
+        cursor: pointer;
+        transform: scale(1.015);
+        opacity: .9;
+    }
+
+        .desktopNavBar{
+            height: 80px;
+            background-color: var(--mainColor);
+            width: 100%;
+            position:fixed;
+            top:0;
+            box-shadow: 0px 0px 10px 10px hsla(0, 0%, 20%, .3);
+            z-index: 100;
+            border-bottom: 1px solid var(--textSecColor);
+        }
+        
+        .desktopOptions {
+            display: flex;
+            position: relative;
+            align-items: center;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+        .desktopOptions-logo-img{
+            margin-right: auto;
+            margin-left: 80px;
+        }
+        .desktopOptions img{
+            height: 60px;
+            width: fit-content;
+            object-fit: contain;
+        }   
+
+        .desktopOptions img:hover{
+            cursor: pointer;
+        }
+
+        .desktop-nav-CTA-buttons{
+            width: auto;
+            margin-left: auto;
+            margin-right: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .isActive{
+            color: var(--textMainColor);
+            border: none;
+            background: none;
+            font-size: 36px;
+            margin-left: 20px;
+
+        }
+        
+       
+
+
+        /* ------------------ Desktop Side Bar ------------------*/
+
+
+        .sideBar-open{
+            height: 100vh;
+            width: 300px;
+            transition: transform .3s ease-in-out;
+            transform: translateX(0%);
+            position: fixed;
+            right:0px;
+            top: -10px;
+
+        }
+
+        .sideBar-close{
+            height: 100vh;
+            width: 300px;
+            transition: all .3s ease-in-out;
+            transform: translateX(110%);
+            position: fixed;
+            right:0px;
+            top: -10px;            
+        }
+
+        .dekstop-nav-sideBar{
+            height: 100%;
+            width: 100%;
+            background-color: var(--secColor);
+            display: flex;
+            flex-direction: column;
+            border-left: 2px solid var(--textSecColor);
+            position: relative;
+            box-shadow: 0px 0px 10px 10px hsla(0, 0%, 20%, .3);
+        }
+        .dekstop-nav-sideBar i{
+            font-size: 36px;
+            margin: 20px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .sideBar-body{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            margin: 20px 20px 0px -10px;
+        }
+        .sideBar-body span i{
+            font-size: 20px;
+            padding-left: 10px;
+            margin: 0px;
+        }
+
+        .sideBar-body i{
+            margin-top: auto;
+            font-size: 20px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+      
+}

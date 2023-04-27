@@ -52,7 +52,7 @@ export default function InputForm (){
     setPopUp("isShown")
     setTimeout(()=>{
       setPopUp("");
-    }, 5000)
+    }, 5000000)
     setEmail("");
     setMessage("");
   };

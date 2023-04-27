@@ -33,7 +33,6 @@ export default function AboutMe(){
                                 <br/>
                                 Before becoming a web developer, I worked in <b>motion graphics</b> but wanted a more challenging career. 
                                 <br/>
-                                <br/>
                                 As a web developer, I get to combine my love for <b>creating</b> with my passion for <b>problem-solving.</b> 
                                 <br/>
                                 Feel free to explore <b>my portfolio</b> and reach out by clicking the button below to <b>connect</b> with me.

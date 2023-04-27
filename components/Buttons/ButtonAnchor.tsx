@@ -15,7 +15,8 @@ export default function ButtonAnchor({
         mainButton: "mainButton",
         secButton: "secButton",
         ghostButton: "ghostButton",
-        linkButton: "linkButton"
+        linkButton: "linkButton",
+        desktopButton: "desktopButton"
     }
 
 

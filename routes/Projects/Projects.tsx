@@ -52,12 +52,13 @@ export default function Projects(){
                     <p>
                         Take a look around to some of my <b>features</b> I've been learning and <b>improving</b> along my <b>web developer career.</b>
                     </p>
+                    <Button onClick={handleProjectsButton} variant="secButton" className="projects-CTA">
+                        {isActive === false ? "Open Projects" : "Close Projects"}
+                    </Button>
                 </div>
             </div>
             <div className="projects-btn-display">
-                <Button onClick={handleProjectsButton} variant="secButton" className="projects-CTA">
-                        {isActive === false ? "Open Projects" : "Close Projects"}
-                </Button>
+                
                 {isActive === true &&
                     <section className="projects-display-features">
                         <DemoCard header={<><i className="fa-solid fa-cart-shopping"></i> Shopping Cart</>} isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")} >

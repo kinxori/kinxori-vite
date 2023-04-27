@@ -24,6 +24,9 @@ img{
     margin: 0;
 
 }
+img:hover{
+    cursor: pointer;
+}
 ul{
     text-align: left;
     width: 90%;
@@ -97,7 +100,7 @@ span{
     height: 0px;
   }
 
-/*  ----------------------------------- CLOSED  ------------------------------------ */
+/*  ------------------------- CLOSED  --------------------- */
 
 .card-root-close{
     width: 100%;
@@ -151,7 +154,7 @@ span{
 
 
 
-@media (min-width: 600px){
+@media (min-width: 601px){
 
     h2{
         font-size: 34px;
@@ -196,7 +199,7 @@ span{
     }
  
     
-    /*  ----------------------------------- CLOSED  ------------------------------------ */
+    /*  ----------------------- CLOSED --------------------- */
     
     .card-root-close{
       
@@ -217,4 +220,88 @@ span{
         gap: 25px;
     }
 
+}
+
+
+/* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
+
+
+@media (min-width: 1181px){
+
+
+
+    h2{
+        font-size: 30px;
+      
+    }
+
+    p{
+        
+        font-size: 20px;
+      
+    }
+ 
+    img:hover{
+        cursor: pointer;
+    }
+    ul{
+        text-align: left;
+        width: 90%;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .card-root-open{
+     
+        border: 2px solid var(--mainColor);
+        border-radius: 18px;
+        margin: 10px 0px;
+
+    }
+    
+    .card-title{
+        height: 80px;
+        padding: 0px 30px;
+        font-size: 30px;
+    }
+    .card-root-open .card-title button{
+        height: 40px;
+        width: 40px;
+        
+    }
+    .card-root-open .card-body{
+        
+        max-height: 500px;
+        width: 90%;
+        padding: 40px 0px;
+        gap: 25px;
+
+    }
+
+    
+    /*  ----------------- CLOSED  ------------------- */
+    
+    .card-root-close{
+        
+        border: 2px solid var(--mainColor);
+        border-radius: 18px;
+        margin: 10px 0px;
+    }
+    
+    .card-root-close .card-title button{
+        height: 40px;
+        width: 40px;
+        
+    
+    }
+    .card-root-close .card-body{
+      
+        max-height: 0px;
+        width: 90%;   
+        padding: 0px 0px;
+        gap: 25px;
+        overflow: scroll;
+
+    }
+    
 }
