@@ -10,7 +10,7 @@ b{
     margin-bottom: 40%;
 
 }
-.aboutMe-root .aboutMe-content{
+.aboutMe-content{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -23,9 +23,12 @@ b{
     height: 250px;
     object-fit: contain;
 }
-.aboutMe-body{
+.aboutMe-copy{
     margin-top: 20%;
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 .aboutMe-body h2{
     font-size: 24px;
@@ -34,23 +37,20 @@ b{
     margin-right: auto;
 }
 
-.aboutMe-body{
-    position: relative;
-    height:fit-content;
-    width: 100%;
-}
-.aboutMe-copy{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-}
-
 .aboutMe-copy p{
     text-align: justify;
-    margin-bottom: 10%;
     font-size: 16px;
 }
+
+.aboutMe-CTA button{
+    margin-top: 16%;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 20%;
+}
+
+
+
 .aboutme-copy-PFP{
     height: 150px;
     width: 150px;
@@ -71,51 +71,7 @@ b{
 }
 
 
-/* -------------------- Copy blur ------------------------*/
 
- .copyIsClose{
-    overflow: hidden;
-    margin-bottom: 6%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height:100px;
-    position: relative;
-}
-
-.copyIsClose .contact-copy-blur {
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    bottom: -150%;
-    left: -50%;
-    background-color: var(--secColor);
-    display: flex;
-    filter: blur(20px);
-}
-
- .copyIsOpen{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-    height: fit-content;
-    position: relative;
-}
-
-.aboutMe-readMore {
-    width: 100%;
-}
-.aboutMe-readMore button{
-    padding: 0px;
-    display: flex;
-    margin-left: auto;
-}
-.aboutMe-CTA button{
-    margin-top: 16%;
-    display: flex;
-    margin-left: auto;
-}
 
 
 
@@ -188,5 +144,5 @@ b{
 
 
 @media (min-width: 1181px){
-    
+
 }

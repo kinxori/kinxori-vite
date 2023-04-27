@@ -21,34 +21,57 @@ export default function AboutMe(){
         <article className="aboutMe-root">
             <div className="aboutMe-content">
                 <img src="/AboutmeAsset.png" alt="about me asset" className="about-me-asset"/>
-                <div className="aboutMe-body">
+                <div className="aboutMe-copy">
                     <h2>
                         But... <b>Who am I?</b> 🤪
                     </h2>
                     <br/>
-                    <div className="aboutMe-copy">
-                         <span className={isOpen === false ? "copyIsClose" : "copyIsOpen"} onClick={handleClick}>
-                            <p>
-                                Hi! I am Gustavo Quiroz, a <b>front-end</b> web developer with a passion for creating things. 
-                                <br/>
-                                Before becoming a web developer, I worked in <b>motion graphics</b> but wanted a more challenging career. 
-                                <br/>
-                                As a web developer, I get to combine my love for <b>creating</b> with my passion for <b>problem-solving.</b> 
-                                <br/>
-                                Feel free to explore <b>my portfolio</b> and reach out by clicking the button below to <b>connect</b> with me.
-                            </p>
-                            <div className="aboutme-copy-PFP">
-                                <img src="/273048005_1274448366400567_4493743372539204487_n.jpg" alt="gustavo quiroz"></img>
-                            </div>
-                            <div className="contact-copy-blur"></div>
-                         </span> 
-                        <Button variant="linkButton" className="aboutMe-readMore" onClick={handleClick}>{isOpen? "...read less" : "...read more"}</Button>
-                    </div>
+                    <p>
+                        My name is Gustavo Quiroz, <b>front-end web developer</b> with a passion for creating things. Formerly in <b>motion graphics,</b> now using my love for creating to <b>solve problems.</b>
+                    </p>
+                    <Button className="aboutMe-CTA" variant="secButton" onClick={handleClick}>
+                        {isOpen? "Read less" : "Read more"}
+                    </Button>            
                 </div>
             </div>
-            <Button className="aboutMe-CTA" variant="secButton" to="/contact">
-                Go contact
-            </Button>
+            {isOpen === true && 
+            <div className="about-me-read-more-content">
+                <h3>
+                    Where I come from? 
+                </h3>
+                <br/>
+                <p>
+                    Born in 1998 in Mexico and still living in Mexico. I have in mind to travel and create my own opportunity to live in different places around the globe. 
+                </p>
+                <h3>
+                    Personality? 
+                </h3>
+                <br/>
+                <p>
+                    
+                </p>
+                <h3>
+                    Hobbies? 
+                </h3>
+                <br/>
+                <p>
+                    I have plently of hobbies, most of them require me to go out home. I really like to spend time with my friends. I enjoy listening to music and playing to music aswell. I play the guitar, and  willing to learn violin and saxophone.
+                </p>
+                <p>
+                    I have plently of hobbies. 
+                </p>
+                <h3>
+                    Hobbies? 
+                </h3>
+                <br/>
+                <p>
+                    I have plently of hobbies, most of them require me to go out home. I really like to spend time with my friends. I enjoy listening to music and playing to music aswell. I play the guitar, and  willing to learn violin and saxophone.
+                </p>
+                <div className="aboutme-copy-PFP">
+                    <img src="/273048005_1274448366400567_4493743372539204487_n.jpg" alt="gustavo quiroz"></img>
+                </div>
+            </div>
+            }
         </article>
     )
 }

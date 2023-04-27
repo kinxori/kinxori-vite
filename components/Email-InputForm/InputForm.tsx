@@ -1,42 +1,24 @@
-import { useEffect, useMemo, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useEffect, useState } from "react";
 import './_inputForm.css'
 import Button from "../Buttons/Button";
-
 
 export default function InputForm (){
 
   const [isEmail, setEmail] = useState("");
   const [isMessage, setMessage] = useState("");
-  const [popUp, setPopUp] = useState("")
-  const [emojiData, setEmojiData] = useState([]); // State variable to store the emoji data
+  const [popUp, setPopUp] = useState("");
+  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
 
   const EmojiAPI = "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72"
 
-  useEffect(() => {
-    const fetchEmojiData = async () => {
-      const response = await fetch(EmojiAPI)
-      const emojiData = await response.json()
-      setEmojiData(emojiData)
-    };
-    fetchEmojiData()
-  }, []);
-
-  const cachedEmojiData = useMemo(()=> emojiData, [emojiData])
-  const randomEmojiIndex = Math.floor(Math.random()* cachedEmojiData.length);
-  const randomEmoji = cachedEmojiData[randomEmojiIndex]
-
-  const handlePopUp = () => {
-      setPopUp("")
-    }
-
-  const handleSubmit = async (event:any) => {
+  const handleSubmit = async (event:any) => {  
+    
     event.preventDefault();
     const { target } = event;
     const form = {
       email: target.email.value,
       message: target.message.value,
-      emoji: randomEmoji.codePoint,
+      emoji: randomEmojiGenerated,
     };
     
     const result = await fetch(
@@ -49,14 +31,24 @@ export default function InputForm (){
         body: JSON.stringify({ ...form, secret:"homelo" }),
       }
     )
-    setPopUp("isShown")
-    setTimeout(()=>{
-      setPopUp("");
-    }, 5000000)
+    const fetchEmojiData = async () => {
+      const response = await fetch(EmojiAPI)
+      const emojiData = await response.json()
+      const randomEmojiIndex = Math.floor(Math.random()* emojiData.length);
+      const randomEmoji = emojiData[randomEmojiIndex]
+      setRandomEmojiGenerated(randomEmoji.codePoint)
+    };
+    fetchEmojiData();
+    setPopUp("isShown");
+    setTimeout(()=>{setPopUp("")}, 5000);
     setEmail("");
     setMessage("");
   };
 
+  const handlePopUp = () => {
+    setPopUp("")
+  }
+  
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-body">
