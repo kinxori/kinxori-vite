@@ -1,10 +1,9 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, } from 'react'
 import Button from '../../components/Buttons/Button'
 import ButtonAnchor from '../../components/Buttons/ButtonAnchor'
 import './_contact.css'
 import InputForm from "../../components/Email-InputForm/InputForm"
 import DemoCard from '../../components/DemoCard/DemoCard'
-import useDownloadFile from "../../customHooks/useDownloadFile"
 
 export default function Contact(){
 
@@ -38,8 +37,6 @@ export default function Contact(){
         setisActive(!isActive)
     };
    
-
-
 
     return(
         <article className="contact-root">
