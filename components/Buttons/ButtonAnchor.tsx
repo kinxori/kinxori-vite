@@ -9,7 +9,11 @@ export default function ButtonAnchor({
     type,
     download,
     href,
-}: any){
+    ...props
+}: 
+// {[x:string]:string | number | boolean})
+{[x:string]:any})
+{
 
     const classes: any = {
         mainButton: "mainButton",

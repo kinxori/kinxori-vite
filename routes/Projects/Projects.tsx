@@ -45,7 +45,7 @@ export default function Projects(){
     return(
         <article className="projects-root">
             <div className="projects-content">
-                <img src="/projects-asset.png" alt="project-asset" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/projects-asset.png?alt=media&token=50a7605c-c2af-48b9-8dd8-cdd6bcf2fb91" alt="notebook-with-pencil" />
                 <div className="projects-copy">
                     <h2>Check out my projects to see my <b>skills in action!</b> ✍️</h2>
                     <br/>

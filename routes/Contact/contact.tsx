@@ -4,35 +4,11 @@ import ButtonAnchor from '../../components/Buttons/ButtonAnchor'
 import './_contact.css'
 import InputForm from "../../components/Email-InputForm/InputForm"
 import DemoCard from '../../components/DemoCard/DemoCard'
+import useDownloadFile from "../../customHooks/useDownloadFile"
 
 export default function Contact(){
 
-    const imgAsset = "/404Assets.png"
-
-    const [downloadUrl, setDownloadUrl] = useState(imgAsset);
-
-    const downloadCV = async () => {
-      try {
-        const response = await fetch(
-          `https://us-central1-myportfolio-70cb1.cloudfunctions.net/downloadFileFunction`,
-          {
-            mode: "no-cors"
-          }
-        );
-    
-        if (!response.ok) {
-          throw new Error("Failed to download file");
-        }
-    
-        const blob = await response.blob();
-        const url = URL.createObjectURL(blob);
-        setDownloadUrl(url);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-
+    const resumePDF = "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/FrontEnd%20-%20Gustavo%20Quiroz%20-%20Resume.pdf?alt=media&token=7ca9df80-d374-4152-8146-33c7f05f4d05"
     
     const [isClicked, setIsClicked] = useState(() => {
         const storedState = localStorage.getItem("isClicked");
@@ -100,8 +76,8 @@ export default function Contact(){
                         </DemoCard>
                         <DemoCard header={<><i className="fa-solid fa-download"></i> Resume </>} isActive={isClicked === "card4"} onClick={() => handleCardClick("card4")}>
                             <h3>Click the button below to download my lastes CV! 📜</h3>
-                            <ButtonAnchor href={downloadUrl} download variant="mainButton">                            
-                                    Download CV                                                  
+                            <ButtonAnchor href={resumePDF} download variant="mainButton">                            
+                                    Download Resume                                               
                             </ButtonAnchor>
                         </DemoCard>
                     </section>
