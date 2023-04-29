@@ -3,66 +3,63 @@ b{
     font-weight: inherit;
 }
 
-h3{
-    font-size: 20px;
-    text-align: center;
-    font-weight: 700;
-}
 .contact-root{
-    height: auto;
     width: 80%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: min-content;
     margin: 0 auto;
-    margin-bottom: 40%;
     margin-top: 20%;
 }
 
-.contact-content{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+    }
 
-.contact-content img{
-    height: 250px;
-    object-fit: contain;
-}
+        .contact-content img{
+            height: 250px;
+            object-fit: contain;
+        }
 
-.contact-copy{
-    margin-top: 20%;
-}
-.contact-copy h2{
-    font-size: 24px;
-    font-weight: 700;
-    text-align: left;
-}
-.contact-copy p{
-    font-size: 16px;
-    font-weight: normal;
-    text-align: justify;
-}
-.contact-btn-options{
-    width: 100%;
-    height: auto;
-}
-.Contact-CTA button{
-    margin-top: 16%;
-    margin-left: auto;
-    display: flex;
-    margin-bottom: 20%;
-}
+        .contact-copy{
+        padding-top: 20%;
+        padding-bottom: 20%;
+        }
+            .contact-copy h2{
+                font-size: 24px;
+                text-align:left;
+                font-weight: 700;
+                width: 100%;
+            }
+            .contact-copy p{
+                font-size: 16px;
+                font-weight: normal;
+                text-align: justify;
+            }
+            .Contact-CTA button{
+                display: flex;
+                margin-left: auto;
+                margin-top: 16%;
+            }
 
-.contact-options-cards{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
+    .contact-options-cards{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40%;
+    }
+        .contact-options-cards h3{
+            font-size: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .contact-options-cards span{
+            margin: 10px 0;
+        }
 
 
 

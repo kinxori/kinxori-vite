@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import './_inputForm.css'
 import Button from "../Buttons/Button";
 
@@ -8,7 +8,7 @@ export default function InputForm (){
   const [isMessage, setMessage] = useState("");
   const [popUp, setPopUp] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
-
+  const [clipboardIsCopy, setClipboardIsCopy] = useState(false)
   const EmojiAPI = "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72"
 
   const handleSubmit = async (event:any) => {  
@@ -48,11 +48,27 @@ export default function InputForm (){
   const handlePopUp = () => {
     setPopUp("")
   }
-  
+
+  const textToClipBoard = useRef("") as any
+
+  const handleClipboardState = ()=>{
+    const text = textToClipBoard.current.textContent;
+    navigator.clipboard.writeText(text);
+    setClipboardIsCopy(!clipboardIsCopy);
+    setTimeout(()=>{setClipboardIsCopy(false)}, 5000);
+  } 
+
+
+
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-body">
-        <h3>Email: </h3>
+        <h3>My email 📧:</h3>
+        <div className="input-form-my-email">
+          <p ref={textToClipBoard}> gustavoq26@gmail.com </p>
+          <div onClick={handleClipboardState}>{clipboardIsCopy ? <i className="fa-solid fa-check"></i> : <i className="fa-regular fa-clipboard"></i>}</div>
+        </div>
+        <h3>Your mail: </h3>
         <label>
           <input
             type="email"
@@ -64,7 +80,7 @@ export default function InputForm (){
             placeholder="email@example.com"
           />
         </label>
-        <h3>Message:</h3>
+        <h3>Your message:</h3>
         <label>
           <textarea
             required

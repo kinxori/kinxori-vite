@@ -36,6 +36,9 @@ export default function AboutMe(){
             </div>
             {isOpen === true && 
             <div className="about-me-read-more-content">
+                <div className="aboutme-copy-PFP">
+                    <img src="/273048005_1274448366400567_4493743372539204487_n.jpg" alt="gustavo quiroz"></img>
+                </div>
                 <h3>
                     Where I come from? 
                 </h3>
@@ -67,9 +70,7 @@ export default function AboutMe(){
                 <p>
                     I have plently of hobbies, most of them require me to go out home. I really like to spend time with my friends. I enjoy listening to music and playing to music aswell. I play the guitar, and  willing to learn violin and saxophone.
                 </p>
-                <div className="aboutme-copy-PFP">
-                    <img src="/273048005_1274448366400567_4493743372539204487_n.jpg" alt="gustavo quiroz"></img>
-                </div>
+                
             </div>
             }
         </article>

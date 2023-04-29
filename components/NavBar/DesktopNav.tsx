@@ -29,10 +29,10 @@ export default function DesktopNav(){
                     </Link>
                     <div className="desktop-nav-CTA-buttons">
                         <Button to="/projects" variant="desktopSecButton">
-                            Projects 
+                        <i className="fa-solid fa-briefcase"></i> Projects 
                         </Button>
                         <Button to="/contact"  variant="desktopMainButton">
-                            Contact
+                        <i className="fa-solid fa-address-book"></i> Contact 
                         </Button>
                         <button className="isActive">
                             <i className="fa-solid fa-bars" onClick={handleSideBarClick} ></i>

@@ -7,13 +7,11 @@ export default function ButtonAnchor({
     target,
     variant = "mainButton",
     type,
-    download,
     href,
-    ...props
-}: 
-// {[x:string]:string | number | boolean})
-{[x:string]:any})
+    download, 
+}:any)
 {
+// {[x:string]:string | number | boolean})
 
     const classes: any = {
         mainButton: "mainButton",
@@ -25,9 +23,9 @@ export default function ButtonAnchor({
 
 
         return(
-            <span className={className}>
-                <a href={href} download={download} onClick={onClick} target={target}>
-                    <button className={classes[variant]} type={type}>
+            <span className={className} >
+                <a href={href} download={download}  onClick={onClick} target={target} type={type}>
+                    <button className={classes[variant]}>
                         {children}
                     </button>
                 </a>

@@ -1,53 +1,54 @@
 
 b{
     color: var(--mainColor);
+    font-weight: 700;
 }
-
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
 .landingPage-root{
     width: 80%;
-    height: auto;
+    height: min-content;
     margin: 0 auto;
     margin-top: 20%;
-    margin-bottom: 40%;
+}
+    .landingPage-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+    }
 
-}
-.landingPage-root .landingPage-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
+        .landingPage-content img{
+            height: 250px;
+            object-fit: contain;
 
-.landingPage-content .astroBoy{
-    height: 250px;
-    object-fit: contain;
+        }
+        .landingPage-copy{
+            padding-top: 20%;
+            padding-bottom: 20%;
+        }
+            .landingPage-copy h2{
+                font-size: 24px;
+                text-align:left;
+                font-weight: 700;
+                width: 100%;
+                margin: 0;
+            }
 
-}
-.landingPage-copy{
-    margin-top: 20%;
-}
-.landingPage-copy h2{
-    font-size: 24px;
-    text-align:left;
-    font-weight: 700;
-    width: 100%;
-    margin: 0;
-}
+            .landingPage-copy p{
+                font-size: 16px;
+                font-weight: normal;
+                text-align: justify;
+            }
 
-.landingPage-copy p{
-    font-size: 16px;
-    font-weight: normal;
-    text-align: justify;
-}
-
-.landingPage-CTA button{ 
-    display: flex;
-    margin-left: auto;
-    margin-top: 16%;
-    margin-bottom: 20%;
-}
+            .landingPage-CTA button{ 
+                display: flex;
+                margin-left: auto;
+                margin-top: 16%;
+            }
 
 
 

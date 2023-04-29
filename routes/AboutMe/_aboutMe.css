@@ -7,68 +7,70 @@ b{
     height: auto;
     margin: 0 auto;
     margin-top: 20%;
-    margin-bottom: 40%;
 
-}
-.aboutMe-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items:center;
-    height: 100%;
-    position: relative;
-}
+    }
+    .aboutMe-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+        height: 100%;
+        position: relative;
+    }
 
-.about-me-asset{
-    height: 250px;
-    object-fit: contain;
-}
-.aboutMe-copy{
-    margin-top: 20%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-}
-.aboutMe-body h2{
-    font-size: 24px;
-    font-weight: 700;
-    text-align: left;
-    margin-right: auto;
-}
+        .aboutMe-content img{
+            height: 250px;
+            object-fit: contain;
+        }
+        .aboutMe-copy{
+        padding-top: 20%;
+        padding-bottom: 20%;
+        }
+            .aboutMe-body h2{
+                font-size: 24px;
+                text-align:left;
+                font-weight: 700;
+                width: 100%;
+            }
 
-.aboutMe-copy p{
-    text-align: justify;
-    font-size: 16px;
-}
+            .aboutMe-copy p{
+                font-size: 16px;
+                font-weight: normal;
+                text-align: justify;
+            }
 
-.aboutMe-CTA button{
-    margin-top: 16%;
-    margin-left: auto;
-    display: flex;
-    margin-bottom: 20%;
-}
+            .aboutMe-CTA button{
+                display: flex;
+                margin-left: auto;
+                margin-top: 16%;
+            }
 
-
-
-.aboutme-copy-PFP{
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    margin: 0 auto;
-    margin-bottom: 10%;
-    border: 2px solid white;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.aboutme-copy-PFP img{
-    height: 800px;
-    object-fit:cover;
-    position: relative;
-    top: 100%;
-}
+    .about-me-read-more-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40%;
+    }
+    .aboutme-copy-PFP{
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        border: 2px solid white;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutme-copy-PFP img{
+        height: 800px;
+        object-fit:cover;
+        position: relative;
+        top: 100%;
+    }
 
 
 

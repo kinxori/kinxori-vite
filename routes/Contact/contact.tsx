@@ -7,8 +7,6 @@ import DemoCard from '../../components/DemoCard/DemoCard'
 
 export default function Contact(){
 
-    const resumePDF = "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/FrontEnd%20-%20Gustavo%20Quiroz%20-%20Resume.pdf?alt=media&token=7ca9df80-d374-4152-8146-33c7f05f4d05"
-    
     const [isClicked, setIsClicked] = useState(() => {
         const storedState = localStorage.getItem("isClicked");
         return storedState || null;
@@ -37,7 +35,7 @@ export default function Contact(){
         setisActive(!isActive)
     };
    
-
+    
     return(
         <article className="contact-root">
             <div className="contact-content">
@@ -53,33 +51,32 @@ export default function Contact(){
                     </Button>
                 </div>
             </div>
-            <div className='contact-btn-options'>
-                {isActive === true &&
-                    <section className='contact-options-cards'>
-                        <DemoCard header={<> <i className="fa-regular fa-envelope"></i> Email</>} isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")}>
-                            <InputForm/>
-                        </DemoCard>
-                        <DemoCard header={<><i className="fa-brands fa-whatsapp"></i> What's App </>} isActive={isClicked === "card2"} onClick={() => handleCardClick("card2")}>
-                            <h3>Click the button below to send me a What's App message.</h3>
-                            <Button to="https://api.whatsapp.com/send/?phone=527713168861&text&type=phone_number&app_absent=0" target="_blank" variant="mainButton">
-                                Send a What's App
-                            </Button>
-                        </DemoCard>
-                        <DemoCard header={<><i className="fa-brands fa-twitter"></i> Twitter </>} isActive={isClicked === "card3"} onClick={() => handleCardClick("card3")}>
-                            <h3>Follow me on Twitter and let's share thoughts!</h3>
-                            <Button to="https://twitter.com/kinxori" target="_blank" variant="mainButton">
-                                Go Twitter
-                            </Button>
-                        </DemoCard>
-                        <DemoCard header={<><i className="fa-solid fa-download"></i> Resume </>} isActive={isClicked === "card4"} onClick={() => handleCardClick("card4")}>
-                            <h3>Click the button below to download my lastes CV! 📜</h3>
-                            <ButtonAnchor href={resumePDF} download variant="mainButton">                            
-                                    Download Resume                                               
-                            </ButtonAnchor>
-                        </DemoCard>
-                    </section>
-                }
-            </div>
+            {isActive === true &&
+                <section className='contact-options-cards'>
+                    <DemoCard header={<> <i className="fa-regular fa-envelope"></i> Send email</>} isActive={isClicked === "card1"} onClick={() => handleCardClick("card1")}>
+                        <InputForm/>
+                    </DemoCard>
+                    <DemoCard header={<><i className="fa-brands fa-whatsapp"></i> What's App </>} isActive={isClicked === "card2"} onClick={() => handleCardClick("card2")}>
+                        <h3>Click the button below to send me a What's App message. 💬</h3>
+                        <Button to="https://api.whatsapp.com/send/?phone=527713168861&text&type=phone_number&app_absent=0" target="_blank" variant="mainButton">
+                            Send a What's App
+                        </Button>
+                    </DemoCard>
+                    <DemoCard header={<><i className="fa-brands fa-twitter"></i> Twitter </>} isActive={isClicked === "card3"} onClick={() => handleCardClick("card3")}>
+                        <h3>Follow me on Twitter and let's share thoughts! 🐦</h3>
+                        <Button to="https://twitter.com/intent/tweet?text=@kinxro%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝" target="_blank" variant="mainButton">
+                            Go Twitter
+                        </Button>
+                    </DemoCard>
+                    <DemoCard header={<><i className="fa-solid fa-download"></i> Resume </>} isActive={isClicked === "card4"} onClick={() => handleCardClick("card4")}>
+                        <h3>Click the button below to download my latest resume! 📜</h3>
+                        <ButtonAnchor href="/FrontEnd - Gustavo Quiroz - Resume.pdf" download variant="mainButton">                            
+                                Download Resume                                               
+                        </ButtonAnchor>
+                    </DemoCard>
+                </section>
+            }
         </article>
     )
 }
+
