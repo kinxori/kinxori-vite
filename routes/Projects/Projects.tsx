@@ -40,7 +40,6 @@ export default function Projects(){
         setIsFullScreen((currenValue)=>currenValue !== id ? id : "")
     }
 
-    const resumePDF = "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/FrontEnd%20-%20Gustavo%20Quiroz%20-%20Resume.pdf?alt=media&token=7ca9df80-d374-4152-8146-33c7f05f4d05"
 
 
     return(
@@ -110,7 +109,7 @@ export default function Projects(){
                             <Button to="/contact">
                                 Contact me!
                             </Button>
-                            <ButtonAnchor variant="secButton" href={resumePDF} download>
+                            <ButtonAnchor variant="secButton" href="/FrontEnd - Gustavo Quiroz - Resume.pdf" download>
                                 Download Resume
                             </ButtonAnchor>
                         </div>
@@ -159,7 +158,7 @@ export default function Projects(){
                             <Button to="/contact">
                                 Contact me!
                             </Button>
-                            <ButtonAnchor variant="secButton" href={resumePDF} download>
+                            <ButtonAnchor variant="secButton" href="/FrontEnd - Gustavo Quiroz - Resume.pdf" download>
                                 Download Resume
                             </ButtonAnchor>
                         </div>
@@ -213,7 +212,7 @@ export default function Projects(){
                             <Button to="/contact">
                                 Contact me!
                             </Button>
-                            <ButtonAnchor variant="secButton" href={resumePDF} download>
+                            <ButtonAnchor variant="secButton" href="/FrontEnd - Gustavo Quiroz - Resume.pdf" download>
                                 Download Resume
                             </ButtonAnchor>
                         </div>

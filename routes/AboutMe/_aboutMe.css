@@ -53,26 +53,32 @@ b{
         align-items: center;
         margin-bottom: 40%;
     }
-    .aboutme-copy-PFP{
-        height: 150px;
-        width: 150px;
-        border-radius: 100%;
-        margin: 0 auto;
-        margin-bottom: 10%;
-        border: 2px solid white;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .aboutme-copy-PFP img{
-        height: 800px;
-        object-fit:cover;
-        position: relative;
-        top: 100%;
-    }
 
+        .aboutme-copy-PFP{
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+            margin: 0 auto;
+            margin-bottom: 10%;
+            border: 2px solid white;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .aboutme-copy-PFP img{
+            height: 800px;
+            object-fit:cover;
+            position: relative;
+            top: 100%;
+        }
 
+        .about-me-read-more-content h3{
+            font-size: 20px;
+        }
+        .about-me-read-more-content p{
+            font-size: 16px;
+        }
 
 
 
