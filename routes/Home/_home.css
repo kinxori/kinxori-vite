@@ -6,12 +6,6 @@
     height: min-content;
     width: 100vw;
     position: relative;
-    overflow: hidden scroll;
-    scroll-behavior: smooth;
-}
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
 }
 a {
     color: inherit;
@@ -29,3 +23,20 @@ a {
     font-size: inherit;
     font-weight: inherit;
   }
+ 
+@media (min-width: 1181px){
+
+  
+  ::-webkit-scrollbar{
+    width: 12px;
+    overflow:scroll;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 30%, .8);
+    border-radius: 30px;
+  }
+  ::-webkit-scrollbar-track {
+    border: 1px solid hsla(0, 0%, 10%, .5);
+    background-color: hsla(0, 0%, 20%, 1);
+  }
+}

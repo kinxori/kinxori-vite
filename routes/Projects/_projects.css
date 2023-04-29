@@ -46,16 +46,12 @@ b{
     .projects-display-features{
         display: flex;
         flex-direction: column;
-        width: 100%;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
+        width: 100%;
         margin-bottom: 40%;
     }
-        .projects-display-features h3{
-            font-size: 20px;
-            text-align: left;
-            font-weight: 700;
-        }
         .projects-display-features-buttons-CTA{
             display: flex;
             flex-direction: column;
@@ -114,6 +110,9 @@ b{
     .projects-full-screen-img-close{
         display: default;
     }
+    .projects-full-screen-img-close:hover{
+        cursor: pointer;
+    }
         .projects-full-screen-img-close span{
             display: none;
         }
@@ -143,34 +142,31 @@ b{
             padding-top: 10%;
             padding-bottom: 10%;
         }
-        
-        .projects-copy h2{
-            font-size: 34px;
             
-        }
-        .projects-copy p{
-            font-size: 24px;
-        }
-        
-        .projects-CTA button{
-            margin-top: 12%;
-        }
+            .projects-copy h2{
+                font-size: 34px;
+                
+            }
+            .projects-copy p{
+                font-size: 24px;
+            }
+            
+            .projects-CTA button{
+                margin-top: 12%;
+            }
+
         .projects-display-features {
             margin-bottom: 30%;
         }
-        .projects-display-features h3{
-            font-size: 30px;
-        }
-    
 
-    .projects-display-features-buttons-CTA{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 30px 0;
-        gap: 30px;
-    }
+            .projects-display-features-buttons-CTA{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 30px 0;
+                gap: 30px;
+            }
     /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
     .projects-full-screen-img-open span{
@@ -185,80 +181,63 @@ b{
 @media (min-width: 1181px){
 
     .projects-root{
-        margin-bottom: 20%;
         margin-top: 10%;
     }
-    .projects-content{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .projects-content img{
-        height: 450px;
-        object-fit: contain;
-    }
-    .projects-copy{
-        margin-top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .projects-copy h2{
-        font-size: 30px;
-        margin: 0;
-    }
-    .projects-copy p{
-        font-size: 20px;
+        .projects-content{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
         
-    }
-    .projects-CTA{
-        display: flex;
-        margin-right: auto;
-        height: fit-content;
-        width: fit-content;
-        margin-top: 10%;
-    }
-    .projects-CTA button{
-        margin: 0px;
-        display: flex;
-        margin: 0px 0px;
-        height: fit-content;
-        width: fit-content;
-    }
-    .projects-btn-display{
-        width: 80%;
-        height: auto;
-        margin-top: 10%;
-    }
-    
-    .projects-display-features h3{
-        font-size: 25px;
+            .projects-content img{
+                height: 450px;
+            }
+            .projects-copy{
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+            
+                .projects-copy h2{
+                    font-size: 34px;
+                }
+                .projects-copy p{
+                    font-size: 20px;
+                }
+                .projects-CTA button{
+                    display: flex;
+                    margin: 0px;
+                    margin-top: 12%;
+                    height: fit-content;
+                    width: fit-content;
+                }
 
-    }
-
-    .projects-display-features-buttons-CTA{
-        flex-direction: row;
-        margin: 20px 0;
-        gap: 20px;
-    }
-    
+        .projects-display-features{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: 80%;
+        }
+            .projects-display-features-buttons-CTA{
+                flex-direction: row;
+                margin: 20px 0;
+                gap: 10px;
+            }
+        
     /* -------------------- Projects card styles for img FullScreen open ---------------*/
-    
-    
+
+
     .projects-full-screen-img-open{
-        height: 100vh;
-        z-index: 200;
+        z-index: 100;
     }
-    
-    .projects-full-screen-img-open span{
-        top: 0px;
+        .projects-full-screen-img-open span{
+            top: 10px;
+        }
+
+    /* ------- full screen img FullScreen closed  ------ */
+
+
+    .projects-full-screen-img-close{
+        display: default;
     }
 
 }

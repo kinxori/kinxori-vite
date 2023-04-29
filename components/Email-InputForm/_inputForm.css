@@ -160,10 +160,10 @@
                     border-radius: 8px;
                 }
         
-                .email-input-box:focus{
-                    border: 2px solid var(--mainColor);
-                    border-radius: 8px;
-                }
+                    .email-input-box:focus{
+                        border: 2px solid var(--mainColor);
+                        border-radius: 8px;
+                    }
         
                 .message-input-box{
                     min-height: 200px;
@@ -171,10 +171,10 @@
                     padding: 20px 20px;
                     border-radius: 8px;
                 }
-                .message-input-box:focus{
-                    border: 2px solid var(--mainColor);
-                    border-radius: 8px;
-                }
+                    .message-input-box:focus{
+                        border: 2px solid var(--mainColor);
+                        border-radius: 8px;
+                    }
                
            
         .submit-button-CTA{
@@ -208,54 +208,62 @@
 
 
 
-.form-body{
-   
-    gap: 20px;
-    padding-bottom: 30px;
-}
+    .form-body{
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+        .input-form-my-email p{
+            font-size: 24px;
+        }
+        .input-form-my-email div{
+            width: 45px;
+            height: 45px;
+        }
+            .input-form-my-email div i{
+                font-size: 28px;
+            }
+        .email-input-box{
+            height: 40px;
+            font-size: 24px;
+            padding: 30px 30px;
+            border-radius: 8px;
+        }
 
-.form-body h3{
-    font-size: 25px;
-}
+            .email-input-box:focus{
+                border: 2px solid var(--mainColor);
+                border-radius: 8px;
+            }
 
-.form-body .email-input-box{
-    height: 40px;
-    font-size: 16px;
-    padding: 20px 20px;
-    border-radius: 8px;
-}
+        .form-body .message-input-box{
+            min-height: 200px;  
+            font-size: 24px;
+            padding: 30px 30px;
+            border-radius: 8px;
+        }
+            .message-input-box:focus{
+                border: 2px solid var(--mainColor);
+                border-radius: 8px;
+            }
 
-.email-input-box:focus{
-    border: 2px solid var(--mainColor);
-    border-radius: 8px;
-}
+    .submit-button-CTA{
+        margin: 20px 0;
+    }
+        .email-pop-up-body{
+            position:fixed;
+            height: 200px;
+            width: 300px;
+            border-radius: 22px;
+            border: 2px solid var(--mainColor);
+            gap: 15px;
+        }
+            .email-pop-up-body h2{
+                font-size:34px;
+                margin: 0;
+            }
+            .email-pop-up-body span{
+                margin: 0;
 
-.form-body .message-input-box{
-    min-height: 150px;  
-    font-size: 16px;
-    padding: 20px 20px;
-    border-radius: 8px;
-}
-.message-input-box:focus{
-    border: 2px solid var(--mainColor);
-    border-radius: 8px;
-}
-
-
-
-
-.email-pop-up-body{
-    position:fixed;
-    height: 200px;
-    width: 300px;
-    border-radius: 18px;
-    border: 2px solid var(--mainColor);
-    gap: 10%;
-}
-.email-pop-up-body h2{
-    font-size: 30px;
-  
-}
+            }
 
 
 }

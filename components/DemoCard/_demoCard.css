@@ -31,7 +31,6 @@
             font-size: 20px;
         }
 
-
         .card-root-open .card-title span{
             height: 30px;
             width: 30px;
@@ -46,7 +45,10 @@
             transform:rotate(90deg);
             transition: all .3s ease-in-out;
         }
-    .card-root-open .card-body{
+
+/* -------------------- Card open --------------------*/    
+    
+.card-root-open .card-body{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -57,9 +59,9 @@
         padding: 20px 20px;
         transition: all .3s ease-in-out;
         gap: 20px;
-        overflow: scroll;
         opacity: 1;
         box-sizing: border-box;
+        overflow: scroll;
 
     }
         .card-root-open .card-body h3{
@@ -107,7 +109,7 @@
     border: 1px solid var(--mainColor);
     border-radius: 12px;
     position: relative;
-    overflow: scroll;
+    overflow: hidden;
     margin: 5px 0px;
     background-color: none;
 }
@@ -132,7 +134,6 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        overflow: hidden;
         max-height: 0px;
         background-color: var(--secColor);
         padding: 0px 20px;
@@ -172,7 +173,7 @@
         .card-title .fa-chevron-right{
             font-size: 28px;
         }
-
+/* -------------------- Card open --------------------*/    
 
         .card-root-open .card-title span{
             height: 40px;
@@ -182,7 +183,6 @@
             max-height: 500px;
             padding: 30px 30px;
             gap: 30px;
-
         }
             .card-root-open .card-body h3{
                 font-size: 28px;
@@ -226,80 +226,90 @@
 
 @media (min-width: 1181px){
 
-
-
-    h2{
-        font-size: 30px;
-      
-    }
-
-    p{
-        
-        font-size: 20px;
-      
-    }
- 
-    img:hover{
-        cursor: pointer;
-    }
-    ul{
-        text-align: left;
-        width: 90%;
-        padding-left: 20px;
-        font-size: 20px;
-    }
-    
     .card-root-open{
-     
         border: 2px solid var(--mainColor);
-        border-radius: 18px;
+        border-radius: 22px;
         margin: 10px 0px;
-
     }
+        .card-title{
+            height: 70px;
+            padding: 0px 30px;
+        }
+            .card-title h3{
+                font-size: 28px;
+            }
+            .card-title .fa-chevron-right{
+                font-size: 28px;
+            }
     
-    .card-title{
-        height: 80px;
-        padding: 0px 30px;
-        font-size: 30px;
-    }
-    .card-root-open .card-title button{
-        height: 40px;
-        width: 40px;
-        
-    }
-    .card-root-open .card-body{
-        
-        max-height: 500px;
-        width: 90%;
-        padding: 40px 0px;
-        gap: 25px;
+  /* -------------------- Card open --------------------*/
+  
+  
+        .card-root-open .card-title span{
+            height: 45px;
+            width: 45px;
+        }   
 
-    }
-
+        .card-root-open .card-body{
+            max-height: 500px;
+            padding: 30px 30px;
+            gap: 30px;
+        }
+        .card-root-open .card-body h3{
+            font-size: 28px;
+        }
+        p{
+            font-size: 24px;
+        }
+        ul{
+            padding-left: 30px;
+        }
+        li{
+            padding: 4px 0;
+        }
+        .card-root-open .card-body::-webkit-scrollbar{
+            width: 12px;
+            overflow:scroll;
+          }
+        .card-root-open .card-body::-webkit-scrollbar-thumb {
+            background-color: hsla(0, 0%, 30%, .8);
+            border-radius: 30px;
+        }
+        .card-root-open .card-body::-webkit-scrollbar-track {
+            border: 1px solid hsla(0, 0%, 10%, .5);
+            background-color: hsla(0, 0%, 20%, 1);
+        }
     
-    /*  ----------------- CLOSED  ------------------- */
+    /*  ------------------------- CLOSED  --------------------- */
     
     .card-root-close{
-        
         border: 2px solid var(--mainColor);
-        border-radius: 18px;
+        border-radius: 22px;
         margin: 10px 0px;
     }
     
-    .card-root-close .card-title button{
-        height: 40px;
-        width: 40px;
+        .card-root-close .card-title span{
+            height: 45px;
+            width: 45px;
+        }
+        .card-root-close .card-body{
+            padding: 0px 30px;
+            gap: 30px;
+        }
+        .card-root-close .card-body h3{
+            font-size: 28px;
+        }
         
-    
-    }
-    .card-root-close .card-body{
-      
-        max-height: 0px;
-        width: 90%;   
-        padding: 0px 0px;
-        gap: 25px;
-        overflow: scroll;
-
-    }
-    
+        .card-root-close .card-body::-webkit-scrollbar{
+            width: 0;
+            height: 100%;
+            overflow-y:none;
+          }
+        .card-root-close .card-body::-webkit-scrollbar-thumb {
+            background-color: none;
+            border-radius: 0;
+        }
+        .card-root-close .card-body::-webkit-scrollbar-track {
+            background-color: none;
+        }
 }

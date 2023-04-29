@@ -108,70 +108,42 @@ b{
 
 @media (min-width: 1181px){
 
-    h3{
-        font-size: 25px;
-        text-align: center;
-    }
     .contact-root{
-        margin-bottom: 20%;
         margin-top: 10%;
     }
-    
-    .contact-content{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .contact-content img{
-        height: 450px;
-        object-fit: contain;
-    }
-    
-    .contact-copy{
-        margin-top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .contact-copy h2{
-        font-size: 30px;
-        margin: 0;
-    }
-    .contact-copy p{
-        font-size: 20px;
-    }
-    .Contact-CTA{
-        display: flex;
-        margin-right: auto;
-        height: fit-content;
-        width: fit-content;
-        margin-top: 10%;
-    }
-    .Contact-CTA button{
-        margin: 0px;
-        display: flex;
-        margin: 0px 0px;
-        height: fit-content;
-        width: fit-content;
-    }
-    .contact-btn-options{
-        width: 50%;
-        height: auto;
-        margin-top: 10%;
-    }
-    
-    .contact-options-cards{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
+        
+        .contact-content{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+            
+            .contact-content img{
+                height: 450px;
+            }
+            
+            .contact-copy{
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+                .contact-copy h2{
+                    font-size: 34px;
+                    width: 95%;
+                }
+                .contact-copy p{
+                    font-size: 20px;
+                }
+                .Contact-CTA button{
+                    display: flex;
+                    margin: 0px;
+                    margin-top: 12%;
+                    height: fit-content;
+                    width: fit-content;
+                }
+        .contact-options-cards{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: 50%;
+        }
 }
