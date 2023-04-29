@@ -12,7 +12,7 @@ export default function LandingPage(){
                     </h2>
                     <br/>
                     <p>
-                        Hi! I am Kinxori and <b>welcome</b> to my website! Developing myself as a <b>web developer,</b> and former <b>motion graphic artist.</b> Take a deep dive into my work!
+                        Hi! I am Kinxori and <b>welcome</b> to my website! Developing myself as a <b>web developer</b> and <b>motion graphic artist.</b> Take a deep dive into my work!
                     </p>
                     <Button variant="secButton" to="/projects" className='landingPage-CTA'>
                          Go projects

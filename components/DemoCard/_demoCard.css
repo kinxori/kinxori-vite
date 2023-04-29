@@ -72,18 +72,20 @@ ul{
     transition: max-height .3s ease-in-out;
 }
 .card-root-open .card-body{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 300px;
     justify-content: flex-start;
     align-items: center;
     background-color: var(--secColor);
-    overflow: hidden;
+    max-height: 300px;
     padding: 20px 20px;
-    box-sizing: border-box;
     transition: all .3s ease-in-out;
     gap: 20px;
     overflow: scroll;
+    opacity: 1;
+    box-sizing: border-box;
+
 }
 
 
@@ -99,7 +101,7 @@ ul{
     border: 1px solid var(--mainColor);
     border-radius: 12px;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     margin: 5px 0px;
     background-color: none;
 }
@@ -119,17 +121,20 @@ ul{
     transition: all .3s ease-in-out;
 }
 .card-root-close .card-body{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 0px;
-    overflow: hidden;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
+    max-height: 0px;
     background-color: var(--secColor);
     padding: 0px 20px;
-    box-sizing: border-box;
     transition: all .4s ease;
     gap: 20px;
+    opacity: 0;
+    box-sizing: border-box;
+
 }
 
 

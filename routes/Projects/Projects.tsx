@@ -66,7 +66,11 @@ export default function Projects(){
                             {isLoadingVideo && <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>}        
                             <video 
                             src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797" 
-                            onLoadedData={()=>setIsLoadingVideo(false)}></video>               
+                            onLoadedData={()=>setIsLoadingVideo(false)}
+                            loop
+                            autoPlay
+                            controls={false}
+                            muted></video>               
                             <div></div>
                         </div>
                         <h3>How does this work? 🤔</h3>
@@ -110,7 +114,8 @@ export default function Projects(){
                             {isLoadingVideo && <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>}        
                             <video 
                             src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4" 
-                            onLoad={()=>setIsLoadingVideo(false)}></video>
+                            onLoad={()=>setIsLoadingVideo(false)}
+                            loop></video>
                             <div></div>
                         </div>
                         <h3>How does this work? 🤔</h3>
@@ -150,7 +155,9 @@ export default function Projects(){
                             {isLoadingVideo && <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>}        
                             <video 
                             src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb" 
-                            onLoad={()=>setIsLoadingVideo(false)}></video>
+                            onLoad={()=>setIsLoadingVideo(false)}
+                            loop
+                            ></video>
                             <div></div>
                         </div>
                         <h3>How does this work? 🤔</h3>
