@@ -138,7 +138,6 @@ export default function Projects(){
                             <li>Filtering and searching data</li>
                             <li>Componentization and modularity</li>
                             <li>Handling events and state changes</li>
-                            <li>React.js</li>
                         </ul>
                         <h3>Advantages 🦾</h3>
                         <ul>
@@ -185,7 +184,6 @@ export default function Projects(){
                         </ul>
                         <h3>Skills 🧠</h3>
                         <ul>
-                            <li>React.js</li>
                             <li>Fetching data from APIs</li>
                             <li>Event handling</li>
                             <li>Conditional rendering</li>

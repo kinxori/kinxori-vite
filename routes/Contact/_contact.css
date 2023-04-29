@@ -52,7 +52,13 @@ b{
         margin: 0 auto;
         width: 100%;
         margin-bottom: 40%;
-    }
+    }  
+        .contact-options-cards h3{
+            font-size: 20px;
+        }
+        .contact-options-cards span{
+            margin: 10px 0;
+        }
        
 
 

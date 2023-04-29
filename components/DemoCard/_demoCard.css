@@ -64,7 +64,7 @@
     }
         .card-root-open .card-body h3{
         font-size: 20px;
-        text-align: left;
+        text-align: inherit;
         font-weight: 700;
         width: 100%;
         }
@@ -144,7 +144,7 @@
 
     .card-root-close .card-body h3{
         font-size: 20px;
-        text-align: left;
+        text-align: inherit;
         font-weight: 700;
         width: 100%;
     }
