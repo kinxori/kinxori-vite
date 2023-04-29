@@ -73,11 +73,18 @@ export default function Projects(){
                             muted></video>               
                             <div></div>
                         </div>
-                        <h3>How does this work? 🤔</h3>
+                        <h3>How does it work? 🤔</h3>
                         <p>This feature updates the shopping cart's total price based on user input quantity and removes items from the cart.</p>
-                        <h3>Skills 🛠</h3>
+                        <h3>Technologies used 💡</h3>
                         <ul>
-                            <li>React.js</li>
+                            <li><i className="fa-brands fa-react"></i> React</li>
+                            <li><i className="fa-brands fa-square-js"></i> Javascript</li>
+                            <li><i className="fa-brands fa-html5"></i> HTML</li>
+                            <li><i className="fa-brands fa-css3"></i> CSS</li>
+                            <li><i className="fa-brands fa-node"></i> NodeJS</li>
+                        </ul>
+                        <h3>Skills 🧠</h3>
+                        <ul>
                             <li>State management</li>
                             <li>React component architecture</li>
                             <li>User experience and interactivity</li>
@@ -92,7 +99,7 @@ export default function Projects(){
                             <li>Reusability</li>
                             <li>Analytics</li>
                         </ul>
-                        <h3>Difficulties 🧠</h3>
+                        <h3>Difficulties ⚙️</h3>
                         <ul>
                             <li>State management and data flow</li>
                             <li>Handle user input and form data </li>
@@ -118,9 +125,17 @@ export default function Projects(){
                             loop></video>
                             <div></div>
                         </div>
-                        <h3>How does this work? 🤔</h3>
+                        <h3>How does it work? 🤔</h3>
                         <p>This is a search bar component that filters and displays data in a table based on user input.</p>
-                        <h3>Skills 🛠</h3>
+                        <h3>Technologies used 💡</h3>
+                        <ul>
+                            <li><i className="fa-brands fa-react"></i> React</li>
+                            <li><i className="fa-brands fa-square-js"></i> Javascript</li>
+                            <li><i className="fa-brands fa-html5"></i> HTML</li>
+                            <li><i className="fa-brands fa-css3"></i> CSS</li>
+                            <li><i className="fa-brands fa-node"></i> NodeJS</li>
+                        </ul>
+                        <h3>Skills 🧠</h3>
                         <ul>
                             <li>Filtering and searching data</li>
                             <li>Componentization and modularity</li>
@@ -133,7 +148,7 @@ export default function Projects(){
                             <li>Provides real-time search results as users type</li>
                             <li>Improves user experience by reducing the need to manually search and sort through data</li>
                         </ul>
-                        <h3>Difficulties 🧠</h3>
+                        <h3>Difficulties ⚙️</h3>
                         <ul>
                             <li>Managing state</li>
                             <li>Filtering logic</li>
@@ -160,9 +175,17 @@ export default function Projects(){
                             ></video>
                             <div></div>
                         </div>
-                        <h3>How does this work? 🤔</h3>
+                        <h3>How does it work? 🤔</h3>
                         <p>The code fetches data from the Rick & Morty API and displays characters' information. Clicking on a character's image shows their details.</p>
-                        <h3>Skills 🛠</h3>
+                        <h3>Technologies used 💡</h3>
+                        <ul>
+                            <li><i className="fa-brands fa-react"></i> React</li>
+                            <li><i className="fa-brands fa-square-js"></i> Javascript</li>
+                            <li><i className="fa-brands fa-html5"></i> HTML</li>
+                            <li><i className="fa-brands fa-css3"></i> CSS</li>
+                            <li><i className="fa-brands fa-node"></i> NodeJS</li>
+                        </ul>
+                        <h3>Skills 🧠</h3>
                         <ul>
                             <li>React.js</li>
                             <li>Fetching data from APIs</li>
@@ -179,7 +202,7 @@ export default function Projects(){
                             <li>Enhanced user experience</li>
                             <li>More effective information display</li>
                         </ul>
-                        <h3>Difficulties 🧠</h3>
+                        <h3>Difficulties ⚙️</h3>
                         <ul>
                             <li>Handling multiple states and data flow</li>
                             <li>Managing complex user interactions and events</li>

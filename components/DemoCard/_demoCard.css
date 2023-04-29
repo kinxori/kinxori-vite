@@ -30,6 +30,11 @@ ul{
     width: 90%;
     padding-left: 20px;
 }
+li{
+    text-align: left;
+    width: 100%;
+    padding: 2px 0;
+}
 
 
 .card-root-open{
