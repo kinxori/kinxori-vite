@@ -60,28 +60,27 @@ b{
     
     .landingPage-root{
         margin-top: 10%;
-        margin-bottom: 20%;
     }
     
-    .landingPage-content  .astroBoy{
-        height: 450px;
-       
-    }
-    .landingPage-copy{
-        margin-top: 10%;
-    }
-    .landingPage-copy h2{
-        font-size: 34px;
-    }
+        .landingPage-content  img{
+            height: 450px;
+        
+        }
+        .landingPage-copy{
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+            .landingPage-copy h2{
+                font-size: 34px;
+            }
 
-    .landingPage-copy p{
-        font-size: 26px;
-    }
-    
-    .landingPage-CTA button{ 
-        margin-top: 12%;
-        margin-bottom: 16%;
-    }
+            .landingPage-copy p{
+                font-size: 24px;
+            }
+            
+            .landingPage-CTA button{ 
+                margin-top: 12%;
+            }
 }
 
 

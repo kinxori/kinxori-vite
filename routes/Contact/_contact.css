@@ -47,20 +47,13 @@ b{
     .contact-options-cards{
         display: flex;
         flex-direction: column;
-        width: 100%;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
+        width: 100%;
         margin-bottom: 40%;
     }
-        .contact-options-cards h3{
-            font-size: 20px;
-            text-align: center;
-            font-weight: 700;
-        }
-        .contact-options-cards span{
-            margin: 10px 0;
-        }
-
+       
 
 
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
@@ -68,35 +61,38 @@ b{
 @media (min-width: 601px){
 
      
-    h3{
-        font-size: 30px;
-    }
     .contact-root{
- 
-        margin-bottom: 20%;
-        margin-top: 10%;
+         margin-top: 10%;
     }
-    
-    
-    .contact-content img{
-        height: 450px;
-    }
-    
-    .contact-copy{
-        margin-top: 10%;
-    }
-    .contact-copy h2{
-        font-size: 34px;
-    }
-    .contact-copy p{
-        font-size: 26px;
-    }
+            
+        .contact-content img{
+            height: 450px;
+        }
+        
+        .contact-copy{
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+            .contact-copy h2{
+                font-size: 34px;
+            }
+            .contact-copy p{
+                font-size: 24px;
+            }
+            .Contact-CTA button{
+                margin-top: 12%;
+            }
 
-    .Contact-CTA button{
-        margin-top: 12%;
-        margin-bottom: 16%;
+    .contact-options-cards{
+        width: 80%;
+        margin-bottom: 30%;
     }
-   
+        .contact-options-cards h3{
+            font-size: 28px;
+        }
+        .contact-options-cards span{
+            margin: 20px 0;
+        }
 
 }
 

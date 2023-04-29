@@ -12,11 +12,11 @@ export default function DemoCard ({
     return(
         <div className={isActive === true ? "card-root-open" : "card-root-close"}>
             <div className="card-title">
-                <h2>{header}</h2>
+                <h3>{header}</h3>
                 <div>
-                    <button onClick={onClick} id={id}>
+                    <span onClick={onClick} id={id}>
                        <i className="fa-solid fa-chevron-right"></i>
-                    </button>
+                    </span>
                 </div>
             </div>
             <div className="card-body">

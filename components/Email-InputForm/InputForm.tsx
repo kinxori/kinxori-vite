@@ -40,7 +40,7 @@ export default function InputForm (){
     };
     fetchEmojiData();
     setPopUp("isShown");
-    setTimeout(()=>{setPopUp("")}, 5000);
+    setTimeout(()=>{setPopUp("")}, 5000000);
     setEmail("");
     setMessage("");
   };
@@ -63,12 +63,12 @@ export default function InputForm (){
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-body">
-        <h3>My email 📧:</h3>
+        <h3>My email 📮: </h3>
         <div className="input-form-my-email">
           <p ref={textToClipBoard}> gustavoq26@gmail.com </p>
           <div onClick={handleClipboardState}>{clipboardIsCopy ? <i className="fa-solid fa-check"></i> : <i className="fa-regular fa-clipboard"></i>}</div>
         </div>
-        <h3>Your mail: </h3>
+        <h3>Your email 📫: </h3>
         <label>
           <input
             type="email"
@@ -80,7 +80,7 @@ export default function InputForm (){
             placeholder="email@example.com"
           />
         </label>
-        <h3>Your message:</h3>
+        <h3>Your message 💬:</h3>
         <label>
           <textarea
             required

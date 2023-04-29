@@ -41,7 +41,6 @@ export default function Projects(){
     }
 
 
-
     return(
         <article className="projects-root">
             <div className="projects-content">

@@ -130,45 +130,38 @@ b{
 
 @media (min-width: 601px){
 
-       
-  
     
     .projects-root{
-        
-        margin-bottom: 20%;
         margin-top: 10%;
     }
 
+        .projects-content img{
+            height: 450px;
+        }
     
-    .projects-content img{
-        height: 450px;
-        object-fit: contain;
-    }
- 
-    .projects-copy{
-        margin-top: 10%;
-    }
-    
-
-    .projects-copy h2{
-        font-size: 34px;
+        .projects-copy{
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
         
-    }
-    .projects-copy p{
-        font-size: 26px;
+        .projects-copy h2{
+            font-size: 34px;
+            
+        }
+        .projects-copy p{
+            font-size: 24px;
+        }
+        
+        .projects-CTA button{
+            margin-top: 12%;
+        }
+        .projects-display-features {
+            margin-bottom: 30%;
+        }
+        .projects-display-features h3{
+            font-size: 30px;
+        }
     
-    }
-    
-    .projects-CTA button{
-        margin-top: 12%;
-        margin-bottom: 16%;
-    }
-    
-    .projects-display-features h3{
-        font-size: 30px;
-       
-    }
- 
 
     .projects-display-features-buttons-CTA{
         display: flex;
@@ -181,9 +174,7 @@ b{
     /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
     .projects-full-screen-img-open span{
-        
         top: -80px;
-
     }
 }
 
