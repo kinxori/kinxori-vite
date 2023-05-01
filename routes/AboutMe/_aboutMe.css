@@ -51,6 +51,7 @@ b{
         width: 100%;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
         margin-bottom: 40%;
         gap: 25px;
     }
@@ -118,6 +119,7 @@ b{
 
     .about-me-read-more-content{
         margin-bottom: 30%;
+        gap: 30px;
     }
 
         .aboutme-copy-PFP{
@@ -145,5 +147,62 @@ b{
 
 
 @media (min-width: 1181px){
-
+    .aboutMe-root{
+        margin-top: 10%;
+    }
+        .aboutMe-content{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+    
+            .aboutMe-content img{
+                height: 450px;
+            }
+            .aboutMe-copy{
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+                .aboutMe-copy h2{
+                    font-size: 34px;
+                    width: 95%;
+                }
+    
+                .aboutMe-copy p{
+                    font-size: 20px;
+                }
+    
+                .aboutMe-CTA button{
+                    display: flex;
+                    margin: 0px;
+                    margin-top: 12%;
+                    height: fit-content;
+                    width: fit-content;
+                }
+    
+        .about-me-read-more-content{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: 80%;
+            gap: 30px;
+        }
+    
+            .aboutme-copy-PFP{
+                height: 400px;
+                width: 400px;
+                margin-bottom: 10%;
+                border: 4px solid white;
+            }
+            .aboutme-copy-PFP img{
+                height: 1800px;
+                top: 80%;
+            }
+    
+            .about-me-read-more-content h3{
+                font-size: 28px;
+            }
+            .about-me-read-more-content p{
+                font-size: 20px;
+            }
 }

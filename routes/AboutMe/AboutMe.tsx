@@ -23,7 +23,7 @@ export default function AboutMe(){
                 <img src="/AboutmeAsset.png" alt="about me asset" className="about-me-asset"/>
                 <div className="aboutMe-copy">
                     <h2>
-                        But... <b>Who am I?</b> 🤪
+                        But... <b>Who is Kinxori?</b> 🤪
                     </h2>
                     <br/>
                     <p>
