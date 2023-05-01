@@ -14,10 +14,6 @@
       {
         "source": "/formFunction",
         "function": "formFunction"
-      },
-      {
-        "source": "/downloadFileFunction",
-        "function": "downloadFileFunction"
       }
     ]
   },

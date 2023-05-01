@@ -7,7 +7,6 @@
     align-items: center; 
     gap: 2%;  
 }
-
 #error-404 img{
     height: 250px;
     object-fit: contain;
@@ -16,7 +15,6 @@
     font-size: 24px;
     font-weight: bold;
 }
-
 .error404-btn{
     padding-top: 10%;
 }
@@ -24,23 +22,35 @@
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 
-@media (min-width: 600px){
+@media (min-width: 601px){
     #error-404{
         gap: 2%;  
     }
-    
     #error-404 img{
         height: 450px;
-        object-fit: contain;
-    }
-    #error-404 span{
-        font-size: 25px;
     }
     #error-404 span{
         font-size: 34px;
-        font-weight: bold;
     }
     .error404-btn{
-        padding-top: 10%;
+        padding-top: 12%;
+    }
+}
+
+/* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
+
+
+@media (min-width: 1181px){
+    #error-404{
+        gap: 1%;  
+    }
+    #error-404 img{
+        height: 400px;
+    }
+    #error-404 span{
+        font-size: 34px;
+    }
+    .error404-btn{
+        padding-top: 3%;
     }
 }
