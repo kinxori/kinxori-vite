@@ -52,6 +52,7 @@ b{
         justify-content: center;
         align-items: center;
         margin-bottom: 40%;
+        gap: 25px;
     }
 
         .aboutme-copy-PFP{
