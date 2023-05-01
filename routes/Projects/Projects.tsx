@@ -46,7 +46,7 @@ export default function Projects(){
             <div className="projects-content">
                 <img src="/projects-asset.png" alt="notebook-with-pencil" />
                 <div className="projects-copy">
-                    <h2>Check out <b>my projects</b> to see my kills in action! ✍️</h2>
+                    <h2>Check out <b>my projects</b> to see my skills in action! ✍️</h2>
                     <br/>
                     <p>
                         Take a look around to some of my <b>features</b> I've been learning and <b>improving</b> along my <b>web developer career.</b>
