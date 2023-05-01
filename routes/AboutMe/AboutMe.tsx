@@ -54,7 +54,7 @@ export default function AboutMe(){
                 </h3>
                 <br/>
                 <p>
-                    I'm a person who enjoys a balanced lifestyle. While I'm not necessarily introverted, I prefer to spend my time at home. 
+                    I'm a person who enjoys a balanced lifestyle. While I'm not necessarily extroverted, I enjoy my time at home. 
                     I find peace and serenity in my surroundings and like to make the most of it. 
                     However, that doesn't mean I don't like going out. I enjoy having dinner with friends and engaging in deep conversations. 
                     When I'm not socializing, I like to study and listen to music. I strive to live a meaningful life, 
@@ -66,12 +66,11 @@ export default function AboutMe(){
                 </h3>
                 <br/>
                 <p>
-                    In my free time, I love to stay active and be outdoors. 
-                    Biking is one of my favorite activities, and I also enjoy going to the beach and spending time in nature. 
+                    Talking about hobbies, biking and tennis are my favorite sport activities, I also enjoy going to the beach and spending time in nature. 
                     When I'm not outside, I enjoy exploring my creative side through music and craftsmanship. 
                     I play guitar and am interested in learning the violin and saxophone. 
-                    I'm also interested in investing and learning about the stock market. 
-                    Overall, I'm someone who likes to keep things chill and enjoy life's simple pleasures.                
+                    I'm also interested in  investing and learning about global economy and tendencies in the market. 
+                    Overall, I'm someone who likes to keep learning and enjoy life's simple pleasures.                
                 </p>
                 <br/>
                 <h3>
