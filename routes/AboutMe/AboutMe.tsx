@@ -43,15 +43,18 @@ export default function AboutMe(){
                     Where I come from? 🌎
                 </h3>
                 <br></br>
+                <br></br>
                 <p>
                     Born in 1998, I come from a small town near the central region of Mexico. 
                     Despite its size, the town has a rich cultural heritage, with vibrant music and dance traditions, colorful festivals, and delicious local cuisine.
                     Growing up there has taught me the value of community, hard work, and creativity, which I carry with me wherever I go.
                 </p>
                 <br></br>
+                <br></br>
                 <h3>
                     Personality? 💆
                 </h3>
+                <br></br>
                 <br></br>
                 <p>
                     I'm a person who enjoys a balanced lifestyle. While I'm not necessarily extroverted, I enjoy my time at home. 
@@ -60,6 +63,7 @@ export default function AboutMe(){
                     When I'm not socializing, I like to study and listen to music. I strive to live a meaningful life, 
                     and I'm always looking for ways to improve myself and my surroundings.
                 </p>
+                <br></br>
                 <br></br>
                 <h3>
                     Hobbies? 🍿
@@ -73,9 +77,11 @@ export default function AboutMe(){
                     Overall, I'm someone who likes to keep learning and enjoy life's simple pleasures.                
                 </p>
                 <br></br>
+                <br></br>
                 <h3>
                     Aspirations? ⏳
                 </h3>
+                <br></br>
                 <br></br>
                 <p>
                     My main aspiration in life is to achieve financial freedom, not just for myself, but also to share a comfortable life with my loved ones. 
