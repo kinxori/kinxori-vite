@@ -1,11 +1,10 @@
 :root {
-  
   font-family: var(--mainFont);
   color-scheme: light dark;
   color: var(--textMainColor);
-  --mainFont:'RUBIK', system-ui, Avenir, Helvetica, sans-serif;
+  --mainFont: "RUBIK", system-ui, Avenir, Helvetica, sans-serif;
   --textMainColor: #fff;
-  --textSecColor:hsla(106deg, 0%, 73%, 1);
+  --textSecColor: hsla(106deg, 0%, 73%, 1);
   --secColor: #242424;
   --mainColor: hsl(266deg, 100%, 60%);
 
@@ -15,4 +14,61 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+/*----------------- animations individual -------------------*/
+
+@keyframes opacity-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes translation-Y-in {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes translation-X-in {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes scale-in {
+  from {
+    transform: scale(95%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+
+/*----------------- animations mixed -------------------*/
+
+@keyframes opacity-translation-Y-in {
+  from {
+    opacity: 0.1;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes scale-opacity-in {
+  from {
+    transform: scale(90%);
+    opacity: 0.1;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
 }
