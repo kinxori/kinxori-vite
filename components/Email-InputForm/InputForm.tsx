@@ -1,18 +1,17 @@
 import { useEffect, useRef, useState } from "react";
-import './_inputForm.css'
+import "./_inputForm.css";
 import Button from "../Buttons/Button";
 
-export default function InputForm (){
-
+export default function InputForm() {
   const [isEmail, setEmail] = useState("");
   const [isMessage, setMessage] = useState("");
   const [popUp, setPopUp] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
-  const [clipboardIsCopy, setClipboardIsCopy] = useState(false)
-  const EmojiAPI = "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72"
+  const [clipboardIsCopy, setClipboardIsCopy] = useState(false);
+  const EmojiAPI =
+    "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
 
-  const handleSubmit = async (event:any) => {  
-    
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
     const { target } = event;
     const form = {
@@ -20,55 +19,63 @@ export default function InputForm (){
       message: target.message.value,
       emoji: randomEmojiGenerated,
     };
-    
+
     const result = await fetch(
-      'https://us-central1-myportfolio-70cb1.cloudfunctions.net/formFunction',
+      "https://us-central1-myportfolio-70cb1.cloudfunctions.net/formFunction",
       {
         method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...form, secret:"homelo" }),
+        body: JSON.stringify({ ...form, secret: "homelo" }),
       }
-    )
+    );
     const fetchEmojiData = async () => {
-      const response = await fetch(EmojiAPI)
-      const emojiData = await response.json()
-      const randomEmojiIndex = Math.floor(Math.random()* emojiData.length);
-      const randomEmoji = emojiData[randomEmojiIndex]
-      setRandomEmojiGenerated(randomEmoji.codePoint)
+      const response = await fetch(EmojiAPI);
+      const emojiData = await response.json();
+      const randomEmojiIndex = Math.floor(Math.random() * emojiData.length);
+      const randomEmoji = emojiData[randomEmojiIndex];
+      setRandomEmojiGenerated(randomEmoji.codePoint);
     };
     fetchEmojiData();
     setPopUp("isShown");
-    setTimeout(()=>{setPopUp("")}, 5000000);
+    setTimeout(() => {
+      setPopUp("");
+    }, 5000000);
     setEmail("");
     setMessage("");
   };
 
   const handlePopUp = () => {
-    setPopUp("")
-  }
+    setPopUp("");
+  };
 
-  const textToClipBoard = useRef("") as any
+  const textToClipBoard = useRef("") as any;
 
-  const handleClipboardState = ()=>{
+  const handleClipboardState = () => {
     const text = textToClipBoard.current.textContent;
     navigator.clipboard.writeText(text);
     setClipboardIsCopy(!clipboardIsCopy);
-    setTimeout(()=>{setClipboardIsCopy(false)}, 5000);
-  } 
-
-
+    setTimeout(() => {
+      setClipboardIsCopy(false);
+    }, 5000);
+  };
 
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-body">
-        <h3>My email 📮: </h3>
+        <h4>My email 📮: </h4>
         <div className="input-form-my-email">
           <p ref={textToClipBoard}> gustavoq26@gmail.com </p>
-          <div onClick={handleClipboardState}>{clipboardIsCopy ? <i className="fa-solid fa-check"></i> : <i className="fa-regular fa-clipboard"></i>}</div>
+          <div onClick={handleClipboardState}>
+            {clipboardIsCopy ? (
+              <i className="fa-solid fa-check"></i>
+            ) : (
+              <i className="fa-regular fa-clipboard"></i>
+            )}
+          </div>
         </div>
-        <h3>Your email 📫: </h3>
+        <h4>Your email 📫: </h4>
         <label>
           <input
             type="email"
@@ -80,7 +87,7 @@ export default function InputForm (){
             placeholder="email@example.com"
           />
         </label>
-        <h3>Your message 💬:</h3>
+        <h4>Your message 💬:</h4>
         <label>
           <textarea
             required
@@ -94,9 +101,9 @@ export default function InputForm (){
         </label>
       </div>
       <button type="submit" className="mainButton submit-button-CTA">
-          Submit
+        Submit
       </button>
-      {popUp === "isShown" && 
+      {popUp === "isShown" && (
         <div className="email-form-send-pop-up">
           <div className="email-pop-up-body">
             <h2>Email sent! 👨‍💻</h2>
@@ -105,10 +112,8 @@ export default function InputForm (){
             </Button>
           </div>
           <div className="email-pop-up-background"></div>
-        </div> 
-        }
+        </div>
+      )}
     </form>
   );
-};
-
-
+}
