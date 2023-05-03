@@ -1,243 +1,234 @@
-b{
-    color: var(--mainColor);
-    font-weight: inherit;
+b {
+  color: var(--mainColor);
+  font-weight: inherit;
 }
-.projects-root{
-    width: 80%;
-    height: min-content;
-    margin: 0 auto;
-    margin-top: 20%;
-    }
-    .projects-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 100%;
-        width: 100%;
-    }
+.projects-root {
+  width: 80%;
+  height: min-content;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
 
-        .projects-content img{
-            height: 250px;
-            object-fit: contain;
-        }
-        .projects-copy{
-            padding-top: 20%;
-            padding-bottom: 20%;
-        }
+.projects-content img {
+  height: 250px;
+  object-fit: contain;
+  animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
+}
+.projects-copy {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
 
-            .projects-copy h2{
-                font-size: 24px;
-                text-align:left;
-                font-weight: 700;
-                width: 100%;
-            }
-            .projects-copy p{
-                font-size: 16px;
-                font-weight: normal;
-                text-align: justify;
-            }
+.projects-copy h2 {
+  font-size: 24px;
+  text-align: left;
+  font-weight: 700;
+  width: 100%;
+  animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+}
+.projects-copy p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: justify;
+  animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+}
 
-            .projects-CTA button{
-                display: flex;
-                margin-left: auto;
-                margin-top: 16%;
-            }
+.projects-CTA button {
+  display: flex;
+  margin-left: auto;
+  margin-top: 16%;
+  animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
 
-    .projects-display-features{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 100%;
-        margin-bottom: 40%;
-    }
-        .projects-display-features-buttons-CTA{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 10px 0;
-            gap: 10px;
-        }
+.projects-display-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 40%;
+}
+.projects-display-features-buttons-CTA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  gap: 10px;
+}
 
 /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
+.projects-full-screen-img-open {
+  position: fixed;
+  width: 100vw;
+  object-fit: contain;
+  margin: 0 auto;
+  height: fit-content;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.projects-full-screen-img-open:hover {
+  cursor: pointer;
+}
+.projects-full-screen-img-open span {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  right: 0;
+  top: -40px;
+  margin-left: auto;
+  position: absolute;
+}
+.projects-full-screen-loader {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects-full-screen-img-open div {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
 
-    .projects-full-screen-img-open{
-        position: fixed;
-        width: 100vw;
-        object-fit: contain;
-        margin: 0 auto;
-        height:fit-content ;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-    }
-    .projects-full-screen-img-open:hover{
-        cursor: pointer;
-    }
-        .projects-full-screen-img-open span{
-            width: fit-content;
-            height: fit-content;
-            display: flex;
-            right: 0;
-            top: -40px;
-            margin-left: auto;
-            position: absolute;
-        }
-        .projects-full-screen-loader{
-            position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .projects-full-screen-img-open div{
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            background-color: black;
-            margin: 0 auto;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: -1;
-        }
+/* ------- full screen img FullScreen closed  ------ */
 
-    /* ------- full screen img FullScreen closed  ------ */
+.projects-full-screen-img-close {
+  display: default;
+}
+.projects-full-screen-img-close:hover {
+  cursor: pointer;
+}
+.projects-full-screen-img-close span {
+  display: none;
+}
 
-
-    .projects-full-screen-img-close{
-        display: default;
-    }
-    .projects-full-screen-img-close:hover{
-        cursor: pointer;
-    }
-        .projects-full-screen-img-close span{
-            display: none;
-        }
-
-        .projects-full-screen-img-close div{
-            display: none;
-        }
-
-
+.projects-full-screen-img-close div {
+  display: none;
+}
 
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
+@media (min-width: 601px) {
+  .projects-root {
+    margin-top: 10%;
+  }
 
+  .projects-content img {
+    height: 450px;
+  }
 
-@media (min-width: 601px){
+  .projects-copy {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 
-    
-    .projects-root{
-        margin-top: 10%;
-    }
+  .projects-copy h2 {
+    font-size: 34px;
+  }
+  .projects-copy p {
+    font-size: 24px;
+  }
 
-        .projects-content img{
-            height: 450px;
-        }
-    
-        .projects-copy{
-            padding-top: 10%;
-            padding-bottom: 10%;
-        }
-            
-            .projects-copy h2{
-                font-size: 34px;
-                
-            }
-            .projects-copy p{
-                font-size: 24px;
-            }
-            
-            .projects-CTA button{
-                margin-top: 12%;
-            }
+  .projects-CTA button {
+    margin-top: 12%;
+  }
 
-        .projects-display-features {
-            margin-bottom: 30%;
-        }
+  .projects-display-features {
+    margin-bottom: 30%;
+  }
 
-            .projects-display-features-buttons-CTA{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin: 30px 0;
-                gap: 30px;
-            }
-    /* -------------------- Projects card styles for img FullScreen open ---------------*/
+  .projects-display-features-buttons-CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 30px;
+  }
+  /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
-    .projects-full-screen-img-open span{
-        top: -80px;
-    }
+  .projects-full-screen-img-open span {
+    top: -80px;
+  }
 }
-
 
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
+@media (min-width: 1181px) {
+  .projects-root {
+    margin-top: 10%;
+  }
+  .projects-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 
-@media (min-width: 1181px){
+  .projects-content img {
+    height: 450px;
+  }
+  .projects-copy {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 
-    .projects-root{
-        margin-top: 10%;
-    }
-        .projects-content{
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-            align-items: center;
-        }
-        
-            .projects-content img{
-                height: 450px;
-            }
-            .projects-copy{
-                padding-top: 10%;
-                padding-bottom: 10%;
-            }
-            
-                .projects-copy h2{
-                    font-size: 34px;
-                }
-                .projects-copy p{
-                    font-size: 20px;
-                }
-                .projects-CTA button{
-                    display: flex;
-                    margin: 0px;
-                    margin-top: 12%;
-                    height: fit-content;
-                    width: fit-content;
-                }
+  .projects-copy h2 {
+    font-size: 34px;
+  }
+  .projects-copy p {
+    font-size: 20px;
+  }
+  .projects-CTA button {
+    display: flex;
+    margin: 0px;
+    margin-top: 12%;
+    height: fit-content;
+    width: fit-content;
+  }
 
-        .projects-display-features{
-            margin-top: 5%;
-            margin-bottom: 10%;
-            width: 80%;
-        }
-            .projects-display-features-buttons-CTA{
-                flex-direction: row;
-                margin: 20px 0;
-                gap: 10px;
-            }
-        
-    /* -------------------- Projects card styles for img FullScreen open ---------------*/
+  .projects-display-features {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 80%;
+  }
+  .projects-display-features-buttons-CTA {
+    flex-direction: row;
+    margin: 20px 0;
+    gap: 10px;
+  }
 
+  /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
-    .projects-full-screen-img-open{
-        z-index: 100;
-    }
-        .projects-full-screen-img-open span{
-            top: 10px;
-        }
+  .projects-full-screen-img-open {
+    z-index: 100;
+  }
+  .projects-full-screen-img-open span {
+    top: 10px;
+  }
 
-    /* ------- full screen img FullScreen closed  ------ */
+  /* ------- full screen img FullScreen closed  ------ */
 
-
-    .projects-full-screen-img-close{
-        display: default;
-    }
-
+  .projects-full-screen-img-close {
+    display: default;
+  }
 }

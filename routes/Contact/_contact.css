@@ -1,149 +1,147 @@
-b{
-    color: var(--mainColor);
-    font-weight: inherit;
+b {
+  color: var(--mainColor);
+  font-weight: inherit;
 }
 
-.contact-root{
-    width: 80%;
-    height: min-content;
-    margin: 0 auto;
-    margin-top: 20%;
+.contact-root {
+  width: 80%;
+  height: min-content;
+  margin: 0 auto;
+  margin-top: 20%;
 }
 
-    .contact-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 100%;
-        width: 100%;
-    }
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
 
-        .contact-content img{
-            height: 250px;
-            object-fit: contain;
-        }
+.contact-content img {
+  height: 250px;
+  object-fit: contain;
+  animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
+}
 
-        .contact-copy{
-        padding-top: 20%;
-        padding-bottom: 20%;
-        }
-            .contact-copy h2{
-                font-size: 24px;
-                text-align:left;
-                font-weight: 700;
-                width: 100%;
-            }
-            .contact-copy p{
-                font-size: 16px;
-                font-weight: normal;
-                text-align: justify;
-            }
-            .Contact-CTA button{
-                display: flex;
-                margin-left: auto;
-                margin-top: 16%;
-            }
+.contact-copy {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.contact-copy h2 {
+  font-size: 24px;
+  text-align: left;
+  font-weight: 700;
+  width: 100%;
+  animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+}
+.contact-copy p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: justify;
+  animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+}
+.Contact-CTA button {
+  display: flex;
+  margin-left: auto;
+  margin-top: 16%;
+  animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
 
-    .contact-options-cards{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 100%;
-        margin-bottom: 40%;
-    }  
-        .contact-options-cards h3{
-            font-size: 20px;
-        }
-        .contact-options-cards span{
-            margin: 10px 0;
-        }
-       
-
+.contact-options-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 40%;
+}
+.contact-options-cards h3 {
+  font-size: 20px;
+}
+.contact-options-cards span {
+  margin: 10px 0;
+}
 
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
-@media (min-width: 601px){
+@media (min-width: 601px) {
+  .contact-root {
+    margin-top: 10%;
+  }
 
-     
-    .contact-root{
-         margin-top: 10%;
-    }
-            
-        .contact-content img{
-            height: 450px;
-        }
-        
-        .contact-copy{
-            padding-top: 10%;
-            padding-bottom: 10%;
-        }
-            .contact-copy h2{
-                font-size: 34px;
-            }
-            .contact-copy p{
-                font-size: 24px;
-            }
-            .Contact-CTA button{
-                margin-top: 12%;
-            }
+  .contact-content img {
+    height: 450px;
+  }
 
-    .contact-options-cards{
-        width: 80%;
-        margin-bottom: 30%;
-    }
-        .contact-options-cards h3{
-            font-size: 28px;
-        }
-        .contact-options-cards span{
-            margin: 20px 0;
-        }
+  .contact-copy {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .contact-copy h2 {
+    font-size: 34px;
+  }
+  .contact-copy p {
+    font-size: 24px;
+  }
+  .Contact-CTA button {
+    margin-top: 12%;
+  }
 
+  .contact-options-cards {
+    width: 80%;
+    margin-bottom: 30%;
+  }
+  .contact-options-cards h3 {
+    font-size: 28px;
+  }
+  .contact-options-cards span {
+    margin: 20px 0;
+  }
 }
-
 
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
+@media (min-width: 1181px) {
+  .contact-root {
+    margin-top: 10%;
+  }
 
-@media (min-width: 1181px){
+  .contact-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .contact-root{
-        margin-top: 10%;
-    }
-        
-        .contact-content{
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-            align-items: center;
-        }
-            
-            .contact-content img{
-                height: 450px;
-            }
-            
-            .contact-copy{
-                padding-top: 10%;
-                padding-bottom: 10%;
-            }
-                .contact-copy h2{
-                    font-size: 34px;
-                    width: 95%;
-                }
-                .contact-copy p{
-                    font-size: 20px;
-                }
-                .Contact-CTA button{
-                    display: flex;
-                    margin: 0px;
-                    margin-top: 12%;
-                    height: fit-content;
-                    width: fit-content;
-                }
-        .contact-options-cards{
-            margin-top: 5%;
-            margin-bottom: 10%;
-            width: 50%;
-        }
+  .contact-content img {
+    height: 450px;
+  }
+
+  .contact-copy {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .contact-copy h2 {
+    font-size: 34px;
+    width: 95%;
+  }
+  .contact-copy p {
+    font-size: 20px;
+  }
+  .Contact-CTA button {
+    display: flex;
+    margin: 0px;
+    margin-top: 12%;
+    height: fit-content;
+    width: fit-content;
+  }
+  .contact-options-cards {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 50%;
+  }
 }

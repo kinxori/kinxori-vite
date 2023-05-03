@@ -1,208 +1,206 @@
-b{
-    color: var(--mainColor);
-    font-weight: inherit;
+b {
+  color: var(--mainColor);
+  font-weight: inherit;
 }
-.aboutMe-root{
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 20%;
+.aboutMe-root {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+.aboutMe-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
 
-    }
-    .aboutMe-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items:center;
-        height: 100%;
-        position: relative;
-    }
+.aboutMe-content img {
+  height: 250px;
+  object-fit: contain;
+  animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
+}
+.aboutMe-copy {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.aboutMe-copy h2 {
+  font-size: 24px;
+  text-align: left;
+  font-weight: 700;
+  width: 100%;
+  animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+}
 
-        .aboutMe-content img{
-            height: 250px;
-            object-fit: contain;
-        }
-        .aboutMe-copy{
-        padding-top: 20%;
-        padding-bottom: 20%;
-        }
-            .aboutMe-copy h2{
-                font-size: 24px;
-                text-align:left;
-                font-weight: 700;
-                width: 100%;
-            }
+.aboutMe-copy p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: justify;
+  animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+}
 
-            .aboutMe-copy p{
-                font-size: 16px;
-                font-weight: normal;
-                text-align: justify;
-            }
+.aboutMe-CTA button {
+  display: flex;
+  margin-left: auto;
+  margin-top: 16%;
+  animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
 
-            .aboutMe-CTA button{
-                display: flex;
-                margin-left: auto;
-                margin-top: 16%;
-            }
+.about-me-read-more-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 40%;
+  gap: 25px;
+}
 
-    .about-me-read-more-content{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-bottom: 40%;
-        gap: 25px;
-    }
+.aboutme-copy-PFP {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  border: 2px solid white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutme-copy-PFP img {
+  height: 800px;
+  object-fit: cover;
+  position: relative;
+  top: 100%;
+}
 
-        .aboutme-copy-PFP{
-            height: 150px;
-            width: 150px;
-            border-radius: 100%;
-            margin: 0 auto;
-            margin-bottom: 10%;
-            border: 2px solid white;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .aboutme-copy-PFP img{
-            height: 800px;
-            object-fit:cover;
-            position: relative;
-            top: 100%;
-        }
-
-        .about-me-read-more-content h3{
-            font-size: 20px;
-            font-weight: 700;
-            text-align: left;
-            width: 100%;
-        }
-        .about-me-read-more-content p{
-            font-size: 16px;
-            text-align: justify;
-            width: 100%;
-        }
-
-
-
+.about-me-read-more-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+}
+.about-me-read-more-content p {
+  font-size: 16px;
+  text-align: justify;
+  width: 100%;
+}
 
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
-@media (min-width: 601px){
+@media (min-width: 601px) {
+  .aboutMe-root {
+    margin-top: 10%;
+  }
 
-    .aboutMe-root{
-        margin-top: 10%;
-    }
-    
-        .aboutMe-content img{
-            height: 450px;
-        }
-        .aboutMe-copy{
-            padding-top: 10%;
-            padding-bottom: 10%;
-        }
-            .aboutMe-copy h2{
-                font-size: 34px;
-            }
+  .aboutMe-content img {
+    height: 450px;
+  }
+  .aboutMe-copy {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .aboutMe-copy h2 {
+    font-size: 34px;
+  }
 
-            .aboutMe-copy p{
-                font-size: 24px;
-            }
+  .aboutMe-copy p {
+    font-size: 24px;
+  }
 
-            .aboutMe-CTA button{
-                margin-top: 12%;
-            }
+  .aboutMe-CTA button {
+    margin-top: 12%;
+  }
 
-    .about-me-read-more-content{
-        margin-bottom: 30%;
-        gap: 30px;
-    }
+  .about-me-read-more-content {
+    margin-bottom: 30%;
+    gap: 30px;
+  }
 
-        .aboutme-copy-PFP{
-            height: 300px;
-            width: 300px;
-            margin-bottom: 10%;
-            border: 4px solid white;
-        }
-        .aboutme-copy-PFP img{
-            height: 1200px;
-            top: 70%;
-        }
+  .aboutme-copy-PFP {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10%;
+    border: 4px solid white;
+  }
+  .aboutme-copy-PFP img {
+    height: 1200px;
+    top: 70%;
+  }
 
-        .about-me-read-more-content h3{
-            font-size: 30px;
-        }
-        .about-me-read-more-content p{
-            font-size: 24px;
-        }
-
+  .about-me-read-more-content h3 {
+    font-size: 30px;
+  }
+  .about-me-read-more-content p {
+    font-size: 24px;
+  }
 }
-
 
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
+@media (min-width: 1181px) {
+  .aboutMe-root {
+    margin-top: 10%;
+  }
+  .aboutMe-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 
-@media (min-width: 1181px){
-    .aboutMe-root{
-        margin-top: 10%;
-    }
-        .aboutMe-content{
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-            align-items: center;
-        }
-    
-            .aboutMe-content img{
-                height: 450px;
-            }
-            .aboutMe-copy{
-                padding-top: 10%;
-                padding-bottom: 10%;
-            }
-                .aboutMe-copy h2{
-                    font-size: 34px;
-                    width: 95%;
-                }
-    
-                .aboutMe-copy p{
-                    font-size: 20px;
-                }
-    
-                .aboutMe-CTA button{
-                    display: flex;
-                    margin: 0px;
-                    margin-top: 12%;
-                    height: fit-content;
-                    width: fit-content;
-                }
-    
-        .about-me-read-more-content{
-            margin-top: 5%;
-            margin-bottom: 10%;
-            width: 80%;
-            gap: 30px;
-        }
-    
-            .aboutme-copy-PFP{
-                height: 400px;
-                width: 400px;
-                margin-bottom: 10%;
-                border: 4px solid white;
-            }
-            .aboutme-copy-PFP img{
-                height: 1800px;
-                top: 80%;
-            }
-    
-            .about-me-read-more-content h3{
-                font-size: 28px;
-            }
-            .about-me-read-more-content p{
-                font-size: 20px;
-            }
+  .aboutMe-content img {
+    height: 450px;
+  }
+  .aboutMe-copy {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .aboutMe-copy h2 {
+    font-size: 34px;
+    width: 95%;
+  }
+
+  .aboutMe-copy p {
+    font-size: 20px;
+  }
+
+  .aboutMe-CTA button {
+    display: flex;
+    margin: 0px;
+    margin-top: 12%;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .about-me-read-more-content {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 80%;
+    gap: 30px;
+  }
+
+  .aboutme-copy-PFP {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 10%;
+    border: 4px solid white;
+  }
+  .aboutme-copy-PFP img {
+    height: 1800px;
+    top: 80%;
+  }
+
+  .about-me-read-more-content h3 {
+    font-size: 28px;
+  }
+  .about-me-read-more-content p {
+    font-size: 20px;
+  }
 }
