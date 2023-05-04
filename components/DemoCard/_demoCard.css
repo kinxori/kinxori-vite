@@ -63,8 +63,8 @@
   box-sizing: border-box;
   overflow: scroll;
 }
-.card-root-open .card-body h3 {
-  font-size: 20px;
+.card-root-open .card-body h4 {
+  font-size: 18px;
   text-align: inherit;
   font-weight: 700;
   width: 100%;
@@ -179,8 +179,8 @@ li {
     padding: 30px 30px;
     gap: 30px;
   }
-  .card-root-open .card-body h3 {
-    font-size: 28px;
+  .card-root-open .card-body h4 {
+    font-size: 24px;
   }
   p {
     font-size: 24px;
