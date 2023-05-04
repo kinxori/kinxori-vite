@@ -142,8 +142,8 @@ li {
   box-sizing: border-box;
 }
 
-.card-root-close .card-body h3 {
-  font-size: 20px;
+.card-root-close .card-body h4 {
+  font-size: 18px;
   text-align: inherit;
   font-weight: 700;
   width: 100%;
@@ -210,8 +210,8 @@ li {
     padding: 0px 30px;
     gap: 30px;
   }
-  .card-root-close .card-body h3 {
-    font-size: 28px;
+  .card-root-close .card-body h4 {
+    font-size: 24px;
   }
 }
 
@@ -288,8 +288,8 @@ li {
     padding: 0px 30px;
     gap: 30px;
   }
-  .card-root-close .card-body h3 {
-    font-size: 28px;
+  .card-root-close .card-body h4 {
+    font-size: 24px;
   }
 
   .card-root-close .card-body::-webkit-scrollbar {
