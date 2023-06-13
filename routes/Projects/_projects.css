@@ -150,15 +150,14 @@
   justify-content: center;
   align-items: center;
 }
-.projects-full-screen-asset-open div {
-  position: fixed;
+.projects-full-screen-bg {
   width: 100vw;
   height: 100vh;
-  background-color: black;
-  margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  left: 0;
   z-index: -1;
+  position: fixed;
+  background-color: black;
 }
 
 /* ------- full screen img FullScreen closed  ------ */
@@ -169,11 +168,10 @@
 .projects-full-screen-asset-close:hover {
   cursor: pointer;
 }
-.projects-full-screen-asset-close span {
+.projects-full-screen-asset-button {
   display: none;
 }
-
-.projects-full-screen-asset-close div {
+.projects-full-screen-bg {
   display: none;
 }
 

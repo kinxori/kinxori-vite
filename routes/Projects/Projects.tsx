@@ -91,7 +91,7 @@ export default function Projects() {
                   controls={false}
                   muted
                 ></video>
-                <div></div>
+                <div className="projects-full-screen-bg"></div>
               </div>
               <h2>Shopping Cart</h2>
               <p>
@@ -158,9 +158,11 @@ export default function Projects() {
                 }
                 onClick={() => handleFullScreen("search-bar-asset")}
               >
-                <Button variant="linkButton">Close</Button>
+                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                  Close
+                </Button>
                 {isLoadingVideo && (
-                  <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>
+                  <h3 className="projects-full-screen-loader">Loading video...</h3>
                 )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
@@ -170,11 +172,9 @@ export default function Projects() {
                   controls={false}
                   muted
                 ></video>
-                <div></div>
+                <div className="projects-full-screen-bg"></div>
               </div>
-              <h3>
-                <i className="fa-solid fa-magnifying-glass"></i> Search Bar
-              </h3>
+              <h2>Search Bar</h2>
               <p>
                 This is a search bar component that filters and displays data in a table based on
                 user input.
