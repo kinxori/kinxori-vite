@@ -22,12 +22,13 @@
   padding: 0px;
 }
 
-a {
+:root a {
   color: inherit;
   text-decoration: none;
+  font-size: inherit;
 }
 
-b {
+:root b {
   color: red;
 }
 
