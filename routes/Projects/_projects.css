@@ -92,6 +92,7 @@
 .projects-display-card video {
   width: 100%;
   object-fit: contain;
+  display: none; /* 👀 =============== > */
 }
 
 .projects-display-card img {
@@ -109,36 +110,38 @@
 
 /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
-.projects-full-screen-img-open {
-  position: fixed;
+.projects-full-screen-asset-open {
   width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
   object-fit: contain;
-  margin: 0 auto;
-  height: fit-content;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
+  position: fixed;
+  display: flex;
 }
-.projects-full-screen-img-open:hover {
+
+.projects-full-screen-asset-open:hover {
   cursor: pointer;
 }
-.projects-full-screen-img-open span {
-  width: fit-content;
-  height: fit-content;
+
+.projects-full-screen-asset-button {
   display: flex;
   right: 0;
-  top: -40px;
+  top: 30%;
   margin-left: auto;
   position: absolute;
 }
 .projects-full-screen-loader {
-  position: relative;
   width: 100%;
+  height: 150px;
+  border: 1px dotted var(--mainColor);
+  color: var(--mainColor);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.projects-full-screen-img-open div {
+.projects-full-screen-asset-open div {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -151,17 +154,17 @@
 
 /* ------- full screen img FullScreen closed  ------ */
 
-.projects-full-screen-img-close {
+.projects-full-screen-asset-close {
   display: default;
 }
-.projects-full-screen-img-close:hover {
+.projects-full-screen-asset-close:hover {
   cursor: pointer;
 }
-.projects-full-screen-img-close span {
+.projects-full-screen-asset-close span {
   display: none;
 }
 
-.projects-full-screen-img-close div {
+.projects-full-screen-asset-close div {
   display: none;
 }
 
@@ -206,7 +209,7 @@
   }
   /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
-  .projects-full-screen-img-open span {
+  .projects-full-screen-asset-open span {
     top: -80px;
   }
 }
@@ -259,16 +262,16 @@
 
   /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
-  .projects-full-screen-img-open {
+  .projects-full-screen-asset-open {
     z-index: 100;
   }
-  .projects-full-screen-img-open span {
+  .projects-full-screen-asset-open span {
     top: 10px;
   }
 
   /* ------- full screen img FullScreen closed  ------ */
 
-  .projects-full-screen-img-close {
+  .projects-full-screen-asset-close {
     display: default;
   }
 }

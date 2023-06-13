@@ -72,18 +72,20 @@ export default function Projects() {
               <div
                 className={
                   isFullScreen === "shopping-card-asset"
-                    ? "projects-full-screen-img-open"
-                    : "projects-full-screen-img-close"
+                    ? "projects-full-screen-asset-open"
+                    : "projects-full-screen-asset-close"
                 }
                 onClick={() => handleFullScreen("shopping-card-asset")}
               >
-                <Button variant="linkButton">Close</Button>
+                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                  Close
+                </Button>
                 {isLoadingVideo && (
-                  <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>
+                  <h3 className="projects-full-screen-loader">Loading video...</h3>
                 )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
-                  onLoadedData={() => setIsLoadingVideo(false)}
+                  onLoadedData={() => setIsLoadingVideo(true)}
                   loop
                   autoPlay
                   controls={false}
@@ -164,8 +166,8 @@ export default function Projects() {
             <div
               className={
                 isFullScreen === "1"
-                  ? "projects-full-screen-img-open"
-                  : "projects-full-screen-img-close"
+                  ? "projects-full-screen-asset-open"
+                  : "projects-full-screen-asset-close"
               }
               onClick={() => handleFullScreen("1")}
             >
@@ -250,8 +252,8 @@ export default function Projects() {
             <div
               className={
                 isFullScreen === "2"
-                  ? "projects-full-screen-img-open"
-                  : "projects-full-screen-img-close"
+                  ? "projects-full-screen-asset-open"
+                  : "projects-full-screen-asset-close"
               }
               onClick={() => handleFullScreen("2")}
             >
@@ -335,8 +337,8 @@ export default function Projects() {
             <div
               className={
                 isFullScreen === "3"
-                  ? "projects-full-screen-img-open"
-                  : "projects-full-screen-img-close"
+                  ? "projects-full-screen-asset-open"
+                  : "projects-full-screen-asset-close"
               }
               onClick={() => handleFullScreen("3")}
             >
