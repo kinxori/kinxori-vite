@@ -232,6 +232,86 @@ export default function Projects() {
                 </Button>
               </div>
             </div>
+            <div className="projects-display-card">
+              <div
+                className={
+                  isFullScreen === "3"
+                    ? "projects-full-screen-asset-open"
+                    : "projects-full-screen-asset-close"
+                }
+                onClick={() => handleFullScreen("3")}
+              >
+                <Button variant="linkButton">Close</Button>
+                {isLoadingVideo && (
+                  <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>
+                )}
+                <video
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
+                  onLoadedData={() => setIsLoadingVideo(false)}
+                  loop
+                  autoPlay
+                  controls={false}
+                  muted
+                ></video>
+                <div></div>
+              </div>
+              <h2>Fetch API</h2>
+              <p>
+                The code fetches data from the Rick & Morty API and displays characters'
+                information. Clicking on a character's image shows their details.
+              </p>
+              <h3>Technologies used 💡</h3>
+              <ul>
+                <li>
+                  <i className="fa-brands fa-react"></i> React
+                </li>
+                <li>
+                  <i className="fa-brands fa-square-js"></i> Javascript
+                </li>
+                <li>
+                  <i className="fa-brands fa-html5"></i> HTML
+                </li>
+                <li>
+                  <i className="fa-brands fa-css3"></i> CSS
+                </li>
+                <li>
+                  <i className="fa-brands fa-node"></i> NodeJS
+                </li>
+              </ul>
+              <h3>Skills 🧠</h3>
+              <ul>
+                <li>Fetching data from APIs</li>
+                <li>Event handling</li>
+                <li>Conditional rendering</li>
+                <li>Handling and displaying dynamic data</li>
+              </ul>
+              <h3>Advantages 🦾</h3>
+              <ul>
+                <li>Streamlined data manipulation</li>
+                <li>Greater efficiency</li>
+                <li>Simplified data retrieval</li>
+                <li>Improved data organization</li>
+                <li>Enhanced user experience</li>
+                <li>More effective information display</li>
+              </ul>
+              <h3>Difficulties ⚙️</h3>
+              <ul>
+                <li>Handling multiple states and data flow</li>
+                <li>Managing complex user interactions and events</li>
+                <li>Working with external APIs and handling response data</li>
+                <li>Implementing efficient and performant rendering and updating of UI elements</li>
+              </ul>
+              <div className="projects-display-features-buttons-CTA">
+                <Button to="/contact">Contact me!</Button>
+                <ButtonAnchor
+                  variant="secButton"
+                  href="/FrontEnd - Gustavo Quiroz - Resume.pdf"
+                  download
+                >
+                  Download Resume
+                </ButtonAnchor>
+              </div>{" "}
+            </div>
           </DemoCard>
 
           <DemoCard
@@ -242,84 +322,7 @@ export default function Projects() {
             }
             isActive={isClicked === "card3"}
             onClick={() => handleCardClick("card3")}
-          >
-            <div
-              className={
-                isFullScreen === "3"
-                  ? "projects-full-screen-asset-open"
-                  : "projects-full-screen-asset-close"
-              }
-              onClick={() => handleFullScreen("3")}
-            >
-              <Button variant="linkButton">Close</Button>
-              {isLoadingVideo && <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>}
-              <video
-                src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
-                onLoadedData={() => setIsLoadingVideo(false)}
-                loop
-                autoPlay
-                controls={false}
-                muted
-              ></video>
-              <div></div>
-            </div>
-            <h3>How does it work? 🤔</h3>
-            <p>
-              The code fetches data from the Rick & Morty API and displays characters' information.
-              Clicking on a character's image shows their details.
-            </p>
-            <h3>Technologies used 💡</h3>
-            <ul>
-              <li>
-                <i className="fa-brands fa-react"></i> React
-              </li>
-              <li>
-                <i className="fa-brands fa-square-js"></i> Javascript
-              </li>
-              <li>
-                <i className="fa-brands fa-html5"></i> HTML
-              </li>
-              <li>
-                <i className="fa-brands fa-css3"></i> CSS
-              </li>
-              <li>
-                <i className="fa-brands fa-node"></i> NodeJS
-              </li>
-            </ul>
-            <h3>Skills 🧠</h3>
-            <ul>
-              <li>Fetching data from APIs</li>
-              <li>Event handling</li>
-              <li>Conditional rendering</li>
-              <li>Handling and displaying dynamic data</li>
-            </ul>
-            <h3>Advantages 🦾</h3>
-            <ul>
-              <li>Streamlined data manipulation</li>
-              <li>Greater efficiency</li>
-              <li>Simplified data retrieval</li>
-              <li>Improved data organization</li>
-              <li>Enhanced user experience</li>
-              <li>More effective information display</li>
-            </ul>
-            <h3>Difficulties ⚙️</h3>
-            <ul>
-              <li>Handling multiple states and data flow</li>
-              <li>Managing complex user interactions and events</li>
-              <li>Working with external APIs and handling response data</li>
-              <li>Implementing efficient and performant rendering and updating of UI elements</li>
-            </ul>
-            <div className="projects-display-features-buttons-CTA">
-              <Button to="/contact">Contact me!</Button>
-              <ButtonAnchor
-                variant="secButton"
-                href="/FrontEnd - Gustavo Quiroz - Resume.pdf"
-                download
-              >
-                Download Resume
-              </ButtonAnchor>
-            </div>
-          </DemoCard>
+          ></DemoCard>
         </section>
       )}
     </article>
