@@ -1,42 +1,21 @@
-*{
-    margin: 0px;
-    padding: 0px;
+.rootHome {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: relative;
+  overflow: hidden scroll;
 }
-.rootHome{
-    height: min-content;
-    width: 100vw;
-    position: relative;
-}
-a {
-    color: inherit;
-    text-decoration: none;
-  }
-  h2{
-    font-size: inherit;
-    font-weight: inherit;
-  }
-  p{
-    font-size: inherit;
-    font-weight: inherit;
-  }
-  h3{
-    font-size: inherit;
-    font-weight: inherit;
-  }
- 
-@media (min-width: 1181px){
 
-  
-  ::-webkit-scrollbar{
+@media (min-width: 1181px) {
+  ::-webkit-scrollbar {
     width: 12px;
-    overflow:scroll;
+    overflow: scroll;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 30%, .8);
+    background-color: hsla(0, 0%, 30%, 0.8);
     border-radius: 30px;
   }
   ::-webkit-scrollbar-track {
-    border: 1px solid hsla(0, 0%, 10%, .5);
+    border: 1px solid hsla(0, 0%, 10%, 0.5);
     background-color: hsla(0, 0%, 20%, 1);
   }
 }

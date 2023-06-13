@@ -5,9 +5,10 @@
   --mainFont: "RUBIK", system-ui, Avenir, Helvetica, sans-serif;
   --textMainColor: #fff;
   --textSecColor: hsla(106deg, 0%, 73%, 1);
-  --secColor: #242424;
+  --secColor: #181818;
   --mainColor: hsl(266deg, 100%, 60%);
 
+  overflow: hidden;
   background-color: var(--secColor);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,6 +16,21 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+b {
+  color: red;
+}
+
 /*----------------- animations individual -------------------*/
 
 @keyframes opacity-in {
