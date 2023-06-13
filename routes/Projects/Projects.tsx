@@ -58,24 +58,24 @@ export default function Projects() {
         </div>
       </div>
       {isActive === true && (
-        <section className="projects-display-cards">
+        <section className="projects-display-projects">
           <DemoCard
             header={
               <>
                 <i className="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Features
               </>
             }
-            isActive={isClicked === "card1"}
-            onClick={() => handleCardClick("card1")}
+            isActive={isClicked === "features-card"}
+            onClick={() => handleCardClick("features-card")}
           >
-            <div className="projects-display-cards-shopping-cart">
+            <div className="projects-display-card">
               <div
                 className={
-                  isFullScreen === "1"
+                  isFullScreen === "shopping-card-asset"
                     ? "projects-full-screen-img-open"
                     : "projects-full-screen-img-close"
                 }
-                onClick={() => handleFullScreen("1")}
+                onClick={() => handleFullScreen("shopping-card-asset")}
               >
                 <Button variant="linkButton">Close</Button>
                 {isLoadingVideo && (
@@ -91,9 +91,11 @@ export default function Projects() {
                 ></video>
                 <div></div>
               </div>
+
               <h3>
                 <i className="fa-solid fa-cart-shopping"></i> Shopping Cart
               </h3>
+
               <p>
                 This feature updates the shopping cart's total price based on user input quantity
                 and removes items from the cart.
