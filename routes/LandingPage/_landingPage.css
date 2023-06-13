@@ -1,44 +1,38 @@
-b {
-  color: var(--mainColor);
-  font-weight: 700;
-}
-::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
 .landingPage-root {
   width: 80%;
   height: min-content;
   margin: 0 auto;
-  margin-top: 20%;
 }
 .landingPage-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   height: 100%;
   width: 100%;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
 }
 
 .landingPage-content img {
-  height: 250px;
+  width: 100%;
   object-fit: contain;
   animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
   transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
 }
+
 .landingPage-content img:hover {
   transform: rotate(10deg) scale(1.1);
 }
+
 .landingPage-copy {
+  width: 100%;
   padding-top: 20%;
-  padding-bottom: 20%;
+  display: flex;
+  flex-direction: column;
 }
+
 .landingPage-copy h2 {
-  font-size: 24px;
+  font-size: 26px;
   text-align: left;
   font-weight: 700;
-  width: 100%;
-  margin: 0;
   animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
 }
 
@@ -51,17 +45,13 @@ b {
 
 .landingPage-CTA {
   border: 1px dotted white;
-  background-color: aliceblue;
-}
-
-.landingPage-CTA button {
-  display: flex;
   margin-left: auto;
   margin-top: 16%;
   animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   animation-delay: 1s;
   animation-fill-mode: backwards;
 }
+
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
