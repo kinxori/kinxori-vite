@@ -235,15 +235,17 @@ export default function Projects() {
             <div className="projects-display-card">
               <div
                 className={
-                  isFullScreen === "3"
+                  isFullScreen === "fetch-api-asset"
                     ? "projects-full-screen-asset-open"
                     : "projects-full-screen-asset-close"
                 }
-                onClick={() => handleFullScreen("3")}
+                onClick={() => handleFullScreen("fetch-api-asset")}
               >
-                <Button variant="linkButton">Close</Button>
+                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                  Close
+                </Button>
                 {isLoadingVideo && (
-                  <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>
+                  <h3 className="projects-full-screen-loader">Loading video...</h3>
                 )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
@@ -301,19 +303,20 @@ export default function Projects() {
                 <li>Working with external APIs and handling response data</li>
                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
               </ul>
-              <div className="projects-display-features-buttons-CTA">
-                <Button to="/contact">Contact me!</Button>
-                <ButtonAnchor
+              <div className="projects-display-cards-CTA">
+                <Button to="https://kinxori.github.io/react-practice-4/" target="_blank">
+                  Live Project
+                </Button>
+                <Button
+                  to="https://github.com/kinxori/react-practice-4"
                   variant="secButton"
-                  href="/FrontEnd - Gustavo Quiroz - Resume.pdf"
-                  download
+                  target="_blank"
                 >
-                  Download Resume
-                </ButtonAnchor>
-              </div>{" "}
+                  Github Repo
+                </Button>
+              </div>
             </div>
           </DemoCard>
-
           <DemoCard
             header={
               <>
