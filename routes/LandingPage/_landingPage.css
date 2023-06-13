@@ -49,6 +49,11 @@ b {
   animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
 }
 
+.landingPage-CTA {
+  border: 1px dotted white;
+  background-color: aliceblue;
+}
+
 .landingPage-CTA button {
   display: flex;
   margin-left: auto;
