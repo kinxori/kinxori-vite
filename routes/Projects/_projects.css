@@ -70,11 +70,21 @@
   flex-direction: column;
 }
 
-.projects-display-card h3 {
-  font-size: 20px;
+.projects-display-card h2 {
+  font-size: 24px;
   text-align: center;
   font-weight: 700;
   width: 100%;
+  padding: 10px 0;
+  text-decoration: underline;
+}
+
+.projects-display-card h3 {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 700;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .projects-display-card p {
@@ -92,7 +102,6 @@
 .projects-display-card video {
   width: 100%;
   object-fit: contain;
-  display: none; /* 👀 =============== > */
 }
 
 .projects-display-card img {
