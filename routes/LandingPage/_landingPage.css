@@ -45,7 +45,6 @@
 }
 
 .landingPage-CTA {
-  /* border: 1px dotted white; */
   margin-left: auto;
   margin-top: 16%;
   animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);

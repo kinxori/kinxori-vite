@@ -44,7 +44,7 @@ export default function Projects() {
         <img src="/projects-asset.png" alt="notebook-with-pencil" />
         <div className="projects-copy">
           <h2>
-            Check out <b>my skills </b> in action! 💻
+            Check out <b>my skills </b> in action! 🎯
           </h2>
           <br />
           <p>
