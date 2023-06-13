@@ -11,6 +11,7 @@
   overflow: hidden;
   margin: 5px 0px;
 }
+
 .card-title {
   width: 100%;
   height: 50px;
@@ -21,12 +22,14 @@
   padding: 0px 20px;
   box-sizing: border-box;
 }
+
 .card-title h3 {
   font-size: 20px;
   text-align: left;
   font-weight: 700;
   width: 100%;
 }
+
 .card-title .fa-chevron-right {
   font-size: 20px;
 }
@@ -50,50 +53,11 @@
 
 .card-root-open .card-body {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   background-color: var(--secColor);
   max-height: 300px;
-  padding: 20px 20px;
   transition: all 0.3s ease-in-out;
-  gap: 20px;
   opacity: 1;
-  box-sizing: border-box;
-  overflow: scroll;
-}
-.card-root-open .card-body h4 {
-  font-size: 18px;
-  text-align: inherit;
-  font-weight: 700;
-  width: 100%;
-}
-p {
-  text-align: justify;
-  font-size: 16px;
-  width: 100%;
-}
-
-video {
-  width: 100%;
-  object-fit: contain;
-}
-
-img {
-  width: 100%;
-  object-fit: contain;
-}
-
-ul {
-  text-align: left;
-  width: 90%;
-  padding-left: 20px;
-}
-li {
-  text-align: left;
-  width: 100%;
-  padding: 2px 0;
+  overflow: hidden scroll;
 }
 
 /*  ------------------------- CLOSED  --------------------- */

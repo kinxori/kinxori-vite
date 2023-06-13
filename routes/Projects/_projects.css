@@ -52,20 +52,55 @@
   animation-fill-mode: backwards;
 }
 
-.projects-display-features {
+.projects-display-cards {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 20%;
 }
 
-.projects-display-features-buttons-CTA {
+.projects-display-cards-CTA {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
+  margin: 40px 0;
   gap: 10px;
+}
+
+.projects-display-cards-shopping-cart {
+}
+h4 {
+  font-size: 18px;
+  text-align: inherit;
+  font-weight: 700;
+  width: 100%;
+}
+p {
+  text-align: justify;
+  font-size: 16px;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  object-fit: contain;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+ul {
+  text-align: left;
+  width: 90%;
+  padding-left: 20px;
+}
+li {
+  text-align: left;
+  width: 100%;
+  padding: 2px 0;
 }
 
 /* -------------------- Projects card styles for img FullScreen open ---------------*/

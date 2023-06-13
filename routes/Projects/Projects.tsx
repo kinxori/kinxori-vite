@@ -58,92 +58,96 @@ export default function Projects() {
         </div>
       </div>
       {isActive === true && (
-        <section className="projects-display-features">
+        <section className="projects-display-cards">
           <DemoCard
             header={
               <>
-                <i className="fa-solid fa-screwdriver-wrench"></i> Features
+                <i className="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Features
               </>
             }
             isActive={isClicked === "card1"}
             onClick={() => handleCardClick("card1")}
           >
-            <div
-              className={
-                isFullScreen === "1"
-                  ? "projects-full-screen-img-open"
-                  : "projects-full-screen-img-close"
-              }
-              onClick={() => handleFullScreen("1")}
-            >
-              <Button variant="linkButton">Close</Button>
-              {isLoadingVideo && <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>}
-              <video
-                src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
-                onLoadedData={() => setIsLoadingVideo(false)}
-                loop
-                autoPlay
-                controls={false}
-                muted
-              ></video>
-              <div></div>
-            </div>
-            <h3>
-              <i className="fa-solid fa-cart-shopping"></i> Shopping Cart
-            </h3>
-            <p>
-              This feature updates the shopping cart's total price based on user input quantity and
-              removes items from the cart.
-            </p>
-            <h3>Technologies used 💡</h3>
-            <ul>
-              <li>
-                <i className="fa-brands fa-react"></i> React
-              </li>
-              <li>
-                <i className="fa-brands fa-square-js"></i> Javascript
-              </li>
-              <li>
-                <i className="fa-brands fa-html5"></i> HTML
-              </li>
-              <li>
-                <i className="fa-brands fa-css3"></i> CSS
-              </li>
-            </ul>
-            <h3>Skills 🧠</h3>
-            <ul>
-              <li>State management</li>
-              <li>React component architecture</li>
-              <li>User experience and interactivity</li>
-              <li>Testing and debugging</li>
-            </ul>
-            <h3>Advantages 🦾</h3>
-            <ul>
-              <li>Improved user experience</li>
-              <li>Increased sales</li>
-              <li>Customizable</li>
-              <li>Easy integration</li>
-              <li>Reusability</li>
-              <li>Analytics</li>
-            </ul>
-            <h3>Difficulties ⚙️</h3>
-            <ul>
-              <li>State management and data flow</li>
-              <li>Handle user input and form data </li>
-              <li>Improve user experience with better organization of information</li>
-              <li>Integratation with external APIs to retrieve and update product information</li>
-            </ul>
-            <div className="projects-display-features-buttons-CTA">
-              <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
-                Live Project
-              </Button>
-              <Button
-                to="https://github.com/kinxori/react-shopping-cart"
-                variant="secButton"
-                target="_blank"
+            <div className="projects-display-cards-shopping-cart">
+              <div
+                className={
+                  isFullScreen === "1"
+                    ? "projects-full-screen-img-open"
+                    : "projects-full-screen-img-close"
+                }
+                onClick={() => handleFullScreen("1")}
               >
-                Github Repo
-              </Button>
+                <Button variant="linkButton">Close</Button>
+                {isLoadingVideo && (
+                  <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>
+                )}
+                <video
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
+                  onLoadedData={() => setIsLoadingVideo(false)}
+                  loop
+                  autoPlay
+                  controls={false}
+                  muted
+                ></video>
+                <div></div>
+              </div>
+              <h3>
+                <i className="fa-solid fa-cart-shopping"></i> Shopping Cart
+              </h3>
+              <p>
+                This feature updates the shopping cart's total price based on user input quantity
+                and removes items from the cart.
+              </p>
+              <h3>Technologies used 💡</h3>
+              <ul>
+                <li>
+                  <i className="fa-brands fa-react"></i> React
+                </li>
+                <li>
+                  <i className="fa-brands fa-square-js"></i> Javascript
+                </li>
+                <li>
+                  <i className="fa-brands fa-html5"></i> HTML
+                </li>
+                <li>
+                  <i className="fa-brands fa-css3"></i> CSS
+                </li>
+              </ul>
+              <h3>Skills 🧠</h3>
+              <ul>
+                <li>State management</li>
+                <li>React component architecture</li>
+                <li>User experience and interactivity</li>
+                <li>Testing and debugging</li>
+              </ul>
+              <h3>Advantages 🦾</h3>
+              <ul>
+                <li>Improved user experience</li>
+                <li>Increased sales</li>
+                <li>Customizable</li>
+                <li>Easy integration</li>
+                <li>Reusability</li>
+                <li>Analytics</li>
+              </ul>
+              <h3>Difficulties ⚙️</h3>
+              <ul>
+                <li>State management and data flow</li>
+                <li>Handle user input and form data </li>
+                <li>Improve user experience with better organization of information</li>
+                <li>Integratation with external APIs to retrieve and update product information</li>
+              </ul>
+              <div className="projects-display-cards-CTA">
+                <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
+                  Live Project
+                </Button>
+                <Button
+                  to="https://github.com/kinxori/react-shopping-cart"
+                  variant="secButton"
+                  target="_blank"
+                >
+                  Github Repo
+                </Button>
+              </div>
             </div>
           </DemoCard>
           <DemoCard
