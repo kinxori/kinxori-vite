@@ -1,7 +1,3 @@
-b {
-  color: var(--mainColor);
-  font-weight: inherit;
-}
 .projects-root {
   width: 80%;
   height: min-content;

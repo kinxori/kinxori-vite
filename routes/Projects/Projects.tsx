@@ -44,18 +44,15 @@ export default function Projects() {
         <img src="/projects-asset.png" alt="notebook-with-pencil" />
         <div className="projects-copy">
           <h2>
-            Check out <b>my projects</b> to see my skills in action! ✍️
+            Check out <b>my skills </b> in action! 💻
           </h2>
           <br />
           <p>
-            Take a look around to some of my <b>features</b> I've been learning
-            and <b>improving</b> along my <b>web developer career.</b>
+            Take a look around to some of my <b>projects</b> I've been learning and
+            <b> improving </b>
+            along my <b>web developer career.</b>
           </p>
-          <Button
-            onClick={handleProjectsButton}
-            variant="secButton"
-            className="projects-CTA"
-          >
+          <Button onClick={handleProjectsButton} variant="secButton" className="projects-CTA">
             {isActive === false ? "Open Projects" : "Close Projects"}
           </Button>
         </div>
@@ -80,11 +77,7 @@ export default function Projects() {
               onClick={() => handleFullScreen("1")}
             >
               <Button variant="linkButton">Close</Button>
-              {isLoadingVideo && (
-                <h3 className="projects-full-screen-loader">
-                  Loading video...𛱘
-                </h3>
-              )}
+              {isLoadingVideo && <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>}
               <video
                 src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
                 onLoadedData={() => setIsLoadingVideo(false)}
@@ -97,8 +90,8 @@ export default function Projects() {
             </div>
             <h3>How does it work? 🤔</h3>
             <p>
-              This feature updates the shopping cart's total price based on user
-              input quantity and removes items from the cart.
+              This feature updates the shopping cart's total price based on user input quantity and
+              removes items from the cart.
             </p>
             <h3>Technologies used 💡</h3>
             <ul>
@@ -138,13 +131,8 @@ export default function Projects() {
             <ul>
               <li>State management and data flow</li>
               <li>Handle user input and form data </li>
-              <li>
-                Improve user experience with better organization of information
-              </li>
-              <li>
-                Integratation with external APIs to retrieve and update product
-                information
-              </li>
+              <li>Improve user experience with better organization of information</li>
+              <li>Integratation with external APIs to retrieve and update product information</li>
             </ul>
             <div className="projects-display-features-buttons-CTA">
               <Button to="/contact">Contact me!</Button>
@@ -175,11 +163,7 @@ export default function Projects() {
               onClick={() => handleFullScreen("2")}
             >
               <Button variant="linkButton">Close</Button>
-              {isLoadingVideo && (
-                <h3 className="projects-full-screen-loader">
-                  Loading video...𛱘
-                </h3>
-              )}
+              {isLoadingVideo && <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>}
               <video
                 src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
                 onLoadedData={() => setIsLoadingVideo(false)}
@@ -192,8 +176,8 @@ export default function Projects() {
             </div>
             <h3>How does it work? 🤔</h3>
             <p>
-              This is a search bar component that filters and displays data in a
-              table based on user input.
+              This is a search bar component that filters and displays data in a table based on user
+              input.
             </p>
             <h3>Technologies used 💡</h3>
             <ul>
@@ -224,8 +208,8 @@ export default function Projects() {
               <li>Allows users to easily search and filter large datasets</li>
               <li>Provides real-time search results as users type</li>
               <li>
-                Improves user experience by reducing the need to manually search
-                and sort through data
+                Improves user experience by reducing the need to manually search and sort through
+                data
               </li>
             </ul>
             <h3>Difficulties ⚙️</h3>
@@ -264,11 +248,7 @@ export default function Projects() {
               onClick={() => handleFullScreen("3")}
             >
               <Button variant="linkButton">Close</Button>
-              {isLoadingVideo && (
-                <h3 className="projects-full-screen-loader">
-                  Loading video...𛱘
-                </h3>
-              )}
+              {isLoadingVideo && <h3 className="projects-full-screen-loader">Loading video...𛱘</h3>}
               <video
                 src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
                 onLoadedData={() => setIsLoadingVideo(false)}
@@ -281,9 +261,8 @@ export default function Projects() {
             </div>
             <h3>How does it work? 🤔</h3>
             <p>
-              The code fetches data from the Rick & Morty API and displays
-              characters' information. Clicking on a character's image shows
-              their details.
+              The code fetches data from the Rick & Morty API and displays characters' information.
+              Clicking on a character's image shows their details.
             </p>
             <h3>Technologies used 💡</h3>
             <ul>
@@ -324,10 +303,7 @@ export default function Projects() {
               <li>Handling multiple states and data flow</li>
               <li>Managing complex user interactions and events</li>
               <li>Working with external APIs and handling response data</li>
-              <li>
-                Implementing efficient and performant rendering and updating of
-                UI elements
-              </li>
+              <li>Implementing efficient and performant rendering and updating of UI elements</li>
             </ul>
             <div className="projects-display-features-buttons-CTA">
               <Button to="/contact">Contact me!</Button>
