@@ -320,12 +320,14 @@ export default function Projects() {
           <DemoCard
             header={
               <>
-                <i className="fa-solid fa-server"></i> Fetch API{" "}
+                <i className="fa-solid fa-pager"></i>&nbsp;&nbsp;Web Projects
               </>
             }
-            isActive={isClicked === "card3"}
-            onClick={() => handleCardClick("card3")}
-          ></DemoCard>
+            isActive={isClicked === "web-projects-card"}
+            onClick={() => handleCardClick("web-projects-card")}
+          >
+            <div>helo homelo chino</div>
+          </DemoCard>
         </section>
       )}
     </article>
