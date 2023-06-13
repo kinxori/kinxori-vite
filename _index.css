@@ -29,7 +29,7 @@
 }
 
 :root b {
-  color: red;
+  color: var(--mainColor);
 }
 
 /*----------------- animations individual -------------------*/

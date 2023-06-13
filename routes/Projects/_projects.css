@@ -55,12 +55,10 @@
 .projects-display-features {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
   width: 100%;
-  margin-bottom: 40%;
+  margin-bottom: 20%;
 }
+
 .projects-display-features-buttons-CTA {
   display: flex;
   flex-direction: column;
