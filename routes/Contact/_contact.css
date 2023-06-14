@@ -32,18 +32,21 @@
   display: flex;
   flex-direction: column;
 }
+
 .contact-copy h2 {
   font-size: 26px;
   text-align: left;
   font-weight: 700;
   animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
 }
+
 .contact-copy p {
   font-size: 16px;
   font-weight: normal;
   text-align: justify;
   animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
 }
+
 .contact-CTA {
   margin-left: auto;
   margin-top: 10%;

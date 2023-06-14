@@ -93,8 +93,8 @@ export default function Contact() {
                 <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;Twitter
               </>
             }
-            isActive={isClicked === "card3"}
-            onClick={() => handleCardClick("card3")}
+            isActive={isClicked === "twitter-card"}
+            onClick={() => handleCardClick("twitter-card")}
           >
             <div className="contact-display-card">
               <h3>Follow me on Twitter and let's share thoughts! 🐦</h3>
@@ -114,8 +114,8 @@ export default function Contact() {
                 <i className="fa-solid fa-download"></i>&nbsp;&nbsp;Resume/CV
               </>
             }
-            isActive={isClicked === "card4"}
-            onClick={() => handleCardClick("card4")}
+            isActive={isClicked === "resume-card"}
+            onClick={() => handleCardClick("resume-card")}
           >
             <div className="contact-display-card">
               <h3>Click the button below to download my latest resume! 📜</h3>
