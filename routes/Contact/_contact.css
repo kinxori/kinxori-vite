@@ -2,36 +2,40 @@
   width: 80%;
   height: min-content;
   margin: 0 auto;
-  margin-top: 20%;
+  border: 1px dotted white;
 }
 
 .contact-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   height: 100%;
   width: 100%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-content img {
-  height: 250px;
+  width: 100%;
   object-fit: contain;
   animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
   transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
 }
+
 .contact-content img:hover {
   transform: rotate(10deg) scale(1.1);
 }
 
 .contact-copy {
+  width: 100%;
   padding-top: 20%;
-  padding-bottom: 20%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .contact-copy h2 {
-  font-size: 24px;
+  font-size: 26px;
   text-align: left;
   font-weight: 700;
-  width: 100%;
   animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
 }
 .contact-copy p {
@@ -40,10 +44,9 @@
   text-align: justify;
   animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
 }
-.Contact-CTA button {
-  display: flex;
+.contact-CTA {
   margin-left: auto;
-  margin-top: 16%;
+  margin-top: 10%;
   animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   animation-delay: 1s;
   animation-fill-mode: backwards;

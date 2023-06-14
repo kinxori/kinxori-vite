@@ -42,17 +42,11 @@ export default function Contact() {
           <h2>
             <b>Hey there!</b> Thanks for stopping by ☕️{" "}
           </h2>
-          <br />
           <p>
-            Let's chat about <b>web development</b> or <b>motion graphics,</b>{" "}
-            or just connect as friends! <b>Send me a message</b> and let's grab
-            a virtual coffee!
+            Let's chat about <b>web development</b> or <b>motion graphics,</b> or just connect as
+            friends! <b>Send me a message</b> and let's grab a virtual coffee!
           </p>
-          <Button
-            onClick={handleOptionsButton}
-            variant="secButton"
-            className="Contact-CTA"
-          >
+          <Button onClick={handleOptionsButton} variant="secButton" className="contact-CTA">
             {isActive === false ? "Open Options" : "Close Options"}
           </Button>
         </div>
