@@ -10,7 +10,7 @@ export default function Projects() {
     return storedState || null;
   });
   const [isActive, setIsActive] = useState(() => {
-    const storedState = localStorage.getItem("isActive");
+    const storedState = localStorage.getItem("isProjectsButtonActive");
     return storedState ? storedState === "true" : false;
   });
   const [isFullScreen, setIsFullScreen] = useState("");
@@ -23,7 +23,7 @@ export default function Projects() {
   }, [isClicked]);
 
   useEffect(() => {
-    localStorage.setItem("isActive", isActive.toString());
+    localStorage.setItem("isProjectsButtonActive", isActive.toString());
   }, [isActive]);
 
   const handleCardClick = (id: any) => {
