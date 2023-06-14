@@ -13,7 +13,7 @@ export default function Contact() {
   });
 
   const [isActive, setisActive] = useState(() => {
-    const storedState = localStorage.getItem("isActive");
+    const storedState = localStorage.getItem("isOptionsActive");
     return storedState ? storedState === "true" : false;
   });
 
@@ -24,7 +24,7 @@ export default function Contact() {
   }, [isClicked]);
 
   useEffect(() => {
-    localStorage.setItem("isActive", isActive.toString());
+    localStorage.setItem("isOptionsActive", isActive.toString());
   }, [isActive]);
 
   const handleCardClick = (id: any) => {
