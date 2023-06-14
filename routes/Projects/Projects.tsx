@@ -326,7 +326,33 @@ export default function Projects() {
             isActive={isClicked === "web-projects-card"}
             onClick={() => handleCardClick("web-projects-card")}
           >
-            <div>helo homelo chino</div>
+            <div className="projects-display-card">
+              {/* <div
+                className={
+                  isFullScreen === "fetch-api-asset"
+                    ? "projects-full-screen-asset-open"
+                    : "projects-full-screen-asset-close"
+                }
+                onClick={() => handleFullScreen("fetch-api-asset")}
+              >
+                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                  Close
+                </Button>
+                {isLoadingVideo && (
+                  <h3 className="projects-full-screen-loader">Loading video...</h3>
+                )}
+                <video
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
+                  onLoadedData={() => setIsLoadingVideo(false)}
+                  loop
+                  autoPlay
+                  controls={false}
+                  muted
+                ></video>
+                <div></div>
+              </div> */}
+              <h2>Under construction ⚙️</h2>
+            </div>
           </DemoCard>
         </section>
       )}
