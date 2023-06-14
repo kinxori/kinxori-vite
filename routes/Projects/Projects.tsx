@@ -79,9 +79,7 @@ export default function Projects() {
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && (
-                  <h3 className="projects-full-screen-loader">Loading video...</h3>
-                )}
+                {isLoadingVideo && <h3 className="projects-card-asset-loader">Loading video...</h3>}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
                   onLoadedData={() => setIsLoadingVideo(false)}
@@ -89,6 +87,7 @@ export default function Projects() {
                   autoPlay
                   controls={false}
                   muted
+                  className="projects-display-card-asset"
                 ></video>
                 <div className="projects-full-screen-bg"></div>
               </div>
@@ -122,8 +121,6 @@ export default function Projects() {
               <h3>Advantages 🦾</h3>
               <ul>
                 <li>Improved user experience</li>
-                <li>Increased sales</li>
-                <li>Customizable</li>
                 <li>Easy integration</li>
                 <li>Reusability</li>
                 <li>Analytics</li>
@@ -160,9 +157,7 @@ export default function Projects() {
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && (
-                  <h3 className="projects-full-screen-loader">Loading video...</h3>
-                )}
+                {isLoadingVideo && <h3 className="projects-card-asset-loader">Loading video...</h3>}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
                   onLoadedData={() => setIsLoadingVideo(false)}
@@ -170,6 +165,7 @@ export default function Projects() {
                   autoPlay
                   controls={false}
                   muted
+                  className="projects-display-card-asset"
                 ></video>
                 <div className="projects-full-screen-bg"></div>
               </div>
@@ -191,9 +187,6 @@ export default function Projects() {
                 </li>
                 <li>
                   <i className="fa-brands fa-css3"></i> CSS
-                </li>
-                <li>
-                  <i className="fa-brands fa-node"></i> NodeJS
                 </li>
               </ul>
               <h3>Skills 🧠</h3>
@@ -243,9 +236,7 @@ export default function Projects() {
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && (
-                  <h3 className="projects-full-screen-loader">Loading video...</h3>
-                )}
+                {isLoadingVideo && <h3 className="projects-card-asset-loader">Loading video...</h3>}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
                   onLoadedData={() => setIsLoadingVideo(false)}
@@ -253,8 +244,9 @@ export default function Projects() {
                   autoPlay
                   controls={false}
                   muted
+                  className="projects-display-card-asset"
                 ></video>
-                <div></div>
+                <div className="projects-full-screen-bg"></div>
               </div>
               <h2>Fetch API</h2>
               <p>
@@ -275,9 +267,6 @@ export default function Projects() {
                 <li>
                   <i className="fa-brands fa-css3"></i> CSS
                 </li>
-                <li>
-                  <i className="fa-brands fa-node"></i> NodeJS
-                </li>
               </ul>
               <h3>Skills 🧠</h3>
               <ul>
@@ -289,10 +278,8 @@ export default function Projects() {
               <h3>Advantages 🦾</h3>
               <ul>
                 <li>Streamlined data manipulation</li>
-                <li>Greater efficiency</li>
                 <li>Simplified data retrieval</li>
                 <li>Improved data organization</li>
-                <li>Enhanced user experience</li>
                 <li>More effective information display</li>
               </ul>
               <h3>Difficulties ⚙️</h3>
@@ -338,7 +325,7 @@ export default function Projects() {
                   Close
                 </Button>
                 {isLoadingVideo && (
-                  <h3 className="projects-full-screen-loader">Loading video...</h3>
+                  <h3 className="projects-card-asset-loader">Loading video...</h3>
                 )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"

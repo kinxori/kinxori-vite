@@ -1,11 +1,15 @@
-import Button from "../../components/Buttons/Button";
+import Button from "./../../components/Buttons/Button";
+import mainLandingPageAsset from "./../../assets/AstroAssets.png";
 import "./_landingPage.css";
 
 export default function LandingPage() {
   return (
     <article className="landingPage-root">
       <div className="landingPage-content">
-        <img src="/AstroAssets.png" alt="astro-riding-on-bike" />
+        <img
+          src={mainLandingPageAsset}
+          alt="Purple Astro riding a bike - Kinxori landing page asset"
+        />
         <div className="landingPage-copy">
           <h2>
             Combining <b>creativity, numbers,</b> and <b>code</b> to make things happen 🚀
