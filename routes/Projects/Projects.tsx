@@ -47,7 +47,6 @@ export default function Projects() {
             Check out <b>my skills </b> in action! 🎯
           </h2>
           <br></br>
-          <br></br>
           <p>
             Take a look around to some of my <b>projects</b> I've been learning and
             <b> improving </b>
