@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./_inputForm.css";
 import Button from "../Buttons/Button";
 
