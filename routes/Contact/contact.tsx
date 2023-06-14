@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "../../components/Buttons/Button";
 import ButtonAnchor from "../../components/Buttons/ButtonAnchor";
 import "./_contact.css";
+import resumePDF from "./../../assets/FrontEnd - Gustavo Quiroz - Resume - June 2023.pdf";
 import InputForm from "../../components/Email-InputForm/InputForm";
 import DemoCard from "../../components/DemoCard/DemoCard";
 
@@ -120,7 +121,7 @@ export default function Contact() {
             <div className="contact-display-card">
               <h3>Click the button below to download my latest resume! 📜</h3>
               <ButtonAnchor
-                href="/FrontEnd - Gustavo Quiroz - Resume - June 2023.pdf"
+                href={resumePDF}
                 download
                 variant="mainButton"
                 className="contact-display-card-CTA"
