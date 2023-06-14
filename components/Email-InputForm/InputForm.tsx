@@ -27,7 +27,7 @@ export default function InputForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...form, secret: "homelo" }),
+        body: JSON.stringify({ ...form }),
       }
     );
     const fetchEmojiData = async () => {
