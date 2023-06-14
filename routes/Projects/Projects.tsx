@@ -57,7 +57,7 @@ export default function Projects() {
         </div>
       </div>
       {isActive === true && (
-        <section className="projects-display-projects">
+        <section className="projects-display-projects-cards">
           <DemoCard
             header={
               <>

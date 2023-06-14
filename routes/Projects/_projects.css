@@ -53,7 +53,7 @@
   animation-fill-mode: backwards;
 }
 
-.projects-display-projects {
+.projects-display-projects-cards {
   display: flex;
   flex-direction: column;
   width: 100%;
