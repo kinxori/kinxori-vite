@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Button from "../../components/Buttons/Button";
-import "./_projects.css";
 import DemoCard from "../../components/DemoCard/DemoCard";
-import ButtonAnchor from "../../components/Buttons/ButtonAnchor";
+import mainProjectsAsset from "./../../assets/projects-asset.png";
+import "./_projects.css";
 
 export default function Projects() {
   const [isClicked, setIsClicked] = useState(() => {
@@ -41,7 +41,7 @@ export default function Projects() {
   return (
     <article className="projects-root">
       <div className="projects-content">
-        <img src="/projects-asset.png" alt="notebook-with-pencil" />
+        <img src={mainProjectsAsset} alt="purple notebook with pencil - Kinxori Projects Route" />
         <div className="projects-copy">
           <h2>
             Check out <b>my skills </b> in action! 🎯
