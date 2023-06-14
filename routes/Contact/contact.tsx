@@ -56,68 +56,78 @@ export default function Contact() {
           <DemoCard
             header={
               <>
-                {" "}
-                <i className="fa-regular fa-envelope"></i> Send email
+                <i className="fa-regular fa-envelope"></i>&nbsp;&nbsp;Send email
               </>
             }
-            isActive={isClicked === "card1"}
-            onClick={() => handleCardClick("card1")}
+            isActive={isClicked === "email-card"}
+            onClick={() => handleCardClick("email-card")}
           >
-            <InputForm />
+            <div className="contact-display-card">
+              <InputForm />
+            </div>
           </DemoCard>
           <DemoCard
             header={
               <>
-                <i className="fa-brands fa-whatsapp"></i> What's App{" "}
+                <i className="fa-brands fa-linkedin"></i>&nbsp;&nbsp;LinkedIn
               </>
             }
-            isActive={isClicked === "card2"}
-            onClick={() => handleCardClick("card2")}
+            isActive={isClicked === "linkedin-card"}
+            onClick={() => handleCardClick("linkedin-card")}
           >
-            <h4>Click the button below to send me a What's App message. 💬</h4>
-            <Button
-              to="https://api.whatsapp.com/send/?phone=527713168861&text&type=phone_number&app_absent=0"
-              target="_blank"
-              variant="mainButton"
-            >
-              Send a What's App
-            </Button>
+            <div className="contact-display-card">
+              <h3>Click the button below to visit my LinkedIn profile! 🧳</h3>
+              <Button
+                to="https://api.whatsapp.com/send/?phone=527713168861&text&type=phone_number&app_absent=0"
+                target="_blank"
+                variant="mainButton"
+                className="contact-display-card-CTA"
+              >
+                Go LinkedIn
+              </Button>
+            </div>
           </DemoCard>
           <DemoCard
             header={
               <>
-                <i className="fa-brands fa-twitter"></i> Twitter{" "}
+                <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;Twitter
               </>
             }
             isActive={isClicked === "card3"}
             onClick={() => handleCardClick("card3")}
           >
-            <h4>Follow me on Twitter and let's share thoughts! 🐦</h4>
-            <Button
-              to="https://twitter.com/intent/tweet?text=@kinxro%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
-              target="_blank"
-              variant="mainButton"
-            >
-              Go Twitter
-            </Button>
+            <div className="contact-display-card">
+              <h3>Follow me on Twitter and let's share thoughts! 🐦</h3>
+              <Button
+                to="https://twitter.com/intent/tweet?text=@kinxro%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
+                target="_blank"
+                variant="mainButton"
+                className="contact-display-card-CTA"
+              >
+                Go Twitter
+              </Button>
+            </div>
           </DemoCard>
           <DemoCard
             header={
               <>
-                <i className="fa-solid fa-download"></i> Resume{" "}
+                <i className="fa-solid fa-download"></i>&nbsp;&nbsp;Resume/CV
               </>
             }
             isActive={isClicked === "card4"}
             onClick={() => handleCardClick("card4")}
           >
-            <h4>Click the button below to download my latest resume! 📜</h4>
-            <ButtonAnchor
-              href="/FrontEnd - Gustavo Quiroz - Resume.pdf"
-              download
-              variant="mainButton"
-            >
-              Download Resume
-            </ButtonAnchor>
+            <div className="contact-display-card">
+              <h3>Click the button below to download my latest resume! 📜</h3>
+              <ButtonAnchor
+                href="/FrontEnd - Gustavo Quiroz - Resume - June 2023.pdf"
+                download
+                variant="mainButton"
+                className="contact-display-card-CTA"
+              >
+                Download Resume
+              </ButtonAnchor>
+            </div>
           </DemoCard>
         </section>
       )}
