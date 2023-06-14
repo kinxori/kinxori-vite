@@ -10,7 +10,6 @@ export default function LandingPage() {
           <h2>
             Combining <b>creativity, numbers,</b> and <b>code</b> to make things happen 🚀
           </h2>
-          <br />
           <p>
             Hi! I am Kinxori and <b>welcome</b> to my website! Developing myself as a
             <b> web developer</b> and <b>motion designer.</b> Take a deep dive into my work!
