@@ -26,8 +26,8 @@
 
 .projects-copy {
   width: 100%;
-  height: fit-content;
   padding-top: 20%;
+  gap: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -47,7 +47,7 @@
 
 .projects-CTA {
   margin-left: auto;
-  margin-top: 16%;
+  margin-top: 10%;
   animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   animation-delay: 1s;
   animation-fill-mode: backwards;
