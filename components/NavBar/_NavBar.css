@@ -1,15 +1,15 @@
-.mobileNavBar {
+.mobile-nav-bar-root {
   height: 60px;
-  background-color: var(--mainColor);
   width: 100%;
-  position: fixed;
   bottom: 0;
-  box-shadow: 0px 0px 10px 10px hsla(0, 0%, 20%, 0.3);
   z-index: 100;
+  box-shadow: 0px 0px 10px 10px hsla(0, 0%, 20%, 0.3);
+  background-color: var(--mainColor);
   border-top: 1px solid var(--textSecColor);
+  position: fixed;
 }
 
-.mobileNavBar .mobileOptions {
+.mobile-nav-bar-content {
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -19,16 +19,18 @@
 
 .isActive {
   color: var(--textMainColor);
+  font-size: 20px;
+  scale: 1.1;
   border: none;
   background: none;
-  font-size: 20px;
 }
 
 .isIdle {
   color: var(--textSecColor);
+  font-size: 20px;
+  opacity: 0.8;
   border: none;
   background: none;
-  font-size: 20px;
 }
 
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
