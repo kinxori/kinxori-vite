@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "../../components/Buttons/Button";
 import ButtonAnchor from "../../components/Buttons/ButtonAnchor";
 import "./_contact.css";
-import resumePDF from "./../../assets/FrontEnd - Gustavo Quiroz - Resume - June 2023.pdf";
+import resumeFilePDF from "./../../assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
 import InputForm from "../../components/Email-InputForm/InputForm";
 import DemoCard from "../../components/DemoCard/DemoCard";
 
@@ -41,7 +41,7 @@ export default function Contact() {
         <img src="./contact-asset.png" alt="contact-asset.png" />
         <div className="contact-copy">
           <h2>
-            <b>Hey there!</b> Thanks for stopping by ☕️{" "}
+            <b>Hey there!</b> Thanks for stopping by ☕️
           </h2>
           <p>
             Let's chat about <b>web development</b> or <b>motion graphics,</b> or just connect as
@@ -121,7 +121,7 @@ export default function Contact() {
             <div className="contact-display-card">
               <h3>Click the button below to download my latest resume! 📜</h3>
               <ButtonAnchor
-                href={resumePDF}
+                href={resumeFilePDF}
                 download
                 variant="mainButton"
                 className="contact-display-card-CTA"
