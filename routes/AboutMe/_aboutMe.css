@@ -1,20 +1,16 @@
-b {
-  color: var(--mainColor);
-  font-weight: inherit;
-}
 .aboutMe-root {
   width: 80%;
-  height: auto;
+  height: min-content;
   margin: 0 auto;
-  margin-top: 20%;
 }
 .aboutMe-content {
+  border: 2px dotted white;
+  height: 100%;
+  width: 100%;
+  margin-top: 20%;
+  margin-bottom: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-  position: relative;
 }
 
 .aboutMe-content img {
@@ -23,18 +19,23 @@ b {
   animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
   transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
 }
+
 .aboutMe-content img:hover {
   transform: rotate(10deg) scale(1.1);
 }
+
 .aboutMe-copy {
+  width: 100%;
   padding-top: 20%;
-  padding-bottom: 20%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
 .aboutMe-copy h2 {
-  font-size: 24px;
+  font-size: 26px;
   text-align: left;
   font-weight: 700;
-  width: 100%;
   animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
 }
 
@@ -45,10 +46,9 @@ b {
   animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
 }
 
-.aboutMe-CTA button {
-  display: flex;
+.aboutMe-CTA {
   margin-left: auto;
-  margin-top: 16%;
+  margin-top: 10%;
   animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   animation-delay: 1s;
   animation-fill-mode: backwards;

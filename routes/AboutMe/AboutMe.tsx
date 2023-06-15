@@ -24,7 +24,7 @@ export default function AboutMe() {
           <h2>
             But... <b>Who is Kinxori?</b> 🤪
           </h2>
-          <br />
+
           <p>
             My name is Gustavo Quiroz, <b>front-end web developer</b> with a passion for creating
             things. Formerly in <b>motion graphics,</b> now using my love for creating to{" "}
