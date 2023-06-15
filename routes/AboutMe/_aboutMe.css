@@ -68,20 +68,25 @@
   height: 150px;
   width: 150px;
   border-radius: 100%;
-  margin: 0 auto;
   margin-bottom: 10%;
-  border: 2px solid white;
+  border: 5px solid white;
+  transition: all 0.2s ease-in-out;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.aboutme-copy-PFP:hover {
+  scale: 1.1;
+  border: 5px solid var(--mainColor);
+}
+
 .aboutme-copy-PFP img {
-  height: 800px;
-  object-fit: cover;
+  height: 350px;
+  object-fit: contain;
   position: relative;
-  top: 100%;
+  top: 30%;
 }
 
 .about-me-read-more-content h3 {

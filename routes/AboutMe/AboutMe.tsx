@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../../components/Buttons/Button";
 import mainAboutMeAsset from "./../../assets/AboutmeAsset.png";
+import imgAssetPFP from "./../../assets/new-pfp-for-social-network.jpg";
 import "./_aboutMe.css";
 
 export default function AboutMe() {
@@ -27,7 +28,7 @@ export default function AboutMe() {
         />
         <div className="aboutMe-copy">
           <h2>
-            But... <b>Who is Kinxori?</b> 🤪
+            But... <b>Who is Kinxori?</b> 🤔
           </h2>
 
           <p>
@@ -43,19 +44,16 @@ export default function AboutMe() {
       {isOpen === true && (
         <div className="about-me-read-more-content">
           <div className="aboutme-copy-PFP">
-            <img
-              src="/273048005_1274448366400567_4493743372539204487_n.jpg"
-              alt="Gustavo Quiroz - Kinxori"
-            ></img>
+            <img src={imgAssetPFP} alt="Gustavo Quiroz - Kinxori"></img>
           </div>
-          <h3>Where do I come from? 🌎</h3>
+          <h3>🌎 Where do I come from?</h3>
           <p>
             Born in 1998, I come from a small town near the central region of Mexico. Despite its
             size, the town has a rich cultural heritage, with vibrant music and dance traditions,
             colorful festivals, and delicious local cuisine. Growing up there has taught me the
             value of community, hard work, and creativity, which I carry with me wherever I go.
           </p>
-          <h3>Personality? 💆</h3>
+          <h3>💆 Personality?</h3>
           <p>
             I'm a person who enjoys a balanced lifestyle. While I'm not necessarily extroverted, I
             enjoy my time at home. I find peace and serenity in my surroundings and like to make the
@@ -64,7 +62,7 @@ export default function AboutMe() {
             study and listen to music. I strive to live a meaningful life, and I'm always looking
             for ways to improve myself and my surroundings.
           </p>
-          <h3>Career? 👨‍🎓</h3>
+          <h3>👨‍🎓 Career?</h3>
           <p>
             Throughout my career path, I have pursued my passion for creativity and visual arts.
             After graduating with a degree in Animation and Visual Effects in 2020, I landed a job
@@ -85,7 +83,7 @@ export default function AboutMe() {
             been an exciting and fulfilling experience, and I look forward to what the future holds
             as I continue to grow and evolve as a developer.
           </p>
-          <h3>Hobbies? 🍿</h3>
+          <h3>🍿 Hobbies?</h3>
           <p>
             Talking about hobbies, biking and tennis are my favorite sport activities, I also enjoy
             going to the beach and spending time in nature. When I'm not outside, I enjoy exploring
@@ -94,7 +92,7 @@ export default function AboutMe() {
             global economy and tendencies in the market. Overall, I'm someone who likes to keep
             learning and enjoy life's simple pleasures.
           </p>
-          <h3>Aspirations? ⏳</h3>
+          <h3>⏳ Aspirations?</h3>
           <p>
             My main aspiration in life is to achieve financial freedom, not just for myself, but
             also to share a comfortable life with my loved ones. I believe that personal growth is
