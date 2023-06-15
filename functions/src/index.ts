@@ -25,11 +25,11 @@ transport
 const sendContactForm = (form: any) => {
   return transport
     .sendMail({
-      subject: `Hey there, let's connect! `,
+      subject: `Hey there, let's connect! ${form?.subject}`,
       bcc: "gustavoq26@gmail.com",
-      html: `<h3>This person has sent you an email, reply ASAP!</h3>
-        <p> From: ${form.email} </p>
-        <p> Message: ${form.message} </p>
+      html: `<h3>This person has sent you an email 👀</h3>
+        <p> From: ${form?.email} </p>
+        <p> Message: ${form?.message} </p>
         `,
     })
     .then((r: any) => {
