@@ -1,7 +1,8 @@
 import { useRouteError } from "react-router-dom";
 import "./_Error404.css";
 import Button from "../Buttons/Button";
-import img404 from "./../../src/assets/404Assets.png";
+
+const img404 = "./../../src/assets/404Assets.png";
 
 export default function Error404() {
   const error: any = useRouteError();

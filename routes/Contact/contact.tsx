@@ -3,9 +3,10 @@ import Button from "./../../components/Buttons/Button";
 import ButtonAnchor from "./../../components/Buttons/ButtonAnchor";
 import InputForm from "./../../components/Email-InputForm/InputForm";
 import DemoCard from "./../../components/DemoCard/DemoCard";
-import resumeFilePDF from "./../../src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
-import mainContactAsset from "./../../src/assets/contact-asset.png";
 import "./_contact.css";
+
+const resumeFilePDF = "./../../src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
+const contactAsset = "./../../src/assets/contactAsset.png";
 
 export default function Contact() {
   const [isClicked, setIsClicked] = useState(() => {
@@ -39,10 +40,7 @@ export default function Contact() {
   return (
     <article className="contact-root">
       <div className="contact-content">
-        <img
-          src={mainContactAsset}
-          alt="Purple mailbox receiving an email - Kinxori Contact Route"
-        />
+        <img src={contactAsset} alt="Purple mailbox receiving an email - Kinxori Contact Route" />
         <div className="contact-copy">
           <h2>
             <b>Hey there!</b> Thanks for stopping by ☕️

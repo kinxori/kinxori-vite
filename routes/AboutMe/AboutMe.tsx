@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Button from "../../components/Buttons/Button";
-import mainAboutMeAsset from "./../../src/assets/AboutmeAsset.png";
-import imgAssetPFP from "./../../src/assets/new-pfp-for-social-network.jpg";
 import "./_aboutMe.css";
+
+const mainAboutMeAsset = "./../../src/assets/AboutmeAsset.png";
+const imgAssetPFP = "./../../src/assets/new-pfp-for-social-network.jpg";
 
 export default function AboutMe() {
   const [isOpen, setisOpen] = useState(() => {
