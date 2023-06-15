@@ -29,6 +29,7 @@ const sendContactForm = (form: any) => {
       bcc: "gustavoq26@gmail.com",
       html: `<h3>This person has sent you an email 👀</h3>
         <p> From: ${form?.email} </p>
+        <p> Subject: ${form?.subject} </p>
         <p> Message: ${form?.message} </p>
         `,
     })
