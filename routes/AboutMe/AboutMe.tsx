@@ -20,7 +20,11 @@ export default function AboutMe() {
   return (
     <article className="aboutMe-root">
       <div className="aboutMe-content">
-        <img src={mainAboutMeAsset} alt="about me asset" className="about-me-asset" />
+        <img
+          src={mainAboutMeAsset}
+          alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori about page"
+          className="about-me-asset"
+        />
         <div className="aboutMe-copy">
           <h2>
             But... <b>Who is Kinxori?</b> 🤪
