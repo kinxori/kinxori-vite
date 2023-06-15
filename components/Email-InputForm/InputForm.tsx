@@ -6,7 +6,7 @@ export default function InputForm() {
   const [isEmail, setEmail] = useState("");
   const [isMessage, setMessage] = useState("");
   const [popUp, setPopUp] = useState(false);
-  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
+  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState({});
   const [clipboardIsCopy, setClipboardIsCopy] = useState(false);
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
