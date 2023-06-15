@@ -32,7 +32,7 @@ export default function AboutMe() {
 
           <p>
             My name is Gustavo Quiroz, <b>front-end web developer</b> with a passion for creating
-            things. Formerly in <b>motion graphics,</b> now using my love for creating to{" "}
+            things. Formerly in <b>motion design,</b> now using my love for creating to{" "}
             <b>solve problems.</b>
           </p>
           <Button className="aboutMe-CTA" variant="secButton" onClick={handleClick}>

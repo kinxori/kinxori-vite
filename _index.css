@@ -30,6 +30,7 @@
 
 :root b {
   color: var(--mainColor);
+  font-weight: 700;
 }
 
 /*----------------- animations individual -------------------*/
