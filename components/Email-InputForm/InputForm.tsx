@@ -41,7 +41,7 @@ export default function InputForm() {
     setPopUp("isShown");
     setTimeout(() => {
       setPopUp("");
-    }, 5000000);
+    }, 5000);
     setEmail("");
     setMessage("");
   };
@@ -63,46 +63,45 @@ export default function InputForm() {
 
   return (
     <form onSubmit={handleSubmit} className="form-root">
-      <div className="form-body">
-        <h4>My email 📮: </h4>
-        <div className="input-form-my-email">
-          <p ref={textToClipBoard}> gustavoq26@gmail.com </p>
-          <div onClick={handleClipboardState}>
-            {clipboardIsCopy ? (
-              <i className="fa-solid fa-check"></i>
-            ) : (
-              <i className="fa-regular fa-clipboard"></i>
-            )}
-          </div>
-        </div>
-        <h4>Your email 📫: </h4>
-        <label>
-          <input
-            type="email"
-            value={isEmail}
-            name="email"
-            onChange={(event) => setEmail(event.target.value)}
-            className="email-input-box"
-            required
-            placeholder="email@example.com"
-          />
-        </label>
-        <h4>Your message 💬:</h4>
-        <label>
-          <textarea
-            required
-            // type="text"
-            value={isMessage}
-            name="message"
-            onChange={(event) => setMessage(event.target.value)}
-            className="message-input-box"
-            placeholder="Enter your message here"
-          />
-        </label>
+      <div className="form-content">
+        <h3>Insert your email:</h3>
+        <input
+          type="email"
+          value={isEmail}
+          name="email"
+          onChange={(event) => setEmail(event.target.value)}
+          className="form-email-input"
+          required
+          placeholder="example@email.com"
+        />
+        <h3>Insert your message:</h3>
+        <textarea
+          required
+          value={isMessage}
+          name="message"
+          onChange={(event) => setMessage(event.target.value)}
+          className="form-message-input"
+          placeholder="Enter your message here"
+        />
+        <button type="submit" className="mainButton form-button-CTA">
+          Submit
+        </button>
+
+        <h3>Copy my email:</h3>
+        <p ref={textToClipBoard}>gustavoq26@gmail.com</p>
+        <Button onClick={handleClipboardState} className="form-button-CTA">
+          {clipboardIsCopy ? (
+            <>
+              Copied&nbsp;&nbsp;<i className="fa-solid fa-check"></i>
+            </>
+          ) : (
+            <>
+              Copy&nbsp;&nbsp;<i className="fa-regular fa-clipboard"></i>
+            </>
+          )}
+        </Button>
       </div>
-      <button type="submit" className="mainButton submit-button-CTA">
-        Submit
-      </button>
+
       {popUp === "isShown" && (
         <div className="email-form-send-pop-up">
           <div className="email-pop-up-body">
