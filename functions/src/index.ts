@@ -44,9 +44,7 @@ exports.formFunction = functions.https.onRequest((request: any, response: any) =
   response.set("Access-Control-Allow-Methods", "POST");
   response.set("Access-Control-Allow-Headers", "Content-Type");
 
-  if (request.method === "POST") {
-    response.send("Correct method 🗿");
-  } else if (request.body) {
-    response.send("Email sent! 🛐");
+  if (request.body) {
+    response.send("Email sent! 🛐", request.body);
   }
 });
