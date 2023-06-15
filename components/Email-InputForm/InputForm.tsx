@@ -4,6 +4,7 @@ import "./_inputForm.css";
 
 export default function InputForm() {
   const [emailInput, setEmailInput] = useState("");
+  const [subjectInput, setSubjectInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
   const [popUp, setPopUp] = useState(false);
@@ -18,6 +19,7 @@ export default function InputForm() {
     const form = {
       email: target.email.value,
       message: target.message.value,
+      subject: target.subject.value,
       emoji: randomEmojiGenerated,
     };
 
@@ -56,7 +58,7 @@ export default function InputForm() {
   const handleClipboardState = () => {
     const text = textToClipBoard.current.textContent;
     navigator.clipboard.writeText(text);
-    setClipboardIsCopy(!clipboardIsCopy);
+    setClipboardIsCopy(true);
     setTimeout(() => {
       setClipboardIsCopy(false);
     }, 3000);
@@ -65,7 +67,7 @@ export default function InputForm() {
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-content">
-        <h3>Insert your email:</h3>
+        <h3>Email:</h3>
         <input
           type="email"
           value={emailInput}
@@ -74,7 +76,16 @@ export default function InputForm() {
           required
           placeholder="example@email.com"
         />
-        <h3>Insert your message:</h3>
+        <h3>Subject</h3>
+        <input
+          type="text"
+          value={subjectInput}
+          name="subject"
+          onChange={(event) => setSubjectInput(event.target.value)}
+          required
+          placeholder="Enter your subject"
+        />
+        <h3>Message:</h3>
         <textarea
           required
           value={messageInput}
