@@ -55,14 +55,14 @@
 }
 
 .about-me-read-more-content {
+  border: 2px dotted white;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: center;
   align-items: center;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 40%;
-  gap: 25px;
+  margin-bottom: 20%;
+  gap: 20px;
 }
 
 .aboutme-copy-PFP {
@@ -77,6 +77,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .aboutme-copy-PFP img {
   height: 800px;
   object-fit: cover;
@@ -86,13 +87,14 @@
 
 .about-me-read-more-content h3 {
   font-size: 20px;
+  text-align: center;
   font-weight: 700;
-  text-align: left;
   width: 100%;
 }
+
 .about-me-read-more-content p {
-  font-size: 16px;
   text-align: justify;
+  font-size: 16px;
   width: 100%;
 }
 

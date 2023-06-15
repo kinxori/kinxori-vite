@@ -43,7 +43,7 @@ export default function AboutMe() {
               alt="Gustavo Quiroz - Kinxori"
             ></img>
           </div>
-          <h3>Where I come from? 🌎</h3>
+          <h3>Where do I come from? 🌎</h3>
           <p>
             Born in 1998, I come from a small town near the central region of Mexico. Despite its
             size, the town has a rich cultural heritage, with vibrant music and dance traditions,
