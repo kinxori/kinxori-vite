@@ -44,6 +44,10 @@ exports.formFunction = functions.https.onRequest((request: any, response: any) =
   response.set("Access-Control-Allow-Methods", "POST");
   response.set("Access-Control-Allow-Headers", "Content-Type");
 
-  sendContactForm(request.body);
-  return response.send("Email sent! 🛐");
+  if (request.method === "OPTIONS") {
+    response.status(204).send("");
+  } else {
+    sendContactForm(request.body);
+    return response.json({ message: "Email sent! 🛐" });
+  }
 });
