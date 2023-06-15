@@ -8,7 +8,10 @@ export default function Error404() {
 
   return (
     <article className="error-404-root">
-      <img src={img404} alt="" />
+      <img
+        src={img404}
+        alt="Purple gorilla in a couch holding a cellphone with a pop-up message saying 'Oops! 404' declaring it's a failed route in the page - Kinxori 404 error page"
+      />
       <h2>
         <i> {error.message || error.statusText}</i> 🥸
       </h2>
