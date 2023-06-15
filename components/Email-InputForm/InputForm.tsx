@@ -5,7 +5,7 @@ import "./_inputForm.css";
 export default function InputForm() {
   const [emailInput, setEmailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
-  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
+  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
   const [popUp, setPopUp] = useState(false);
   const [clipboardIsCopy, setClipboardIsCopy] = useState(false);
 
@@ -71,7 +71,6 @@ export default function InputForm() {
           value={emailInput}
           name="email"
           onChange={(event) => setEmailInput(event.target.value)}
-          className="form-email-input"
           required
           placeholder="example@email.com"
         />
@@ -81,13 +80,12 @@ export default function InputForm() {
           value={messageInput}
           name="message"
           onChange={(event) => setMessageInput(event.target.value)}
-          className="form-message-input"
           placeholder="Enter your message here"
         />
         <button type="submit" className="mainButton form-button-CTA">
           Submit
         </button>
-        <h3>Copy my email:</h3>
+        <h3>Send an email:</h3>
         <p ref={textToClipBoard}>gustavoq26@gmail.com</p>
         <Button onClick={handleClipboardState} className="form-button-CTA">
           {clipboardIsCopy ? (
