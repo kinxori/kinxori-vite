@@ -25,7 +25,7 @@ transport
 const sendContactForm = (form: any) => {
   return transport
     .sendMail({
-      subject: `Hey there, let's connect! ${form?.subject}`,
+      subject: `Hey there, let's connect! ${form?.emoji}`,
       bcc: "gustavoq26@gmail.com",
       html: `<h3>This person has sent you an email 👀</h3>
         <p> From: ${form?.email} </p>
