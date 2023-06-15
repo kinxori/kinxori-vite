@@ -1,7 +1,6 @@
 import Button from "./../../components/Buttons/Button";
 import "./_landingPage.css";
-
-const mainLandingPageAsset = "./../../src/assets/AstroAssets.png";
+import mainLandingPageAsset from "/src/assets/AstroAssets.png";
 
 export default function LandingPage() {
   return (

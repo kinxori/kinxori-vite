@@ -5,8 +5,7 @@ import InputForm from "./../../components/Email-InputForm/InputForm";
 import DemoCard from "./../../components/DemoCard/DemoCard";
 import "./_contact.css";
 import contactAsset from "/src/assets/contactAsset.png";
-
-const resumeFilePDF = "./src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
+import resumeFilePDF from "/src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
 
 export default function Contact() {
   const [isClicked, setIsClicked] = useState(() => {
