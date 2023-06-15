@@ -42,7 +42,7 @@ export default function InputForm() {
     setPopUp(true);
     setTimeout(() => {
       setPopUp(false);
-    }, 5000);
+    }, 10000);
     setEmailInput("");
     setMessageInput("");
   };
@@ -59,7 +59,7 @@ export default function InputForm() {
     setClipboardIsCopy(!clipboardIsCopy);
     setTimeout(() => {
       setClipboardIsCopy(false);
-    }, 5000);
+    }, 3000);
   };
 
   return (
