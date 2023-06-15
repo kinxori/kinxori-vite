@@ -5,7 +5,7 @@ import "./_inputForm.css";
 export default function InputForm() {
   const [emailInput, setEmailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
-  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
+  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
   const [popUp, setPopUp] = useState(false);
   const [clipboardIsCopy, setClipboardIsCopy] = useState(false);
 

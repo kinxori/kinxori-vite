@@ -25,7 +25,7 @@ transport
 const sendContactForm = (form: any) => {
   return transport
     .sendMail({
-      subject: `Hey there, let's connect! ${String.fromCodePoint(parseInt(form.emoji, 16))}`,
+      // subject: `Hey there, let's connect! ${String.fromCodePoint(parseInt(form.emoji, 16))}`,
       bcc: "gustavoq26@gmail.com",
       html: `<h3>This person has sent you an email, reply ASAP!</h3>
         <p> From: ${form.email} </p>
@@ -44,10 +44,12 @@ exports.formFunction = functions.https.onRequest((request: any, response: any) =
   response.set("Access-Control-Allow-Methods", "POST");
   response.set("Access-Control-Allow-Headers", "Content-Type");
 
+  console.log("body 🤪", request.body);
+
   if (request.method === "OPTIONS") {
-    response.status(204).send("");
+    response.status(204).send("🥲");
   } else {
     sendContactForm(request.body);
-    return response.json({ message: "Email sent! 🛐" });
+    return response.json({ message: "Email sent!" });
   }
 });
