@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Button from "../../components/Buttons/Button";
-import DemoCard from "../../components/DemoCard/DemoCard";
+import Button from "./../../components/Buttons/Button";
+import DemoCard from "./../../components/DemoCard/DemoCard";
 import mainProjectsAsset from "./../../src/assets/projects-asset.png";
 import "./_projects.css";
 

@@ -81,9 +81,9 @@ export default function Contact() {
             onClick={() => handleCardClick("linkedin-card")}
           >
             <div className="contact-display-card">
-              <h3>Click the button below to visit my LinkedIn profile! 🧳</h3>
+              <h3>Click the button below to visit my LinkedIn profile! 💻</h3>
               <Button
-                to="https://api.whatsapp.com/send/?phone=527713168861&text&type=phone_number&app_absent=0"
+                to="https://www.linkedin.com/in/quinchori/"
                 target="_blank"
                 variant="mainButton"
                 className="contact-display-card-CTA"
