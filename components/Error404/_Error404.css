@@ -1,34 +1,44 @@
-#error-404 {
-  display: flex;
-  flex-direction: column;
+.error-404-root {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 20px;
 }
-#error-404 img {
+
+.error-404-root img {
   height: 250px;
   object-fit: contain;
+  animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
+  transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
 }
-#error-404 span {
-  font-size: 24px;
-  font-weight: bold;
+
+.error-404-root h2 {
+  font-size: 26px;
+  text-align: left;
+  font-weight: 700;
+  animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
 }
+
 .error404-btn {
-  padding-top: 10%;
+  margin-top: 10%;
+  animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
-  #error-404 {
+  .error-404-root {
     gap: 2%;
   }
-  #error-404 img {
+  .error-404-root img {
     height: 450px;
   }
-  #error-404 span {
+  .error-404-root span {
     font-size: 34px;
   }
   .error404-btn {
@@ -39,13 +49,13 @@
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
 @media (min-width: 1181px) {
-  #error-404 {
+  .error-404-root {
     gap: 1%;
   }
-  #error-404 img {
+  .error-404-root img {
     height: 400px;
   }
-  #error-404 span {
+  .error-404-root span {
     font-size: 34px;
   }
   .error404-btn {

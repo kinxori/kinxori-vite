@@ -8,11 +8,11 @@ export default function Error404() {
   const error: any = useRouteError();
 
   return (
-    <article id="error-404">
-      <img src={img404} alt="404error" />
-      <span>
+    <article className="error-404-root">
+      <img src={img404} alt="404error-asset" />
+      <h2>
         <i> {error.message || error.statusText}</i> 🥸
-      </span>
+      </h2>
       <Button variant="mainButton" to="/" className="error404-btn">
         Back home
       </Button>
