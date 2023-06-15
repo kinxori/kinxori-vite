@@ -59,19 +59,6 @@ export default function Contact() {
           <DemoCard
             header={
               <>
-                <i className="fa-regular fa-envelope"></i>&nbsp;&nbsp;Send email
-              </>
-            }
-            isActive={isClicked === "email-card"}
-            onClick={() => handleCardClick("email-card")}
-          >
-            <div className="contact-display-card">
-              <InputForm />
-            </div>
-          </DemoCard>
-          <DemoCard
-            header={
-              <>
                 <i className="fa-brands fa-linkedin"></i>&nbsp;&nbsp;LinkedIn
               </>
             }
@@ -88,6 +75,27 @@ export default function Contact() {
               >
                 Go LinkedIn
               </Button>
+            </div>
+          </DemoCard>
+          <DemoCard
+            header={
+              <>
+                <i className="fa-solid fa-download"></i>&nbsp;&nbsp;Resume/CV
+              </>
+            }
+            isActive={isClicked === "resume-card"}
+            onClick={() => handleCardClick("resume-card")}
+          >
+            <div className="contact-display-card">
+              <h3>Click the button below to download my latest resume! 📜</h3>
+              <ButtonAnchor
+                href={resumeFilePDF}
+                download
+                variant="mainButton"
+                className="contact-display-card-CTA"
+              >
+                Download Resume
+              </ButtonAnchor>
             </div>
           </DemoCard>
           <DemoCard
@@ -111,25 +119,18 @@ export default function Contact() {
               </Button>
             </div>
           </DemoCard>
+
           <DemoCard
             header={
               <>
-                <i className="fa-solid fa-download"></i>&nbsp;&nbsp;Resume/CV
+                <i className="fa-regular fa-envelope"></i>&nbsp;&nbsp;Send email
               </>
             }
-            isActive={isClicked === "resume-card"}
-            onClick={() => handleCardClick("resume-card")}
+            isActive={isClicked === "email-card"}
+            onClick={() => handleCardClick("email-card")}
           >
             <div className="contact-display-card">
-              <h3>Click the button below to download my latest resume! 📜</h3>
-              <ButtonAnchor
-                href={resumeFilePDF}
-                download
-                variant="mainButton"
-                className="contact-display-card-CTA"
-              >
-                Download Resume
-              </ButtonAnchor>
+              <InputForm />
             </div>
           </DemoCard>
         </section>

@@ -1,11 +1,11 @@
 import { useRef, useState } from "react";
-import "./_inputForm.css";
 import Button from "../Buttons/Button";
+import "./_inputForm.css";
 
 export default function InputForm() {
   const [isEmail, setEmail] = useState("");
   const [isMessage, setMessage] = useState("");
-  const [popUp, setPopUp] = useState("");
+  const [popUp, setPopUp] = useState(false);
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
   const [clipboardIsCopy, setClipboardIsCopy] = useState(false);
   const EmojiAPI =
@@ -38,16 +38,16 @@ export default function InputForm() {
       setRandomEmojiGenerated(randomEmoji.codePoint);
     };
     fetchEmojiData();
-    setPopUp("isShown");
+    setPopUp(true);
     setTimeout(() => {
-      setPopUp("");
+      setPopUp(false);
     }, 5000);
     setEmail("");
     setMessage("");
   };
 
   const handlePopUp = () => {
-    setPopUp("");
+    setPopUp(false);
   };
 
   const textToClipBoard = useRef("") as any;
@@ -102,13 +102,11 @@ export default function InputForm() {
         </Button>
       </div>
 
-      {popUp === "isShown" && (
-        <div className="email-form-send-pop-up">
-          <div className="email-pop-up-body">
+      {popUp && (
+        <div className="email-pop-up-root" onClick={handlePopUp}>
+          <div className="email-pop-up-content">
             <h2>Email sent! 👨‍💻</h2>
-            <Button variant="mainButton" onClick={handlePopUp}>
-              Ok
-            </Button>
+            <Button variant="mainButton">Ok</Button>
           </div>
           <div className="email-pop-up-background"></div>
         </div>
