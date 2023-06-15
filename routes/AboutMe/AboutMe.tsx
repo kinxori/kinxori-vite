@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import Button from "../../components/Buttons/Button";
+import mainAboutMeAsset from "./../../assets/AboutmeAsset.png";
 import "./_aboutMe.css";
 
 export default function AboutMe() {
   const [isOpen, setisOpen] = useState(() => {
-    const storedState = localStorage.getItem("isOpen");
+    const storedState = localStorage.getItem("isReadMore");
     return storedState ? storedState === "true" : false;
   });
 
   useEffect(() => {
-    localStorage.setItem("isOpen", isOpen.toString());
+    localStorage.setItem("isReadMore", isOpen.toString());
   }, [isOpen]);
 
   const handleClick = () => {
@@ -19,7 +20,7 @@ export default function AboutMe() {
   return (
     <article className="aboutMe-root">
       <div className="aboutMe-content">
-        <img src="/AboutmeAsset.png" alt="about me asset" className="about-me-asset" />
+        <img src={mainAboutMeAsset} alt="about me asset" className="about-me-asset" />
         <div className="aboutMe-copy">
           <h2>
             But... <b>Who is Kinxori?</b> 🤪
