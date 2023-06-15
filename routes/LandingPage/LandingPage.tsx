@@ -1,5 +1,5 @@
 import Button from "./../../components/Buttons/Button";
-import mainLandingPageAsset from "./../../assets/AstroAssets.png";
+import mainLandingPageAsset from "./../../src/assets/AstroAssets.png";
 import "./_landingPage.css";
 
 export default function LandingPage() {

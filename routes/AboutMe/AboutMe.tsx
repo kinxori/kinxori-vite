@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../../components/Buttons/Button";
-import mainAboutMeAsset from "./../../assets/AboutmeAsset.png";
-import imgAssetPFP from "./../../assets/new-pfp-for-social-network.jpg";
+import mainAboutMeAsset from "./../../src/assets/AboutmeAsset.png";
+import imgAssetPFP from "./../../src/assets/new-pfp-for-social-network.jpg";
 import "./_aboutMe.css";
 
 export default function AboutMe() {
