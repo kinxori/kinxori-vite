@@ -6,7 +6,7 @@ export default function InputForm() {
   const [isEmail, setEmail] = useState("");
   const [isMessage, setMessage] = useState("");
   const [popUp, setPopUp] = useState(false);
-  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState({});
+  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
   const [clipboardIsCopy, setClipboardIsCopy] = useState(false);
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
@@ -86,7 +86,6 @@ export default function InputForm() {
         <button type="submit" className="mainButton form-button-CTA">
           Submit
         </button>
-
         <h3>Copy my email:</h3>
         <p ref={textToClipBoard}>gustavoq26@gmail.com</p>
         <Button onClick={handleClipboardState} className="form-button-CTA">
