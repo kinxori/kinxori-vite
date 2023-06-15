@@ -45,6 +45,6 @@ exports.formFunction = functions.https.onRequest((request: any, response: any) =
   response.set("Access-Control-Allow-Headers", "Content-Type");
 
   if (request.body) {
-    response.send("Email sent! 🛐", request.body);
+    response.send("Email sent! 🛐");
   }
 });

@@ -3,11 +3,12 @@ import Button from "../Buttons/Button";
 import "./_inputForm.css";
 
 export default function InputForm() {
-  const [isEmail, setEmail] = useState("");
-  const [isMessage, setMessage] = useState("");
-  const [popUp, setPopUp] = useState(false);
+  const [emailInput, setEmailInput] = useState("");
+  const [messageInput, setMessageInput] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState([]);
+  const [popUp, setPopUp] = useState(false);
   const [clipboardIsCopy, setClipboardIsCopy] = useState(false);
+
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
 
@@ -42,8 +43,8 @@ export default function InputForm() {
     setTimeout(() => {
       setPopUp(false);
     }, 5000);
-    setEmail("");
-    setMessage("");
+    setEmailInput("");
+    setMessageInput("");
   };
 
   const handlePopUp = () => {
@@ -67,9 +68,9 @@ export default function InputForm() {
         <h3>Insert your email:</h3>
         <input
           type="email"
-          value={isEmail}
+          value={emailInput}
           name="email"
-          onChange={(event) => setEmail(event.target.value)}
+          onChange={(event) => setEmailInput(event.target.value)}
           className="form-email-input"
           required
           placeholder="example@email.com"
@@ -77,9 +78,9 @@ export default function InputForm() {
         <h3>Insert your message:</h3>
         <textarea
           required
-          value={isMessage}
+          value={messageInput}
           name="message"
-          onChange={(event) => setMessage(event.target.value)}
+          onChange={(event) => setMessageInput(event.target.value)}
           className="form-message-input"
           placeholder="Enter your message here"
         />
