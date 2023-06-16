@@ -4,8 +4,10 @@ import ButtonAnchor from "./../../components/Buttons/ButtonAnchor";
 import InputForm from "./../../components/Email-InputForm/InputForm";
 import DemoCard from "./../../components/DemoCard/DemoCard";
 import "./_contact.css";
+import "./../Projects/_projects.css";
 import contactAsset from "/src/assets/contactAsset.png";
 import resumeFilePDF from "/src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
+import linkedinSS from "./../../src/assets/linkedin-profile-ss.png";
 
 export default function Contact() {
   const [isClicked, setIsClicked] = useState(() => {
@@ -17,6 +19,12 @@ export default function Contact() {
     const storedState = localStorage.getItem("isOptionsButtonActive");
     return storedState ? storedState === "true" : false;
   });
+
+  const [isFullScreen, setIsFullScreen] = useState("");
+
+  const handleFullScreen = (id: any) => {
+    setIsFullScreen((currenValue) => (currenValue !== id ? id : ""));
+  };
 
   useEffect(() => {
     if (isClicked !== null) {
@@ -65,6 +73,24 @@ export default function Contact() {
             onClick={() => handleCardClick("linkedin-card")}
           >
             <div className="contact-display-card">
+              <div
+                className={
+                  isFullScreen === "shopping-card-asset"
+                    ? "projects-full-screen-asset-open"
+                    : "projects-full-screen-asset-close"
+                }
+                onClick={() => handleFullScreen("shopping-card-asset")}
+              >
+                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                  Close
+                </Button>
+                <img
+                  src={linkedinSS}
+                  alt="screenshot of Kinxori's linkedin profile"
+                  className="projects-display-card-asset"
+                ></img>
+                <div className="projects-full-screen-bg"></div>
+              </div>
               <h3>Click the button below to visit my LinkedIn profile! 💻</h3>
               <Button
                 to="https://www.linkedin.com/in/quinchori/"
