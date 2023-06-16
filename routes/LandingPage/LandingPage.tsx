@@ -18,9 +18,11 @@ export default function LandingPage() {
             Hi! I am Kinxori and <b>welcome</b> to my website! Developing myself as a
             <b> web developer</b> and <b>motion designer.</b> Take a deep dive into my work!
           </p>
-          <Button variant="secButton" to="/projects" className="landingPage-CTA">
-            Go projects
-          </Button>
+          <div className="landingPage-CTA">
+            <Button variant="secButton" to="/webprojects">
+              Web projects
+            </Button>
+          </div>
         </div>
       </div>
     </article>

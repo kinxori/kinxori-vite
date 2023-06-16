@@ -47,7 +47,10 @@
 }
 
 .landingPage-CTA {
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
   margin-top: 10%;
   animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   animation-delay: 1s;
