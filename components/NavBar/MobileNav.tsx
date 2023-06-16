@@ -31,11 +31,11 @@ export default function MobileNav() {
         <PathIcon to="/" handleClick={handleClick}>
           <i className="fa-solid fa-house"></i>
         </PathIcon>
-        <PathIcon to="/projects" handleClick={handleClick}>
-          <i className="fa-solid fa-briefcase"></i>
+        <PathIcon to="/webprojects" handleClick={handleClick}>
+          <i className="fa-solid fa-laptop-code"></i>
         </PathIcon>
-        <PathIcon to="https://github.com/kinxori" target="_blank" handleClick={handleClick}>
-          <i className="fa-brands fa-github"></i>
+        <PathIcon to="/motionprojects" handleClick={handleClick}>
+          <i className="fa-solid fa-film"></i>
         </PathIcon>
         <PathIcon to="/contact" handleClick={handleClick}>
           <i className="fa-solid fa-address-book"></i>

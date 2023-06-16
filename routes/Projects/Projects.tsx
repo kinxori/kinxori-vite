@@ -306,7 +306,7 @@ export default function Projects() {
           <DemoCard
             header={
               <>
-                <i className="fa-solid fa-pager"></i>&nbsp;&nbsp;Web Projects
+                <i className="fa-solid fa-pager"></i>&nbsp;&nbsp;Apps
               </>
             }
             isActive={isClicked === "web-projects-card"}
