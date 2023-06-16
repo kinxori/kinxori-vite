@@ -45,7 +45,7 @@ export default function Contact() {
             <b>Hey there!</b> Thanks for stopping by ☕️
           </h2>
           <p>
-            Let's chat about <b>web development</b> or <b>motion graphics,</b> or just connect as
+            Let's chat about <b>web development</b> or <b>motion design,</b> or just connect as
             friends! <b>Send me a message</b> and let's grab a virtual coffee!
           </p>
           <Button onClick={handleOptionsButton} variant="secButton" className="contact-CTA">
@@ -100,6 +100,28 @@ export default function Contact() {
           <DemoCard
             header={
               <>
+                <i className="fa-brands fa-github"></i>&nbsp;&nbsp;Github
+              </>
+            }
+            isActive={isClicked === "github-card"}
+            onClick={() => handleCardClick("github-card")}
+          >
+            <div className="contact-display-card">
+              <img src="" alt=""></img>
+              <h3>Take a look at my github! I'm sure you will find something of value 📖</h3>
+              <Button
+                to="https://github.com/kinxori"
+                target="_blank"
+                variant="mainButton"
+                className="contact-display-card-CTA"
+              >
+                Go Github
+              </Button>
+            </div>
+          </DemoCard>
+          <DemoCard
+            header={
+              <>
                 <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;Twitter
               </>
             }
@@ -118,7 +140,6 @@ export default function Contact() {
               </Button>
             </div>
           </DemoCard>
-
           <DemoCard
             header={
               <>
