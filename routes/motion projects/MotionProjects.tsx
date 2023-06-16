@@ -47,11 +47,12 @@ export default function MotionProjects() {
         />
         <div className="motion-projects-copy">
           <h2>
-            Check out <b>motion design</b> projecst in action! 🎬
+            Check out some of my <b>motion design</b> projects in action! 🎬
           </h2>
           <p>
-            As you may already know, I am a <b>motion designer</b> firs and a web developer second.
-            <b> Check out</b> my work as a creative as well!
+            As you may already know, I am a <b>motion designer</b> and a web developer most
+            recently.
+            <b> Check out</b> my work as a creative as well.
           </p>
           <Button
             onClick={handleProjectsButton}
