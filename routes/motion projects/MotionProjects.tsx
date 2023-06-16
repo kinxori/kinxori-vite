@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import Button from "./../../components/Buttons/Button";
 import DemoCard from "./../../components/DemoCard/DemoCard";
-import "./_projects.css";
-import mainProjectsAsset from "/src/assets/projects-asset.png";
+import "./_motionProjects.css";
+import mainMotionProjectsAsset from "/src/assets/motion-projects-asset.png";
 
-export default function Projects() {
+export default function MotionProjects() {
   const [isClicked, setIsClicked] = useState(() => {
     const storedState = localStorage.getItem("isClicked");
     return storedState || null;
   });
   const [isActive, setIsActive] = useState(() => {
-    const storedState = localStorage.getItem("isProjectsButtonActive");
+    const storedState = localStorage.getItem("isProjectsMotionActive");
     return storedState ? storedState === "true" : false;
   });
   const [isFullScreen, setIsFullScreen] = useState("");
@@ -23,7 +23,7 @@ export default function Projects() {
   }, [isClicked]);
 
   useEffect(() => {
-    localStorage.setItem("isProjectsButtonActive", isActive.toString());
+    localStorage.setItem("isProjectsMotionActive", isActive.toString());
   }, [isActive]);
 
   const handleCardClick = (id: any) => {
@@ -39,47 +39,55 @@ export default function Projects() {
   };
 
   return (
-    <article className="projects-root">
-      <div className="projects-content">
-        <img src={mainProjectsAsset} alt="purple notebook with pencil - Kinxori Projects Route" />
-        <div className="projects-copy">
+    <article className="motion-projects-root">
+      <div className="motion-projects-content">
+        <img
+          src={mainMotionProjectsAsset}
+          alt="Purple bulb illustration with a melting like effect running - Kinxori Motion Design Projects Route"
+        />
+        <div className="motion-projects-copy">
           <h2>
-            Check out <b>web developer</b> projects in action! 💻
+            Check out <b>motion design</b> projecst in action! 🎬
           </h2>
           <p>
-            Take a look around to some of my <b>projects</b> I've been learning and
-            <b> improving </b>
-            along my <b>web developer career.</b>
+            As you may already know, I am a <b>motion designer</b> firs and a web developer second.
+            <b> Check out</b> my work as a creative as well!
           </p>
-          <Button onClick={handleProjectsButton} variant="secButton" className="projects-CTA">
+          <Button
+            onClick={handleProjectsButton}
+            variant="secButton"
+            className="motion-projects-CTA"
+          >
             {isActive === false ? "Open Projects" : "Close Projects"}
           </Button>
         </div>
       </div>
       {isActive === true && (
-        <section className="projects-display-projects-cards">
+        <section className="motion-projects-display-projects-cards">
           <DemoCard
             header={
               <>
-                <i className="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Features
+                <i className="fa-solid fa-video"></i>&nbsp;&nbsp;Motion Design
               </>
             }
             isActive={isClicked === "features-card"}
             onClick={() => handleCardClick("features-card")}
           >
-            <div className="projects-display-card">
+            <div className="motion-projects-display-card">
               <div
                 className={
                   isFullScreen === "shopping-card-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
+                    ? "motion-projects-full-screen-asset-open"
+                    : "motion-projects-full-screen-asset-close"
                 }
                 onClick={() => handleFullScreen("shopping-card-asset")}
               >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                <Button className="motion-projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && <h3 className="projects-card-asset-loader">Loading video...</h3>}
+                {isLoadingVideo && (
+                  <h3 className="motion-projects-card-asset-loader">Loading video...</h3>
+                )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
                   onLoadedData={() => setIsLoadingVideo(false)}
@@ -87,9 +95,9 @@ export default function Projects() {
                   autoPlay
                   controls={false}
                   muted
-                  className="projects-display-card-asset"
+                  className="motion-projects-display-card-asset"
                 ></video>
-                <div className="projects-full-screen-bg"></div>
+                <div className="motion-projects-full-screen-bg"></div>
               </div>
               <h2>Shopping Cart</h2>
               <p>
@@ -132,7 +140,7 @@ export default function Projects() {
                 <li>Improve user experience with better organization of information</li>
                 <li>Integratation with external APIs to retrieve and update product information</li>
               </ul>
-              <div className="projects-display-cards-CTA">
+              <div className="motion-projects-display-cards-CTA">
                 <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
                 </Button>
@@ -145,19 +153,21 @@ export default function Projects() {
                 </Button>
               </div>
             </div>
-            <div className="projects-display-card">
+            <div className="motion-projects-display-card">
               <div
                 className={
                   isFullScreen === "search-bar-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
+                    ? "motion-projects-full-screen-asset-open"
+                    : "motion-projects-full-screen-asset-close"
                 }
                 onClick={() => handleFullScreen("search-bar-asset")}
               >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                <Button className="motion-projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && <h3 className="projects-card-asset-loader">Loading video...</h3>}
+                {isLoadingVideo && (
+                  <h3 className="motion-projects-card-asset-loader">Loading video...</h3>
+                )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
                   onLoadedData={() => setIsLoadingVideo(false)}
@@ -165,9 +175,9 @@ export default function Projects() {
                   autoPlay
                   controls={false}
                   muted
-                  className="projects-display-card-asset"
+                  className="motion-projects-display-card-asset"
                 ></video>
-                <div className="projects-full-screen-bg"></div>
+                <div className="motion-projects-full-screen-bg"></div>
               </div>
               <h2>Search Bar</h2>
               <p>
@@ -211,7 +221,7 @@ export default function Projects() {
                 <li>Handling large datasets</li>
                 <li>Accessibility</li>
               </ul>
-              <div className="projects-display-cards-CTA">
+              <div className="motion-projects-display-cards-CTA">
                 <Button to="https://kinxori.github.io/react-practice-5/" target="_blank">
                   Live Project
                 </Button>
@@ -224,19 +234,21 @@ export default function Projects() {
                 </Button>
               </div>
             </div>
-            <div className="projects-display-card">
+            <div className="motion-projects-display-card">
               <div
                 className={
                   isFullScreen === "fetch-api-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
+                    ? "motion-projects-full-screen-asset-open"
+                    : "motion-projects-full-screen-asset-close"
                 }
                 onClick={() => handleFullScreen("fetch-api-asset")}
               >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                <Button className="motion-projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && <h3 className="projects-card-asset-loader">Loading video...</h3>}
+                {isLoadingVideo && (
+                  <h3 className="motion-projects-card-asset-loader">Loading video...</h3>
+                )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
                   onLoadedData={() => setIsLoadingVideo(false)}
@@ -244,9 +256,9 @@ export default function Projects() {
                   autoPlay
                   controls={false}
                   muted
-                  className="projects-display-card-asset"
+                  className="motion-projects-display-card-asset"
                 ></video>
-                <div className="projects-full-screen-bg"></div>
+                <div className="motion-projects-full-screen-bg"></div>
               </div>
               <h2>Fetch API</h2>
               <p>
@@ -289,7 +301,7 @@ export default function Projects() {
                 <li>Working with external APIs and handling response data</li>
                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
               </ul>
-              <div className="projects-display-cards-CTA">
+              <div className="motion-projects-display-cards-CTA">
                 <Button to="https://kinxori.github.io/react-practice-4/" target="_blank">
                   Live Project
                 </Button>
@@ -306,26 +318,26 @@ export default function Projects() {
           <DemoCard
             header={
               <>
-                <i className="fa-solid fa-pager"></i>&nbsp;&nbsp;Apps
+                <i className="fa-solid fa-cube"></i>&nbsp;&nbsp;3D Modeling
               </>
             }
             isActive={isClicked === "web-projects-card"}
             onClick={() => handleCardClick("web-projects-card")}
           >
-            <div className="projects-display-card">
+            <div className="motion-projects-display-card">
               {/* <div
                 className={
                   isFullScreen === "fetch-api-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
+                    ? "motion-projects-full-screen-asset-open"
+                    : "motion-projects-full-screen-asset-close"
                 }
                 onClick={() => handleFullScreen("fetch-api-asset")}
               >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                <Button className="motion-projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
                 {isLoadingVideo && (
-                  <h3 className="projects-card-asset-loader">Loading video...</h3>
+                  <h3 className="motion-projects-card-asset-loader">Loading video...</h3>
                 )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"

@@ -109,7 +109,7 @@ export default function Contact() {
             <div className="contact-display-card">
               <h3>Follow me on Twitter and let's share thoughts! 🐦</h3>
               <Button
-                to="https://twitter.com/intent/tweet?text=@kinxro%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
+                to="https://twitter.com/intent/tweet?text=@kinxori%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
                 target="_blank"
                 variant="mainButton"
                 className="contact-display-card-CTA"
