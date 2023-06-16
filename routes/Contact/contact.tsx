@@ -4,12 +4,12 @@ import ButtonAnchor from "./../../components/Buttons/ButtonAnchor";
 import InputForm from "./../../components/Email-InputForm/InputForm";
 import DemoCard from "./../../components/DemoCard/DemoCard";
 import "./_contact.css";
-import "./../Projects/_projects.css";
 import contactAsset from "/src/assets/contactAsset.png";
 import resumeFilePDF from "/src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
 import linkedinSS from "./../../src/assets/linkedin-profile-ss.png";
 import resumeSS from "./../../src/assets/resume-ss.png";
 import githubSS from "./../../src/assets/github-profile-ss.png";
+import twitterSS from "./../../src/assets/twitter-profile-ss.png";
 
 export default function Contact() {
   const [isClicked, setIsClicked] = useState(() => {
@@ -192,6 +192,24 @@ export default function Contact() {
             onClick={() => handleCardClick("twitter-card")}
           >
             <div className="contact-display-card">
+              <div
+                className={
+                  isFullScreen === "twitter-card-img-asset"
+                    ? "projects-full-screen-asset-open"
+                    : "projects-full-screen-asset-close"
+                }
+                onClick={() => handleFullScreen("twitter-card-img-asset")}
+              >
+                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                  Close
+                </Button>
+                <img
+                  src={twitterSS}
+                  alt="screenshot of Kinxori's twitter profile"
+                  className="projects-display-card-asset"
+                ></img>
+                <div className="projects-full-screen-bg"></div>
+              </div>
               <h3>Follow me on Twitter and let's share thoughts! 🐦</h3>
               <Button
                 to="https://twitter.com/intent/tweet?text=@kinxori%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
