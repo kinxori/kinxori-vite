@@ -8,6 +8,7 @@ import "./../Projects/_projects.css";
 import contactAsset from "/src/assets/contactAsset.png";
 import resumeFilePDF from "/src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
 import linkedinSS from "./../../src/assets/linkedin-profile-ss.png";
+import resumeSS from "./../../src/assets/resume-ss.png";
 
 export default function Contact() {
   const [isClicked, setIsClicked] = useState(() => {
@@ -75,11 +76,11 @@ export default function Contact() {
             <div className="contact-display-card">
               <div
                 className={
-                  isFullScreen === "shopping-card-asset"
+                  isFullScreen === "linkedin-card-img-asset"
                     ? "projects-full-screen-asset-open"
                     : "projects-full-screen-asset-close"
                 }
-                onClick={() => handleFullScreen("shopping-card-asset")}
+                onClick={() => handleFullScreen("linkedin-card-img-asset")}
               >
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
                   Close
@@ -112,6 +113,24 @@ export default function Contact() {
             onClick={() => handleCardClick("resume-card")}
           >
             <div className="contact-display-card">
+              <div
+                className={
+                  isFullScreen === "resume-card-img-asset"
+                    ? "projects-full-screen-asset-open"
+                    : "projects-full-screen-asset-close"
+                }
+                onClick={() => handleFullScreen("resume-card-img-asset")}
+              >
+                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                  Close
+                </Button>
+                <img
+                  src={resumeSS}
+                  alt="screenshot of Kinxori's latest resume"
+                  className="projects-display-card-asset"
+                ></img>
+                <div className="projects-full-screen-bg"></div>
+              </div>
               <h3>Click the button below to download my latest resume! 📜</h3>
               <ButtonAnchor
                 href={resumeFilePDF}
