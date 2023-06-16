@@ -186,6 +186,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 12px;
 }
 .projects-full-screen-asset-close .projects-full-screen-bg {
   display: none;

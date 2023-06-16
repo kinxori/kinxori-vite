@@ -87,6 +87,69 @@
   gap: 10px;
 }
 
+/* -------------------- contact card styles for img FullScreen open ---------------*/
+
+.contact-full-screen-asset-open {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0px;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-full-screen-asset-open:hover {
+  cursor: pointer;
+}
+
+.contact-full-screen-asset-open .contact-full-screen-asset-button {
+  z-index: 1;
+  top: 30%;
+  right: 0;
+  position: absolute;
+}
+
+.contact-full-screen-asset-open .contact-display-card-asset {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  object-fit: contain;
+}
+
+.contact-full-screen-asset-open .contact-full-screen-bg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  position: absolute;
+  background-color: black;
+}
+
+/* ------- full screen img FullScreen closed  ------ */
+
+.contact-full-screen-asset-close {
+  display: default;
+}
+.contact-full-screen-asset-close:hover {
+  cursor: pointer;
+}
+.contact-full-screen-asset-close .contact-full-screen-asset-button {
+  display: none;
+}
+.contact-full-screen-asset-close .contact-display-card-asset {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+.contact-full-screen-asset-close .contact-full-screen-bg {
+  display: none;
+}
+
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {

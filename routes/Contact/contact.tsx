@@ -78,20 +78,20 @@ export default function Contact() {
               <div
                 className={
                   isFullScreen === "linkedin-card-img-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
+                    ? "contact-full-screen-asset-open"
+                    : "contact-full-screen-asset-close"
                 }
                 onClick={() => handleFullScreen("linkedin-card-img-asset")}
               >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                <Button className="contact-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
                 <img
                   src={linkedinSS}
                   alt="screenshot of Kinxori's linkedin profile"
-                  className="projects-display-card-asset"
+                  className="contact-display-card-asset"
                 ></img>
-                <div className="projects-full-screen-bg"></div>
+                <div className="contact-full-screen-bg"></div>
               </div>
               <h3>Click the button below to visit my LinkedIn profile! 💻</h3>
               <Button
@@ -117,20 +117,20 @@ export default function Contact() {
               <div
                 className={
                   isFullScreen === "resume-card-img-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
+                    ? "contact-full-screen-asset-open"
+                    : "contact-full-screen-asset-close"
                 }
                 onClick={() => handleFullScreen("resume-card-img-asset")}
               >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                <Button className="contact-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
                 <img
                   src={resumeSS}
                   alt="screenshot of Kinxori's latest resume"
-                  className="projects-display-card-asset"
+                  className="contact-display-card-asset"
                 ></img>
-                <div className="projects-full-screen-bg"></div>
+                <div className="contact-full-screen-bg"></div>
               </div>
               <h3>Click the button below to download my latest resume! 📜</h3>
               <ButtonAnchor
@@ -156,20 +156,20 @@ export default function Contact() {
               <div
                 className={
                   isFullScreen === "github-card-img-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
+                    ? "contact-full-screen-asset-open"
+                    : "contact-full-screen-asset-close"
                 }
                 onClick={() => handleFullScreen("github-card-img-asset")}
               >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                <Button className="contact-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
                 <img
                   src={githubSS}
                   alt="screenshot of Kinxori's github profile"
-                  className="projects-display-card-asset"
+                  className="contact-display-card-asset"
                 ></img>
-                <div className="projects-full-screen-bg"></div>
+                <div className="contact-full-screen-bg"></div>
               </div>
               <h3>Take a look at my github! I'm sure you will find something of value 📖</h3>
               <Button
@@ -195,20 +195,20 @@ export default function Contact() {
               <div
                 className={
                   isFullScreen === "twitter-card-img-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
+                    ? "contact-full-screen-asset-open"
+                    : "contact-full-screen-asset-close"
                 }
                 onClick={() => handleFullScreen("twitter-card-img-asset")}
               >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
+                <Button className="contact-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
                 <img
                   src={twitterSS}
                   alt="screenshot of Kinxori's twitter profile"
-                  className="projects-display-card-asset"
+                  className="contact-display-card-asset"
                 ></img>
-                <div className="projects-full-screen-bg"></div>
+                <div className="contact-full-screen-bg"></div>
               </div>
               <h3>Follow me on Twitter and let's share thoughts! 🐦</h3>
               <Button
