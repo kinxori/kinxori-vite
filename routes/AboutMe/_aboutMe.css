@@ -89,9 +89,10 @@
   top: 30%;
 }
 
-.about-me-read-more-content h3 {
-  font-size: 20px;
+.about-me-read-more-content h2 {
+  font-size: 26px;
   text-align: center;
+  text-decoration: underline;
   font-weight: 700;
   width: 100%;
 }
@@ -102,53 +103,74 @@
   width: 100%;
 }
 
+.about-me-read-more-content i {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
-  .aboutMe-root {
-    margin-top: 10%;
+  .aboutMe-content {
+    margin-top: 15%;
+    margin-bottom: 15%;
   }
 
   .aboutMe-content img {
-    height: 450px;
+    height: 400px;
   }
+
   .aboutMe-copy {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 15%;
+    gap: 30px;
   }
+
   .aboutMe-copy h2 {
-    font-size: 34px;
+    font-size: 36px;
   }
 
   .aboutMe-copy p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
-  .aboutMe-CTA button {
-    margin-top: 12%;
+  .aboutMe-CTA {
+    gap: 20px;
+    margin-top: 10%;
   }
 
   .about-me-read-more-content {
-    margin-bottom: 30%;
+    margin-bottom: 15%;
     gap: 30px;
   }
 
   .aboutme-copy-PFP {
-    height: 300px;
-    width: 300px;
-    margin-bottom: 10%;
-    border: 4px solid white;
-  }
-  .aboutme-copy-PFP img {
-    height: 1200px;
-    top: 70%;
+    height: 250px;
+    width: 250px;
+    border: 7px solid white;
   }
 
-  .about-me-read-more-content h3 {
-    font-size: 30px;
+  .aboutme-copy-PFP:hover {
+    border: 7px solid var(--mainColor);
   }
+
+  .aboutme-copy-PFP img {
+    height: 500px;
+    top: 25%;
+  }
+
+  .about-me-read-more-content h2 {
+    font-size: 36px;
+  }
+
   .about-me-read-more-content p {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .about-me-read-more-content i {
+    font-size: 20px;
+    margin-top: 40px;
   }
 }
 
