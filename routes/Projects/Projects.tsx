@@ -145,6 +145,7 @@ export default function Projects() {
                 </Button>
               </div>
             </div>
+            <hr></hr>
             <div className="projects-display-card">
               <div
                 className={
@@ -224,6 +225,7 @@ export default function Projects() {
                 </Button>
               </div>
             </div>
+            <hr></hr>
             <div className="projects-display-card">
               <div
                 className={

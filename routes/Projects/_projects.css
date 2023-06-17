@@ -60,6 +60,12 @@
   margin-bottom: 20%;
 }
 
+.projects-display-projects-cards hr {
+  width: 85%;
+  border-radius: 100%;
+  margin: 20px auto;
+}
+
 .projects-display-card {
   width: 100%;
   padding: 20px;
@@ -72,7 +78,7 @@
 }
 
 .projects-display-card h2 {
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
   font-weight: 700;
   width: 100%;
@@ -224,6 +230,10 @@
     margin-bottom: 15%;
   }
 
+  .projects-display-projects-cards hr {
+    margin: 30px auto;
+  }
+
   .projects-display-card {
     padding: 40px;
     gap: 30px;
@@ -240,12 +250,12 @@
   }
 
   .projects-display-card p {
-    text-align: justify;
     font-size: 20px;
   }
 
   .projects-display-card ul {
     padding-left: 50px;
+    font-size: 20px;
   }
 
   .projects-display-card video {
