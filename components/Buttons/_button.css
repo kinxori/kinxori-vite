@@ -1,190 +1,161 @@
-.mainButton{
-    color: var(--textMainColor);
-    border: 1px solid white;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-size: 16px;
-    background: var(--mainColor);
-    transition: all .2s ease-in-out;
-}       
-
-
-.secButton{
-    color: var(--textMainColor);
-    border: 1px solid var(--mainColor);
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-size: 16px;
-    background: var(--secColor);
-} 
-
-
-
-.ghostButton{
-    color: var(--textMainColor);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-size: 16px;
-    background: none;
+.mainButton {
+  color: var(--textMainColor);
+  border: 1px solid white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: var(--mainColor);
+  transition: all 0.2s ease-in-out;
 }
 
-
-.linkButton{
-    color: var(--textMainColor);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-size: 16px;
-    background: none;
-    font-style: italic;
-    color: var(--mainColor);
-    text-decoration-line: underline;
-
+.secButton {
+  color: var(--textMainColor);
+  border: 1px solid var(--mainColor);
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: var(--secColor);
 }
 
+.ghostButton {
+  color: var(--textMainColor);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: none;
+}
 
-
+.linkButton {
+  color: var(--textMainColor);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: none;
+  font-style: italic;
+  color: var(--mainColor);
+  text-decoration-line: underline;
+}
 
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
+@media (min-width: 601px) {
+  .mainButton {
+    padding: 20px 28px;
+    border-radius: 22px;
+    font-size: 20px;
+    border: 2px solid white;
+  }
 
+  .secButton {
+    padding: 20px 28px;
+    border-radius: 22px;
+    font-size: 20px;
+    border: 2px solid var(--mainColor);
+  }
 
-@media (min-width: 601px){
+  .ghostButton {
+    padding: 20px 28px;
+    border-radius: 22px;
+    font-size: 20px;
+  }
 
-    .mainButton{
-        
-        padding: 22px 30px;
-        border-radius: 22px;
-        font-size: 26px;
-        border: 2px solid white;
-
-    }       
-    
- 
-    
-    .secButton{
-        
-        padding: 22px 30px;
-        border-radius: 22px;
-        font-size: 26px;
-        border: 2px solid var(--mainColor);
-
-    } 
-    
- 
-    .ghostButton{
-        padding: 22px 30px;
-        border-radius: 22px;
-        font-size: 26px;
-    }
-    
-
-    .linkButton{
-        padding: 22px 30px;
-        border-radius: 22px;
-        font-size: 26px;
-
-    }
-    
- 
-
+  .linkButton {
+    padding: 20px 28px;
+    border-radius: 22px;
+    font-size: 20px;
+  }
 }
-
 
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
+@media (min-width: 1181px) {
+  .desktopMainButton {
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    padding: 12px 20px;
+    border-radius: 18px;
+    font-size: 20px;
+    background: white;
+  }
 
-@media (min-width: 1181px){
+  .desktopMainButton:hover {
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: 0.9;
+  }
+  .desktopSecButton {
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+    border-radius: 18px;
+    font-size: 20px;
+    background: none;
+  }
 
-    .desktopMainButton{
-        color: var(--mainColor);
-        border: 2px solid var(--mainColor);
-        padding: 12px 20px;
-        border-radius: 18px;
-        font-size: 20px;
-        background: white;
-    }
+  .desktopSecButton:hover {
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: 0.9;
+  }
+  .mainButton {
+    color: var(--textMainColor);
+    border: 2px solid white;
+    padding: 12px 20px;
+    border-radius: 18px;
+    font-size: 20px;
+    background: var(--mainColor);
+  }
+  .mainButton:hover {
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: 0.9;
+  }
 
-    .desktopMainButton:hover{
-        cursor: pointer;
-        transform: scale(1.015);
-        opacity: .9;
-    } 
-    .desktopSecButton{
-        color: white;
-        border: 2px solid white;
-        padding: 12px 20px;
-        border-radius: 18px;
-        font-size: 20px;
-        background: none;
-    }
+  .secButton {
+    color: var(--textMainColor);
+    border: 2px solid var(--mainColor);
+    padding: 12px 20px;
+    border-radius: 18px;
+    font-size: 20px;
+    background: var(--secColor);
+  }
 
-    .desktopSecButton:hover{
-        cursor: pointer;
-        transform: scale(1.015);
-        opacity: .9;
-    } 
-    .mainButton{
-        color: var(--textMainColor);
-        border: 2px solid white;
-        padding: 12px 20px;
-        border-radius: 18px;
-        font-size: 20px;
-        background: var(--mainColor);
-    }       
-    .mainButton:hover{
-        cursor: pointer;
-        transform: scale(1.015);
-        opacity: .9;
-    }
+  .secButton:hover {
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: 0.9;
+  }
 
-    .secButton{
-        color: var(--textMainColor);
-        border: 2px solid var(--mainColor);
-        padding: 12px 20px;
-        border-radius: 18px;
-        font-size: 20px;
-        background: var(--secColor);
-    } 
+  .ghostButton {
+    color: var(--textMainColor);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 18px;
+    font-size: 20px;
+    background: none;
+  }
 
-    .secButton:hover{
-        cursor: pointer;
-        transform: scale(1.015);
-        opacity: .9;
-    }
+  .ghostButton:hover {
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: 0.9;
+  }
 
-    .ghostButton{
-        color: var(--textMainColor);
-        border: none;
-        padding: 12px 20px;
-        border-radius: 18px;
-        font-size: 20px;
-        background: none;
-    }
-
-    .ghostButton:hover{
-        cursor: pointer;
-        transform: scale(1.015);
-        opacity: .90;
-    }
-    
-
-    .linkButton{
-        color: var(--textMainColor);
-        border: none;
-        padding: 12px 20px;
-        border-radius: 18px;
-        font-size: 20px;
-        background: none;
-        color: var(--mainColor);
-        text-decoration-line: underline;
-
-    }
-    .linkButton:hover{
-        cursor: pointer;
-        transform: scale(1.015);
-        opacity: .90;
-    }
-    
+  .linkButton {
+    color: var(--textMainColor);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 18px;
+    font-size: 20px;
+    background: none;
+    color: var(--mainColor);
+    text-decoration-line: underline;
+  }
+  .linkButton:hover {
+    cursor: pointer;
+    transform: scale(1.015);
+    opacity: 0.9;
+  }
 }
