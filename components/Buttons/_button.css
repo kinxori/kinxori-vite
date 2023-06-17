@@ -4,9 +4,10 @@
   padding: 12px 20px;
   border-radius: 12px;
   font-size: 16px;
-  background: var(--mainColor);
   transition: all 0.2s ease-in-out;
   min-width: 150px;
+  font-weight: bold;
+  background: var(--mainColor);
 }
 
 .secButton {
@@ -16,6 +17,7 @@
   border-radius: 12px;
   font-size: 16px;
   min-width: 150px;
+  font-weight: bold;
   background: var(--secColor);
 }
 
@@ -26,6 +28,7 @@
   border-radius: 12px;
   font-size: 16px;
   min-width: 150px;
+  font-weight: bold;
   background: none;
 }
 
@@ -38,6 +41,7 @@
   min-width: 150px;
   background: none;
   font-style: italic;
+  font-weight: bold;
   color: var(--mainColor);
   text-decoration-line: underline;
 }

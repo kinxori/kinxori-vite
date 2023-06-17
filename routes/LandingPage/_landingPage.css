@@ -61,9 +61,7 @@
 
 @media (min-width: 601px) {
   .landingPage-root {
-    width: 80%;
-    height: min-content;
-    margin: 0 auto;
+    border: 2px dotted white;
   }
 
   .landingPage-content {
