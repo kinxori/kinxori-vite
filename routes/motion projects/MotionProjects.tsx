@@ -50,8 +50,8 @@ export default function MotionProjects() {
             Check out some of my <b>motion design</b> projects in action! 🎬
           </h2>
           <p>
-            As you may already know, I am a <b>motion designer</b> and a web developer most
-            recently.
+            As you may already know, I am a <b>motion designer</b> and became a
+            <b> web developer </b> recently.
             <b> Check out</b> my work as a creative as well.
           </p>
           <Button
