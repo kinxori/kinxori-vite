@@ -186,7 +186,97 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 12px;
 }
 .motion-projects-full-screen-asset-close .motion-projects-full-screen-bg {
   display: none;
+}
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+@media (min-width: 601px) {
+  .motion-projects-content {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .motion-projects-content img {
+    height: 400px;
+  }
+
+  .motion-projects-content img:hover {
+    transform: rotate(10deg) scale(1.1);
+  }
+
+  .motion-projects-copy {
+    padding-top: 15%;
+    gap: 30px;
+  }
+
+  .motion-projects-copy h2 {
+    font-size: 36px;
+  }
+  .motion-projects-copy p {
+    font-size: 20px;
+  }
+
+  .motion-projects-CTA {
+    gap: 20px;
+    margin-top: 10%;
+  }
+
+  .motion-projects-display-projects-cards {
+    margin-bottom: 15%;
+  }
+
+  .motion-projects-display-projects-cards hr {
+    margin: 30px auto;
+  }
+
+  .motion-projects-display-card {
+    padding: 40px;
+    gap: 30px;
+    line-height: 30px;
+  }
+
+  .motion-projects-display-card h2 {
+    font-size: 36px;
+    padding: 20px 0;
+  }
+
+  .motion-projects-display-card h3 {
+    font-size: 28px;
+  }
+
+  .motion-projects-display-card p {
+    font-size: 20px;
+  }
+
+  .motion-projects-display-card ul {
+    padding-left: 50px;
+    font-size: 20px;
+  }
+
+  .motion-projects-display-cards-CTA {
+    margin: 20px auto;
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .motion-projects-card-asset-loader {
+    height: 250px;
+    border: 5px dotted var(--mainColor);
+  }
+
+  /* -------------------- Projects card styles for img FullScreen open ---------------*/
+
+  .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button {
+    top: 24%;
+  }
+
+  /* ------- full screen img FullScreen closed  ------ */
+
+  .motion-projects-full-screen-asset-close .motion-projects-display-card-asset {
+    border-radius: 18px;
+  }
 }
