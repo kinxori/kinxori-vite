@@ -102,64 +102,45 @@
 @media (min-width: 601px) {
   .card-root-open {
     border: 2px solid var(--mainColor);
-    border-radius: 22px;
-    margin: 15px 0px;
-  }
-  .card-headline {
-    height: 65px;
-    display: flex;
-    padding: 0px 20px;
-  }
-  .card-headline-title {
-    font-size: 28px;
-  }
-  .card-headline .fa-chevron-right {
-    font-size: 28px;
-  }
-  /* -------------------- Card open --------------------*/
-
-  .card-root-open .card-headline span {
-    height: 40px;
-    width: 40px;
-  }
-  .card-root-open .card-body {
-    max-height: 500px;
-    padding: 30px 30px;
-    gap: 30px;
-  }
-  .card-root-open .card-body h4 {
-    font-size: 24px;
-  }
-  p {
-    font-size: 24px;
-  }
-
-  ul {
-    padding-left: 30px;
-    font-size: 24px;
-  }
-  li {
-    padding: 4px 0;
-  }
-
-  /*  ------------------------- CLOSED  --------------------- */
-
-  .card-root-close {
-    border: 2px solid var(--mainColor);
-    border-radius: 22px;
+    border-radius: 18px;
     margin: 10px 0px;
   }
 
-  .card-root-close .card-headline span {
+  .card-root-close {
+    border: 2px solid var(--mainColor);
+    border-radius: 18px;
+    margin: 10px 0px;
+  }
+
+  .card-headline {
+    height: 70px;
+    padding: 0px 30px;
+  }
+
+  .card-headline-title {
+    font-size: 28px;
+  }
+
+  .fa-chevron-right {
+    font-size: 20px;
+  }
+
+  .card-root-chevron-open {
     height: 40px;
     width: 40px;
   }
-  .card-root-close .card-body {
-    padding: 0px 30px;
-    gap: 30px;
+
+  .card-root-chevron-close {
+    height: 40px;
+    width: 40px;
   }
-  .card-root-close .card-body h4 {
-    font-size: 24px;
+
+  .card-root-close .card-body {
+    max-height: 0px;
+  }
+
+  .card-root-open .card-body {
+    max-height: 400px;
   }
 }
 

@@ -51,7 +51,7 @@
 @media (min-width: 601px) {
   .mainButton {
     padding: 20px 28px;
-    border-radius: 22px;
+    border-radius: 18px;
     font-size: 20px;
     border: 2px solid white;
     min-width: 200px;
@@ -59,7 +59,7 @@
 
   .secButton {
     padding: 20px 28px;
-    border-radius: 22px;
+    border-radius: 18px;
     font-size: 20px;
     border: 2px solid var(--mainColor);
     min-width: 200px;
@@ -67,14 +67,14 @@
 
   .ghostButton {
     padding: 20px 28px;
-    border-radius: 22px;
+    border-radius: 18px;
     font-size: 20px;
     min-width: 200px;
   }
 
   .linkButton {
     padding: 20px 28px;
-    border-radius: 22px;
+    border-radius: 18px;
     font-size: 20px;
     min-width: 200px;
   }
