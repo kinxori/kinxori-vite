@@ -9,7 +9,7 @@
 
 @media (min-width: 601px) {
   .rootHome {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
   }
 }
 
