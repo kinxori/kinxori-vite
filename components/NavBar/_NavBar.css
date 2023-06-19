@@ -56,7 +56,7 @@
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
 @media (min-width: 1181px) {
-  .desktopNavBar {
+  .desktopNavBar-root {
     height: 80px;
     background-color: var(--mainColor);
     width: 100%;
@@ -67,97 +67,37 @@
     border-bottom: 1px solid var(--textSecColor);
   }
 
-  .desktopOptions {
+  .desktopNavBar-content {
     display: flex;
     position: relative;
     align-items: center;
     top: 50%;
     transform: translateY(-50%);
   }
-  .desktopOptions-logo-img {
+  .desktopNavBar-main-logo {
     margin-right: auto;
     margin-left: 80px;
   }
-  .desktopOptions img {
-    height: 60px;
-    width: fit-content;
-    object-fit: contain;
+
+  .desktopNavBar-main-logo h1 {
+    font-size: 50px;
   }
 
-  .desktopOptions img:hover {
-    cursor: pointer;
-  }
-
-  .desktop-nav-CTA-buttons {
+  .desktopNavBar-CTA-buttons {
     width: auto;
     margin-left: auto;
     display: flex;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
   }
-
-  .isActive {
-    font-size: 36px;
-    margin: 0px 30px;
+  .desktopNavBar-CTA-buttons span {
+    padding: 0;
   }
-
-  /* ------------------ Desktop Side Bar ------------------*/
-
-  .sideBar-open {
-    height: 100vh;
-    width: 300px;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(0%);
-    position: fixed;
-    right: 0px;
-    top: -10px;
+  .desktopNavBar-CTA-buttons button {
+    padding: 0;
+    border: 1px dotted white;
   }
-
-  .sideBar-close {
-    height: 100vh;
-    width: 300px;
-    transition: all 0.3s ease-in-out;
-    transform: translateX(110%);
-    position: fixed;
-    right: 0px;
-    top: -10px;
-  }
-
-  .dekstop-nav-sideBar {
-    height: 100%;
-    width: 100%;
-    background-color: var(--secColor);
-    display: flex;
-    flex-direction: column;
-    border-left: 2px solid var(--textSecColor);
-    position: relative;
-    box-shadow: 0px 0px 10px 10px hsla(0, 0%, 20%, 0.3);
-  }
-  .dekstop-nav-sideBar i {
-    font-size: 36px;
-    margin: 20px;
-    width: fit-content;
-    height: fit-content;
-  }
-
-  .sideBar-body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-    margin: 20px 20px 0px -20px;
-  }
-  .sideBar-body span i {
-    font-size: 20px;
-    padding-left: 10px;
-    margin: 0px;
-  }
-
-  .sideBar-body i {
-    margin-top: auto;
-    font-size: 20px;
-    width: fit-content;
-    height: fit-content;
+  .desktopNavBar-CTA-buttons i {
+    padding: 0;
   }
 }

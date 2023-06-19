@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./_NavBar.css";
 import Button from "../Buttons/Button";
 import ButtonAnchor from "../Buttons/ButtonAnchor";
+import resumeFilePDF from "/src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
 
 export default function DesktopNav() {
   const [isPath, setIsPath] = useState("/");
@@ -13,33 +14,29 @@ export default function DesktopNav() {
   };
 
   return (
-    <nav className="desktopNavBar">
-      <div className="desktopOptions">
-        <Link to="/" className="desktopOptions-logo-img">
+    <nav className="desktopNavBar-root">
+      <div className="desktopNavBar-content">
+        <Link to="/" className="desktopNavBar-main-logo">
           <h1 onClick={handleClick}>Kinxori</h1>
         </Link>
-        <div className="desktop-nav-CTA-buttons">
+        <div className="desktopNavBar-CTA-buttons">
           <Button variant="ghostButton" to="/">
-            Home <i className="fa-solid fa-house"></i>
+            <i className="fa-solid fa-house"></i> Home
           </Button>
           <Button variant="ghostButton" to="/projects">
-            Projects <i className="fa-solid fa-briefcase"></i>
+            <i className="fa-solid fa-laptop-code"></i> Projects
           </Button>
-          <Button variant="ghostButton" to="https://github.com/kinxori" target="_blank">
-            Github <i className="fa-brands fa-github"></i>
+          <Button variant="ghostButton" to="/motionprojects" target="_blank">
+            <i className="fa-solid fa-film"></i> Motion Projects
           </Button>
           <Button variant="ghostButton" to="/contact">
-            Contact <i className="fa-solid fa-address-book"></i>
+            <i className="fa-solid fa-address-book"></i> Contact
           </Button>
           <Button variant="ghostButton" to="/about">
-            About me <i className="fa-solid fa-user"></i>
+            <i className="fa-solid fa-user"></i> About me
           </Button>
-          <ButtonAnchor
-            variant="ghostButton"
-            href="/FrontEnd - Gustavo Quiroz - Resume.pdf"
-            download
-          >
-            Download Resume <i className="fa-solid fa-download"></i>
+          <ButtonAnchor variant="ghostButton" href={resumeFilePDF} download>
+            <i className="fa-solid fa-download"></i> Download Resume
           </ButtonAnchor>
         </div>
       </div>
