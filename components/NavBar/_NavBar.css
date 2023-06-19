@@ -56,18 +56,6 @@
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
 @media (min-width: 1181px) {
-  button:hover {
-    cursor: pointer;
-    transform: scale(1.015);
-    opacity: 0.9;
-  }
-
-  i:hover {
-    cursor: pointer;
-    transform: scale(1.015);
-    opacity: 0.9;
-  }
-
   .desktopNavBar {
     height: 80px;
     background-color: var(--mainColor);

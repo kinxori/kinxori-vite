@@ -16,15 +16,19 @@
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
 @media (min-width: 1181px) {
-  ::-webkit-scrollbar {
+  .rootHome {
+    height: calc(100vh - 80px);
+  }
+
+  .rootHome::-webkit-scrollbar {
     width: 12px;
     overflow: scroll;
   }
-  ::-webkit-scrollbar-thumb {
+  .rootHome::-webkit-scrollbar-thumb {
     background-color: hsla(0, 0%, 30%, 0.8);
     border-radius: 30px;
   }
-  ::-webkit-scrollbar-track {
+  .rootHome::-webkit-scrollbar-track {
     border: 1px solid hsla(0, 0%, 10%, 0.5);
     background-color: hsla(0, 0%, 20%, 1);
   }
