@@ -33,6 +33,10 @@
   font-weight: 700;
 }
 
+:root button {
+  cursor: pointer;
+}
+
 /*----------------- animations individual -------------------*/
 
 @keyframes opacity-in {
