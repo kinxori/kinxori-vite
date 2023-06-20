@@ -3,7 +3,7 @@
   width: 100%;
   bottom: 0;
   z-index: 100;
-  box-shadow: 0px 0px 10px 10px hsla(0, 0%, 20%, 0.3);
+  box-shadow: 0px 0px 10px 10px hsla(266deg, 99%, 60%, 0.3);
   background-color: var(--mainColor);
   border-top: 1px solid var(--textSecColor);
   position: fixed;
@@ -38,7 +38,7 @@
 @media (min-width: 601px) {
   .mobile-nav-bar-root {
     height: 70px;
-    box-shadow: 0px 0px 30px 30px hsla(0, 0%, 20%, 0.5);
+    box-shadow: 0px 0px 30px 30px hsla(266deg, 99%, 60%, 0.5);
     border-top: 2px solid var(--textSecColor);
   }
 
@@ -62,9 +62,14 @@
     width: 100%;
     position: fixed;
     top: 0;
-    box-shadow: 0px 0px 10px 10px hsla(0, 0%, 20%, 0.3);
+    box-shadow: 0px 0px 20px 10px hsla(266deg, 99%, 60%, 0.2);
+    transition: box-shadow 0.5s ease-in-out;
     z-index: 100;
     border-bottom: 1px solid var(--textSecColor);
+  }
+
+  .desktopNavBar-root:hover {
+    box-shadow: 0px 0px 50px 20px hsla(266deg, 99%, 60%, 0.4);
   }
 
   .desktopNavBar-content {
