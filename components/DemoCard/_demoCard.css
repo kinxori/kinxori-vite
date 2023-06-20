@@ -149,88 +149,79 @@
 @media (min-width: 1181px) {
   .card-root-open {
     border: 2px solid var(--mainColor);
-    border-radius: 22px;
+    border-radius: 18px;
     margin: 10px 0px;
   }
+
+  .card-root-close {
+    border: 2px solid var(--mainColor);
+    border-radius: 18px;
+    margin: 10px 0px;
+  }
+
   .card-headline {
     height: 70px;
     padding: 0px 30px;
   }
+
   .card-headline-title {
     font-size: 28px;
   }
-  .card-headline .fa-chevron-right {
-    font-size: 28px;
+
+  .fa-chevron-right {
+    font-size: 20px;
   }
 
-  /* -------------------- Card open --------------------*/
+  .card-root-chevron-open {
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+  .card-root-chevron-open:hover {
+    height: 42px;
+    width: 42px;
+    color: white;
+    background-color: var(--mainColor);
+    border: 2px solid white;
+    cursor: pointer;
+  }
 
-  .card-root-open .card-headline span {
-    height: 45px;
-    width: 45px;
+  .card-root-chevron-close {
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+  .card-root-chevron-close:hover {
+    height: 42px;
+    width: 42px;
+    color: white;
+    background-color: var(--mainColor);
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+  .card-root-close .card-body {
+    max-height: 0px;
   }
 
   .card-root-open .card-body {
     max-height: 500px;
-    padding: 30px 30px;
-    gap: 30px;
   }
-  .card-root-open .card-body h4 {
-    font-size: 24px;
-  }
-  p {
-    font-size: 20px;
-  }
-  ul {
-    padding-left: 30px;
-  }
-  li {
-    padding: 4px 0;
-    font-size: 20px;
-  }
+
   .card-root-open .card-body::-webkit-scrollbar {
-    width: 12px;
-    overflow: scroll;
+    width: 9px;
   }
-  .card-root-open .card-body::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 30%, 0.8);
-    border-radius: 30px;
-  }
+
   .card-root-open .card-body::-webkit-scrollbar-track {
-    border: 1px solid hsla(0, 0%, 10%, 0.5);
-    background-color: hsla(0, 0%, 20%, 1);
+    background-color: transparent;
   }
 
-  /*  ------------------------- CLOSED  --------------------- */
-
-  .card-root-close {
-    border: 2px solid var(--mainColor);
-    border-radius: 22px;
-    margin: 10px 0px;
+  .card-root-open .card-body::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border-radius: 9px;
   }
 
-  .card-root-close .card-headline span {
-    height: 45px;
-    width: 45px;
-  }
-  .card-root-close .card-body {
-    padding: 0px 30px;
-    gap: 30px;
-  }
-  .card-root-close .card-body h4 {
-    font-size: 24px;
-  }
-
-  .card-root-close .card-body::-webkit-scrollbar {
-    width: 0;
-    height: 100%;
-    overflow-y: none;
-  }
-  .card-root-close .card-body::-webkit-scrollbar-thumb {
-    background-color: none;
-    border-radius: 0;
-  }
-  .card-root-close .card-body::-webkit-scrollbar-track {
-    background-color: none;
+  .card-root-open .card-body::-webkit-scrollbar-thumb:hover {
+    background-color: hsla(266deg, 99%, 60%, 1);
   }
 }
