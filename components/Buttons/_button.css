@@ -83,91 +83,51 @@
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
 @media (min-width: 1181px) {
-  .desktopMainButton {
-    color: var(--mainColor);
-    border: 2px solid var(--mainColor);
-    padding: 12px 20px;
-    border-radius: 18px;
-    font-size: 20px;
-    background: white;
-  }
-
-  .desktopMainButton:hover {
-    cursor: pointer;
-    transform: scale(1.015);
-    opacity: 0.9;
-  }
-  .desktopSecButton {
-    color: white;
-    border: 2px solid white;
-    padding: 12px 20px;
-    border-radius: 18px;
-    font-size: 20px;
-    background: none;
-  }
-
-  .desktopSecButton:hover {
-    cursor: pointer;
-    transform: scale(1.015);
-    opacity: 0.9;
-  }
   .mainButton {
     color: var(--textMainColor);
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 12px 20px;
-    border-radius: 18px;
+    border-radius: 12px;
     font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    min-width: 150px;
+    font-weight: bold;
     background: var(--mainColor);
-  }
-  .mainButton:hover {
-    cursor: pointer;
-    transform: scale(1.015);
-    opacity: 0.9;
   }
 
   .secButton {
     color: var(--textMainColor);
-    border: 2px solid var(--mainColor);
+    border: 1px solid var(--mainColor);
     padding: 12px 20px;
-    border-radius: 18px;
+    border-radius: 12px;
     font-size: 20px;
+    min-width: 150px;
+    font-weight: bold;
     background: var(--secColor);
-  }
-
-  .secButton:hover {
-    cursor: pointer;
-    transform: scale(1.015);
-    opacity: 0.9;
   }
 
   .ghostButton {
     color: var(--textMainColor);
     border: none;
     padding: 12px 20px;
-    border-radius: 18px;
+    border-radius: 12px;
     font-size: 20px;
+    min-width: 150px;
+    font-weight: bold;
     background: none;
-  }
-
-  .ghostButton:hover {
-    cursor: pointer;
-    transform: scale(1.015);
-    opacity: 0.9;
   }
 
   .linkButton {
     color: var(--textMainColor);
     border: none;
     padding: 12px 20px;
-    border-radius: 18px;
+    border-radius: 12px;
     font-size: 20px;
+    min-width: 150px;
     background: none;
+    font-style: italic;
+    font-weight: bold;
     color: var(--mainColor);
     text-decoration-line: underline;
-  }
-  .linkButton:hover {
-    cursor: pointer;
-    transform: scale(1.015);
-    opacity: 0.9;
   }
 }

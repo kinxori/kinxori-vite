@@ -75,29 +75,49 @@
     transform: translateY(-50%);
   }
   .desktopNavBar-main-logo {
-    margin-right: auto;
-    margin-left: 80px;
+    margin-left: 20px;
+    height: 80px;
+    width: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .desktopNavBar-main-logo:hover {
+    border-bottom: 3px solid white;
+    border-radius: 2px;
   }
 
   .desktopNavBar-main-logo h1 {
     font-size: 50px;
+    padding: 0 20px;
   }
 
   .desktopNavBar-CTA-buttons {
-    width: auto;
+    width: fit-content;
     margin-left: auto;
+    padding-right: 20px;
     display: flex;
     align-items: center;
-    gap: 10px;
   }
+
   .desktopNavBar-CTA-buttons span {
-    padding: 0;
+    width: fit-content;
+    padding: 0 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
   }
+
+  .desktopNavBar-CTA-buttons span:hover {
+    border-bottom: 3px solid white;
+    border-radius: 2px;
+  }
+
   .desktopNavBar-CTA-buttons button {
-    padding: 0;
-    border: 1px dotted white;
-  }
-  .desktopNavBar-CTA-buttons i {
-    padding: 0;
+    padding: 1px;
+    min-width: fit-content;
   }
 }
