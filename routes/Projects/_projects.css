@@ -300,7 +300,6 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
-    border: 2px dotted white;
   }
 
   .projects-content img {
@@ -309,7 +308,6 @@
     object-fit: contain;
     animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
     transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-    border: 2px dotted white;
   }
 
   .projects-content img:hover {
@@ -323,7 +321,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 2px dotted white;
   }
 
   .projects-copy h2 {
