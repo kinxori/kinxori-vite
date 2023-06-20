@@ -53,7 +53,6 @@
     padding: 20px 28px;
     border-radius: 18px;
     font-size: 20px;
-    border: 2px solid white;
     min-width: 200px;
   }
 
@@ -84,50 +83,31 @@
 
 @media (min-width: 1181px) {
   .mainButton {
-    color: var(--textMainColor);
-    border: 1px solid white;
-    padding: 12px 20px;
-    border-radius: 12px;
+    padding: 20px 28px;
+    border-radius: 18px;
     font-size: 20px;
-    transition: all 0.2s ease-in-out;
-    min-width: 150px;
-    font-weight: bold;
-    background: var(--mainColor);
+    min-width: 200px;
   }
 
   .secButton {
-    color: var(--textMainColor);
-    border: 1px solid var(--mainColor);
-    padding: 12px 20px;
-    border-radius: 12px;
+    padding: 20px 28px;
+    border-radius: 18px;
     font-size: 20px;
-    min-width: 150px;
-    font-weight: bold;
-    background: var(--secColor);
+    border: 2px solid var(--mainColor);
+    min-width: 200px;
   }
 
   .ghostButton {
-    color: var(--textMainColor);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 12px;
+    padding: 20px 28px;
+    border-radius: 18px;
     font-size: 20px;
-    min-width: 150px;
-    font-weight: bold;
-    background: none;
+    min-width: 200px;
   }
 
   .linkButton {
-    color: var(--textMainColor);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 12px;
+    padding: 20px 28px;
+    border-radius: 18px;
     font-size: 20px;
-    min-width: 150px;
-    background: none;
-    font-style: italic;
-    font-weight: bold;
-    color: var(--mainColor);
-    text-decoration-line: underline;
+    min-width: 200px;
   }
 }
