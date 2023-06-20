@@ -19,7 +19,7 @@ export default function DesktopNav() {
           <Button variant="ghostButton" to="/webprojects">
             Web Projects
           </Button>
-          <Button variant="ghostButton" to="/motionprojects" target="_blank">
+          <Button variant="ghostButton" to="/motionprojects">
             Motion Projects
           </Button>
           <Button variant="ghostButton" to="/contact">

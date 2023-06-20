@@ -105,7 +105,6 @@
   .desktopNavBar-CTA-buttons span {
     width: fit-content;
     padding: 0 10px;
-    height: 80px;
     display: flex;
     align-items: center;
     transition: all 0.2s ease-in-out;
@@ -119,5 +118,6 @@
   .desktopNavBar-CTA-buttons button {
     padding: 1px;
     min-width: fit-content;
+    height: 80px;
   }
 }
