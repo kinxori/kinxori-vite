@@ -15,6 +15,10 @@
   transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
 }
 
+.error-404-root img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
 .error-404-root h2 {
   font-size: 26px;
   text-align: left;
@@ -53,15 +57,18 @@
 
 @media (min-width: 1181px) {
   .error-404-root {
-    gap: 1%;
+    gap: 30px;
   }
+
   .error-404-root img {
     height: 400px;
   }
-  .error-404-root span {
-    font-size: 34px;
+
+  .error-404-root h2 {
+    font-size: 46px;
   }
+
   .error404-btn {
-    padding-top: 3%;
+    margin-top: 0%;
   }
 }
