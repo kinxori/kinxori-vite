@@ -14,7 +14,7 @@ export default function Projects() {
     return storedState ? storedState === "true" : false;
   });
   const [isFullScreen, setIsFullScreen] = useState("");
-  const [isLoadingVideo, setIsLoadingVideo] = useState(true);
+  const [isLoadingVideo, setIsLoadingVideo] = useState(false);
 
   useEffect(() => {
     if (isClicked !== null) {
@@ -51,9 +51,11 @@ export default function Projects() {
             <b> improving </b>
             along my <b>web developer career.</b>
           </p>
-          <Button onClick={handleProjectsButton} variant="secButton" className="projects-CTA">
-            {isActive === false ? "Open Projects" : "Close Projects"}
-          </Button>
+          <div className="projects-CTA">
+            <Button onClick={handleProjectsButton} variant="secButton">
+              {isActive === false ? "Open Projects" : "Close Projects"}
+            </Button>
+          </div>
         </div>
       </div>
       {isActive === true && (
@@ -79,10 +81,12 @@ export default function Projects() {
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && <h3 className="projects-card-asset-loader">Loading video...</h3>}
+                {!isLoadingVideo && (
+                  <h3 className="projects-card-asset-loader">Loading video...</h3>
+                )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
-                  onLoadedData={() => setIsLoadingVideo(false)}
+                  onLoadedData={() => setIsLoadingVideo(true)}
                   loop
                   autoPlay
                   controls={false}
@@ -158,10 +162,12 @@ export default function Projects() {
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && <h3 className="projects-card-asset-loader">Loading video...</h3>}
+                {!isLoadingVideo && (
+                  <h3 className="projects-card-asset-loader">Loading video...</h3>
+                )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
-                  onLoadedData={() => setIsLoadingVideo(false)}
+                  onLoadedData={() => setIsLoadingVideo(true)}
                   loop
                   autoPlay
                   controls={false}
@@ -238,10 +244,12 @@ export default function Projects() {
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && <h3 className="projects-card-asset-loader">Loading video...</h3>}
+                {!isLoadingVideo && (
+                  <h3 className="projects-card-asset-loader">Loading video...</h3>
+                )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
-                  onLoadedData={() => setIsLoadingVideo(false)}
+                  onLoadedData={() => setIsLoadingVideo(true)}
                   loop
                   autoPlay
                   controls={false}
@@ -326,12 +334,12 @@ export default function Projects() {
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
                   Close
                 </Button>
-                {isLoadingVideo && (
+                {!isLoadingVideo && (
                   <h3 className="projects-card-asset-loader">Loading video...</h3>
                 )}
                 <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
-                  onLoadedData={() => setIsLoadingVideo(false)}
+                  onLoadedData={() => setIsLoadingVideo(true)}
                   loop
                   autoPlay
                   controls={false}
