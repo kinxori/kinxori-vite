@@ -20,23 +20,11 @@
     height: calc(100vh -80px);
     position: absolute;
     top: 80px;
+    left: 0;
   }
-  /* 
-  .rootHome::-webkit-scrollbar {
-    width: 12px;
-    overflow: scroll;
-  }
-  .rootHome::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 30%, 0.8);
-    border-radius: 30px;
-  }
-  .rootHome::-webkit-scrollbar-track {
-    border: 1px solid hsla(0, 0%, 10%, 0.5);
-    background-color: hsla(0, 0%, 20%, 1);
-  } */
 
   .rootHome::-webkit-scrollbar {
-    width: 8px;
+    width: 9px;
   }
 
   .rootHome::-webkit-scrollbar-track {
@@ -44,11 +32,11 @@
   }
 
   .rootHome::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 9999px;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border-radius: 9px;
   }
 
   .rootHome::-webkit-scrollbar-thumb:hover {
-    background-color: #aaa;
+    background-color: hsla(266deg, 99%, 60%, 1);
   }
 }
