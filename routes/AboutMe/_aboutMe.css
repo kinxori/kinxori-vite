@@ -178,61 +178,114 @@
 
 @media (min-width: 1181px) {
   .aboutMe-root {
-    margin-top: 10%;
+    width: 80%;
+    height: min-content;
+    margin: 0 auto;
   }
+
   .aboutMe-content {
+    height: 100%;
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 20%;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
   }
 
   .aboutMe-content img {
-    height: 450px;
+    height: 250px;
+    object-fit: contain;
+    animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
+    transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
   }
+
+  .aboutMe-content img:hover {
+    transform: rotate(10deg) scale(1.1);
+  }
+
   .aboutMe-copy {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    width: 100%;
+    padding-top: 20%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
   }
+
   .aboutMe-copy h2 {
-    font-size: 34px;
-    width: 95%;
+    font-size: 26px;
+    text-align: left;
+    font-weight: 700;
+    animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   }
 
   .aboutMe-copy p {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+    animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   }
 
-  .aboutMe-CTA button {
-    display: flex;
-    margin: 0px;
-    margin-top: 12%;
-    height: fit-content;
-    width: fit-content;
+  .aboutMe-CTA {
+    margin-left: auto;
+    margin-top: 10%;
+    animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
   }
 
   .about-me-read-more-content {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    width: 80%;
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20%;
+    gap: 20px;
   }
 
   .aboutme-copy-PFP {
-    height: 400px;
-    width: 400px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
     margin-bottom: 10%;
-    border: 4px solid white;
-  }
-  .aboutme-copy-PFP img {
-    height: 1800px;
-    top: 80%;
+    border: 5px solid white;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .about-me-read-more-content h3 {
-    font-size: 28px;
+  .aboutme-copy-PFP:hover {
+    scale: 1.1;
+    border: 5px solid var(--mainColor);
   }
+
+  .aboutme-copy-PFP img {
+    height: 350px;
+    object-fit: contain;
+    position: relative;
+    top: 30%;
+  }
+
+  .about-me-read-more-content h2 {
+    font-size: 26px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+    width: 100%;
+  }
+
   .about-me-read-more-content p {
-    font-size: 20px;
+    text-align: justify;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .about-me-read-more-content i {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
   }
 }
