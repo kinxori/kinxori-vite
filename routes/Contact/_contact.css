@@ -281,14 +281,15 @@
   .contact-options-cards {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-bottom: 20%;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 10%;
   }
 
   .contact-display-card {
     width: 100%;
-    padding: 20px;
-    gap: 20px;
+    padding: 40px;
+    gap: 30px;
     line-height: 20px;
     height: fit-content;
     box-sizing: border-box;
@@ -297,18 +298,19 @@
   }
 
   .contact-display-card h3 {
-    font-size: 20px;
+    font-size: 32px;
     text-align: center;
     font-weight: 700;
     width: 100%;
+    line-height: 30px;
   }
 
   .contact-display-card-CTA {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin: 10px 0;
-    gap: 10px;
+    margin: 20px auto;
+    gap: 20px;
   }
 
   /* -------------------- contact card styles for img FullScreen open ---------------*/
@@ -329,8 +331,8 @@
   }
 
   .contact-full-screen-asset-open .contact-full-screen-asset-button {
-    z-index: 1;
-    top: 30%;
+    z-index: 2;
+    top: 0;
     right: 0;
     position: absolute;
   }
@@ -368,7 +370,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 12px;
+    border-radius: 18px;
   }
   .contact-full-screen-asset-close .contact-full-screen-bg {
     display: none;
