@@ -350,14 +350,15 @@
   .motion-projects-display-projects-cards {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-bottom: 20%;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 10%;
   }
 
   .motion-projects-display-card {
     width: 100%;
-    padding: 20px;
-    gap: 20px;
+    padding: 40px;
+    gap: 30px;
     line-height: 20px;
     height: fit-content;
     box-sizing: border-box;
@@ -366,7 +367,7 @@
   }
 
   .motion-projects-display-card h2 {
-    font-size: 26px;
+    font-size: 46px;
     text-align: center;
     font-weight: 700;
     width: 100%;
@@ -375,23 +376,22 @@
   }
 
   .motion-projects-display-card h3 {
-    font-size: 20px;
+    font-size: 32px;
     text-align: left;
     font-weight: 700;
     width: 100%;
-    padding-left: 20px;
   }
 
   .motion-projects-display-card p {
     text-align: justify;
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
   }
 
   .motion-projects-display-card ul {
     text-align: left;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 50px;
     box-sizing: border-box;
   }
 
@@ -407,15 +407,15 @@
 
   .motion-projects-display-cards-CTA {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin: 10px 0;
-    gap: 10px;
+    margin: 20px auto;
+    gap: 20px;
   }
 
   .motion-projects-card-asset-loader {
     width: 100%;
-    height: 150px;
+    height: 450px;
     border: 3px dotted var(--mainColor);
     color: var(--mainColor);
     display: flex;
@@ -441,8 +441,8 @@
   }
 
   .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button {
-    z-index: 1;
-    top: 30%;
+    z-index: 2;
+    top: 0;
     right: 0;
     position: absolute;
   }
@@ -480,7 +480,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 12px;
+    border-radius: 18px;
   }
   .motion-projects-full-screen-asset-close .motion-projects-full-screen-bg {
     display: none;
