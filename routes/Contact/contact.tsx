@@ -58,9 +58,11 @@ export default function Contact() {
             Let's chat about <b>web development</b> or <b>motion design,</b> or just connect as
             friends! <b>Send me a message</b> and let's grab a virtual coffee!
           </p>
-          <Button onClick={handleOptionsButton} variant="secButton" className="contact-CTA">
-            {isActive === false ? "Open Options" : "Close Options"}
-          </Button>
+          <div className="contact-CTA">
+            <Button onClick={handleOptionsButton} variant="secButton">
+              {isActive === false ? "Open Options" : "Close Options"}
+            </Button>
+          </div>
         </div>
       </div>
       {isActive === true && (
