@@ -54,13 +54,11 @@ export default function MotionProjects() {
             <b> web developer </b> recently.
             <b> Check out</b> my work as a creative as well.
           </p>
-          <Button
-            onClick={handleProjectsButton}
-            variant="secButton"
-            className="motion-projects-CTA"
-          >
-            {isActive === false ? "Open Projects" : "Close Projects"}
-          </Button>
+          <div className="motion-projects-CTA">
+            <Button onClick={handleProjectsButton} variant="secButton">
+              {isActive === false ? "Open Projects" : "Close Projects"}
+            </Button>
+          </div>
         </div>
       </div>
       {isActive === true && (
