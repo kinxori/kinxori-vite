@@ -36,9 +36,11 @@ export default function AboutMe() {
             things. Formerly a <b> motion design, </b> now using my love for creating to
             <b> solve problems. </b>
           </p>
-          <Button className="aboutMe-CTA" variant="secButton" onClick={handleClick}>
-            {isOpen ? "Read less" : "Read more"}
-          </Button>
+          <div className="aboutMe-CTA">
+            <Button variant="secButton" onClick={handleClick}>
+              {isOpen ? "Read less" : "Read more"}
+            </Button>
+          </div>
         </div>
       </div>
       {isOpen === true && (
