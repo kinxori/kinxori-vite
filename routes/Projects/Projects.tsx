@@ -323,31 +323,73 @@ export default function Projects() {
             onClick={() => handleCardClick("web-projects-card")}
           >
             <div className="projects-display-card">
-              {/* <div
-                className={
-                  isFullScreen === "fetch-api-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
-                }
-                onClick={() => handleFullScreen("fetch-api-asset")}
-              >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
-                  Close
-                </Button>
-                {!isLoadingVideo && (
+              <div className="projects-full-screen-asset-close">
+                {!isLoadingVideo ? (
                   <h3 className="projects-card-asset-loader">Loading video...</h3>
+                ) : (
+                  <video
+                    src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
+                    onLoadedData={() => setIsLoadingVideo(true)}
+                    controls={true}
+                    className="projects-display-card-asset"
+                  ></video>
                 )}
-                <video
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
-                  onLoadedData={() => setIsLoadingVideo(true)}
-                  loop
-                  autoPlay
-                  controls={false}
-                  muted
-                ></video>
-                <div></div>
-              </div> */}
-              <h2>Under construction ⚙️</h2>
+              </div>
+
+              <h2>Shopping Cart</h2>
+              <p>
+                This feature updates the shopping cart's total price based on user input quantity
+                and removes items from the cart.
+              </p>
+              <h3>Technologies used 💡</h3>
+              <ul>
+                <li>
+                  <i className="fa-brands fa-react"></i> React
+                </li>
+                <li>
+                  <i className="fa-brands fa-square-js"></i> Javascript
+                </li>
+                <li>
+                  <i className="fa-brands fa-html5"></i> HTML
+                </li>
+                <li>
+                  <i className="fa-brands fa-css3"></i> CSS
+                </li>
+              </ul>
+              <h3>Skills 🧠</h3>
+              <ul>
+                <li>State management</li>
+                <li>React component architecture</li>
+                <li>User experience and interactivity</li>
+                <li>Testing and debugging</li>
+              </ul>
+              <h3>Advantages 🦾</h3>
+              <ul>
+                <li>Improved user experience</li>
+                <li>Easy integration</li>
+                <li>Reusability</li>
+                <li>Analytics</li>
+              </ul>
+              <h3>Difficulties ⚙️</h3>
+              <ul>
+                <li>State management and data flow</li>
+                <li>Handle user input and form data </li>
+                <li>Improve user experience with better organization of information</li>
+                <li>Integratation with external APIs to retrieve and update product information</li>
+              </ul>
+              <div className="projects-display-cards-CTA">
+                <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
+                  Live Project
+                </Button>
+                <Button
+                  to="https://github.com/kinxori/react-shopping-cart"
+                  variant="secButton"
+                  target="_blank"
+                >
+                  Github Repo
+                </Button>
+              </div>
+              <hr></hr>
             </div>
           </DemoCard>
         </section>
