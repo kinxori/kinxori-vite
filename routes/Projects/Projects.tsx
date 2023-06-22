@@ -4,6 +4,7 @@ import DemoCard from "./../../components/DemoCard/DemoCard";
 import "./_projects.css";
 import mainProjectsAsset from "/src/assets/projects-asset.png";
 import typescriptLogo from "/src/assets/typescript-png-logo-500x500-white.png";
+import tailwindLogo from "/src/assets/tailwindcss-png-logo-500x500-white.png";
 
 export default function Projects() {
   const [isClicked, setIsClicked] = useState(() => {
