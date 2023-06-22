@@ -376,30 +376,36 @@ export default function Projects() {
               <h3>Skills 🧠</h3>
               <ul>
                 <li>State management</li>
-                <li>React component architecture</li>
+                <li>UI Design and Styling</li>
                 <li>User experience and interactivity</li>
-                <li>Testing and debugging</li>
+                <li>Data Management</li>
+                <li>Event Handling</li>
               </ul>
               <h3>Advantages 🦾</h3>
               <ul>
-                <li>Improved user experience</li>
-                <li>Easy integration</li>
-                <li>Reusability</li>
-                <li>Analytics</li>
+                <li>Enhanced User Experience</li>
+                <li>Convenience and Accessibility</li>
+                <li>Customization and Personalization</li>
+                <li>Cross-Platform Compatibility</li>
+                <li>Real-Time Updates and Feedback</li>
+                <li>Integration with External Services</li>
+                <li>Scalability</li>
               </ul>
               <h3>Difficulties ⚙️</h3>
               <ul>
-                <li>State management and data flow</li>
-                <li>Handle user input and form data </li>
-                <li>Improve user experience with better organization of information</li>
-                <li>Integratation with external APIs to retrieve and update product information</li>
+                <li>Accessibility Considerations</li>
+                <li>Testing and Quality Assurance</li>
+                <li>Error Handling and Debugging</li>
+                <li>Performance Optimization</li>
+                <li>Audio Playback and Compatibility</li>
+                <li>Integration with External APIs</li>
               </ul>
               <div className="projects-display-cards-CTA">
-                <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
+                <Button to="https://kinxori.github.io/react-media-player-practice/" target="_blank">
                   Live Project
                 </Button>
                 <Button
-                  to="https://github.com/kinxori/react-shopping-cart"
+                  to="https://github.com/kinxori/react-media-player-practice/tree/master"
                   variant="secButton"
                   target="_blank"
                 >
