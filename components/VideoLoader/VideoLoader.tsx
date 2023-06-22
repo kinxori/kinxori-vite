@@ -4,16 +4,18 @@ export default function VideoLoader({
   autoPlay,
   controls,
   muted,
+  preload,
   className,
   controlsList,
 }: any) {
   return (
     <video
       src={src}
-      loop
+      loop={loop}
       autoPlay={autoPlay}
       controls={controls}
-      muted
+      muted={muted}
+      preload={preload}
       className={className}
       controlsList={controlsList}
     ></video>
