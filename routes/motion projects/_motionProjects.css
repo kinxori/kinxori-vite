@@ -73,6 +73,7 @@
 
 .motion-projects-display-card h2 {
   font-size: 26px;
+  line-height: 30px;
   text-align: center;
   font-weight: 700;
   width: 100%;
@@ -241,6 +242,7 @@
 
   .motion-projects-display-card h2 {
     font-size: 36px;
+    line-height: 34px;
     padding: 20px 0;
   }
 
@@ -368,10 +370,11 @@
 
   .motion-projects-display-card h2 {
     font-size: 46px;
+    line-height: 38px;
     text-align: center;
     font-weight: 700;
     width: 100%;
-    padding: 10px 0;
+    padding: 30px 0;
     text-decoration: underline;
   }
 
