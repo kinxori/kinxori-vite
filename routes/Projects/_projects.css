@@ -116,6 +116,19 @@
   object-fit: contain;
 }
 
+.projects-typescript-logo {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center;
+}
+
+.projects-typescript-logo img {
+  height: 14px;
+  width: 14px;
+  margin-right: auto;
+}
+
 .projects-display-cards-CTA {
   display: flex;
   flex-direction: column;

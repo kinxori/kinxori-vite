@@ -357,13 +357,19 @@ export default function Projects() {
                   <i className="fa-brands fa-react"></i> React
                 </li>
                 <li>
-                  <i className="fa-brands fa-square-js"></i> Typescript
+                  <span className="projects-typescript-logo">
+                    <img src={typescriptLogo} alt="typescript logo on white - kinxori.com"></img>
+                    &nbsp;<p>Typescript</p>
+                  </span>
                 </li>
                 <li>
                   <i className="fa-brands fa-html5"></i> HTML
                 </li>
                 <li>
-                  <i className="fa-brands fa-css3"></i> Tailwind
+                  <span className="projects-typescript-logo">
+                    <img src={typescriptLogo} alt="typescript logo on white - kinxori.com"></img>
+                    &nbsp;<p>Tailwind</p>
+                  </span>
                 </li>
               </ul>
               <h3>Skills 🧠</h3>
