@@ -271,6 +271,19 @@
     font-size: 20px;
   }
 
+  .projects-typescript-logo {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects-typescript-logo img {
+    height: 20px;
+    width: 20px;
+    margin-right: auto;
+  }
+
   .projects-display-cards-CTA {
     margin: 20px auto;
     gap: 20px;
@@ -278,7 +291,7 @@
   }
 
   .projects-card-asset-loader {
-    height: 250px;
+    height: 300px;
     border: 5px dotted var(--mainColor);
   }
 
