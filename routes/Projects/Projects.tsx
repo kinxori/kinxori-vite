@@ -3,6 +3,7 @@ import Button from "./../../components/Buttons/Button";
 import DemoCard from "./../../components/DemoCard/DemoCard";
 import "./_projects.css";
 import mainProjectsAsset from "/src/assets/projects-asset.png";
+import typescriptLogo from "/src/assets/typescript-png-logo-500x500-white.png";
 
 export default function Projects() {
   const [isClicked, setIsClicked] = useState(() => {
@@ -341,10 +342,14 @@ export default function Projects() {
                 )}
               </div>
 
-              <h2>Shopping Cart</h2>
+              <h2>Music Media Player</h2>
               <p>
-                This feature updates the shopping cart's total price based on user input quantity
-                and removes items from the cart.
+                This music media player app built with React allows users to play, pause, and skip
+                songs in a playlist. It provides controls for volume adjustment and offers features
+                like shuffle and repeat modes. The app displays song information and updates the
+                progress bar in real-time. Users can click on a song in the playlist to start
+                playing it. Enjoy a simple and intuitive interface for managing and enjoying your
+                music collection.
               </p>
               <h3>Technologies used 💡</h3>
               <ul>
@@ -352,13 +357,13 @@ export default function Projects() {
                   <i className="fa-brands fa-react"></i> React
                 </li>
                 <li>
-                  <i className="fa-brands fa-square-js"></i> Javascript
+                  <i className="fa-brands fa-square-js"></i> Typescript
                 </li>
                 <li>
                   <i className="fa-brands fa-html5"></i> HTML
                 </li>
                 <li>
-                  <i className="fa-brands fa-css3"></i> CSS
+                  <i className="fa-brands fa-css3"></i> Tailwind
                 </li>
               </ul>
               <h3>Skills 🧠</h3>
