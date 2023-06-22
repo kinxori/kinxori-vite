@@ -164,7 +164,7 @@ export default function Projects() {
                 onClick={() => handleFullScreen("search-bar-asset")}
               >
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
-                  Close
+                  <i className="fa-regular fa-circle-xmark"></i>
                 </Button>
                 {isLoadingVideo ? (
                   <video
@@ -247,7 +247,7 @@ export default function Projects() {
                 onClick={() => handleFullScreen("fetch-api-asset")}
               >
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
-                  Close
+                  <i className="fa-regular fa-circle-xmark"></i>
                 </Button>
                 {isLoadingVideo ? (
                   <video
@@ -336,6 +336,7 @@ export default function Projects() {
                     src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
                     onLoadedData={() => setIsLoadingVideo(true)}
                     controls={true}
+                    controlsList="nodownload noplaybackrate"
                     className="projects-display-card-asset"
                   ></video>
                 ) : (
