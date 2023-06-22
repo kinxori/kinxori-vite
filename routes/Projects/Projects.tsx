@@ -81,7 +81,7 @@ export default function Projects() {
                 onClick={() => handleFullScreen("shopping-card-asset")}
               >
                 <Button className="projects-full-screen-asset-button" variant="linkButton">
-                  Close
+                  <i className="fa-regular fa-circle-xmark"></i>
                 </Button>
                 {isLoadingVideo ? (
                   <video

@@ -148,10 +148,16 @@
 }
 
 .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button {
-  z-index: 1;
-  top: 30%;
+  z-index: 3;
+  top: 37%;
   right: 0;
   position: absolute;
+}
+
+.motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button button {
+  padding: 10px;
+  min-width: 0;
+  font-size: 30px;
 }
 
 .motion-projects-full-screen-asset-open .motion-projects-display-card-asset {
@@ -237,7 +243,7 @@
   .motion-projects-display-card {
     padding: 40px;
     gap: 30px;
-    line-height: 30px;
+    line-height: 25px;
   }
 
   .motion-projects-display-card h2 {
@@ -273,7 +279,13 @@
   /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
   .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button {
-    top: 24%;
+    top: 31%;
+  }
+
+  .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button button {
+    padding: 20px;
+    min-width: 0;
+    font-size: 40px;
   }
 
   /* ------- full screen img FullScreen closed  ------ */
@@ -361,7 +373,7 @@
     width: 100%;
     padding: 40px;
     gap: 30px;
-    line-height: 20px;
+    line-height: 25px;
     height: fit-content;
     box-sizing: border-box;
     display: flex;
@@ -444,10 +456,20 @@
   }
 
   .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button {
-    z-index: 2;
+    z-index: 3;
     top: 0;
     right: 0;
     position: absolute;
+  }
+
+  .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button button {
+    padding: 20px;
+    min-width: 0;
+    font-size: 40px;
+  }
+
+  .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button:hover {
+    color: white;
   }
 
   .motion-projects-full-screen-asset-open .motion-projects-display-card-asset {

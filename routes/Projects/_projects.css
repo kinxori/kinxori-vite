@@ -179,16 +179,22 @@
 }
 
 .projects-full-screen-asset-open .projects-full-screen-asset-button {
-  z-index: 1;
-  top: 30%;
+  z-index: 3;
+  top: 37%;
   right: 0;
   position: absolute;
+}
+
+.projects-full-screen-asset-open .projects-full-screen-asset-button button {
+  padding: 10px;
+  min-width: 0;
+  font-size: 30px;
 }
 
 .projects-full-screen-asset-open .projects-display-card-asset {
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   object-fit: contain;
 }
@@ -264,7 +270,7 @@
   .projects-display-card {
     padding: 40px;
     gap: 30px;
-    line-height: 30px;
+    line-height: 25px;
   }
 
   .projects-display-card h2 {
@@ -326,7 +332,13 @@
   /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
   .projects-full-screen-asset-open .projects-full-screen-asset-button {
-    top: 24%;
+    top: 31%;
+  }
+
+  .projects-full-screen-asset-open .projects-full-screen-asset-button button {
+    padding: 20px;
+    min-width: 0;
+    font-size: 40px;
   }
 
   /* ------- full screen img FullScreen closed  ------ */
@@ -420,7 +432,7 @@
     width: 100%;
     padding: 40px;
     gap: 30px;
-    line-height: 30px;
+    line-height: 25px;
     height: fit-content;
     box-sizing: border-box;
     display: flex;
@@ -529,10 +541,20 @@
   }
 
   .projects-full-screen-asset-open .projects-full-screen-asset-button {
-    z-index: 2;
+    z-index: 3;
     top: 0;
     right: 0;
     position: absolute;
+  }
+
+  .projects-full-screen-asset-open .projects-full-screen-asset-button button {
+    padding: 20px;
+    min-width: 0;
+    font-size: 40px;
+  }
+
+  .projects-full-screen-asset-open .projects-full-screen-asset-button button:hover {
+    color: white;
   }
 
   .projects-full-screen-asset-open .projects-display-card-asset {
