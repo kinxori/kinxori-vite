@@ -118,14 +118,14 @@
 
 .projects-typescript-logo {
   width: 100%;
-  height: min-content;
+  height: 20px;
   display: flex;
   align-items: center;
 }
 
 .projects-typescript-logo img {
-  height: 14px;
-  width: 14px;
+  height: 16px;
+  width: 16px;
   margin-right: auto;
 }
 

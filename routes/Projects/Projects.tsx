@@ -368,7 +368,7 @@ export default function Projects() {
                 </li>
                 <li>
                   <span className="projects-typescript-logo">
-                    <img src={typescriptLogo} alt="typescript logo on white - kinxori.com"></img>
+                    <img src={tailwindLogo} alt="typescript logo on white - kinxori.com"></img>
                     &nbsp;<p>Tailwind</p>
                   </span>
                 </li>
