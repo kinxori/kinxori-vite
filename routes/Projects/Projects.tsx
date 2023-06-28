@@ -1,10 +1,10 @@
 import { useEffect, useState, Suspense, lazy } from "react";
 import Button from "./../../components/Buttons/Button";
 import DemoCard from "./../../components/DemoCard/DemoCard";
+import mainProjectsAsset from "./../../src/assets/projects-asset.png";
+import typescriptLogo from "./../../src/assets/typescript-png-logo-500x500-white.png";
+import tailwindLogo from "./../../src/assets/tailwindcss-png-logo-500x500-white.png";
 import "./_projects.css";
-import mainProjectsAsset from "./src/assets/projects-asset.png";
-import typescriptLogo from "./src/assets/typescript-png-logo-500x500-white.png";
-import tailwindLogo from "./src/assets/tailwindcss-png-logo-500x500-white.png";
 
 const VideoLoader = lazy(() => import("./../../components/VideoLoader/VideoLoader"));
 
@@ -18,7 +18,6 @@ export default function Projects() {
     return storedState ? storedState === "true" : false;
   });
   const [isFullScreen, setIsFullScreen] = useState("");
-  const [isLoadingVideo, setIsLoadingVideo] = useState(false); //------- fix this !!!!  -------
 
   useEffect(() => {
     if (isClicked !== null) {
