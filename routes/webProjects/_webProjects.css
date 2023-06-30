@@ -157,6 +157,7 @@
   left: 0px;
   z-index: 550;
   position: fixed;
+  object-fit: contain;
 }
 
 .projects-full-screen-img-close {

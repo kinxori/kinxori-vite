@@ -65,6 +65,18 @@ export default function Projects() {
       </div>
       {isActive === true && (
         <section className="projects-display-projects-cards">
+          {isFullScreen !== "" && (
+            <>
+              <Button
+                className="projects-full-screen-close-button"
+                variant="linkButton"
+                onClick={() => handleFullScreen("")}
+              >
+                <i className="fa-regular fa-circle-xmark"></i>
+              </Button>
+              <div className="projects-full-screen-bg" onClick={() => handleFullScreen("")}></div>
+            </>
+          )}
           <DemoCard
             header={
               <>
@@ -75,21 +87,6 @@ export default function Projects() {
             onClick={() => handleCardClick("features-card")}
           >
             <div className="projects-display-card">
-              {isFullScreen !== "" && (
-                <>
-                  <Button
-                    className="projects-full-screen-close-button"
-                    variant="linkButton"
-                    onClick={() => handleFullScreen("")}
-                  >
-                    <i className="fa-regular fa-circle-xmark"></i>
-                  </Button>
-                  <div
-                    className="projects-full-screen-bg"
-                    onClick={() => handleFullScreen("")}
-                  ></div>
-                </>
-              )}
               <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
                 <VideoLoader
                   className={

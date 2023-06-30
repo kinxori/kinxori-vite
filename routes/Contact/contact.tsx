@@ -67,6 +67,18 @@ export default function Contact() {
       </div>
       {isActive === true && (
         <section className="contact-options-cards">
+          {isFullScreen !== "" && (
+            <>
+              <Button
+                className="contact-full-screen-close-button"
+                variant="linkButton"
+                onClick={() => handleFullScreen("")}
+              >
+                <i className="fa-regular fa-circle-xmark"></i>
+              </Button>
+              <div className="contact-full-screen-bg" onClick={() => handleFullScreen("")}></div>
+            </>
+          )}
           <DemoCard
             header={
               <>
@@ -77,24 +89,16 @@ export default function Contact() {
             onClick={() => handleCardClick("linkedin-card")}
           >
             <div className="contact-display-card">
-              <div
+              <img
                 className={
-                  isFullScreen === "linkedin-card-img-asset"
-                    ? "contact-full-screen-asset-open"
-                    : "contact-full-screen-asset-close"
+                  isFullScreen === "linkedin-card-img"
+                    ? "contact-full-screen-img-open"
+                    : "contact-full-screen-img-close"
                 }
-                onClick={() => handleFullScreen("linkedin-card-img-asset")}
-              >
-                <Button className="contact-full-screen-asset-button" variant="linkButton">
-                  Close
-                </Button>
-                <img
-                  src={linkedinSS}
-                  alt="screenshot of Kinxori's linkedin profile"
-                  className="contact-display-card-asset"
-                ></img>
-                <div className="contact-full-screen-bg"></div>
-              </div>
+                onClick={() => handleFullScreen("linkedin-card-img")}
+                src={linkedinSS}
+                alt="screenshot of Kinxori's linkedin profile"
+              ></img>
               <h3>Click the button below to visit my LinkedIn profile! 💻</h3>
               <Button
                 to="https://www.linkedin.com/in/quinchori/"
@@ -116,24 +120,16 @@ export default function Contact() {
             onClick={() => handleCardClick("resume-card")}
           >
             <div className="contact-display-card">
-              <div
+              <img
                 className={
                   isFullScreen === "resume-card-img-asset"
-                    ? "contact-full-screen-asset-open"
-                    : "contact-full-screen-asset-close"
+                    ? "contact-full-screen-img-open"
+                    : "contact-full-screen-img-close"
                 }
                 onClick={() => handleFullScreen("resume-card-img-asset")}
-              >
-                <Button className="contact-full-screen-asset-button" variant="linkButton">
-                  Close
-                </Button>
-                <img
-                  src={resumeSS}
-                  alt="screenshot of Kinxori's latest resume"
-                  className="contact-display-card-asset"
-                ></img>
-                <div className="contact-full-screen-bg"></div>
-              </div>
+                src={resumeSS}
+                alt="screenshot of Kinxori's latest resume"
+              ></img>
               <h3>Click the button below to download my latest resume! 📜</h3>
               <ButtonAnchor
                 href={resumeFilePDF}
@@ -155,24 +151,16 @@ export default function Contact() {
             onClick={() => handleCardClick("github-card")}
           >
             <div className="contact-display-card">
-              <div
+              <img
+                src={githubSS}
+                alt="screenshot of Kinxori's github profile"
                 className={
                   isFullScreen === "github-card-img-asset"
-                    ? "contact-full-screen-asset-open"
-                    : "contact-full-screen-asset-close"
+                    ? "contact-full-screen-img-open"
+                    : "contact-full-screen-img-close"
                 }
                 onClick={() => handleFullScreen("github-card-img-asset")}
-              >
-                <Button className="contact-full-screen-asset-button" variant="linkButton">
-                  Close
-                </Button>
-                <img
-                  src={githubSS}
-                  alt="screenshot of Kinxori's github profile"
-                  className="contact-display-card-asset"
-                ></img>
-                <div className="contact-full-screen-bg"></div>
-              </div>
+              ></img>
               <h3>Take a look at my github! I'm sure you will find something of value 📖</h3>
               <Button
                 to="https://github.com/kinxori"
@@ -194,24 +182,16 @@ export default function Contact() {
             onClick={() => handleCardClick("twitter-card")}
           >
             <div className="contact-display-card">
-              <div
+              <img
+                src={twitterSS}
+                alt="screenshot of Kinxori's twitter profile"
+                onClick={() => handleFullScreen("twitter-card-img-asset")}
                 className={
                   isFullScreen === "twitter-card-img-asset"
-                    ? "contact-full-screen-asset-open"
-                    : "contact-full-screen-asset-close"
+                    ? "contact-full-screen-img-open"
+                    : "contact-full-screen-img-close"
                 }
-                onClick={() => handleFullScreen("twitter-card-img-asset")}
-              >
-                <Button className="contact-full-screen-asset-button" variant="linkButton">
-                  Close
-                </Button>
-                <img
-                  src={twitterSS}
-                  alt="screenshot of Kinxori's twitter profile"
-                  className="contact-display-card-asset"
-                ></img>
-                <div className="contact-full-screen-bg"></div>
-              </div>
+              ></img>
               <h3>Follow me on Twitter and let's share thoughts! 🐦</h3>
               <Button
                 to="https://twitter.com/intent/tweet?text=@kinxori%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
