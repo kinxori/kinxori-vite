@@ -420,40 +420,20 @@
     box-sizing: border-box;
   }
 
-  .projects-display-card video {
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .projects-display-card img {
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .projects-card-logo {
+  .projects-display-card li {
     width: 100%;
     height: min-content;
+    text-align: left;
     position: relative;
+    box-sizing: border-box;
   }
 
-  .projects-card-logo div {
-    width: 100%;
-    height: min-content;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .projects-card-logo img {
-    width: 20px;
-    height: 20px;
+  .projects-display-card li > img {
+    height: 16px;
     object-fit: contain;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .projects-card-logo p {
-    padding-left: 20px;
   }
 
   .projects-display-cards-CTA {
@@ -474,76 +454,19 @@
     align-items: center;
   }
 
-  /* -------------------- Projects card styles for img FullScreen open ---------------*/
-
-  .projects-full-screen-img-open {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0px;
-    z-index: 1000;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
+  .projects-display-card-video {
+    border-radius: 18px;
   }
 
-  .projects-full-screen-img-open:hover {
-    cursor: pointer;
+  /* -------------------- handle FullScreen open ---------------*/
+
+  .projects-full-screen-img-close {
+    border-radius: 18px;
   }
 
-  .projects-full-screen-img-open .projects-full-screen-asset-button {
-    z-index: 3;
-    top: 0;
-    right: 0;
-    position: absolute;
-  }
-
-  .projects-full-screen-img-open .projects-full-screen-asset-button button {
+  .projects-full-screen-close-button button {
     padding: 20px;
     min-width: 0;
     font-size: 40px;
-  }
-
-  .projects-full-screen-img-open .projects-full-screen-asset-button button:hover {
-    color: white;
-  }
-
-  .projects-full-screen-img-open .projects-display-card-asset {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    position: absolute;
-    object-fit: contain;
-  }
-
-  .projects-full-screen-img-open .projects-full-screen-bg {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    position: absolute;
-    background-color: black;
-  }
-
-  /* ------- full screen img FullScreen closed  ------ */
-
-  .projects-full-screen-img-close {
-    display: default;
-  }
-  .projects-full-screen-img-close:hover {
-    cursor: pointer;
-  }
-  .projects-full-screen-img-close .projects-full-screen-asset-button {
-    display: none;
-  }
-  .projects-full-screen-img-close .projects-display-card-asset {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 18px;
-  }
-  .projects-full-screen-img-close .projects-full-screen-bg {
-    display: none;
   }
 }
