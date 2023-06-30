@@ -7,6 +7,7 @@ export default function VideoLoader({
   preload,
   className,
   controlsList,
+  onClick,
 }: any) {
   return (
     <video
@@ -18,6 +19,7 @@ export default function VideoLoader({
       preload={preload}
       className={className}
       controlsList={controlsList}
+      onClick={onClick}
     ></video>
   );
 }

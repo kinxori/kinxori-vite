@@ -161,73 +161,49 @@
   align-items: center;
 }
 
-/* -------------------- Projects card styles for img FullScreen open ---------------*/
+/* --------------------  FullScreen open ---------------*/
 
 .projects-full-screen-asset-open {
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0px;
-  z-index: 1000;
+  z-index: 550;
   position: fixed;
-  display: flex;
-  flex-direction: column;
+}
+
+.projects-full-screen-asset-close {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
 .projects-full-screen-asset-open:hover {
   cursor: pointer;
 }
 
-.projects-full-screen-asset-open .projects-full-screen-asset-button {
-  z-index: 3;
-  top: 37%;
+.projects-full-screen-close-button {
+  z-index: 600;
+  top: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
 }
 
-.projects-full-screen-asset-open .projects-full-screen-asset-button button {
+.projects-full-screen-close-button button {
   padding: 10px;
   min-width: 0;
   font-size: 30px;
 }
 
-.projects-full-screen-asset-open .projects-display-card-asset {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  position: absolute;
-  object-fit: contain;
-}
-
-.projects-full-screen-asset-open .projects-full-screen-bg {
-  width: 100%;
-  height: 100%;
+.projects-full-screen-bg {
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
-  z-index: 0;
-  position: absolute;
+  z-index: 500;
+  position: fixed;
   background-color: black;
-}
-
-/* ------- full screen img FullScreen closed  ------ */
-
-.projects-full-screen-asset-close {
-  display: default;
-}
-.projects-full-screen-asset-close:hover {
-  cursor: pointer;
-}
-.projects-full-screen-asset-close .projects-full-screen-asset-button {
-  display: none;
-}
-.projects-full-screen-asset-close .projects-display-card-asset {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 12px;
-}
-.projects-full-screen-asset-close .projects-full-screen-bg {
-  display: none;
 }
 
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/

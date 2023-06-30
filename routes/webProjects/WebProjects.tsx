@@ -13,10 +13,12 @@ export default function Projects() {
     const storedState = localStorage.getItem("isClicked");
     return storedState || null;
   });
+
   const [isActive, setIsActive] = useState(() => {
     const storedState = localStorage.getItem("isProjectsButtonActive");
     return storedState ? storedState === "true" : false;
   });
+
   const [isFullScreen, setIsFullScreen] = useState("");
 
   useEffect(() => {
@@ -73,32 +75,37 @@ export default function Projects() {
             onClick={() => handleCardClick("features-card")}
           >
             <div className="projects-display-card">
-              <div
-                className={
-                  isFullScreen === "shopping-card-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
-                }
-                onClick={() => handleFullScreen("shopping-card-asset")}
-              >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
-                  <i className="fa-regular fa-circle-xmark"></i>
-                </Button>
-                <Suspense
-                  fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}
-                >
-                  <VideoLoader
-                    className="projects-display-card-asset"
-                    src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
-                    loop={true}
-                    preload="auto"
-                    autoPlay={true}
-                    controls={false}
-                    muted={true}
-                  />
-                </Suspense>
-                <div className="projects-full-screen-bg"></div>
-              </div>
+              {isFullScreen !== "" && (
+                <>
+                  <Button
+                    className="projects-full-screen-close-button"
+                    variant="linkButton"
+                    onClick={() => handleFullScreen("")}
+                  >
+                    <i className="fa-regular fa-circle-xmark"></i>
+                  </Button>
+                  <div
+                    className="projects-full-screen-bg"
+                    onClick={() => handleFullScreen("")}
+                  ></div>
+                </>
+              )}
+              <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+                <VideoLoader
+                  className={
+                    isFullScreen === "shopping-card-asset"
+                      ? "projects-full-screen-asset-open"
+                      : "projects-full-screen-asset-close"
+                  }
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
+                  loop={true}
+                  preload="auto"
+                  autoPlay={true}
+                  controls={false}
+                  muted={true}
+                  onClick={() => handleFullScreen("shopping-card-asset")}
+                />
+              </Suspense>
               <h2>Shopping Cart</h2>
               <p>
                 This feature updates the shopping cart's total price based on user input quantity
@@ -155,32 +162,22 @@ export default function Projects() {
             </div>
             <hr></hr>
             <div className="projects-display-card">
-              <div
-                className={
-                  isFullScreen === "search-bar-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
-                }
-                onClick={() => handleFullScreen("search-bar-asset")}
-              >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
-                  <i className="fa-regular fa-circle-xmark"></i>
-                </Button>
-                <Suspense
-                  fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}
-                >
-                  <VideoLoader
-                    className="projects-display-card-asset"
-                    src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
-                    loop={true}
-                    preload="auto"
-                    autoPlay={true}
-                    controls={false}
-                    muted={true}
-                  />
-                </Suspense>
-                <div className="projects-full-screen-bg"></div>
-              </div>
+              <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+                <VideoLoader
+                  className={
+                    isFullScreen === "search-bar-asset"
+                      ? "projects-full-screen-asset-open"
+                      : "projects-full-screen-asset-close"
+                  }
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
+                  loop={true}
+                  preload="auto"
+                  autoPlay={true}
+                  controls={false}
+                  muted={true}
+                  onClick={() => handleFullScreen("search-bar-asset")}
+                />
+              </Suspense>
               <h2>Search Bar</h2>
               <p>
                 This is a search bar component that filters and displays data in a table based on
@@ -238,32 +235,22 @@ export default function Projects() {
             </div>
             <hr></hr>
             <div className="projects-display-card">
-              <div
-                className={
-                  isFullScreen === "fetch-api-asset"
-                    ? "projects-full-screen-asset-open"
-                    : "projects-full-screen-asset-close"
-                }
-                onClick={() => handleFullScreen("fetch-api-asset")}
-              >
-                <Button className="projects-full-screen-asset-button" variant="linkButton">
-                  <i className="fa-regular fa-circle-xmark"></i>
-                </Button>
-                <Suspense
-                  fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}
-                >
-                  <VideoLoader
-                    className="projects-display-card-asset"
-                    src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
-                    loop={true}
-                    preload="auto"
-                    autoPlay={true}
-                    controls={false}
-                    muted={true}
-                  />
-                </Suspense>
-                <div className="projects-full-screen-bg"></div>
-              </div>
+              <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+                <VideoLoader
+                  className={
+                    isFullScreen === ""
+                      ? "projects-full-screen-asset-close"
+                      : "projects-full-screen-asset-open"
+                  }
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
+                  loop={true}
+                  preload="auto"
+                  autoPlay={true}
+                  controls={false}
+                  muted={true}
+                  onClick={() => handleFullScreen("fetch-api-asset")}
+                />
+              </Suspense>
               <h2>Fetch API</h2>
               <p>
                 The code fetches data from the Rick & Morty API and displays characters'
@@ -343,7 +330,6 @@ export default function Projects() {
                   />
                 </Suspense>
               </div>
-
               <h2>Music Media Player</h2>
               <p>
                 This music media player app built with React allows users to play, pause, and skip
