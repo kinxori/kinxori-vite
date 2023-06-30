@@ -1,6 +1,5 @@
 .projects-root {
   width: 80%;
-  height: min-content;
   margin: 0 auto;
 }
 
@@ -197,6 +196,10 @@
 /* ------------------------------------------------------ Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
+  .projects-root {
+    width: 70%;
+  }
+
   .projects-content {
     margin-top: 15%;
     margin-bottom: 15%;
@@ -212,10 +215,10 @@
   }
 
   .projects-copy h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
   .projects-copy p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .projects-CTA {

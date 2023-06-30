@@ -1,6 +1,5 @@
 .landingPage-root {
   width: 80%;
-  height: min-content;
   margin: 0 auto;
 }
 
@@ -60,6 +59,10 @@
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
+  .landingPage-root {
+    width: 70%;
+  }
+
   .landingPage-content {
     margin-top: 15%;
     margin-bottom: 15%;
@@ -75,7 +78,7 @@
   }
 
   .landingPage-copy h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .landingPage-copy p {

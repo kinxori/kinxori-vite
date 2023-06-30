@@ -48,7 +48,7 @@ export default function AboutMe() {
           <div className="aboutme-copy-PFP">
             <img src={imgAssetPFP} alt="Gustavo Quiroz - Kinxori"></img>
           </div>
-          <h2>🌎 Where do I come from?</h2>
+          <h3>🌎 Where do I come from?</h3>
           <p>
             <b> Born in 1998, </b> I come from a small town near the central region of
             <b> Mexico. </b>
@@ -59,7 +59,7 @@ export default function AboutMe() {
             <b> community, hard work, and creativity, </b>
             <b> which I carry with me </b> wherever I go.
           </p>
-          <h2>💆 Personality?</h2>
+          <h3>💆 Personality?</h3>
           <p>
             I'm a person who enjoys a <b> balanced lifestyle. </b> While I'm not necessarily
             extroverted, I enjoy my time at home. I find peace and serenity in my surroundings and
@@ -70,7 +70,7 @@ export default function AboutMe() {
             <b> study and listen to music. </b> I strive to live a meaningful life, and I'm
             <b> always looking for ways to improve myself </b> and my surroundings.
           </p>
-          <h2>👨‍🎓 Career?</h2>
+          <h3>👨‍🎓 Career?</h3>
           <p>
             Throughout my career path, I have pursued my
             <b> passion for creativity and visual arts. </b>
@@ -98,7 +98,7 @@ export default function AboutMe() {
             future holds as I continue to
             <b> grow and evolve as a developer. </b>
           </p>
-          <h2>🍿 Hobbies?</h2>
+          <h3>🍿 Hobbies?</h3>
           <p>
             Talking about hobbies, <b> biking and tennis are my favorite sport activities, </b> I
             also enjoy <b> going to the beach </b> and spending time in nature. When I'm not
@@ -108,7 +108,7 @@ export default function AboutMe() {
             market. Overall, I'm someone who likes to
             <b> keep learning and enjoy life's simple pleasures. </b>
           </p>
-          <h2>⏳ Aspirations?</h2>
+          <h3>⏳ Aspirations?</h3>
           <p>
             My main aspiration in life is to <b> achieve financial freedom, </b> not just for
             myself, but also to <b> share a comfortable life with my loved ones. </b> I believe that

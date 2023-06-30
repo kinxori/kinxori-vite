@@ -1,6 +1,5 @@
 .aboutMe-root {
   width: 80%;
-  height: min-content;
   margin: 0 auto;
 }
 
@@ -89,8 +88,8 @@
   top: 30%;
 }
 
-.about-me-read-more-content h2 {
-  font-size: 26px;
+.about-me-read-more-content h3 {
+  font-size: 20px;
   text-align: center;
   text-decoration: underline;
   font-weight: 700;
@@ -104,7 +103,7 @@
 }
 
 .about-me-read-more-content i {
-  font-size: 16px;
+  font-size: 10px;
   text-align: center;
   margin-top: 20px;
   width: 100%;
@@ -113,6 +112,10 @@
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
+  .aboutMe-root {
+    width: 70%;
+  }
+
   .aboutMe-content {
     margin-top: 15%;
     margin-bottom: 15%;
@@ -128,11 +131,11 @@
   }
 
   .aboutMe-copy h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .aboutMe-copy p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .aboutMe-CTA {
@@ -160,16 +163,16 @@
     top: 25%;
   }
 
-  .about-me-read-more-content h2 {
-    font-size: 36px;
+  .about-me-read-more-content h3 {
+    font-size: 28px;
   }
 
   .about-me-read-more-content p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .about-me-read-more-content i {
-    font-size: 20px;
+    font-size: 12px;
     margin-top: 40px;
   }
 }

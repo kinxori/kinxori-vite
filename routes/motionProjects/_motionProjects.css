@@ -1,6 +1,5 @@
 .motion-projects-root {
   width: 80%;
-  height: min-content;
   margin: 0 auto;
 }
 
@@ -202,6 +201,11 @@
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
+  .motion-projects-root {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   .motion-projects-content {
     margin-top: 15%;
     margin-bottom: 15%;
@@ -221,10 +225,10 @@
   }
 
   .motion-projects-copy h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
   .motion-projects-copy p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .motion-projects-CTA {
