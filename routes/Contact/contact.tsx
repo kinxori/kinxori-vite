@@ -99,7 +99,7 @@ export default function Contact() {
                 src={linkedinSS}
                 alt="screenshot of Kinxori's linkedin profile"
               ></img>
-              <h3>Click the button below to visit my LinkedIn profile! 💻</h3>
+              <h4>Click the button below to visit my LinkedIn profile! 💻</h4>
               <Button
                 to="https://www.linkedin.com/in/quinchori/"
                 target="_blank"
@@ -130,7 +130,7 @@ export default function Contact() {
                 src={resumeSS}
                 alt="screenshot of Kinxori's latest resume"
               ></img>
-              <h3>Click the button below to download my latest resume! 📜</h3>
+              <h4>Click the button below to download my latest resume! 📜</h4>
               <ButtonAnchor
                 href={resumeFilePDF}
                 download
@@ -161,7 +161,7 @@ export default function Contact() {
                 }
                 onClick={() => handleFullScreen("github-card-img-asset")}
               ></img>
-              <h3>Take a look at my github! I'm sure you will find something of value 📖</h3>
+              <h4>Take a look at my github! I'm sure you will find something of value 📖</h4>
               <Button
                 to="https://github.com/kinxori"
                 target="_blank"
@@ -192,7 +192,7 @@ export default function Contact() {
                     : "contact-full-screen-img-close"
                 }
               ></img>
-              <h3>Follow me on Twitter and let's share thoughts! 🐦</h3>
+              <h4>Follow me on Twitter and let's share thoughts! 🐦</h4>
               <Button
                 to="https://twitter.com/intent/tweet?text=@kinxori%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
                 target="_blank"
