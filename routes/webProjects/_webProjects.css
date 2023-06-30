@@ -117,6 +117,23 @@
   object-fit: contain;
 }
 
+.projects-card-asset-loader {
+  width: 100%;
+  height: 150px;
+  border: 3px dotted var(--mainColor);
+  color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-display-card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
 .projects-card-logo {
   width: 100%;
   height: min-content;
@@ -151,19 +168,9 @@
   gap: 10px;
 }
 
-.projects-card-asset-loader {
-  width: 100%;
-  height: 150px;
-  border: 3px dotted var(--mainColor);
-  color: var(--mainColor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* -------------------- Handle FullScreen  ---------------*/
 
-.projects-full-screen-asset-open {
+.projects-full-screen-img-open {
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -172,14 +179,14 @@
   position: fixed;
 }
 
-.projects-full-screen-asset-close {
+.projects-full-screen-img-close {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 12px;
 }
 
-.projects-full-screen-asset-open:hover {
+.projects-full-screen-img-open:hover {
   cursor: pointer;
 }
 
@@ -307,11 +314,11 @@
 
   /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
-  .projects-full-screen-asset-open .projects-full-screen-asset-button {
+  .projects-full-screen-img-open .projects-full-screen-asset-button {
     top: 31%;
   }
 
-  .projects-full-screen-asset-open .projects-full-screen-asset-button button {
+  .projects-full-screen-img-open .projects-full-screen-asset-button button {
     padding: 20px;
     min-width: 0;
     font-size: 40px;
@@ -319,7 +326,7 @@
 
   /* ------- full screen img FullScreen closed  ------ */
 
-  .projects-full-screen-asset-close .projects-display-card-asset {
+  .projects-full-screen-img-close .projects-display-card-asset {
     border-radius: 18px;
   }
 }
@@ -501,7 +508,7 @@
 
   /* -------------------- Projects card styles for img FullScreen open ---------------*/
 
-  .projects-full-screen-asset-open {
+  .projects-full-screen-img-open {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -512,28 +519,28 @@
     flex-direction: column;
   }
 
-  .projects-full-screen-asset-open:hover {
+  .projects-full-screen-img-open:hover {
     cursor: pointer;
   }
 
-  .projects-full-screen-asset-open .projects-full-screen-asset-button {
+  .projects-full-screen-img-open .projects-full-screen-asset-button {
     z-index: 3;
     top: 0;
     right: 0;
     position: absolute;
   }
 
-  .projects-full-screen-asset-open .projects-full-screen-asset-button button {
+  .projects-full-screen-img-open .projects-full-screen-asset-button button {
     padding: 20px;
     min-width: 0;
     font-size: 40px;
   }
 
-  .projects-full-screen-asset-open .projects-full-screen-asset-button button:hover {
+  .projects-full-screen-img-open .projects-full-screen-asset-button button:hover {
     color: white;
   }
 
-  .projects-full-screen-asset-open .projects-display-card-asset {
+  .projects-full-screen-img-open .projects-display-card-asset {
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -541,7 +548,7 @@
     object-fit: contain;
   }
 
-  .projects-full-screen-asset-open .projects-full-screen-bg {
+  .projects-full-screen-img-open .projects-full-screen-bg {
     width: 100%;
     height: 100%;
     top: 0;
@@ -553,22 +560,22 @@
 
   /* ------- full screen img FullScreen closed  ------ */
 
-  .projects-full-screen-asset-close {
+  .projects-full-screen-img-close {
     display: default;
   }
-  .projects-full-screen-asset-close:hover {
+  .projects-full-screen-img-close:hover {
     cursor: pointer;
   }
-  .projects-full-screen-asset-close .projects-full-screen-asset-button {
+  .projects-full-screen-img-close .projects-full-screen-asset-button {
     display: none;
   }
-  .projects-full-screen-asset-close .projects-display-card-asset {
+  .projects-full-screen-img-close .projects-display-card-asset {
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 18px;
   }
-  .projects-full-screen-asset-close .projects-full-screen-bg {
+  .projects-full-screen-img-close .projects-full-screen-bg {
     display: none;
   }
 }

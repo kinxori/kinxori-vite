@@ -8,6 +8,7 @@ export default function VideoLoader({
   className,
   controlsList,
   onClick,
+  disablePictureInPicture,
 }: any) {
   return (
     <video
@@ -20,6 +21,7 @@ export default function VideoLoader({
       className={className}
       controlsList={controlsList}
       onClick={onClick}
+      disablePictureInPicture={disablePictureInPicture}
     ></video>
   );
 }

@@ -94,8 +94,8 @@ export default function Projects() {
                 <VideoLoader
                   className={
                     isFullScreen === "shopping-card-asset"
-                      ? "projects-full-screen-asset-open"
-                      : "projects-full-screen-asset-close"
+                      ? "projects-full-screen-img-open"
+                      : "projects-full-screen-img-close"
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
                   loop={true}
@@ -166,8 +166,8 @@ export default function Projects() {
                 <VideoLoader
                   className={
                     isFullScreen === "search-bar-asset"
-                      ? "projects-full-screen-asset-open"
-                      : "projects-full-screen-asset-close"
+                      ? "projects-full-screen-img-open"
+                      : "projects-full-screen-img-close"
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
                   loop={true}
@@ -239,8 +239,8 @@ export default function Projects() {
                 <VideoLoader
                   className={
                     isFullScreen === "fetch-api-asset"
-                      ? "projects-full-screen-asset-open"
-                      : "projects-full-screen-asset-close"
+                      ? "projects-full-screen-img-open"
+                      : "projects-full-screen-img-close"
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
                   loop={true}
@@ -316,20 +316,17 @@ export default function Projects() {
             onClick={() => handleCardClick("web-projects-card")}
           >
             <div className="projects-display-card">
-              <div className="projects-full-screen-asset-close">
-                <Suspense
-                  fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}
-                >
-                  <VideoLoader
-                    src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
-                    controls={true}
-                    autoPlay={false}
-                    preload="auto"
-                    controlsList="nodownload noplaybackrate"
-                    className="projects-display-card-asset"
-                  />
-                </Suspense>
-              </div>
+              <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+                <VideoLoader
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
+                  controls={true}
+                  autoPlay={false}
+                  preload="auto"
+                  disablePictureInPicture
+                  controlsList="nodownload noplaybackrate"
+                  className="projects-display-card-video"
+                />
+              </Suspense>
               <h2>Music Media Player</h2>
               <p>
                 This music media player app built with React allows users to play, pause, and skip
