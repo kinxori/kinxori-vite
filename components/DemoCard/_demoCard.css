@@ -9,7 +9,6 @@
   border-radius: 12px;
   position: relative;
   overflow: hidden;
-  margin: 5px 0px;
 }
 
 .card-root-close {
@@ -23,7 +22,6 @@
   border-radius: 12px;
   position: relative;
   overflow: hidden;
-  margin: 5px 0px;
   background-color: none;
 }
 
@@ -103,18 +101,16 @@
   .card-root-open {
     border: 2px solid var(--mainColor);
     border-radius: 16px;
-    margin: 10px 0px;
   }
 
   .card-root-close {
     border: 2px solid var(--mainColor);
     border-radius: 16px;
-    margin: 10px 0px;
   }
 
   .card-headline {
-    height: 70px;
-    padding: 0px 30px;
+    height: 60px;
+    padding: 0px 25px;
   }
 
   .card-headline-title {
@@ -150,13 +146,11 @@
   .card-root-open {
     border: 2px solid var(--mainColor);
     border-radius: 18px;
-    margin: 10px 0px;
   }
 
   .card-root-close {
     border: 2px solid var(--mainColor);
     border-radius: 18px;
-    margin: 10px 0px;
   }
 
   .card-headline {
