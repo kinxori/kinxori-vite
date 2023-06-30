@@ -342,23 +342,15 @@ export default function Projects() {
                   <i className="fa-brands fa-react"></i> React
                 </li>
                 <li>
-                  <span className="projects-card-logo">
-                    <div>
-                      <img src={typescriptLogo} alt="typescript logo on white - kinxori.com"></img>
-                      &nbsp;<p>Typescript</p>
-                    </div>
-                  </span>
+                  <img src={typescriptLogo} alt="typescript logo on white - kinxori.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Typescript
                 </li>
                 <li>
                   <i className="fa-brands fa-html5"></i> HTML
                 </li>
                 <li>
-                  <span className="projects-card-logo">
-                    <div>
-                      <img src={tailwindLogo} alt="tailwindcss logo on white - kinxori.com"></img>
-                      &nbsp;<p>Tailwind</p>
-                    </div>
-                  </span>
+                  <img src={tailwindLogo} alt="tailwindcss logo on white - kinxori.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tailwind
                 </li>
               </ul>
               <h3>Skills 🧠</h3>
