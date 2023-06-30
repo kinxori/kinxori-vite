@@ -102,13 +102,13 @@
 @media (min-width: 601px) {
   .card-root-open {
     border: 2px solid var(--mainColor);
-    border-radius: 18px;
+    border-radius: 16px;
     margin: 10px 0px;
   }
 
   .card-root-close {
     border: 2px solid var(--mainColor);
-    border-radius: 18px;
+    border-radius: 16px;
     margin: 10px 0px;
   }
 
