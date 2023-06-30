@@ -31,16 +31,16 @@ export default function Projects() {
     localStorage.setItem("isProjectsButtonActive", isActive.toString());
   }, [isActive]);
 
+  const handleFullScreen = (id: string) => {
+    setIsFullScreen((currenValue) => (currenValue !== id ? id : ""));
+  };
+
   const handleCardClick = (id: any) => {
     setIsClicked((currentValue: any) => (currentValue !== id ? id : false));
   };
 
   const handleProjectsButton = () => {
     setIsActive(!isActive);
-  };
-
-  const handleFullScreen = (id: any) => {
-    setIsFullScreen((currenValue) => (currenValue !== id ? id : ""));
   };
 
   return (
@@ -238,9 +238,9 @@ export default function Projects() {
               <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
                 <VideoLoader
                   className={
-                    isFullScreen === ""
-                      ? "projects-full-screen-asset-close"
-                      : "projects-full-screen-asset-open"
+                    isFullScreen === "fetch-api-asset"
+                      ? "projects-full-screen-asset-open"
+                      : "projects-full-screen-asset-close"
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
                   loop={true}
