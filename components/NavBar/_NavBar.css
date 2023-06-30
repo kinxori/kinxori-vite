@@ -38,7 +38,7 @@
 @media (min-width: 601px) {
   .mobile-nav-bar-root {
     height: 70px;
-    box-shadow: 0px 0px 30px 30px hsla(266deg, 99%, 60%, 0.5);
+    box-shadow: 0px 0px 80px 15px hsla(266deg, 99%, 60%, 0.3);
     border-top: 2px solid var(--textSecColor);
   }
 
