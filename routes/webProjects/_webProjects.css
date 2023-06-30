@@ -113,7 +113,6 @@
   text-align: left;
   position: relative;
   box-sizing: border-box;
-  border: 1px dotted white;
 }
 
 .projects-display-card li > img {
@@ -194,7 +193,7 @@
   background-color: black;
 }
 
-/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+/* ------------------------------------------------------ Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
   .projects-content {
@@ -256,30 +255,20 @@
     font-size: 20px;
   }
 
-  .projects-card-logo {
+  .projects-display-card li {
     width: 100%;
     height: min-content;
+    text-align: left;
     position: relative;
+    box-sizing: border-box;
   }
 
-  .projects-card-logo div {
-    width: 100%;
-    height: min-content;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .projects-card-logo img {
-    width: 20px;
-    height: 20px;
+  .projects-display-card li > img {
+    height: 16px;
     object-fit: contain;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .projects-card-logo p {
-    padding-left: 20px;
   }
 
   .projects-display-cards-CTA {
@@ -293,22 +282,20 @@
     border: 5px dotted var(--mainColor);
   }
 
-  /* -------------------- Projects card styles for img FullScreen open ---------------*/
-
-  .projects-full-screen-img-open .projects-full-screen-asset-button {
-    top: 31%;
+  .projects-display-card-video {
+    border-radius: 18px;
   }
 
-  .projects-full-screen-img-open .projects-full-screen-asset-button button {
+  /* -------------------- Handle FullScreen  ---------------*/
+
+  .projects-full-screen-img-close {
+    border-radius: 18px;
+  }
+
+  .projects-full-screen-close-button button {
     padding: 20px;
     min-width: 0;
     font-size: 40px;
-  }
-
-  /* ------- full screen img FullScreen closed  ------ */
-
-  .projects-full-screen-img-close .projects-display-card-asset {
-    border-radius: 18px;
   }
 }
 
