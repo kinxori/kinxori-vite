@@ -62,17 +62,17 @@ export default function MotionProjects() {
         </div>
       </div>
       {isActive === true && (
-        <section className="motion-projects-display-projects-cards">
+        <section className="motion-projects-cards">
           <DemoCard
             header={
               <>
                 <i className="fa-solid fa-video"></i>&nbsp;&nbsp;Motion Design
               </>
             }
-            isActive={isClicked === "features-card"}
-            onClick={() => handleCardClick("features-card")}
+            isActive={isClicked === "motion-desing-card"}
+            onClick={() => handleCardClick("motion-desing-card")}
           >
-            <div className="motion-projects-display-card">
+            <div className="motion-projects-card-display">
               {/* <div
                 className={
                   isFullScreen === "shopping-card-asset"
@@ -94,13 +94,13 @@ export default function MotionProjects() {
                   autoPlay
                   controls={false}
                   muted
-                  className="motion-projects-display-card-asset"
+                  className="motion-projects-card-display-asset"
                 ></video>
                 <div className="motion-projects-full-screen-bg"></div>
               </div> */}
               <h2>Under construction ⚙️</h2>
 
-              {/* <div className="motion-projects-display-cards-CTA">
+              {/* <div className="motion-projects-card-displays-CTA">
                 <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
                 </Button>
@@ -120,10 +120,10 @@ export default function MotionProjects() {
                 <i className="fa-solid fa-cube"></i>&nbsp;&nbsp;3D Modeling
               </>
             }
-            isActive={isClicked === "web-projects-card"}
-            onClick={() => handleCardClick("web-projects-card")}
+            isActive={isClicked === "3d-modeling-card"}
+            onClick={() => handleCardClick("3d-modeling-card")}
           >
-            <div className="motion-projects-display-card">
+            <div className="motion-projects-card-display">
               {/* <div
                 className={
                   isFullScreen === "fetch-api-asset"

@@ -52,25 +52,31 @@
   animation-fill-mode: backwards;
 }
 
-.motion-projects-display-projects-cards {
+.motion-projects-cards {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 10px;
   margin-bottom: 20%;
 }
 
-.motion-projects-display-card {
+.motion-projects-cards hr {
+  width: 85%;
+  border-radius: 100%;
+  margin: 20px auto;
+}
+
+.motion-projects-card-display {
   width: 100%;
   padding: 20px;
   gap: 20px;
-  line-height: 20px;
   height: fit-content;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
-.motion-projects-display-card h2 {
+.motion-projects-card-display h2 {
   font-size: 26px;
   line-height: 30px;
   text-align: center;
@@ -80,43 +86,39 @@
   text-decoration: underline;
 }
 
-.motion-projects-display-card h3 {
+.motion-projects-card-display h3 {
   font-size: 20px;
   text-align: left;
   font-weight: 700;
   width: 100%;
-  padding-left: 20px;
 }
 
-.motion-projects-display-card p {
+.motion-projects-card-display p {
   text-align: justify;
   font-size: 16px;
   width: 100%;
 }
 
-.motion-projects-display-card ul {
+.motion-projects-card-display ul {
   text-align: left;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 30px;
   box-sizing: border-box;
 }
 
-.motion-projects-display-card video {
+.motion-projects-card-display li {
   width: 100%;
-  object-fit: contain;
+  height: min-content;
+  text-align: left;
+  position: relative;
 }
 
-.motion-projects-display-card img {
-  width: 100%;
+.motion-projects-card-display li > img {
+  height: 16px;
   object-fit: contain;
-}
-
-.motion-projects-display-cards-CTA {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 0;
-  gap: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .motion-projects-card-asset-loader {
@@ -129,81 +131,72 @@
   align-items: center;
 }
 
-/* -------------------- Projects card styles for img FullScreen open ---------------*/
-
-.motion-projects-full-screen-asset-open {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0px;
-  z-index: 1000;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-}
-
-.motion-projects-full-screen-asset-open:hover {
-  cursor: pointer;
-}
-
-.motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button {
-  z-index: 3;
-  top: 37%;
-  right: 0;
-  position: absolute;
-}
-
-.motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button button {
-  padding: 10px;
-  min-width: 0;
-  font-size: 30px;
-}
-
-.motion-projects-full-screen-asset-open .motion-projects-display-card-asset {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: absolute;
-  object-fit: contain;
-}
-
-.motion-projects-full-screen-asset-open .motion-projects-full-screen-bg {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  position: absolute;
-  background-color: black;
-}
-
-/* ------- full screen img FullScreen closed  ------ */
-
-.motion-projects-full-screen-asset-close {
-  display: default;
-}
-.motion-projects-full-screen-asset-close:hover {
-  cursor: pointer;
-}
-.motion-projects-full-screen-asset-close .motion-projects-full-screen-asset-button {
-  display: none;
-}
-.motion-projects-full-screen-asset-close .motion-projects-display-card-asset {
+.motion-projects-card-display-video {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 12px;
 }
-.motion-projects-full-screen-asset-close .motion-projects-full-screen-bg {
-  display: none;
+
+.motion-projects-card-displays-CTA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  gap: 10px;
 }
 
-/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+/* -------------------- Handle FullScreen  ---------------*/
+
+.motion-projects-full-screen-img-open {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0px;
+  z-index: 550;
+  position: fixed;
+  object-fit: contain;
+}
+
+.motion-projects-full-screen-img-close {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.motion-projects-full-screen-img-open:hover {
+  cursor: pointer;
+}
+
+.motion-projects-full-screen-close-button {
+  z-index: 600;
+  top: 0;
+  right: 0;
+  position: fixed;
+}
+
+.motion-projects-full-screen-close-button button {
+  padding: 10px;
+  min-width: 0;
+  font-size: 30px;
+}
+
+.motion-projects-full-screen-bg {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  position: fixed;
+  background-color: black;
+}
+
+/* ------------------------------------------------------ Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
   .motion-projects-root {
     width: 70%;
-    margin: 0 auto;
   }
 
   .motion-projects-content {
@@ -213,10 +206,6 @@
 
   .motion-projects-content img {
     height: 400px;
-  }
-
-  .motion-projects-content img:hover {
-    transform: rotate(10deg) scale(1.1);
   }
 
   .motion-projects-copy {
@@ -236,66 +225,81 @@
     margin-top: 10%;
   }
 
-  .motion-projects-display-projects-cards {
+  .motion-projects-cards {
     margin-bottom: 15%;
+    gap: 15px;
   }
 
-  .motion-projects-display-projects-cards hr {
+  .motion-projects-cards hr {
     margin: 30px auto;
   }
 
-  .motion-projects-display-card {
+  .motion-projects-card-display {
     padding: 40px;
-    gap: 30px;
+    gap: 25px;
     line-height: 25px;
   }
 
-  .motion-projects-display-card h2 {
-    font-size: 36px;
+  .motion-projects-card-display h2 {
+    font-size: 32px;
     line-height: 34px;
     padding: 20px 0;
   }
 
-  .motion-projects-display-card h3 {
+  .motion-projects-card-display h3 {
     font-size: 28px;
   }
 
-  .motion-projects-display-card p {
-    font-size: 20px;
+  .motion-projects-card-display p {
+    font-size: 16px;
   }
 
-  .motion-projects-display-card ul {
+  .motion-projects-card-display ul {
     padding-left: 50px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
-  .motion-projects-display-cards-CTA {
-    margin: 20px auto;
-    gap: 20px;
+  .motion-projects-card-display li {
+    width: 100%;
+    height: min-content;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .motion-projects-card-display li > img {
+    height: 16px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .motion-projects-card-displays-CTA {
+    margin: 15px auto;
+    gap: 15px;
     flex-direction: row;
   }
 
   .motion-projects-card-asset-loader {
-    height: 250px;
+    height: 300px;
     border: 5px dotted var(--mainColor);
   }
 
-  /* -------------------- Projects card styles for img FullScreen open ---------------*/
-
-  .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button {
-    top: 31%;
+  .motion-projects-card-display-video {
+    border-radius: 16px;
   }
 
-  .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button button {
+  /* -------------------- Handle FullScreen  ---------------*/
+
+  .motion-projects-full-screen-img-close {
+    border-radius: 16px;
+  }
+
+  .motion-projects-full-screen-close-button button {
     padding: 20px;
     min-width: 0;
     font-size: 40px;
-  }
-
-  /* ------- full screen img FullScreen closed  ------ */
-
-  .motion-projects-full-screen-asset-close .motion-projects-display-card-asset {
-    border-radius: 18px;
   }
 }
 
@@ -365,7 +369,7 @@
     animation-fill-mode: backwards;
   }
 
-  .motion-projects-display-projects-cards {
+  .motion-projects-cards {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -373,7 +377,13 @@
     margin-bottom: 10%;
   }
 
-  .motion-projects-display-card {
+  .motion-projects-cards hr {
+    width: 90%;
+    border-radius: 100%;
+    margin: 20px auto;
+  }
+
+  .motion-projects-card-display {
     width: 100%;
     padding: 40px;
     gap: 30px;
@@ -384,7 +394,7 @@
     flex-direction: column;
   }
 
-  .motion-projects-display-card h2 {
+  .motion-projects-card-display h2 {
     font-size: 46px;
     line-height: 38px;
     text-align: center;
@@ -394,37 +404,43 @@
     text-decoration: underline;
   }
 
-  .motion-projects-display-card h3 {
+  .motion-projects-card-display h3 {
     font-size: 32px;
     text-align: left;
     font-weight: 700;
     width: 100%;
   }
 
-  .motion-projects-display-card p {
+  .motion-projects-card-display p {
     text-align: justify;
     font-size: 20px;
     width: 100%;
   }
 
-  .motion-projects-display-card ul {
+  .motion-projects-card-display ul {
     text-align: left;
     width: 100%;
     padding-left: 50px;
     box-sizing: border-box;
   }
 
-  .motion-projects-display-card video {
+  .motion-projects-card-display li {
     width: 100%;
-    object-fit: contain;
+    height: min-content;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
   }
 
-  .motion-projects-display-card img {
-    width: 100%;
+  .motion-projects-card-display li > img {
+    height: 16px;
     object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  .motion-projects-display-cards-CTA {
+  .motion-projects-card-displays-CTA {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -442,76 +458,19 @@
     align-items: center;
   }
 
-  /* -------------------- Projects card styles for img FullScreen open ---------------*/
-
-  .motion-projects-full-screen-asset-open {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0px;
-    z-index: 1000;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
+  .motion-projects-card-display-video {
+    border-radius: 18px;
   }
 
-  .motion-projects-full-screen-asset-open:hover {
-    cursor: pointer;
+  /* -------------------- handle FullScreen open ---------------*/
+
+  .motion-projects-full-screen-img-close {
+    border-radius: 18px;
   }
 
-  .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button {
-    z-index: 3;
-    top: 0;
-    right: 0;
-    position: absolute;
-  }
-
-  .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button button {
+  .motion-projects-full-screen-close-button button {
     padding: 20px;
     min-width: 0;
     font-size: 40px;
-  }
-
-  .motion-projects-full-screen-asset-open .motion-projects-full-screen-asset-button:hover {
-    color: white;
-  }
-
-  .motion-projects-full-screen-asset-open .motion-projects-display-card-asset {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    position: absolute;
-    object-fit: contain;
-  }
-
-  .motion-projects-full-screen-asset-open .motion-projects-full-screen-bg {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    position: absolute;
-    background-color: black;
-  }
-
-  /* ------- full screen img FullScreen closed  ------ */
-
-  .motion-projects-full-screen-asset-close {
-    display: default;
-  }
-  .motion-projects-full-screen-asset-close:hover {
-    cursor: pointer;
-  }
-  .motion-projects-full-screen-asset-close .motion-projects-full-screen-asset-button {
-    display: none;
-  }
-  .motion-projects-full-screen-asset-close .motion-projects-display-card-asset {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 18px;
-  }
-  .motion-projects-full-screen-asset-close .motion-projects-full-screen-bg {
-    display: none;
   }
 }
