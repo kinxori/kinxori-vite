@@ -86,7 +86,7 @@ export default function Projects() {
             isActive={isClicked === "features-card"}
             onClick={() => handleCardClick("features-card")}
           >
-            <div className="projects-display-card">
+            <div className="projects-display-card-body">
               <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
                 <VideoLoader
                   className={
@@ -144,7 +144,7 @@ export default function Projects() {
                 <li>Improve user experience with better organization of information</li>
                 <li>Integratation with external APIs to retrieve and update product information</li>
               </ul>
-              <div className="projects-display-cards-CTA">
+              <div className="projects-display-card-CTA">
                 <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
                 </Button>
@@ -158,7 +158,7 @@ export default function Projects() {
               </div>
             </div>
             <hr></hr>
-            <div className="projects-display-card">
+            <div className="projects-display-card-body">
               <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
                 <VideoLoader
                   className={
@@ -217,7 +217,7 @@ export default function Projects() {
                 <li>Handling large datasets</li>
                 <li>Accessibility</li>
               </ul>
-              <div className="projects-display-cards-CTA">
+              <div className="projects-display-card-CTA">
                 <Button to="https://kinxori.github.io/react-practice-5/" target="_blank">
                   Live Project
                 </Button>
@@ -231,7 +231,7 @@ export default function Projects() {
               </div>
             </div>
             <hr></hr>
-            <div className="projects-display-card">
+            <div className="projects-display-card-body">
               <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
                 <VideoLoader
                   className={
@@ -289,7 +289,7 @@ export default function Projects() {
                 <li>Working with external APIs and handling response data</li>
                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
               </ul>
-              <div className="projects-display-cards-CTA">
+              <div className="projects-display-card-CTA">
                 <Button to="https://kinxori.github.io/react-practice-4/" target="_blank">
                   Live Project
                 </Button>
@@ -312,7 +312,7 @@ export default function Projects() {
             isActive={isClicked === "web-projects-card"}
             onClick={() => handleCardClick("web-projects-card")}
           >
-            <div className="projects-display-card">
+            <div className="projects-display-card-body">
               <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
                 <VideoLoader
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
@@ -321,7 +321,7 @@ export default function Projects() {
                   preload="auto"
                   disablePictureInPicture
                   controlsList="nodownload noplaybackrate"
-                  className="projects-display-card-video"
+                  className="projects-display-card-body-video"
                 />
               </Suspense>
               <h2>Music Media Player</h2>
@@ -377,7 +377,7 @@ export default function Projects() {
                 <li>Audio Playback and Compatibility</li>
                 <li>Integration with External APIs</li>
               </ul>
-              <div className="projects-display-cards-CTA">
+              <div className="projects-display-card-CTA">
                 <Button to="https://kinxori.github.io/react-media-player-practice/" target="_blank">
                   Live Project
                 </Button>

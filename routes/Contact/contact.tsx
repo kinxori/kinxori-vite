@@ -88,7 +88,7 @@ export default function Contact() {
             isActive={isClicked === "linkedin-card"}
             onClick={() => handleCardClick("linkedin-card")}
           >
-            <div className="contact-display-card">
+            <div className="contact-display-card-body">
               <img
                 className={
                   isFullScreen === "linkedin-card-img"
@@ -119,7 +119,7 @@ export default function Contact() {
             isActive={isClicked === "resume-card"}
             onClick={() => handleCardClick("resume-card")}
           >
-            <div className="contact-display-card">
+            <div className="contact-display-card-body">
               <img
                 className={
                   isFullScreen === "resume-card-img-asset"
@@ -150,7 +150,7 @@ export default function Contact() {
             isActive={isClicked === "github-card"}
             onClick={() => handleCardClick("github-card")}
           >
-            <div className="contact-display-card">
+            <div className="contact-display-card-body">
               <img
                 src={githubSS}
                 alt="screenshot of Kinxori's github profile"
@@ -181,7 +181,7 @@ export default function Contact() {
             isActive={isClicked === "twitter-card"}
             onClick={() => handleCardClick("twitter-card")}
           >
-            <div className="contact-display-card">
+            <div className="contact-display-card-body">
               <img
                 src={twitterSS}
                 alt="screenshot of Kinxori's twitter profile"
@@ -212,7 +212,7 @@ export default function Contact() {
             isActive={isClicked === "email-card"}
             onClick={() => handleCardClick("email-card")}
           >
-            <div className="contact-display-card">
+            <div className="contact-display-card-body">
               <InputForm />
             </div>
           </DemoCard>

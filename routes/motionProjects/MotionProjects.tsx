@@ -63,6 +63,14 @@ export default function MotionProjects() {
       </div>
       {isActive === true && (
         <section className="motion-projects-cards">
+          {/* {isFullScreen !== "" && (
+                <>
+                  <Button className="motion-projects-full-screen-close-button" variant="linkButton">
+                    Close
+                  </Button>
+                  <div className="motion-projects-full-screen-bg"></div>
+                </>
+              )} */}
           <DemoCard
             header={
               <>
@@ -72,35 +80,24 @@ export default function MotionProjects() {
             isActive={isClicked === "motion-desing-card"}
             onClick={() => handleCardClick("motion-desing-card")}
           >
-            <div className="motion-projects-card-display">
-              {/* <div
-                className={
-                  isFullScreen === "shopping-card-asset"
-                    ? "motion-projects-full-screen-asset-open"
-                    : "motion-projects-full-screen-asset-close"
-                }
-                onClick={() => handleFullScreen("shopping-card-asset")}
-              >
-                <Button className="motion-projects-full-screen-asset-button" variant="linkButton">
-                  Close
-                </Button>
-                {isLoadingVideo && (
-                  <h3 className="motion-projects-card-asset-loader">Loading video...</h3>
-                )}
-                <video
+            <div className="motion-projects-card-body">
+              {/* <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
                   onLoadedData={() => setIsLoadingVideo(false)}
                   loop
                   autoPlay
                   controls={false}
                   muted
-                  className="motion-projects-card-display-asset"
-                ></video>
-                <div className="motion-projects-full-screen-bg"></div>
-              </div> */}
+                    className={
+                  isFullScreen === "shopping-card-asset"
+                    ? "motion-projects-full-screen-img-open"
+                    : "motion-projects-full-screen-img-close"
+                }
+                onClick={() => handleFullScreen("shopping-card-asset")}
+                ></video> */}
               <h2>Under construction ⚙️</h2>
 
-              {/* <div className="motion-projects-card-displays-CTA">
+              {/* <div className="motion-projects-card-CTA">
                 <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
                 </Button>
@@ -123,32 +120,34 @@ export default function MotionProjects() {
             isActive={isClicked === "3d-modeling-card"}
             onClick={() => handleCardClick("3d-modeling-card")}
           >
-            <div className="motion-projects-card-display">
-              {/* <div
+            <div className="motion-projects-card-body">
+              {/* <video
+                src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
+                onLoadedData={() => setIsLoadingVideo(false)}
+                loop
+                autoPlay
+                controls={false}
+                muted
                 className={
                   isFullScreen === "fetch-api-asset"
-                    ? "motion-projects-full-screen-asset-open"
-                    : "motion-projects-full-screen-asset-close"
+                    ? "motion-projects-full-screen-img-open"
+                    : "motion-projects-full-screen-img-close"
                 }
                 onClick={() => handleFullScreen("fetch-api-asset")}
-              >
-                <Button className="motion-projects-full-screen-asset-button" variant="linkButton">
-                  Close
-                </Button>
-                {isLoadingVideo && (
-                  <h3 className="motion-projects-card-asset-loader">Loading video...</h3>
-                )}
-                <video
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
-                  onLoadedData={() => setIsLoadingVideo(false)}
-                  loop
-                  autoPlay
-                  controls={false}
-                  muted
-                ></video>
-                <div></div>
-              </div> */}
+              ></video> */}
               <h2>Under construction ⚙️</h2>
+              {/* <div className="motion-projects-card-CTA">
+                <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
+                  Live Project
+                </Button>
+                <Button
+                  to="https://github.com/kinxori/react-shopping-cart"
+                  variant="secButton"
+                  target="_blank"
+                >
+                  Github Repo
+                </Button>
+              </div> */}
             </div>
           </DemoCard>
         </section>
