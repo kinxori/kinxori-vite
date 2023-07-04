@@ -13,14 +13,15 @@ import twitterSS from "@src/assets/twitter-profile-ss.png";
 
 export default function Contact() {
   const [isFullScreen, setIsFullScreen] = useState("");
-  const [isClicked, setIsClicked] = useState(() => {
-    const storedState = localStorage.getItem("isClicked");
-    return storedState || null;
-  });
 
   const [isActive, setisActive] = useState(() => {
     const storedState = localStorage.getItem("isOptionsButtonActive");
     return storedState ? storedState === "true" : false;
+  });
+
+  const [isClicked, setIsClicked] = useState(() => {
+    const storedState = localStorage.getItem("isClicked");
+    return storedState || null;
   });
 
   useEffect(() => {

@@ -3,6 +3,7 @@ import "./_aboutMe.css";
 import Button from "@components/Buttons/Button";
 import mainAboutMeAsset from "@src/assets/AboutmeAsset.png";
 import imgAssetPFP from "@src/assets/new-pfp-for-social-network.jpg";
+import mockupAsset from "@src/assets/hey-asset-on-black.png";
 
 export default function AboutMe() {
   const [isOpen, setisOpen] = useState(() => {
@@ -26,7 +27,6 @@ export default function AboutMe() {
           <h2>
             But... <b>Who is Kinxori?</b> 🤔
           </h2>
-
           <p>
             My name is Gustavo Quiroz, <b> front-end web developer </b> with a passion for creating
             things. Formerly a <b> motion design, </b> now using my love for creating to
@@ -44,7 +44,7 @@ export default function AboutMe() {
           <div className="aboutme-copy-PFP">
             <img src={imgAssetPFP} alt="Gustavo Quiroz - Kinxori"></img>
           </div>
-          <h3>🌎 Where do I come from?</h3>
+          <h3>Where do I come from? 🌎</h3>
           <p>
             <b> Born in 1998, </b> I come from a small town near the central region of
             <b> Mexico. </b>
@@ -55,7 +55,8 @@ export default function AboutMe() {
             <b> community, hard work, and creativity, </b>
             <b> which I carry with me </b> wherever I go.
           </p>
-          <h3>💆 Personality?</h3>
+          <img src={mockupAsset} alt="ADD ALT"></img>
+          <h3>Personality? 💆</h3>
           <p>
             I'm a person who enjoys a <b> balanced lifestyle. </b> While I'm not necessarily
             extroverted, I enjoy my time at home. I find peace and serenity in my surroundings and
@@ -66,7 +67,8 @@ export default function AboutMe() {
             <b> study and listen to music. </b> I strive to live a meaningful life, and I'm
             <b> always looking for ways to improve myself </b> and my surroundings.
           </p>
-          <h3>👨‍🎓 Career?</h3>
+          <img src={mockupAsset} alt="ADD ALT"></img>
+          <h3>Career? 👨‍🎓</h3>
           <p>
             Throughout my career path, I have pursued my
             <b> passion for creativity and visual arts. </b>
@@ -87,6 +89,7 @@ export default function AboutMe() {
             grew, and in <b> January 2023, </b> I made the decision to
             <b> pursue web development as a full-time job. </b>
           </p>
+          <img src={mockupAsset} alt="ADD ALT"></img>
           <p>
             Currently, I am focusing on developing myself as a<b> Front-End Developer, </b> and I am
             determined to become a<b> Full-Stack Developer </b> in the near future. My career
@@ -94,7 +97,7 @@ export default function AboutMe() {
             future holds as I continue to
             <b> grow and evolve as a developer. </b>
           </p>
-          <h3>🍿 Hobbies?</h3>
+          <h3>Hobbies? 🍿</h3>
           <p>
             Talking about hobbies, <b> biking and tennis are my favorite sport activities, </b> I
             also enjoy <b> going to the beach </b> and spending time in nature. When I'm not
@@ -104,7 +107,8 @@ export default function AboutMe() {
             market. Overall, I'm someone who likes to
             <b> keep learning and enjoy life's simple pleasures. </b>
           </p>
-          <h3>⏳ Aspirations?</h3>
+          <img src={mockupAsset} alt="ADD ALT"></img>
+          <h3>Aspirations? ⏳</h3>
           <p>
             My main aspiration in life is to <b> achieve financial freedom, </b> not just for
             myself, but also to <b> share a comfortable life with my loved ones. </b> I believe that
@@ -116,6 +120,7 @@ export default function AboutMe() {
             where I can enjoy the simple things in life and cherish the moments
             <b> spent with the people who matter most to me. </b>
           </p>
+          <img src={mockupAsset} alt="ADD ALT"></img>
           <i>17th of June, 2023 / Mexico</i>
         </div>
       )}

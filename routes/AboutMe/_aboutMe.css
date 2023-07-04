@@ -102,6 +102,11 @@
   width: 100%;
 }
 
+.about-me-read-more-content img {
+  object-fit: contain;
+  width: 100%;
+}
+
 .about-me-read-more-content i {
   font-size: 10px;
   text-align: center;
@@ -165,6 +170,8 @@
 
   .about-me-read-more-content h3 {
     font-size: 28px;
+    text-align: left;
+    padding-left: 40px;
   }
 
   .about-me-read-more-content p {
@@ -174,6 +181,7 @@
   .about-me-read-more-content i {
     font-size: 12px;
     margin-top: 40px;
+    text-align: right;
   }
 }
 
@@ -279,13 +287,13 @@
     top: 25%;
   }
 
-  .about-me-read-more-content h2 {
-    font-size: 46px;
-    text-align: center;
+  .about-me-read-more-content h3 {
+    font-size: 32px;
+    text-align: left;
     text-decoration: underline;
     font-weight: 700;
     width: 100%;
-    padding: 20px 0;
+    padding-left: 50px;
   }
 
   .about-me-read-more-content p {
@@ -296,8 +304,8 @@
 
   .about-me-read-more-content i {
     font-size: 20px;
-    text-align: center;
-    margin-top: 30px;
+    text-align: right;
+    margin-top: 50px;
     width: 100%;
   }
 }
