@@ -1,9 +1,8 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./_NavBar.css";
-import Button from "../Buttons/Button";
-import ButtonAnchor from "../Buttons/ButtonAnchor";
-import resumeFilePDF from "/src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
+import Button from "@components/Buttons/Button";
+import ButtonAnchor from "@components/Buttons/ButtonAnchor";
+import resumeFilePDF from "@src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
 
 export default function DesktopNav() {
   return (
