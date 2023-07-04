@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react";
-import Button from "./../../components/Buttons/Button";
-import ButtonAnchor from "./../../components/Buttons/ButtonAnchor";
-import InputForm from "./../../components/Email-InputForm/InputForm";
-import DemoCard from "./../../components/DemoCard/DemoCard";
 import "./_contact.css";
-import contactAsset from "/src/assets/contactAsset.png";
-import resumeFilePDF from "/src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
-import linkedinSS from "./../../src/assets/linkedin-profile-ss.png";
-import resumeSS from "./../../src/assets/resume-ss.png";
-import githubSS from "./../../src/assets/github-profile-ss.png";
-import twitterSS from "./../../src/assets/twitter-profile-ss.png";
+import Button from "@components/Buttons/Button";
+import ButtonAnchor from "@components/Buttons/ButtonAnchor";
+import InputForm from "@components/Email-InputForm/InputForm";
+import DemoCard from "@components/DemoCard/DemoCard";
+import contactAsset from "@src/assets/contactAsset.png";
+import resumeFilePDF from "@src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
+import linkedinSS from "@src/assets/linkedin-profile-ss.png";
+import resumeSS from "@src/assets/resume-ss.png";
+import githubSS from "@src/assets/github-profile-ss.png";
+import twitterSS from "@src/assets/twitter-profile-ss.png";
 
 export default function Contact() {
+  const [isFullScreen, setIsFullScreen] = useState("");
   const [isClicked, setIsClicked] = useState(() => {
     const storedState = localStorage.getItem("isClicked");
     return storedState || null;
@@ -22,11 +23,9 @@ export default function Contact() {
     return storedState ? storedState === "true" : false;
   });
 
-  const [isFullScreen, setIsFullScreen] = useState("");
-
-  const handleFullScreen = (id: any) => {
-    setIsFullScreen((currenValue) => (currenValue !== id ? id : ""));
-  };
+  useEffect(() => {
+    localStorage.setItem("isOptionsButtonActive", isActive.toString());
+  }, [isActive]);
 
   useEffect(() => {
     if (isClicked !== null) {
@@ -34,16 +33,16 @@ export default function Contact() {
     }
   }, [isClicked]);
 
-  useEffect(() => {
-    localStorage.setItem("isOptionsButtonActive", isActive.toString());
-  }, [isActive]);
+  const handleOptionsButton = () => {
+    setisActive(!isActive);
+  };
 
   const handleCardClick = (id: any) => {
     setIsClicked((currentValue: any) => (currentValue !== id ? id : false));
   };
 
-  const handleOptionsButton = () => {
-    setisActive(!isActive);
+  const handleFullScreen = (id: any) => {
+    setIsFullScreen((currenValue) => (currenValue !== id ? id : ""));
   };
 
   return (

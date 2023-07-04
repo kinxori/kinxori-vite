@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Button from "../../components/Buttons/Button";
 import "./_aboutMe.css";
-import mainAboutMeAsset from "/src/assets/AboutmeAsset.png";
-import imgAssetPFP from "/src/assets/new-pfp-for-social-network.jpg";
+import Button from "@components/Buttons/Button";
+import mainAboutMeAsset from "@src/assets/AboutmeAsset.png";
+import imgAssetPFP from "@src/assets/new-pfp-for-social-network.jpg";
 
 export default function AboutMe() {
   const [isOpen, setisOpen] = useState(() => {
@@ -13,10 +13,6 @@ export default function AboutMe() {
   useEffect(() => {
     localStorage.setItem("isReadMore", isOpen.toString());
   }, [isOpen]);
-
-  const handleClick = () => {
-    setisOpen(!isOpen);
-  };
 
   return (
     <article className="aboutMe-root">
@@ -37,7 +33,7 @@ export default function AboutMe() {
             <b> solve problems. </b>
           </p>
           <div className="aboutMe-CTA">
-            <Button variant="secButton" onClick={handleClick}>
+            <Button variant="secButton" onClick={() => setisOpen(!isOpen)}>
               {isOpen ? "Read less" : "Read more"}
             </Button>
           </div>
