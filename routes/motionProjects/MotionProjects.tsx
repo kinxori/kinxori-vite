@@ -5,29 +5,29 @@ import DemoCard from "@components/DemoCard/DemoCard";
 import mainMotionProjectsAsset from "@src/assets/motion-projects-asset.png";
 
 export default function MotionProjects() {
-  const [isClicked, setIsClicked] = useState(() => {
-    const storedState = localStorage.getItem("isClicked");
-    return storedState || null;
-  });
+  const [fullScreenAsset, setFullScreenAsset] = useState("");
+  const [isLoadingVideo, setLoadingVideo] = useState(true);
   const [isActive, setIsActive] = useState(() => {
-    const storedState = localStorage.getItem("isProjectsMotionActive");
+    const storedState = localStorage.getItem("StoredMotionProjects");
     return storedState ? storedState === "true" : false;
   });
-  const [isFullScreen, setIsFullScreen] = useState("");
-  const [isLoadingVideo, setIsLoadingVideo] = useState(true);
+  const [cardClicked, setCardClicked] = useState(() => {
+    const storedState = localStorage.getItem("StoredCardClicked");
+    return storedState || null;
+  });
 
   useEffect(() => {
-    if (isClicked !== null) {
-      localStorage.setItem("isClicked", isClicked);
-    }
-  }, [isClicked]);
-
-  useEffect(() => {
-    localStorage.setItem("isProjectsMotionActive", isActive.toString());
+    localStorage.setItem("StoredMotionProjects", isActive.toString());
   }, [isActive]);
 
+  useEffect(() => {
+    if (cardClicked !== null) {
+      localStorage.setItem("StoredCardClicked", cardClicked);
+    }
+  }, [cardClicked]);
+
   const handleCardClick = (id: any) => {
-    setIsClicked((currentValue: any) => (currentValue !== id ? id : false));
+    setCardClicked((currentValue: any) => (currentValue !== id ? id : false));
   };
 
   const handleProjectsButton = () => {
@@ -35,7 +35,7 @@ export default function MotionProjects() {
   };
 
   const handleFullScreen = (id: any) => {
-    setIsFullScreen((currenValue) => (currenValue !== id ? id : ""));
+    setFullScreenAsset((currenValue) => (currenValue !== id ? id : ""));
   };
 
   return (
@@ -63,7 +63,7 @@ export default function MotionProjects() {
       </div>
       {isActive === true && (
         <section className="motion-projects-cards">
-          {/* {isFullScreen !== "" && (
+          {/* {fullScreenAsset !== "" && (
                 <>
                   <Button className="motion-projects-full-screen-close-button" variant="linkButton">
                     Close
@@ -77,19 +77,19 @@ export default function MotionProjects() {
                 <i className="fa-solid fa-video"></i>&nbsp;&nbsp;Motion Design
               </>
             }
-            isActive={isClicked === "motion-desing-card"}
+            isActive={cardClicked === "motion-desing-card"}
             onClick={() => handleCardClick("motion-desing-card")}
           >
             <div className="motion-projects-card-body">
               {/* <video
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
-                  onLoadedData={() => setIsLoadingVideo(false)}
+                  onLoadedData={() => setLoadingVideo(false)}
                   loop
                   autoPlay
                   controls={false}
                   muted
                     className={
-                  isFullScreen === "shopping-card-asset"
+                  fullScreenAsset === "shopping-card-asset"
                     ? "motion-projects-full-screen-img-open"
                     : "motion-projects-full-screen-img-close"
                 }
@@ -117,19 +117,19 @@ export default function MotionProjects() {
                 <i className="fa-solid fa-cube"></i>&nbsp;&nbsp;3D Modeling
               </>
             }
-            isActive={isClicked === "3d-modeling-card"}
+            isActive={cardClicked === "3d-modeling-card"}
             onClick={() => handleCardClick("3d-modeling-card")}
           >
             <div className="motion-projects-card-body">
               {/* <video
                 src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
-                onLoadedData={() => setIsLoadingVideo(false)}
+                onLoadedData={() => setLoadingVideo(false)}
                 loop
                 autoPlay
                 controls={false}
                 muted
                 className={
-                  isFullScreen === "fetch-api-asset"
+                  fullScreenAsset === "fetch-api-asset"
                     ? "motion-projects-full-screen-img-open"
                     : "motion-projects-full-screen-img-close"
                 }

@@ -13,7 +13,7 @@ import twitterSS from "@src/assets/twitter-profile-ss.png";
 
 export default function Contact() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
-  const [isActive, setisActive] = useState(() => {
+  const [isActive, setActive] = useState(() => {
     const storedState = localStorage.getItem("OptionsButton");
     return storedState ? storedState === "true" : false;
   });
@@ -34,7 +34,7 @@ export default function Contact() {
   }, [cardClicked]);
 
   const handleOptionsButton = () => {
-    setisActive(!isActive);
+    setActive(!isActive);
   };
 
   const handleCardClick = (id: any) => {
