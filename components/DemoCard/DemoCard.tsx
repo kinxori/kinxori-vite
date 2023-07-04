@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./_demoCard.css";
 
 export default function DemoCard({ header, children, isActive, onClick }: any) {
