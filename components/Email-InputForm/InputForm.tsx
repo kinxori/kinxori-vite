@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import Button from "../Buttons/Button";
 import "./_inputForm.css";
+import Button from "@components/Buttons/Button";
 
 export default function InputForm() {
   const [emailInput, setEmailInput] = useState("");
