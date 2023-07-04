@@ -22,6 +22,6 @@
       "@components/*": ["components/*"]
     }
   },
-  "include": ["./*", "src", "routes", "components", "declarations.d.ts"],
+  "include": ["./", "declarations.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

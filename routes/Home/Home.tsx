@@ -1,11 +1,11 @@
 import { useLocation } from "react-router-dom";
 import "./_home.css";
-import NavBar from "./../../components/NavBar/NavBar";
-import LandingPage from "./../LandingPage/LandingPage";
-import WebProjects from "./../webProjects/WebProjects";
-import MotionProjects from "./../motionProjects/MotionProjects";
-import Contact from "./../Contact/Contact";
-import AboutMe from "./../AboutMe/AboutMe";
+import NavBar from "@components/NavBar/NavBar";
+import LandingPage from "@routes/LandingPage/LandingPage";
+import WebProjects from "@routes/webProjects/WebProjects";
+import MotionProjects from "@routes/motionProjects/MotionProjects";
+import Contact from "@routes/Contact/Contact";
+import AboutMe from "@routes/AboutMe/AboutMe";
 
 export default function Home() {
   const location = useLocation();

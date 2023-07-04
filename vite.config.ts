@@ -9,7 +9,7 @@ export default defineConfig({
     alias: {
       "@src": "./src",
       "@components": "./components",
-      "@routes": "routes",
+      "@routes": "./routes",
     },
   },
 });
