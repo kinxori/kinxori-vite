@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import MobileNav from "./MobileNav";
-import DesktopNav from "./DesktopNav";
+import MobileNav from "@components/NavBar/MobileNav";
+import DesktopNav from "@components/NavBar/DesktopNav";
 
 export default function NavBar() {
   const [navComponent, setIsNavComponent] = useState(<MobileNav />);
