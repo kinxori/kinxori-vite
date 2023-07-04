@@ -14,7 +14,7 @@ import twitterSS from "@src/assets/twitter-profile-ss.png";
 export default function Contact() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
   const [isActive, setActive] = useState(() => {
-    const storedState = localStorage.getItem("OptionsButton");
+    const storedState = localStorage.getItem("StoredOptionsButton");
     return storedState ? storedState === "true" : false;
   });
 
@@ -24,7 +24,7 @@ export default function Contact() {
   });
 
   useEffect(() => {
-    localStorage.setItem("OptionsButton", isActive.toString());
+    localStorage.setItem("StoredOptionsButton", isActive.toString());
   }, [isActive]);
 
   useEffect(() => {
