@@ -12,38 +12,37 @@ import githubSS from "@src/assets/github-profile-ss.png";
 import twitterSS from "@src/assets/twitter-profile-ss.png";
 
 export default function Contact() {
-  const [isFullScreen, setIsFullScreen] = useState("");
-
+  const [fullScreenAsset, setFullScreenAsset] = useState("");
   const [isActive, setisActive] = useState(() => {
-    const storedState = localStorage.getItem("isOptionsButtonActive");
+    const storedState = localStorage.getItem("OptionsButton");
     return storedState ? storedState === "true" : false;
   });
 
-  const [isClicked, setIsClicked] = useState(() => {
-    const storedState = localStorage.getItem("isClicked");
+  const [cardClicked, setCardClicked] = useState(() => {
+    const storedState = localStorage.getItem("CardClicked");
     return storedState || null;
   });
 
   useEffect(() => {
-    localStorage.setItem("isOptionsButtonActive", isActive.toString());
+    localStorage.setItem("OptionsButton", isActive.toString());
   }, [isActive]);
 
   useEffect(() => {
-    if (isClicked !== null) {
-      localStorage.setItem("isClicked", isClicked);
+    if (cardClicked !== null) {
+      localStorage.setItem("CardClicked", cardClicked);
     }
-  }, [isClicked]);
+  }, [cardClicked]);
 
   const handleOptionsButton = () => {
     setisActive(!isActive);
   };
 
   const handleCardClick = (id: any) => {
-    setIsClicked((currentValue: any) => (currentValue !== id ? id : false));
+    setCardClicked((currentValue) => (currentValue !== id ? id : false));
   };
 
   const handleFullScreen = (id: any) => {
-    setIsFullScreen((currenValue) => (currenValue !== id ? id : ""));
+    setFullScreenAsset((currenValue) => (currenValue !== id ? id : ""));
   };
 
   return (
@@ -67,7 +66,7 @@ export default function Contact() {
       </div>
       {isActive === true && (
         <section className="contact-options-cards">
-          {isFullScreen !== "" && (
+          {fullScreenAsset !== "" && (
             <>
               <Button
                 className="contact-full-screen-close-button"
@@ -85,13 +84,13 @@ export default function Contact() {
                 <i className="fa-brands fa-linkedin"></i>&nbsp;&nbsp;LinkedIn
               </>
             }
-            isActive={isClicked === "linkedin-card"}
+            isActive={cardClicked === "linkedin-card"}
             onClick={() => handleCardClick("linkedin-card")}
           >
             <div className="contact-display-card-body">
               <img
                 className={
-                  isFullScreen === "linkedin-card-img"
+                  fullScreenAsset === "linkedin-card-img"
                     ? "contact-full-screen-img-open"
                     : "contact-full-screen-img-close"
                 }
@@ -116,13 +115,13 @@ export default function Contact() {
                 <i className="fa-solid fa-download"></i>&nbsp;&nbsp;Resume/CV
               </>
             }
-            isActive={isClicked === "resume-card"}
+            isActive={cardClicked === "resume-card"}
             onClick={() => handleCardClick("resume-card")}
           >
             <div className="contact-display-card-body">
               <img
                 className={
-                  isFullScreen === "resume-card-img-asset"
+                  fullScreenAsset === "resume-card-img-asset"
                     ? "contact-full-screen-img-open"
                     : "contact-full-screen-img-close"
                 }
@@ -147,7 +146,7 @@ export default function Contact() {
                 <i className="fa-brands fa-github"></i>&nbsp;&nbsp;Github
               </>
             }
-            isActive={isClicked === "github-card"}
+            isActive={cardClicked === "github-card"}
             onClick={() => handleCardClick("github-card")}
           >
             <div className="contact-display-card-body">
@@ -155,7 +154,7 @@ export default function Contact() {
                 src={githubSS}
                 alt="screenshot of Kinxori's github profile"
                 className={
-                  isFullScreen === "github-card-img-asset"
+                  fullScreenAsset === "github-card-img-asset"
                     ? "contact-full-screen-img-open"
                     : "contact-full-screen-img-close"
                 }
@@ -178,7 +177,7 @@ export default function Contact() {
                 <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;Twitter
               </>
             }
-            isActive={isClicked === "twitter-card"}
+            isActive={cardClicked === "twitter-card"}
             onClick={() => handleCardClick("twitter-card")}
           >
             <div className="contact-display-card-body">
@@ -187,7 +186,7 @@ export default function Contact() {
                 alt="screenshot of Kinxori's twitter profile"
                 onClick={() => handleFullScreen("twitter-card-img-asset")}
                 className={
-                  isFullScreen === "twitter-card-img-asset"
+                  fullScreenAsset === "twitter-card-img-asset"
                     ? "contact-full-screen-img-open"
                     : "contact-full-screen-img-close"
                 }
@@ -209,7 +208,7 @@ export default function Contact() {
                 <i className="fa-regular fa-envelope"></i>&nbsp;&nbsp;Send email
               </>
             }
-            isActive={isClicked === "email-card"}
+            isActive={cardClicked === "email-card"}
             onClick={() => handleCardClick("email-card")}
           >
             <div className="contact-display-card-body">

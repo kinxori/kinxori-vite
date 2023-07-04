@@ -6,14 +6,14 @@ import imgAssetPFP from "@src/assets/new-pfp-for-social-network.jpg";
 import mockupAsset from "@src/assets/hey-asset-on-black.png";
 
 export default function AboutMe() {
-  const [isOpen, setisOpen] = useState(() => {
-    const storedState = localStorage.getItem("isReadMore");
+  const [isReadMore, setReadMore] = useState(() => {
+    const storedState = localStorage.getItem("StoredReadMore");
     return storedState ? storedState === "true" : false;
   });
 
   useEffect(() => {
-    localStorage.setItem("isReadMore", isOpen.toString());
-  }, [isOpen]);
+    localStorage.setItem("StoredReadMore", isReadMore.toString());
+  }, [isReadMore]);
 
   return (
     <article className="aboutMe-root">
@@ -33,13 +33,13 @@ export default function AboutMe() {
             <b> solve problems. </b>
           </p>
           <div className="aboutMe-CTA">
-            <Button variant="secButton" onClick={() => setisOpen(!isOpen)}>
-              {isOpen ? "Read less" : "Read more"}
+            <Button variant="secButton" onClick={() => setReadMore(!isReadMore)}>
+              {isReadMore ? "Read less" : "Read more"}
             </Button>
           </div>
         </div>
       </div>
-      {isOpen === true && (
+      {isReadMore === true && (
         <div className="about-me-read-more-content">
           <div className="aboutme-copy-PFP">
             <img src={imgAssetPFP} alt="Gustavo Quiroz - Kinxori"></img>
