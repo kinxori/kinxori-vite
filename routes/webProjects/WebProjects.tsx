@@ -9,34 +9,32 @@ import tailwindLogo from "@src/assets/tailwindcss-png-logo-500x500-white.png";
 const VideoLoader = lazy(() => import("@components/VideoLoader/VideoLoader"));
 
 export default function Projects() {
-  const [isClicked, setIsClicked] = useState(() => {
-    const storedState = localStorage.getItem("isClicked");
+  const [fullScreenAsset, setFullScreenAsset] = useState("");
+  const [isActive, setIsActive] = useState(() => {
+    const storedState = localStorage.getItem("StoredWebProjects");
+    return storedState ? storedState === "true" : false;
+  });
+  const [cardClicked, setCardClicked] = useState(() => {
+    const storedState = localStorage.getItem("StoredCardClicked");
     return storedState || null;
   });
 
-  const [isActive, setIsActive] = useState(() => {
-    const storedState = localStorage.getItem("isProjectsButtonActive");
-    return storedState ? storedState === "true" : false;
-  });
-
-  const [isFullScreen, setIsFullScreen] = useState("");
-
   useEffect(() => {
-    if (isClicked !== null) {
-      localStorage.setItem("isClicked", isClicked);
+    if (cardClicked !== null) {
+      localStorage.setItem("StoredCardClicked", cardClicked);
     }
-  }, [isClicked]);
+  }, [cardClicked]);
 
   useEffect(() => {
-    localStorage.setItem("isProjectsButtonActive", isActive.toString());
+    localStorage.setItem("StoredWebProjects", isActive.toString());
   }, [isActive]);
 
   const handleFullScreen = (id: string) => {
-    setIsFullScreen((currenValue) => (currenValue !== id ? id : ""));
+    setFullScreenAsset((currenValue) => (currenValue !== id ? id : ""));
   };
 
   const handleCardClick = (id: any) => {
-    setIsClicked((currentValue: any) => (currentValue !== id ? id : false));
+    setCardClicked((currentValue: any) => (currentValue !== id ? id : false));
   };
 
   const handleProjectsButton = () => {
@@ -65,7 +63,7 @@ export default function Projects() {
       </div>
       {isActive === true && (
         <section className="projects-display-projects-cards">
-          {isFullScreen !== "" && (
+          {fullScreenAsset !== "" && (
             <>
               <Button
                 className="projects-full-screen-close-button"
@@ -83,14 +81,14 @@ export default function Projects() {
                 <i className="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Features
               </>
             }
-            isActive={isClicked === "features-card"}
+            isActive={cardClicked === "features-card"}
             onClick={() => handleCardClick("features-card")}
           >
             <div className="projects-display-card-body">
               <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
                 <VideoLoader
                   className={
-                    isFullScreen === "shopping-card-asset"
+                    fullScreenAsset === "shopping-card-asset"
                       ? "projects-full-screen-img-open"
                       : "projects-full-screen-img-close"
                   }
@@ -162,7 +160,7 @@ export default function Projects() {
               <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
                 <VideoLoader
                   className={
-                    isFullScreen === "search-bar-asset"
+                    fullScreenAsset === "search-bar-asset"
                       ? "projects-full-screen-img-open"
                       : "projects-full-screen-img-close"
                   }
@@ -235,7 +233,7 @@ export default function Projects() {
               <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
                 <VideoLoader
                   className={
-                    isFullScreen === "fetch-api-asset"
+                    fullScreenAsset === "fetch-api-asset"
                       ? "projects-full-screen-img-open"
                       : "projects-full-screen-img-close"
                   }
@@ -309,7 +307,7 @@ export default function Projects() {
                 <i className="fa-solid fa-pager"></i>&nbsp;&nbsp;Apps
               </>
             }
-            isActive={isClicked === "web-projects-card"}
+            isActive={cardClicked === "web-projects-card"}
             onClick={() => handleCardClick("web-projects-card")}
           >
             <div className="projects-display-card-body">
