@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Button from "./../../components/Buttons/Button";
-import DemoCard from "./../../components/DemoCard/DemoCard";
 import "./_motionProjects.css";
-import mainMotionProjectsAsset from "/src/assets/motion-projects-asset.png";
+import Button from "@components/Buttons/Button";
+import DemoCard from "@components/DemoCard/DemoCard";
+import mainMotionProjectsAsset from "@src/assets/motion-projects-asset.png";
 
 export default function MotionProjects() {
   const [isClicked, setIsClicked] = useState(() => {
