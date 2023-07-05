@@ -9,6 +9,8 @@ import arnoldRenderLogo from "@src/assets/arnold-renderer-logo.png";
 import goldenKemonito from "@src/assets/3D-works/golden-kemonito-v2.png";
 import huitziTemple from "@src/assets/3D-works/huitzi_render_comp_v2.png";
 import magicalVoxelLogo from "@src/assets/magical-voxel-logo.png";
+import gatoCalzon from "@src/assets/3D-works/gato-render-resize.png";
+import zbrushLogo from "@src/assets/zbrush-logo.png";
 
 export default function MotionProjects() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
@@ -211,16 +213,16 @@ export default function MotionProjects() {
               <h3>Technologies used 💡</h3>
               <ul>
                 <li>
+                  <img src={magicalVoxelLogo} alt="magical Voxel Logo - kinxori.com " />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Magical Voxel
+                </li>
+                <li>
                   <img src={mayaLogo} alt="autodesk maya logo - kinxor.com"></img>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Maya
                 </li>
                 <li>
                   <img src={arnoldRenderLogo} alt="autodesk maya logo - kinxor.com"></img>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
-                </li>
-                <li>
-                  <img src={magicalVoxelLogo} alt="magical Voxel Logo " />
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Magical Voxel
                 </li>
               </ul>
               <p>
@@ -229,6 +231,46 @@ export default function MotionProjects() {
                 temple.
               </p>
               <i>- 5 February 2020</i>
+            </div>
+            <hr></hr>
+            <div className="motion-projects-card-body">
+              <img
+                src={gatoCalzon}
+                className={
+                  fullScreenAsset === "golden-kemonito-asset"
+                    ? "motion-projects-full-screen-img-open"
+                    : "motion-projects-full-screen-img-close"
+                }
+                alt="Golden Kemonito. 3D model created by Kinxori. A tribute to world famous Mexican wrestler, now converted into a golden statue. This character is wearing a blur fur suit, posing as if it was surfing, dark background with the iconic CMLL letters from the 'Comisión Mexicana de Lucha Libre' - kinxori.com "
+                onClick={() => handleFullScreen("golden-kemonito-asset")}
+              ></img>
+              <h2>Gato Calzón</h2>
+              <p>
+                This project showcases a 3D voxel model depicting the imagined interior of the
+                Huitzilopochtli temple, offering a visual representation of its possible structure
+                and design.
+              </p>
+              <h3>Technologies used 💡</h3>
+              <ul>
+                <li>
+                  <img src={mayaLogo} alt="autodesk maya logo - kinxor.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Maya
+                </li>
+                <li>
+                  <img src={arnoldRenderLogo} alt="Arnold Renderer Logo - kinxori.com " />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arnold Renderer
+                </li>
+                <li>
+                  <img src={zbrushLogo} alt="zBrush logo - kinxor.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zBrush
+                </li>
+              </ul>
+              <p>
+                This project was specifically developed for a short film competition hosted by
+                Shorts Mexico. It aims to faithfully recreate the interior of the Huitzilopochtli
+                temple.
+              </p>
+              <i>- 12 October 2019</i>
             </div>
           </DemoCard>
         </section>
