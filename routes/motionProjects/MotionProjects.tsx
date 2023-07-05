@@ -201,7 +201,9 @@ export default function MotionProjects() {
                     ? "motion-projects-full-screen-img-open"
                     : "motion-projects-full-screen-img-close"
                 }
-                alt="Golden Kemonito. 3D model created by Kinxori. A tribute to world famous Mexican wrestler, now converted into a golden statue. This character is wearing a blur fur suit, posing as if it was surfing, dark background with the iconic CMLL letters from the 'Comisión Mexicana de Lucha Libre' - kinxori.com "
+                alt="Templo de Huitzilopochtli. 3D Voxel model created by Kinxori. This project showcases a 3D voxel model depicting the imagined interior of the
+                Huitzilopochtli temple, offering a visual representation of its possible structure
+                and design. - kinxori.com "
                 onClick={() => handleFullScreen("huitzi-asset")}
               ></img>
               <h2>Templo de Huitzilopochtli</h2>
