@@ -33,12 +33,8 @@ export default function Projects() {
     setFullScreenAsset((currenValue) => (currenValue !== id ? id : ""));
   };
 
-  const handleCardClick = (id: any) => {
-    setCardClicked((currentValue: any) => (currentValue !== id ? id : false));
-  };
-
-  const handleProjectsButton = () => {
-    setIsActive(!isActive);
+  const handleCardClick = (id: string) => {
+    setCardClicked((currentValue) => (currentValue !== id ? id : ""));
   };
 
   return (
@@ -55,7 +51,7 @@ export default function Projects() {
             along my <b>web developer career.</b>
           </p>
           <div className="projects-CTA">
-            <Button onClick={handleProjectsButton} variant="secButton">
+            <Button onClick={() => setIsActive(!isActive)} variant="secButton">
               {isActive === false ? "Open Projects" : "Close Projects"}
             </Button>
           </div>

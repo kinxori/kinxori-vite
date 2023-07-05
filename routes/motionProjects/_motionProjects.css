@@ -320,7 +320,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .motion-projects-content img {
@@ -336,7 +336,7 @@
   }
 
   .motion-projects-copy {
-    width: 50%;
+    width: 55%;
     padding-top: 0%;
     gap: 30px;
     display: flex;

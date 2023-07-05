@@ -33,16 +33,12 @@ export default function Contact() {
     }
   }, [cardClicked]);
 
-  const handleOptionsButton = () => {
-    setActive(!isActive);
-  };
-
-  const handleCardClick = (id: any) => {
-    setCardClicked((currentValue) => (currentValue !== id ? id : false));
-  };
-
-  const handleFullScreen = (id: any) => {
+  const handleFullScreen = (id: string) => {
     setFullScreenAsset((currenValue) => (currenValue !== id ? id : ""));
+  };
+
+  const handleCardClick = (id: string) => {
+    setCardClicked((currentValue) => (currentValue !== id ? id : ""));
   };
 
   return (
@@ -58,7 +54,7 @@ export default function Contact() {
             friends! <b>Send me a message</b> and let's grab a virtual coffee!
           </p>
           <div className="contact-CTA">
-            <Button onClick={handleOptionsButton} variant="secButton">
+            <Button onClick={() => setActive(!isActive)} variant="secButton">
               {isActive === false ? "Open Options" : "Close Options"}
             </Button>
           </div>

@@ -26,16 +26,12 @@ export default function MotionProjects() {
     }
   }, [cardClicked]);
 
-  const handleCardClick = (id: any) => {
-    setCardClicked((currentValue: any) => (currentValue !== id ? id : false));
-  };
-
-  const handleProjectsButton = () => {
-    setIsActive(!isActive);
-  };
-
-  const handleFullScreen = (id: any) => {
+  const handleFullScreen = (id: string) => {
     setFullScreenAsset((currenValue) => (currenValue !== id ? id : ""));
+  };
+
+  const handleCardClick = (id: string) => {
+    setCardClicked((currentValue) => (currentValue !== id ? id : ""));
   };
 
   return (
@@ -55,7 +51,7 @@ export default function MotionProjects() {
             <b> Check out</b> my work as a creative as well.
           </p>
           <div className="motion-projects-CTA">
-            <Button onClick={handleProjectsButton} variant="secButton">
+            <Button onClick={() => setIsActive(!isActive)} variant="secButton">
               {isActive === false ? "Open Projects" : "Close Projects"}
             </Button>
           </div>
@@ -81,20 +77,20 @@ export default function MotionProjects() {
             onClick={() => handleCardClick("motion-desing-card")}
           >
             <div className="motion-projects-card-body">
-              {/* <video
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
-                  onLoadedData={() => setLoadingVideo(false)}
-                  loop
-                  autoPlay
-                  controls={false}
-                  muted
-                    className={
+              <video
+                src="https://drive.google.com/file/d/1JT4KKygKZwdIIhkQi3_MbUntbdlEfGyb/view?usp=sharing"
+                onLoadedData={() => setLoadingVideo(false)}
+                loop
+                autoPlay
+                controls={false}
+                muted
+                className={
                   fullScreenAsset === "shopping-card-asset"
                     ? "motion-projects-full-screen-img-open"
                     : "motion-projects-full-screen-img-close"
                 }
                 onClick={() => handleFullScreen("shopping-card-asset")}
-                ></video> */}
+              ></video>
               <h2>Under construction ⚙️</h2>
 
               {/* <div className="motion-projects-card-CTA">
