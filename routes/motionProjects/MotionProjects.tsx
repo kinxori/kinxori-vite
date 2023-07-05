@@ -241,7 +241,10 @@ export default function MotionProjects() {
                     ? "motion-projects-full-screen-img-open"
                     : "motion-projects-full-screen-img-close"
                 }
-                alt="Golden Kemonito. 3D model created by Kinxori. A tribute to world famous Mexican wrestler, now converted into a golden statue. This character is wearing a blur fur suit, posing as if it was surfing, dark background with the iconic CMLL letters from the 'Comisión Mexicana de Lucha Libre' - kinxori.com "
+                alt="Orange Cat. 3D model created by Kinxori.  This personal project embodies the concept of envisioning a more humane version of a
+                cat. It portrays orange cats as irresistibly lazy, delightfully irrational, and
+                funny personality. It celebrates the uniqueness and charm of orange cats while
+                playfully acknowledging the humorous assumptions often made about them. - kinxori.com "
                 onClick={() => handleFullScreen("golden-kemonito-asset")}
               ></img>
               <h2>Orange Cat</h2>
