@@ -3,6 +3,7 @@ import "./_motionProjects.css";
 import Button from "@components/Buttons/Button";
 import DemoCard from "@components/DemoCard/DemoCard";
 import mainMotionProjectsAsset from "@src/assets/motion-projects-asset.png";
+import mrBureacucracy from "@src/assets/3D-works/ChincheTV_final_comp_PNG_v2.jpg";
 
 export default function MotionProjects() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
@@ -59,14 +60,21 @@ export default function MotionProjects() {
       </div>
       {isActive === true && (
         <section className="motion-projects-cards">
-          {/* {fullScreenAsset !== "" && (
-                <>
-                  <Button className="motion-projects-full-screen-close-button" variant="linkButton">
-                    Close
-                  </Button>
-                  <div className="motion-projects-full-screen-bg"></div>
-                </>
-              )} */}
+          {fullScreenAsset !== "" && (
+            <>
+              <Button
+                className="motion-projects-full-screen-close-button"
+                variant="linkButton"
+                onClick={() => handleFullScreen("")}
+              >
+                <i className="fa-regular fa-circle-xmark"></i>
+              </Button>
+              <div
+                className="motion-projects-full-screen-bg"
+                onClick={() => handleFullScreen("")}
+              ></div>
+            </>
+          )}
           <DemoCard
             header={
               <>
@@ -77,7 +85,7 @@ export default function MotionProjects() {
             onClick={() => handleCardClick("motion-desing-card")}
           >
             <div className="motion-projects-card-body">
-              <video
+              {/* <video
                 src="https://drive.google.com/file/d/1JT4KKygKZwdIIhkQi3_MbUntbdlEfGyb/view?usp=sharing"
                 onLoadedData={() => setLoadingVideo(false)}
                 loop
@@ -90,9 +98,8 @@ export default function MotionProjects() {
                     : "motion-projects-full-screen-img-close"
                 }
                 onClick={() => handleFullScreen("shopping-card-asset")}
-              ></video>
+              ></video> */}
               <h2>Under construction ⚙️</h2>
-
               {/* <div className="motion-projects-card-CTA">
                 <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
@@ -117,21 +124,37 @@ export default function MotionProjects() {
             onClick={() => handleCardClick("3d-modeling-card")}
           >
             <div className="motion-projects-card-body">
-              {/* <video
-                src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
-                onLoadedData={() => setLoadingVideo(false)}
-                loop
-                autoPlay
-                controls={false}
-                muted
+              <img
+                src={mrBureacucracy}
                 className={
-                  fullScreenAsset === "fetch-api-asset"
+                  fullScreenAsset === "mrBureacucracy-asset"
                     ? "motion-projects-full-screen-img-open"
                     : "motion-projects-full-screen-img-close"
                 }
-                onClick={() => handleFullScreen("fetch-api-asset")}
-              ></video> */}
-              <h2>Under construction ⚙️</h2>
+                onClick={() => handleFullScreen("mrBureacucracy-asset")}
+              ></img>
+              <h2>Mr. Bureaucracy</h2>
+              <p>
+                This character draws inspiration from Kingpin, a notable Spider-Man character. The
+                project's core concept revolves around a short film that explores the notion of
+                being governed by television. At the end of the day, the project was not fulfilled
+                due to lack of time.
+              </p>
+              <h3>Technologies used 💡</h3>
+              <ul>
+                <li>
+                  <i className="fa-brands fa-react"></i> React
+                </li>
+                <li>
+                  <i className="fa-brands fa-square-js"></i> Javascript
+                </li>
+                <li>
+                  <i className="fa-brands fa-html5"></i> HTML
+                </li>
+                <li>
+                  <i className="fa-brands fa-css3"></i> CSS
+                </li>
+              </ul>
               {/* <div className="motion-projects-card-CTA">
                 <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
