@@ -3,7 +3,9 @@ import "./_motionProjects.css";
 import Button from "@components/Buttons/Button";
 import DemoCard from "@components/DemoCard/DemoCard";
 import mainMotionProjectsAsset from "@src/assets/motion-projects-asset.png";
-import mrBureacucracy from "@src/assets/3D-works/ChincheTV_final_comp_PNG_v2.jpg";
+import mrBureacucracy from "@src/assets/3D-works/ChincheTV_final_comp_PNG_v2.png";
+import mayaLogo from "@src/assets/autodesk-maya-logo.png";
+import arnoldRenderLogo from "@src/assets/arnold-renderer-logo.png";
 
 export default function MotionProjects() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
@@ -134,27 +136,24 @@ export default function MotionProjects() {
                 onClick={() => handleFullScreen("mrBureacucracy-asset")}
               ></img>
               <h2>Mr. Bureaucracy</h2>
-              <p>
-                This character draws inspiration from Kingpin, a notable Spider-Man character. The
-                project's core concept revolves around a short film that explores the notion of
-                being governed by television. At the end of the day, the project was not fulfilled
-                due to lack of time.
-              </p>
+              <p>This character draws inspiration from Kingpin, a notable Spider-Man character.</p>
               <h3>Technologies used 💡</h3>
               <ul>
                 <li>
-                  <i className="fa-brands fa-react"></i> React
+                  <img src={mayaLogo} alt="autodesk maya logo - kinxor.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Maya
                 </li>
                 <li>
-                  <i className="fa-brands fa-square-js"></i> Javascript
-                </li>
-                <li>
-                  <i className="fa-brands fa-html5"></i> HTML
-                </li>
-                <li>
-                  <i className="fa-brands fa-css3"></i> CSS
+                  <img src={arnoldRenderLogo} alt="autodesk maya logo - kinxor.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
                 </li>
               </ul>
+              <p>
+                The project's core concept revolves around a short film that explores the notion of
+                being governed by television. At the end of the day, the project was not fulfilled
+                due to lack of time.
+              </p>
+              <i>- 26 March 2021</i>
               {/* <div className="motion-projects-card-CTA">
                 <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
@@ -168,6 +167,7 @@ export default function MotionProjects() {
                 </Button>
               </div> */}
             </div>
+            <hr></hr>
           </DemoCard>
         </section>
       )}

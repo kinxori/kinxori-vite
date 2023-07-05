@@ -121,6 +121,11 @@
   transform: translateY(-50%);
 }
 
+.motion-projects-card-body i {
+  text-align: center;
+  font-size: 12px;
+}
+
 .motion-projects-card-asset-loader {
   width: 100%;
   height: 150px;
