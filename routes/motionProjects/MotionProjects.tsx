@@ -142,7 +142,11 @@ export default function MotionProjects() {
                 onClick={() => handleFullScreen("mrBureacucracy-asset")}
               ></img>
               <h2>Mr. Bureaucracy</h2>
-              <p>This character draws inspiration from Kingpin, a notable Spider-Man character.</p>
+              <p>
+                This character draws inspiration from Kingpin, a notable Spider-Man: Into the
+                Spider-Verse cartoon-ish art style. Mr. Bureaucracy is an agent from the goverment
+                that doesn't want people to know the truth in its own diegetic universe.
+              </p>
               <h3>Technologies used 💡</h3>
               <ul>
                 <li>
