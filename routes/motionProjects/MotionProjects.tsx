@@ -7,6 +7,8 @@ import mrBureacucracy from "@src/assets/3D-works/ChincheTV_final_comp_PNG_v2.png
 import mayaLogo from "@src/assets/autodesk-maya-logo.png";
 import arnoldRenderLogo from "@src/assets/arnold-renderer-logo.png";
 import goldenKemonito from "@src/assets/3D-works/golden-kemonito-v2.png";
+import huitziTemple from "@src/assets/3D-works/huitzi_render_comp_v2.png";
+import magicalVoxelLogo from "@src/assets/magical-voxel-logo.png";
 
 export default function MotionProjects() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
@@ -187,6 +189,46 @@ export default function MotionProjects() {
                 his iconic presence in the ring.
               </p>
               <i>- 4 March 2020</i>
+            </div>
+            <hr></hr>
+            <div className="motion-projects-card-body">
+              <img
+                src={huitziTemple}
+                className={
+                  fullScreenAsset === "golden-kemonito-asset"
+                    ? "motion-projects-full-screen-img-open"
+                    : "motion-projects-full-screen-img-close"
+                }
+                alt="Golden Kemonito. 3D model created by Kinxori. A tribute to world famous Mexican wrestler, now converted into a golden statue. This character is wearing a blur fur suit, posing as if it was surfing, dark background with the iconic CMLL letters from the 'Comisión Mexicana de Lucha Libre' - kinxori.com "
+                onClick={() => handleFullScreen("golden-kemonito-asset")}
+              ></img>
+              <h2>Templo de Huitzilopochtli</h2>
+              <p>
+                This project showcases a 3D voxel model depicting the imagined interior of the
+                Huitzilopochtli temple, offering a visual representation of its possible structure
+                and design.
+              </p>
+              <h3>Technologies used 💡</h3>
+              <ul>
+                <li>
+                  <img src={mayaLogo} alt="autodesk maya logo - kinxor.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Maya
+                </li>
+                <li>
+                  <img src={arnoldRenderLogo} alt="autodesk maya logo - kinxor.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
+                </li>
+                <li>
+                  <img src={magicalVoxelLogo} alt="magical Voxel Logo " />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Magical Voxel
+                </li>
+              </ul>
+              <p>
+                This project was specifically developed for a short film competition hosted by
+                Shorts Mexico. It aims to faithfully recreate the interior of the Huitzilopochtli
+                temple.
+              </p>
+              <i>- 5 February 2020</i>
             </div>
           </DemoCard>
         </section>
