@@ -237,7 +237,7 @@ export default function MotionProjects() {
               <img
                 src={gatoCalzon}
                 className={
-                  fullScreenAsset === "golden-kemonito-asset"
+                  fullScreenAsset === "orange-cat-asset"
                     ? "motion-projects-full-screen-img-open"
                     : "motion-projects-full-screen-img-close"
                 }
@@ -245,7 +245,7 @@ export default function MotionProjects() {
                 cat. It portrays orange cats as irresistibly lazy, delightfully irrational, and
                 funny personality. It celebrates the uniqueness and charm of orange cats while
                 playfully acknowledging the humorous assumptions often made about them. - kinxori.com "
-                onClick={() => handleFullScreen("golden-kemonito-asset")}
+                onClick={() => handleFullScreen("orange-cat-asset")}
               ></img>
               <h2>Orange Cat</h2>
               <p>How would an orange cat would look like if it was more humane?</p>
