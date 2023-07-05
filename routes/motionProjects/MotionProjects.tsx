@@ -244,12 +244,8 @@ export default function MotionProjects() {
                 alt="Golden Kemonito. 3D model created by Kinxori. A tribute to world famous Mexican wrestler, now converted into a golden statue. This character is wearing a blur fur suit, posing as if it was surfing, dark background with the iconic CMLL letters from the 'Comisión Mexicana de Lucha Libre' - kinxori.com "
                 onClick={() => handleFullScreen("golden-kemonito-asset")}
               ></img>
-              <h2>Gato Calzón</h2>
-              <p>
-                This project showcases a 3D voxel model depicting the imagined interior of the
-                Huitzilopochtli temple, offering a visual representation of its possible structure
-                and design.
-              </p>
+              <h2>Orange Cat</h2>
+              <p>How would an orange cat would look like if it was more humane?</p>
               <h3>Technologies used 💡</h3>
               <ul>
                 <li>
@@ -266,9 +262,10 @@ export default function MotionProjects() {
                 </li>
               </ul>
               <p>
-                This project was specifically developed for a short film competition hosted by
-                Shorts Mexico. It aims to faithfully recreate the interior of the Huitzilopochtli
-                temple.
+                This personal project embodies the concept of envisioning a more humane version of a
+                cat. It portrays orange cats as irresistibly lazy, delightfully irrational, and
+                funny personality. It celebrates the uniqueness and charm of orange cats while
+                playfully acknowledging the humorous assumptions often made about them.
               </p>
               <i>- 12 October 2019</i>
             </div>
