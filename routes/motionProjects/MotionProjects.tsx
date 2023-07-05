@@ -6,6 +6,7 @@ import mainMotionProjectsAsset from "@src/assets/motion-projects-asset.png";
 import mrBureacucracy from "@src/assets/3D-works/ChincheTV_final_comp_PNG_v2.png";
 import mayaLogo from "@src/assets/autodesk-maya-logo.png";
 import arnoldRenderLogo from "@src/assets/arnold-renderer-logo.png";
+import goldenKemonito from "@src/assets/3D-works/golden-kemonito-v2.png";
 
 export default function MotionProjects() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
@@ -133,6 +134,7 @@ export default function MotionProjects() {
                     ? "motion-projects-full-screen-img-open"
                     : "motion-projects-full-screen-img-close"
                 }
+                alt="Mr. Bureaucracy. 3D model created by Kinxori. This character draws inspiration from Kingpin, a notable Spider-Man character but with a TV displaying a bear instead of head, wearing a suit and posing with 1 fist closed. - Kinxori.com"
                 onClick={() => handleFullScreen("mrBureacucracy-asset")}
               ></img>
               <h2>Mr. Bureaucracy</h2>
@@ -154,20 +156,38 @@ export default function MotionProjects() {
                 due to lack of time.
               </p>
               <i>- 26 March 2021</i>
-              {/* <div className="motion-projects-card-CTA">
-                <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
-                  Live Project
-                </Button>
-                <Button
-                  to="https://github.com/kinxori/react-shopping-cart"
-                  variant="secButton"
-                  target="_blank"
-                >
-                  Github Repo
-                </Button>
-              </div> */}
             </div>
             <hr></hr>
+            <div className="motion-projects-card-body">
+              <img
+                src={goldenKemonito}
+                className={
+                  fullScreenAsset === "golden-kemonito-asset"
+                    ? "motion-projects-full-screen-img-open"
+                    : "motion-projects-full-screen-img-close"
+                }
+                alt="Golden Kemonito. 3D model created by Kinxori. A tribute to world famous Mexican wrestler, now converted into a golden statue. This character is wearing a blur fur suit, posing as if it was surfing, dark background with the iconic CMLL letters from the 'Comisión Mexicana de Lucha Libre' - kinxori.com "
+                onClick={() => handleFullScreen("golden-kemonito-asset")}
+              ></img>
+              <h2>Golden Kemonito</h2>
+              <p>A tribute to world famous Mexican wrestler, now converted into a golden statue.</p>
+              <h3>Technologies used 💡</h3>
+              <ul>
+                <li>
+                  <img src={mayaLogo} alt="autodesk maya logo - kinxor.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Maya
+                </li>
+                <li>
+                  <img src={arnoldRenderLogo} alt="autodesk maya logo - kinxor.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
+                </li>
+              </ul>
+              <p>
+                This project pays tribute to Kemonito, the legendary Mexican wrestler, celebrating
+                his iconic presence in the ring.
+              </p>
+              <i>- 4 March 2020</i>
+            </div>
           </DemoCard>
         </section>
       )}
