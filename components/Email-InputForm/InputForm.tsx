@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import "./_inputForm.css";
 import Button from "@components/Buttons/Button";
+import emailAsset from "@src/assets/email-sent-asset.png";
 
 export default function InputForm() {
   const [emailInput, setEmailInput] = useState("");
   const [subjectInput, setSubjectInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
-  const [popUp, setPopUp] = useState(false);
-  const [clipboardIsCopy, setClipboardIsCopy] = useState(false);
+  const [popUp, setPopUp] = useState(true);
 
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
@@ -58,17 +58,6 @@ export default function InputForm() {
     setPopUp(false);
   };
 
-  const textToClipBoard = useRef("") as any;
-
-  const handleClipboardState = () => {
-    const text = textToClipBoard.current.textContent;
-    navigator.clipboard.writeText(text);
-    setClipboardIsCopy(true);
-    setTimeout(() => {
-      setClipboardIsCopy(false);
-    }, 3000);
-  };
-
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-content">
@@ -113,6 +102,7 @@ export default function InputForm() {
       {popUp && (
         <div className="email-pop-up-root" onClick={handlePopUp}>
           <div className="email-pop-up-content">
+            <img src={emailAsset} alt=""></img>
             <h2>Email sent! 👨‍💻</h2>
             <Button variant="mainButton">Ok</Button>
           </div>
