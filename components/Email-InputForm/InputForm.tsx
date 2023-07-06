@@ -100,13 +100,15 @@ export default function InputForm() {
         </button>
       </div>
       {popUp && (
-        <div className="email-pop-up-root" onClick={handlePopUp}>
+        <div className="email-pop-up-root">
           <div className="email-pop-up-content">
             <img src={emailAsset} alt=""></img>
             <h2>Email sent! 👨‍💻</h2>
-            <Button variant="mainButton">Ok</Button>
+            <Button variant="mainButton" onClick={handlePopUp}>
+              Close
+            </Button>
           </div>
-          <div className="email-pop-up-background"></div>
+          <div className="email-pop-up-background" onClick={handlePopUp}></div>
         </div>
       )}
     </form>
