@@ -257,7 +257,7 @@ export default function MotionProjects() {
                 animation, I aimed to capture the essence of the product's functionality and
                 versatility.
               </p>
-              <i>- 11 February 2022</i>
+              <i>- 12 May 2021</i>
             </div>
           </DemoCard>
           <DemoCard
