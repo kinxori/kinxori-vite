@@ -159,6 +159,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
                 </li>
               </ul>
+              <h3>Story 📖</h3>
               <p>
                 In this project, I had the exciting task of transforming the written concept for
                 Aprociat's commercial into a visually captivating AD. Working closely with the
@@ -169,6 +170,7 @@ export default function MotionProjects() {
               </p>
               <i>- 26 May 2022</i>
             </div>
+            <hr></hr>
           </DemoCard>
           <DemoCard
             header={
