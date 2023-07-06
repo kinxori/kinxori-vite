@@ -98,6 +98,7 @@ export default function Projects() {
                 />
               </Suspense>
               <h2>Shopping Cart</h2>
+              <i>22 April 2023</i>
               <p>
                 This feature updates the shopping cart's total price based on user input quantity
                 and removes items from the cart.
@@ -170,6 +171,7 @@ export default function Projects() {
                 />
               </Suspense>
               <h2>Search Bar</h2>
+              <i>9 March 2023</i>
               <p>
                 This is a search bar component that filters and displays data in a table based on
                 user input.
@@ -243,6 +245,7 @@ export default function Projects() {
                 />
               </Suspense>
               <h2>Fetch API</h2>
+              <i>7 March 2023</i>
               <p>
                 The code fetches data from the Rick & Morty API and displays characters'
                 information. Clicking on a character's image shows their details.
@@ -319,6 +322,7 @@ export default function Projects() {
                 />
               </Suspense>
               <h2>Music Media Player</h2>
+              <i>4 May 2023</i>
               <p>
                 This music media player app built with React allows users to play, pause, and skip
                 songs in a playlist. It provides controls for volume adjustment and offers features
