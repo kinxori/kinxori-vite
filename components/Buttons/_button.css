@@ -46,6 +46,26 @@
   text-decoration-line: underline;
 }
 
+.mainButton:hover {
+  scale: 1.02;
+  opacity: 0.95;
+}
+
+.secButton:hover {
+  scale: 1.02;
+  opacity: 0.95;
+}
+
+.ghostButton:hover {
+  scale: 1.02;
+  opacity: 0.95;
+}
+
+.linkButton:hover {
+  scale: 1.02;
+  opacity: 0.95;
+}
+
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
