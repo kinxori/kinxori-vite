@@ -9,7 +9,7 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .form-content-titles {
@@ -17,7 +17,15 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+}
+
+.form-content-titles div {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .form-content h4 {
@@ -47,14 +55,14 @@
   box-sizing: border-box;
   text-align: left;
   border-radius: 12px;
-  font-family: var(--mainFont);
   resize: none;
   border: none;
+  font-family: var(--mainFont);
 }
 
 .form-button-CTA {
   width: fit-content;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 /* -----------------------  pop-up styles   */

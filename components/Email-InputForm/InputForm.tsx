@@ -73,24 +73,28 @@ export default function InputForm() {
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-content">
         <div className="form-content-titles">
-          <h4>Email:</h4>
-          <input
-            type="email"
-            value={emailInput}
-            name="email"
-            onChange={(event) => setEmailInput(event.target.value)}
-            required
-            placeholder="example@email.com"
-          />
-          <h4>Subject</h4>
-          <input
-            type="text"
-            value={subjectInput}
-            name="subject"
-            onChange={(event) => setSubjectInput(event.target.value)}
-            required
-            placeholder="Enter your subject"
-          />
+          <div>
+            <h4>Email:</h4>
+            <input
+              type="email"
+              value={emailInput}
+              name="email"
+              onChange={(event) => setEmailInput(event.target.value)}
+              required
+              placeholder="example@email.com"
+            />
+          </div>
+          <div>
+            <h4>Subject</h4>
+            <input
+              type="text"
+              value={subjectInput}
+              name="subject"
+              onChange={(event) => setSubjectInput(event.target.value)}
+              required
+              placeholder="Enter your subject"
+            />
+          </div>
         </div>
         <h4>Message:</h4>
         <textarea
@@ -104,7 +108,6 @@ export default function InputForm() {
           Submit
         </button>
       </div>
-
       {popUp && (
         <div className="email-pop-up-root" onClick={handlePopUp}>
           <div className="email-pop-up-content">
