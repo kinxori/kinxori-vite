@@ -72,7 +72,7 @@ export default function InputForm() {
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-content">
-        <div className="form-content-titles">
+        <div className="form-content-inputs">
           <div>
             <h4>Email:</h4>
             <input
@@ -96,14 +96,16 @@ export default function InputForm() {
             />
           </div>
         </div>
-        <h4>Message:</h4>
-        <textarea
-          required
-          value={messageInput}
-          name="message"
-          onChange={(event) => setMessageInput(event.target.value)}
-          placeholder="Enter your message here"
-        />
+        <div className="form-content-textareas">
+          <h4>Message:</h4>
+          <textarea
+            required
+            value={messageInput}
+            name="message"
+            onChange={(event) => setMessageInput(event.target.value)}
+            placeholder="Enter your message here"
+          />
+        </div>
         <button type="submit" className="mainButton form-button-CTA">
           Submit
         </button>

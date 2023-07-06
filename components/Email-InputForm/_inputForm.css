@@ -12,7 +12,7 @@
   gap: 20px;
 }
 
-.form-content-titles {
+.form-content-inputs {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -20,12 +20,20 @@
   gap: 20px;
 }
 
-.form-content-titles div {
+.form-content-inputs div {
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
+}
+
+.form-content-textareas {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .form-content h4 {
@@ -65,7 +73,7 @@
   margin: 10px auto;
 }
 
-/* -----------------------  pop-up styles   */
+/* -----------------------  pop-up styles ------------  */
 
 .email-pop-up-root {
   z-index: 1000;
@@ -109,49 +117,85 @@
   opacity: 0.9;
 }
 
-/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+/* ---------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
-  .form-body {
-    gap: 20px;
-    padding-bottom: 30px;
+  .form-root {
+    width: 100%;
+    height: min-content;
+    margin: 0 auto;
   }
-  .input-form-my-email p {
+
+  .form-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .form-content-inputs {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .form-content-inputs div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-content-textareas {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-content h4 {
     font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
-  .input-form-my-email div {
-    width: 40px;
+
+  .form-content input {
     height: 40px;
-  }
-  .input-form-my-email div i {
-    font-size: 24px;
-  }
-  .email-input-box {
-    height: 50px;
-    font-size: 24px;
-    padding: 20px 20px;
-    border-radius: 8px;
-  }
-
-  .email-input-box:focus {
-    border: 2px solid var(--mainColor);
-    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    text-align: left;
+    box-sizing: border-box;
+    border: none;
+    font-family: var(--mainFont);
   }
 
-  .form-message-input {
-    min-height: 200px;
-    font-size: 24px;
-    padding: 20px 20px;
-    border-radius: 8px;
-  }
-  .form-message-input:focus {
-    border: 2px solid var(--mainColor);
-    border-radius: 8px;
+  .form-content textarea {
+    min-height: 100px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 15px;
+    resize: none;
+    border: none;
+    font-family: var(--mainFont);
   }
 
-  .submit-button-CTA {
-    margin: 20px 0;
+  .form-button-CTA {
+    width: fit-content;
+    margin: 20px auto;
   }
+
+  /* -----------------------  pop-up styles ------------  */
 
   .email-pop-up-body {
     height: 225px;
@@ -159,18 +203,20 @@
     border-radius: 22px;
     border: 2px solid var(--mainColor);
   }
+
   .email-pop-up-body h2 {
     text-align: center;
     font-size: 32px;
     margin: 10px 0;
     font-weight: 700;
   }
+
   .email-pop-up-body span {
     margin: 10px 0;
   }
 }
 
-/* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
+/* ------------------------------------------------ Desktop media query -----------------------------------------------------------------------*/
 
 @media (min-width: 1181px) {
   .form-body {
