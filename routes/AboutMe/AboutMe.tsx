@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import "./_aboutMe.css";
 import Button from "@components/Buttons/Button";
 import mainAboutMeAsset from "@src/assets/AboutmeAsset.png";
 import imgAssetPFP from "@src/assets/new-pfp-for-social-network.jpg";
 import mockupAsset from "@src/assets/hey-asset-on-black.png";
+
+const VideoLoader = lazy(() => import("@components/VideoLoader/VideoLoader"));
 
 export default function AboutMe() {
   const [isReadMore, setReadMore] = useState(() => {
@@ -55,7 +57,18 @@ export default function AboutMe() {
             <b> community, hard work, and creativity, </b>
             <b> which I carry with me </b> wherever I go.
           </p>
-          <img src={mockupAsset} alt="ADD ALT"></img>
+          <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+            <VideoLoader
+              src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
+              loop={true}
+              preload="auto"
+              autoPlay={true}
+              controls={false}
+              muted={true}
+              className="projects-display-card-body-video"
+            ></VideoLoader>
+          </Suspense>
+
           <h3>Personality? 💆</h3>
           <p>
             I'm a person who enjoys a <b> balanced lifestyle. </b> While I'm not necessarily
