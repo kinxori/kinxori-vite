@@ -110,8 +110,9 @@ export default function MotionProjects() {
               </Suspense>
               <h2>Beezy Beez</h2>
               <p>
-                Short AD for Beezy Beez showcasing one of their products which is a healthy treats
-                for pets.
+                Introducing Beezy Beez's Dog Biscuits – the perfect healthy treat for your furry
+                companions. Packed with goodness and crafted with care, these biscuits provide a
+                nutritious and tasty snack that dogs love. Give your pets the best with Beezy Beez.
               </p>
               <h3>Technologies 💡</h3>
               <ul>
@@ -120,8 +121,16 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
                 </li>
               </ul>
+              <p>
+                For this project, I had the opportunity to create a captivating video AD for Beezy
+                Beez. Following the brand's guidelines and utilizing their assets, I brought their
+                vision to life using After Effects. I sourced high-quality stock assets from trusted
+                royalty-free websites to enhance the visual appeal of the AD. It was a rewarding
+                experience to showcase the brand's product in a compelling and engaging way.
+              </p>
               <i>- 5 December 2021</i>
             </div>
+            <hr></hr>
           </DemoCard>
           <DemoCard
             header={
