@@ -219,51 +219,82 @@
 /* ------------------------------------------------ Desktop media query -----------------------------------------------------------------------*/
 
 @media (min-width: 1181px) {
-  .form-body {
-    gap: 20px;
-    padding-bottom: 30px;
+  .form-root {
+    width: 100%;
+    height: min-content;
+    margin: 0 auto;
   }
 
-  .input-form-my-email p {
-    font-size: 20px;
+  .form-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
-  .input-form-my-email div {
-    width: 45px;
-    height: 45px;
+  .form-content-inputs {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
   }
 
-  .input-form-my-email div i {
-    font-size: 20px;
+  .form-content-inputs div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
-  .email-input-box {
+  .form-content-textareas {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-content h4 {
+    font-size: 28px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .form-content input {
     height: 40px;
-    font-size: 20px;
-    padding: 30px 30px;
-    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 18px;
+    text-align: left;
+    box-sizing: border-box;
+    border: none;
+    font-family: var(--mainFont);
   }
 
-  .email-input-box:focus {
-    border: 2px solid var(--mainColor);
-    border-radius: 8px;
+  .form-content textarea {
+    min-height: 150px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 18px;
+    resize: none;
+    border: none;
+    font-family: var(--mainFont);
   }
 
-  .form-body .form-message-input {
-    min-height: 200px;
-    font-size: 20px;
-    padding: 30px 30px;
-    border-radius: 8px;
+  .form-button-CTA {
+    width: fit-content;
+    margin: 30px auto;
   }
 
-  .form-message-input:focus {
-    border: 2px solid var(--mainColor);
-    border-radius: 8px;
-  }
-
-  .submit-button-CTA {
-    margin: 20px 0;
-  }
+  /* -----------------------  pop-up styles ------------  */
 
   .email-pop-up-body {
     position: fixed;
