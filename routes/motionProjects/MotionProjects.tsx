@@ -121,6 +121,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
                 </li>
               </ul>
+              <h3>Story 📖</h3>
               <p>
                 For this project, I had the opportunity to create a captivating video AD for Beezy
                 Beez. Following the brand's guidelines and utilizing their assets, I brought their
