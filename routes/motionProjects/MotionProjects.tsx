@@ -228,10 +228,10 @@ export default function MotionProjects() {
               </Suspense>
               <h2>Pocket Charger</h2>
               <p>
-                The Shower Steamers by Body Restore offer a delightful addition to your shower
-                routine. Infused with soothing essential oils, these convenient companions release
-                aromatic scents when exposed to water, creating a spa-like experience in the comfort
-                of your own bathroom.
+                The Pocket Charger is a compact and portable battery that provides additional power
+                for your smartphone wherever you go. With its sleek design and convenience, it
+                ensures that you never run out of battery while staying connected. Simply plug in
+                your device and enjoy extended usage time on the move.
               </p>
               <h3>Technologies 💡</h3>
               <ul>
@@ -250,12 +250,12 @@ export default function MotionProjects() {
               </ul>
               <h3>Story 📖</h3>
               <p>
-                For this project, following the brand's guidelines and using their provided assets,
-                I crafted an enchanting visual experience that showcased the product's benefits.
-                Using After Effects, I brought the script to life with seamless transitions,
-                captivating visuals, and a captivating soundtrack. The result is an engaging AD that
-                effectively communicates the essence of Body Restore's Shower Steamers, inviting
-                viewers to indulge in a moment of relaxation and self-care.
+                This project was a creative endeavor for Hoski Media, showcasing my animation skills
+                and expertise. Tasked with following the provided script, I brought the concept of
+                the Pocket Charger to life through a combination of Autodesk Maya and After Effects.
+                From crafting custom assets to meticulously composing and editing the final
+                animation, I aimed to capture the essence of the product's functionality and
+                versatility.
               </p>
               <i>- 11 February 2022</i>
             </div>
