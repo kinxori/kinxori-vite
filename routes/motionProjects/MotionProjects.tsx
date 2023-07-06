@@ -172,6 +172,45 @@ export default function MotionProjects() {
               <i>- 26 May 2022</i>
             </div>
             <hr></hr>
+            <div className="motion-projects-card-body">
+              <Suspense
+                fallback={<h3 className="motion-projects-card-asset-loader">Loading video...</h3>}
+              >
+                <VideoLoader
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/BodyRestore_Round31_concept_27.mp4?alt=media&token=b597b3a1-90b3-48fc-aaae-65418596666e"
+                  controls={true}
+                  autoPlay={false}
+                  preload="auto"
+                  disablePictureInPicture
+                  controlsList="nodownload noplaybackrate"
+                  className="motion-projects-card-body-video"
+                />
+              </Suspense>
+              <h2>Body Restore</h2>
+              <p>
+                The Shower Steamers by Body Restore offer a delightful addition to your shower
+                routine. Infused with soothing essential oils, these convenient companions release
+                aromatic scents when exposed to water, creating a spa-like experience in the comfort
+                of your own bathroom.
+              </p>
+              <h3>Technologies 💡</h3>
+              <ul>
+                <li>
+                  <img src={afterEffectsLogo} alt="After Effects logo - kinxori.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
+                </li>
+              </ul>
+              <h3>Story 📖</h3>
+              <p>
+                For this project, following the brand's guidelines and using their provided assets,
+                I crafted an enchanting visual experience that showcased the product's benefits.
+                Using After Effects, I brought the script to life with seamless transitions,
+                captivating visuals, and a captivating soundtrack. The result is an engaging AD that
+                effectively communicates the essence of Body Restore's Shower Steamers, inviting
+                viewers to indulge in a moment of relaxation and self-care.
+              </p>
+              <i>- 26 May 2022</i>
+            </div>
           </DemoCard>
           <DemoCard
             header={
