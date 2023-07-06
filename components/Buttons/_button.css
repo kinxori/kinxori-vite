@@ -1,28 +1,29 @@
 .mainButton {
-  color: var(--textMainColor);
-  border: 1px solid white;
   padding: 12px 20px;
   border-radius: 12px;
   font-size: 16px;
   transition: all 0.2s ease-in-out;
   min-width: 120px;
   font-weight: bold;
+  color: var(--textMainColor);
+  border: 1px solid white;
   background: var(--mainColor);
+  transition: all 0.2s ease-in-out;
 }
 
 .secButton {
-  color: var(--textMainColor);
-  border: 1px solid var(--mainColor);
   padding: 12px 20px;
   border-radius: 12px;
   font-size: 16px;
   min-width: 120px;
   font-weight: bold;
+  color: var(--textMainColor);
+  border: 1px solid var(--mainColor);
   background: var(--secColor);
+  transition: all 0.2s ease-in-out;
 }
 
 .ghostButton {
-  color: var(--textMainColor);
   border: none;
   padding: 12px 20px;
   border-radius: 12px;
@@ -30,10 +31,11 @@
   min-width: 120px;
   font-weight: bold;
   background: none;
+  color: var(--textMainColor);
+  transition: all 0.2s ease-in-out;
 }
 
 .linkButton {
-  color: var(--textMainColor);
   border: none;
   padding: 12px 20px;
   border-radius: 12px;
@@ -44,6 +46,7 @@
   font-weight: bold;
   color: var(--mainColor);
   text-decoration-line: underline;
+  transition: all 0.2s ease-in-out;
 }
 
 .mainButton:hover {
