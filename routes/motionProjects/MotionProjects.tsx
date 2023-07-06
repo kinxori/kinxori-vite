@@ -110,7 +110,7 @@ export default function MotionProjects() {
               </Suspense>
               <h2>Beezy Beez</h2>
               <p>
-                Introducing Beezy Beez's Dog Biscuits – the perfect healthy treat for your furry
+                Introducing Beezy Beez's Dog Biscuits, the perfect healthy treat for your furry
                 companions. Packed with goodness and crafted with care, these biscuits provide a
                 nutritious and tasty snack that dogs love. Give your pets the best with Beezy Beez.
               </p>
@@ -131,6 +131,44 @@ export default function MotionProjects() {
               <i>- 5 December 2021</i>
             </div>
             <hr></hr>
+            <div className="motion-projects-card-body">
+              <Suspense
+                fallback={<h3 className="motion-projects-card-asset-loader">Loading video...</h3>}
+              >
+                <VideoLoader
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/Apricoat_Round38_Video2.mp4?alt=media&token=da9a7ae6-e071-49df-92f7-79bdaed0fe84"
+                  controls={true}
+                  autoPlay={false}
+                  preload="auto"
+                  disablePictureInPicture
+                  controlsList="nodownload noplaybackrate"
+                  className="motion-projects-card-body-video"
+                />
+              </Suspense>
+              <h2>Apricoat</h2>
+              <p>
+                Discover Aprociat, the ultimate destination for adventure-ready clothing. From
+                jackets designed to withstand the toughest conditions to stylish jeans perfect for
+                everyday wear, Aprociat offers a range of products that blend durability and
+                fashion.
+              </p>
+              <h3>Technologies 💡</h3>
+              <ul>
+                <li>
+                  <img src={afterEffectsLogo} alt="After Effects logo - kinxori.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
+                </li>
+              </ul>
+              <p>
+                In this project, I had the exciting task of transforming the written concept for
+                Aprociat's commercial into a visually captivating AD. Working closely with the
+                provided script, I brought the brand's vision to life through compelling visuals and
+                engaging storytelling. By leveraging my skills in video production and editing, I
+                created a dynamic AD that showcased the versatility and style of Aprociat's clothing
+                line.
+              </p>
+              <i>- 26 May 2022</i>
+            </div>
           </DemoCard>
           <DemoCard
             header={
