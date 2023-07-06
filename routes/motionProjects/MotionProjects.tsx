@@ -210,6 +210,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
                 </li>
               </ul>
+              <h3>Story 📖</h3>
               <p>
                 The project's core concept revolves around a short film that explores the notion of
                 being governed by television. At the end of the day, the project was not fulfilled
@@ -242,6 +243,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
                 </li>
               </ul>
+              <h3>Story 📖</h3>
               <p>
                 This project pays tribute to Kemonito, the legendary Mexican wrestler, celebrating
                 his iconic presence in the ring.
@@ -283,6 +285,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
                 </li>
               </ul>
+              <h3>Story 📖</h3>
               <p>
                 This project was specifically developed for a short film competition hosted by
                 Shorts Mexico. It aims to faithfully recreate the interior of the Huitzilopochtli
@@ -322,6 +325,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zBrush
                 </li>
               </ul>
+              <h3>Story 📖</h3>
               <p>
                 This personal project embodies the concept of envisioning a more humane version of a
                 cat. It portrays orange cats as irresistibly lazy, delightfully irrational, and
