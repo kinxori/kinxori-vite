@@ -122,8 +122,9 @@
 }
 
 .motion-projects-card-body i {
-  text-align: center;
-  font-size: 12px;
+  text-align: right;
+  font-size: 10px;
+  opacity: 0.6;
 }
 
 .motion-projects-card-bodys-CTA {
@@ -280,6 +281,10 @@
     transform: translateY(-50%);
   }
 
+  .motion-projects-card-body i {
+    font-size: 12px;
+  }
+
   .motion-projects-card-bodys-CTA {
     margin: 15px auto;
     gap: 15px;
@@ -418,7 +423,7 @@
 
   .motion-projects-card-body p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
   }
 
@@ -443,6 +448,10 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .motion-projects-card-body i {
+    font-size: 14px;
   }
 
   .motion-projects-card-bodys-CTA {

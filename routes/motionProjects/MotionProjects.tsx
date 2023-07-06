@@ -109,6 +109,7 @@ export default function MotionProjects() {
                 />
               </Suspense>
               <h2>Beezy Beez</h2>
+              <i>5 December 2021</i>
               <p>
                 Introducing Beezy Beez's Dog Biscuits, the perfect healthy treat for your furry
                 companions. Packed with goodness and crafted with care, these biscuits provide a
@@ -129,7 +130,6 @@ export default function MotionProjects() {
                 royalty-free websites to enhance the visual appeal of the AD. It was a rewarding
                 experience to showcase the brand's product in a compelling and engaging way.
               </p>
-              <i>- 5 December 2021</i>
             </div>
             <hr></hr>
             <div className="motion-projects-card-body">
@@ -147,6 +147,7 @@ export default function MotionProjects() {
                 />
               </Suspense>
               <h2>Apricoat</h2>
+              <i>26 May 2022</i>
               <p>
                 Discover Aprociat, the ultimate destination for adventure-ready clothing. From
                 jackets designed to withstand the toughest conditions to stylish jeans perfect for
@@ -169,7 +170,6 @@ export default function MotionProjects() {
                 created a dynamic AD that showcased the versatility and style of Aprociat's clothing
                 line.
               </p>
-              <i>- 26 May 2022</i>
             </div>
             <hr></hr>
             <div className="motion-projects-card-body">
@@ -187,6 +187,7 @@ export default function MotionProjects() {
                 />
               </Suspense>
               <h2>Body Restore</h2>
+              <i>11 February 2022</i>
               <p>
                 The Shower Steamers by Body Restore offer a delightful addition to your shower
                 routine. Infused with soothing essential oils, these convenient companions release
@@ -209,7 +210,6 @@ export default function MotionProjects() {
                 effectively communicates the essence of Body Restore's Shower Steamers, inviting
                 viewers to indulge in a moment of relaxation and self-care.
               </p>
-              <i>- 11 February 2022</i>
             </div>
             <hr></hr>
             <div className="motion-projects-card-body">
@@ -227,6 +227,7 @@ export default function MotionProjects() {
                 />
               </Suspense>
               <h2>Pocket Charger</h2>
+              <i>12 May 2021</i>
               <p>
                 The Pocket Charger is a compact and portable battery that provides additional power
                 for your smartphone wherever you go. With its sleek design and convenience, it
@@ -257,7 +258,6 @@ export default function MotionProjects() {
                 animation, I aimed to capture the essence of the product's functionality and
                 versatility.
               </p>
-              <i>- 12 May 2021</i>
             </div>
           </DemoCard>
           <DemoCard
@@ -281,6 +281,7 @@ export default function MotionProjects() {
                 onClick={() => handleFullScreen("mrBureacucracy-asset")}
               ></img>
               <h2>Mr. Bureaucracy</h2>
+              <i>26 March 2021</i>
               <p>
                 This character draws inspiration from Kingpin, a notable Spider-Man: Into the
                 Spider-Verse cartoon-ish art style. Mr. Bureaucracy is an agent from the goverment
@@ -303,7 +304,6 @@ export default function MotionProjects() {
                 being governed by television. At the end of the day, the project was not fulfilled
                 due to lack of time.
               </p>
-              <i>- 26 March 2021</i>
             </div>
             <hr></hr>
             <div className="motion-projects-card-body">
@@ -318,6 +318,7 @@ export default function MotionProjects() {
                 onClick={() => handleFullScreen("golden-kemonito-asset")}
               ></img>
               <h2>Golden Kemonito</h2>
+              <i>4 March 2020</i>
               <p>A tribute to world famous Mexican wrestler, now converted into a golden statue.</p>
               <h3>Technologies used 💡</h3>
               <ul>
@@ -335,7 +336,6 @@ export default function MotionProjects() {
                 This project pays tribute to Kemonito, the legendary Mexican wrestler, celebrating
                 his iconic presence in the ring.
               </p>
-              <i>- 4 March 2020</i>
             </div>
             <hr></hr>
             <div className="motion-projects-card-body">
@@ -352,6 +352,7 @@ export default function MotionProjects() {
                 onClick={() => handleFullScreen("huitzi-asset")}
               ></img>
               <h2>Templo de Huitzilopochtli</h2>
+              <i>5 February 2020</i>
               <p>
                 This project showcases a 3D voxel model depicting the imagined interior of the
                 Huitzilopochtli temple, offering a visual representation of its possible structure
@@ -378,7 +379,6 @@ export default function MotionProjects() {
                 Shorts Mexico. It aims to faithfully recreate the interior of the Huitzilopochtli
                 temple.
               </p>
-              <i>- 5 February 2020</i>
             </div>
             <hr></hr>
             <div className="motion-projects-card-body">
@@ -396,6 +396,7 @@ export default function MotionProjects() {
                 onClick={() => handleFullScreen("orange-cat-asset")}
               ></img>
               <h2>Orange Cat</h2>
+              <i>12 October 2019</i>
               <p>How would an orange cat would look like if it was more humane?</p>
               <h3>Technologies used 💡</h3>
               <ul>
@@ -419,7 +420,6 @@ export default function MotionProjects() {
                 funny personality. It celebrates the uniqueness and charm of orange cats while
                 playfully acknowledging the humorous assumptions often made about them.
               </p>
-              <i>- 12 October 2019</i>
             </div>
           </DemoCard>
         </section>

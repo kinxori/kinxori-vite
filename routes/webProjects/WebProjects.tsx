@@ -387,7 +387,6 @@ export default function Projects() {
                   Github Repo
                 </Button>
               </div>
-              <hr></hr>
             </div>
           </DemoCard>
         </section>
