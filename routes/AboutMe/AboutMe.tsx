@@ -57,7 +57,7 @@ export default function AboutMe() {
             <b> community, hard work, and creativity, </b>
             <b> which I carry with me </b> wherever I go.
           </p>
-          <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+          <Suspense fallback={<h3 className="about-me-asset-loader">Loading video...</h3>}>
             <VideoLoader
               src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
               loop={true}
@@ -65,7 +65,7 @@ export default function AboutMe() {
               autoPlay={true}
               controls={false}
               muted={true}
-              className="projects-display-card-body-video"
+              className="about-me-body-asset"
             ></VideoLoader>
           </Suspense>
 

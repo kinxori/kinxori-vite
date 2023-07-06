@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import "./_motionProjects.css";
 import Button from "@components/Buttons/Button";
 import DemoCard from "@components/DemoCard/DemoCard";
@@ -11,6 +11,8 @@ import huitziTemple from "@src/assets/3D-works/huitzi_render_comp_v2.png";
 import magicalVoxelLogo from "@src/assets/magical-voxel-logo.png";
 import gatoCalzon from "@src/assets/3D-works/gato-render-resize.png";
 import zbrushLogo from "@src/assets/zbrush-logo.png";
+
+const VideoLoader = lazy(() => import("@components/VideoLoader/VideoLoader"));
 
 export default function MotionProjects() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
@@ -92,33 +94,20 @@ export default function MotionProjects() {
             onClick={() => handleCardClick("motion-desing-card")}
           >
             <div className="motion-projects-card-body">
-              {/* <video
-                src="https://drive.google.com/file/d/1JT4KKygKZwdIIhkQi3_MbUntbdlEfGyb/view?usp=sharing"
-                onLoadedData={() => setLoadingVideo(false)}
-                loop
-                autoPlay
-                controls={false}
-                muted
-                className={
-                  fullScreenAsset === "shopping-card-asset"
-                    ? "motion-projects-full-screen-img-open"
-                    : "motion-projects-full-screen-img-close"
-                }
-                onClick={() => handleFullScreen("shopping-card-asset")}
-              ></video> */}
+              <Suspense
+                fallback={<h3 className="motion-projects-card-asset-loader">Loading video...</h3>}
+              >
+                <VideoLoader
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
+                  controls={true}
+                  autoPlay={false}
+                  preload="auto"
+                  disablePictureInPicture
+                  controlsList="nodownload noplaybackrate"
+                  className="motion-projects-card-body-video"
+                />
+              </Suspense>
               <h2>Under construction ⚙️</h2>
-              {/* <div className="motion-projects-card-CTA">
-                <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
-                  Live Project
-                </Button>
-                <Button
-                  to="https://github.com/kinxori/react-shopping-cart"
-                  variant="secButton"
-                  target="_blank"
-                >
-                  Github Repo
-                </Button>
-              </div> */}
             </div>
           </DemoCard>
           <DemoCard
