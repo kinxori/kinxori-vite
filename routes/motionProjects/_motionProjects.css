@@ -78,7 +78,6 @@
 
 .motion-projects-card-body h2 {
   font-size: 26px;
-  line-height: 30px;
   text-align: center;
   font-weight: 700;
   width: 100%;
@@ -86,7 +85,13 @@
   text-decoration: underline;
 }
 
-.motion-projects-card-body h3 {
+.motion-projects-card-body i {
+  text-align: right;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.motion-projects-card-body h4 {
   font-size: 20px;
   text-align: left;
   font-weight: 700;
@@ -119,12 +124,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.motion-projects-card-body i {
-  text-align: right;
-  font-size: 10px;
-  opacity: 0.6;
 }
 
 .motion-projects-card-bodys-CTA {
@@ -243,17 +242,19 @@
   .motion-projects-card-body {
     padding: 40px;
     gap: 25px;
-    line-height: 25px;
   }
 
   .motion-projects-card-body h2 {
     font-size: 32px;
-    line-height: 34px;
     padding: 20px 0;
   }
 
-  .motion-projects-card-body h3 {
-    font-size: 28px;
+  .motion-projects-card-body i {
+    font-size: 12px;
+  }
+
+  .motion-projects-card-body h4 {
+    font-size: 24px;
   }
 
   .motion-projects-card-body p {
@@ -279,10 +280,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .motion-projects-card-body i {
-    font-size: 12px;
   }
 
   .motion-projects-card-bodys-CTA {
@@ -397,7 +394,6 @@
     width: 100%;
     padding: 40px;
     gap: 30px;
-    line-height: 25px;
     height: fit-content;
     box-sizing: border-box;
     display: flex;
@@ -406,7 +402,6 @@
 
   .motion-projects-card-body h2 {
     font-size: 46px;
-    line-height: 38px;
     text-align: center;
     font-weight: 700;
     width: 100%;
@@ -414,8 +409,12 @@
     text-decoration: underline;
   }
 
-  .motion-projects-card-body h3 {
-    font-size: 32px;
+  .motion-projects-card-body i {
+    font-size: 14px;
+  }
+
+  .motion-projects-card-body h4 {
+    font-size: 28px;
     text-align: left;
     font-weight: 700;
     width: 100%;
@@ -448,10 +447,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .motion-projects-card-body i {
-    font-size: 14px;
   }
 
   .motion-projects-card-bodys-CTA {

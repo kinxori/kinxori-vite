@@ -81,7 +81,7 @@ export default function Projects() {
             onClick={() => handleCardClick("features-card")}
           >
             <div className="projects-display-card-body">
-              <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+              <Suspense fallback={<h4 className="projects-card-asset-loader">Loading video...</h4>}>
                 <VideoLoader
                   className={
                     fullScreenAsset === "shopping-card-asset"
@@ -103,7 +103,7 @@ export default function Projects() {
                 This feature updates the shopping cart's total price based on user input quantity
                 and removes items from the cart.
               </p>
-              <h3>Technologies used 💡</h3>
+              <h4>Technologies used 💡</h4>
               <ul>
                 <li>
                   <i className="fa-brands fa-react"></i> React
@@ -118,21 +118,21 @@ export default function Projects() {
                   <i className="fa-brands fa-css3"></i> CSS
                 </li>
               </ul>
-              <h3>Skills 🧠</h3>
+              <h4>Skills 🧠</h4>
               <ul>
                 <li>State management</li>
                 <li>React component architecture</li>
                 <li>User experience and interactivity</li>
                 <li>Testing and debugging</li>
               </ul>
-              <h3>Advantages 🦾</h3>
+              <h4>Advantages 🦾</h4>
               <ul>
                 <li>Improved user experience</li>
                 <li>Easy integration</li>
                 <li>Reusability</li>
                 <li>Analytics</li>
               </ul>
-              <h3>Difficulties ⚙️</h3>
+              <h4>Difficulties ⚙️</h4>
               <ul>
                 <li>State management and data flow</li>
                 <li>Handle user input and form data </li>
@@ -154,7 +154,7 @@ export default function Projects() {
             </div>
             <hr></hr>
             <div className="projects-display-card-body">
-              <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+              <Suspense fallback={<h4 className="projects-card-asset-loader">Loading video...</h4>}>
                 <VideoLoader
                   className={
                     fullScreenAsset === "search-bar-asset"
@@ -176,7 +176,7 @@ export default function Projects() {
                 This is a search bar component that filters and displays data in a table based on
                 user input.
               </p>
-              <h3>Technologies used 💡</h3>
+              <h4>Technologies used 💡</h4>
               <ul>
                 <li>
                   <i className="fa-brands fa-react"></i> React
@@ -191,13 +191,13 @@ export default function Projects() {
                   <i className="fa-brands fa-css3"></i> CSS
                 </li>
               </ul>
-              <h3>Skills 🧠</h3>
+              <h4>Skills 🧠</h4>
               <ul>
                 <li>Filtering and searching data</li>
                 <li>Componentization and modularity</li>
                 <li>Handling events and state changes</li>
               </ul>
-              <h3>Advantages 🦾</h3>
+              <h4>Advantages 🦾</h4>
               <ul>
                 <li>Allows users to easily search and filter large datasets</li>
                 <li>Provides real-time search results as users type</li>
@@ -206,7 +206,7 @@ export default function Projects() {
                   data
                 </li>
               </ul>
-              <h3>Difficulties ⚙️</h3>
+              <h4>Difficulties ⚙️</h4>
               <ul>
                 <li>Managing state</li>
                 <li>Filtering logic</li>
@@ -228,7 +228,7 @@ export default function Projects() {
             </div>
             <hr></hr>
             <div className="projects-display-card-body">
-              <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+              <Suspense fallback={<h4 className="projects-card-asset-loader">Loading video...</h4>}>
                 <VideoLoader
                   className={
                     fullScreenAsset === "fetch-api-asset"
@@ -250,7 +250,7 @@ export default function Projects() {
                 The code fetches data from the Rick & Morty API and displays characters'
                 information. Clicking on a character's image shows their details.
               </p>
-              <h3>Technologies used 💡</h3>
+              <h4>Technologies used 💡</h4>
               <ul>
                 <li>
                   <i className="fa-brands fa-react"></i> React
@@ -265,21 +265,21 @@ export default function Projects() {
                   <i className="fa-brands fa-css3"></i> CSS
                 </li>
               </ul>
-              <h3>Skills 🧠</h3>
+              <h4>Skills 🧠</h4>
               <ul>
                 <li>Fetching data from APIs</li>
                 <li>Event handling</li>
                 <li>Conditional rendering</li>
                 <li>Handling and displaying dynamic data</li>
               </ul>
-              <h3>Advantages 🦾</h3>
+              <h4>Advantages 🦾</h4>
               <ul>
                 <li>Streamlined data manipulation</li>
                 <li>Simplified data retrieval</li>
                 <li>Improved data organization</li>
                 <li>More effective information display</li>
               </ul>
-              <h3>Difficulties ⚙️</h3>
+              <h4>Difficulties ⚙️</h4>
               <ul>
                 <li>Handling multiple states and data flow</li>
                 <li>Managing complex user interactions and events</li>
@@ -310,7 +310,7 @@ export default function Projects() {
             onClick={() => handleCardClick("web-projects-card")}
           >
             <div className="projects-display-card-body">
-              <Suspense fallback={<h3 className="projects-card-asset-loader">Loading video...</h3>}>
+              <Suspense fallback={<h4 className="projects-card-asset-loader">Loading video...</h4>}>
                 <VideoLoader
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
                   controls={true}
@@ -331,7 +331,7 @@ export default function Projects() {
                 playing it. Enjoy a simple and intuitive interface for managing and enjoying your
                 music collection.
               </p>
-              <h3>Technologies used 💡</h3>
+              <h4>Technologies used 💡</h4>
               <ul>
                 <li>
                   <i className="fa-brands fa-react"></i> React
@@ -348,7 +348,7 @@ export default function Projects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tailwind
                 </li>
               </ul>
-              <h3>Skills 🧠</h3>
+              <h4>Skills 🧠</h4>
               <ul>
                 <li>State management</li>
                 <li>UI Design and Styling</li>
@@ -356,7 +356,7 @@ export default function Projects() {
                 <li>Data Management</li>
                 <li>Event Handling</li>
               </ul>
-              <h3>Advantages 🦾</h3>
+              <h4>Advantages 🦾</h4>
               <ul>
                 <li>Enhanced User Experience</li>
                 <li>Convenience and Accessibility</li>
@@ -366,7 +366,7 @@ export default function Projects() {
                 <li>Integration with External Services</li>
                 <li>Scalability</li>
               </ul>
-              <h3>Difficulties ⚙️</h3>
+              <h4>Difficulties ⚙️</h4>
               <ul>
                 <li>Accessibility Considerations</li>
                 <li>Testing and Quality Assurance</li>

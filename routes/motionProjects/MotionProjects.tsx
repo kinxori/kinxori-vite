@@ -96,7 +96,7 @@ export default function MotionProjects() {
           >
             <div className="motion-projects-card-body">
               <Suspense
-                fallback={<h3 className="motion-projects-card-asset-loader">Loading video...</h3>}
+                fallback={<h4 className="motion-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/BEEZY%20BEEZ%20-%20ANIMATION%20ADS%20-%20CONCEPT%202_version2.mp4?alt=media&token=ab532dc9-c4bb-4bc5-9b0c-4e39b117159a"
@@ -115,14 +115,14 @@ export default function MotionProjects() {
                 companions. Packed with goodness and crafted with care, these biscuits provide a
                 nutritious and tasty snack that dogs love. Give your pets the best with Beezy Beez.
               </p>
-              <h3>Technologies 💡</h3>
+              <h4>Technologies 💡</h4>
               <ul>
                 <li>
                   <img src={afterEffectsLogo} alt="After Effects logo - kinxori.com"></img>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
                 </li>
               </ul>
-              <h3>Story 📖</h3>
+              <h4>Story 📖</h4>
               <p>
                 For this project, I had the opportunity to create a captivating video AD for Beezy
                 Beez. Following the brand's guidelines and utilizing their assets, I brought their
@@ -134,7 +134,7 @@ export default function MotionProjects() {
             <hr></hr>
             <div className="motion-projects-card-body">
               <Suspense
-                fallback={<h3 className="motion-projects-card-asset-loader">Loading video...</h3>}
+                fallback={<h4 className="motion-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/Apricoat_Round38_Video2.mp4?alt=media&token=da9a7ae6-e071-49df-92f7-79bdaed0fe84"
@@ -154,14 +154,14 @@ export default function MotionProjects() {
                 everyday wear, Aprociat offers a range of products that blend durability and
                 fashion.
               </p>
-              <h3>Technologies 💡</h3>
+              <h4>Technologies 💡</h4>
               <ul>
                 <li>
                   <img src={afterEffectsLogo} alt="After Effects logo - kinxori.com"></img>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
                 </li>
               </ul>
-              <h3>Story 📖</h3>
+              <h4>Story 📖</h4>
               <p>
                 In this project, I had the exciting task of transforming the written concept for
                 Aprociat's commercial into a visually captivating AD. Working closely with the
@@ -174,7 +174,7 @@ export default function MotionProjects() {
             <hr></hr>
             <div className="motion-projects-card-body">
               <Suspense
-                fallback={<h3 className="motion-projects-card-asset-loader">Loading video...</h3>}
+                fallback={<h4 className="motion-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/BodyRestore_Round31_concept_27.mp4?alt=media&token=b597b3a1-90b3-48fc-aaae-65418596666e"
@@ -194,14 +194,14 @@ export default function MotionProjects() {
                 aromatic scents when exposed to water, creating a spa-like experience in the comfort
                 of your own bathroom.
               </p>
-              <h3>Technologies 💡</h3>
+              <h4>Technologies 💡</h4>
               <ul>
                 <li>
                   <img src={afterEffectsLogo} alt="After Effects logo - kinxori.com"></img>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
                 </li>
               </ul>
-              <h3>Story 📖</h3>
+              <h4>Story 📖</h4>
               <p>
                 For this project, following the brand's guidelines and using their provided assets,
                 I crafted an enchanting visual experience that showcased the product's benefits.
@@ -214,7 +214,7 @@ export default function MotionProjects() {
             <hr></hr>
             <div className="motion-projects-card-body">
               <Suspense
-                fallback={<h3 className="motion-projects-card-asset-loader">Loading video...</h3>}
+                fallback={<h4 className="motion-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/Task_3_Pocket_charger_WithSound_MASTER_V2.mp4?alt=media&token=a998af4c-5410-47f5-b995-ddca7a2a0c70"
@@ -234,7 +234,7 @@ export default function MotionProjects() {
                 ensures that you never run out of battery while staying connected. Simply plug in
                 your device and enjoy extended usage time on the move.
               </p>
-              <h3>Technologies 💡</h3>
+              <h4>Technologies 💡</h4>
               <ul>
                 <li>
                   <img src={afterEffectsLogo} alt="After Effects logo - kinxori.com"></img>
@@ -249,7 +249,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
                 </li>
               </ul>
-              <h3>Story 📖</h3>
+              <h4>Story 📖</h4>
               <p>
                 This project was a creative endeavor for Hoski Media, showcasing my animation skills
                 and expertise. Tasked with following the provided script, I brought the concept of
@@ -287,7 +287,7 @@ export default function MotionProjects() {
                 Spider-Verse cartoon-ish art style. Mr. Bureaucracy is an agent from the goverment
                 that doesn't want people to know the truth in its own diegetic universe.
               </p>
-              <h3>Technologies used 💡</h3>
+              <h4>Technologies used 💡</h4>
               <ul>
                 <li>
                   <img src={mayaLogo} alt="autodesk maya logo - kinxor.com"></img>
@@ -298,7 +298,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
                 </li>
               </ul>
-              <h3>Story 📖</h3>
+              <h4>Story 📖</h4>
               <p>
                 The project's core concept revolves around a short film that explores the notion of
                 being governed by television. At the end of the day, the project was not fulfilled
@@ -320,7 +320,7 @@ export default function MotionProjects() {
               <h2>Golden Kemonito</h2>
               <i>4 March 2020</i>
               <p>A tribute to world famous Mexican wrestler, now converted into a golden statue.</p>
-              <h3>Technologies used 💡</h3>
+              <h4>Technologies used 💡</h4>
               <ul>
                 <li>
                   <img src={mayaLogo} alt="autodesk maya logo - kinxor.com"></img>
@@ -331,7 +331,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
                 </li>
               </ul>
-              <h3>Story 📖</h3>
+              <h4>Story 📖</h4>
               <p>
                 This project pays tribute to Kemonito, the legendary Mexican wrestler, celebrating
                 his iconic presence in the ring.
@@ -358,7 +358,7 @@ export default function MotionProjects() {
                 Huitzilopochtli temple, offering a visual representation of its possible structure
                 and design.
               </p>
-              <h3>Technologies used 💡</h3>
+              <h4>Technologies used 💡</h4>
               <ul>
                 <li>
                   <img src={magicalVoxelLogo} alt="magical Voxel Logo - kinxori.com " />
@@ -373,7 +373,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autodesk Arnold Renderer
                 </li>
               </ul>
-              <h3>Story 📖</h3>
+              <h4>Story 📖</h4>
               <p>
                 This project was specifically developed for a short film competition hosted by
                 Shorts Mexico. It aims to faithfully recreate the interior of the Huitzilopochtli
@@ -398,7 +398,7 @@ export default function MotionProjects() {
               <h2>Orange Cat</h2>
               <i>12 October 2019</i>
               <p>How would an orange cat would look like if it was more humane?</p>
-              <h3>Technologies used 💡</h3>
+              <h4>Technologies used 💡</h4>
               <ul>
                 <li>
                   <img src={mayaLogo} alt="autodesk maya logo - kinxor.com"></img>
@@ -413,7 +413,7 @@ export default function MotionProjects() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zBrush
                 </li>
               </ul>
-              <h3>Story 📖</h3>
+              <h4>Story 📖</h4>
               <p>
                 This personal project embodies the concept of envisioning a more humane version of a
                 cat. It portrays orange cats as irresistibly lazy, delightfully irrational, and

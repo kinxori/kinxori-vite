@@ -88,10 +88,25 @@
   top: 30%;
 }
 
+.about-me-read-more-content h2 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  text-decoration: underline;
+}
+
+.about-me-read-more-content i {
+  font-size: 10px;
+  text-align: right;
+  width: 100%;
+  padding-top: 20px;
+  opacity: 0.6;
+}
+
 .about-me-read-more-content h3 {
   font-size: 20px;
-  text-align: center;
-  text-decoration: underline;
+  text-align: left;
   font-weight: 700;
   width: 100%;
 }
@@ -99,13 +114,6 @@
 .about-me-read-more-content p {
   text-align: justify;
   font-size: 16px;
-  width: 100%;
-}
-
-.about-me-read-more-content i {
-  font-size: 10px;
-  text-align: center;
-  margin-top: 20px;
   width: 100%;
 }
 
@@ -178,18 +186,21 @@
     top: 25%;
   }
 
+  .about-me-read-more-content h2 {
+    font-size: 42px;
+  }
+
+  .about-me-read-more-content i {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
   .about-me-read-more-content h3 {
     font-size: 28px;
   }
 
   .about-me-read-more-content p {
     font-size: 16px;
-  }
-
-  .about-me-read-more-content i {
-    font-size: 12px;
-    margin-top: 40px;
-    text-align: right;
   }
 
   .about-me-asset-loader {
@@ -280,8 +291,8 @@
   }
 
   .aboutme-copy-PFP {
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
     border-radius: 100%;
     margin-bottom: 10%;
     border: 7px solid white;
@@ -298,30 +309,33 @@
   }
 
   .aboutme-copy-PFP img {
-    height: 500px;
+    height: 700px;
     object-fit: contain;
     position: relative;
     top: 25%;
   }
 
+  .about-me-read-more-content h2 {
+    font-size: 58px;
+  }
+
+  .about-me-read-more-content i {
+    font-size: 14px;
+    text-align: right;
+    margin-top: 50px;
+    width: 100%;
+  }
+
   .about-me-read-more-content h3 {
     font-size: 32px;
     text-align: left;
-    text-decoration: underline;
     font-weight: 700;
     width: 100%;
   }
 
   .about-me-read-more-content p {
     text-align: justify;
-    font-size: 20px;
-    width: 100%;
-  }
-
-  .about-me-read-more-content i {
-    font-size: 20px;
-    text-align: right;
-    margin-top: 50px;
+    font-size: 16px;
     width: 100%;
   }
 

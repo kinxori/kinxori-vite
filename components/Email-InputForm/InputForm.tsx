@@ -72,7 +72,7 @@ export default function InputForm() {
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-content">
-        <h3>Email:</h3>
+        <h4>Email:</h4>
         <input
           type="email"
           value={emailInput}
@@ -81,7 +81,7 @@ export default function InputForm() {
           required
           placeholder="example@email.com"
         />
-        <h3>Subject</h3>
+        <h4>Subject</h4>
         <input
           type="text"
           value={subjectInput}
@@ -90,7 +90,7 @@ export default function InputForm() {
           required
           placeholder="Enter your subject"
         />
-        <h3>Message:</h3>
+        <h4>Message:</h4>
         <textarea
           required
           value={messageInput}
@@ -101,7 +101,7 @@ export default function InputForm() {
         <button type="submit" className="mainButton form-button-CTA">
           Submit
         </button>
-        <h3>Send an email:</h3>
+        <h4>Send an email:</h4>
         <p ref={textToClipBoard}>gustavoq26@gmail.com</p>
         <Button onClick={handleClipboardState} className="form-button-CTA">
           {clipboardIsCopy ? (

@@ -65,7 +65,6 @@
   width: 100%;
   padding: 20px;
   gap: 20px;
-  line-height: 20px;
   height: fit-content;
   box-sizing: border-box;
   display: flex;
@@ -175,7 +174,6 @@
   .contact-display-card-body {
     padding: 40px;
     gap: 30px;
-    line-height: 30px;
   }
 
   .contact-display-card-body h4 {
@@ -278,19 +276,17 @@
     width: 100%;
     padding: 40px;
     gap: 30px;
-    line-height: 20px;
     height: fit-content;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
   }
 
-  .contact-display-card-body h3 {
-    font-size: 32px;
+  .contact-display-card-body h4 {
+    font-size: 28px;
     text-align: center;
     font-weight: 700;
     width: 100%;
-    line-height: 30px;
   }
 
   .contact-display-card-CTA {

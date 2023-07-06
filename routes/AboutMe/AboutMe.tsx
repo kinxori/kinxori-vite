@@ -30,8 +30,8 @@ export default function AboutMe() {
             But... <b>Who is Kinxori?</b> 🤔
           </h2>
           <p>
-            My name is Gustavo Quiroz, <b> front-end web developer </b> with a passion for creating
-            things. Formerly a <b> motion design, </b> now using my love for creating to
+            My name is Gustavo, <b> front-end web developer </b> with a passion for creating things.
+            Formerly a <b> motion designer, </b> now using my love for creating to
             <b> solve problems. </b>
           </p>
           <div className="aboutMe-CTA">
@@ -46,6 +46,8 @@ export default function AboutMe() {
           <div className="aboutme-copy-PFP">
             <img src={imgAssetPFP} alt="Gustavo Quiroz - Kinxori"></img>
           </div>
+          <h2>Gustavo Q. O.</h2>
+          <i>17 June 2023 / Mexico</i>
           <h3>Where do I come from? 🌎</h3>
           <p>
             <b> Born in 1998, </b> I come from a small town near the central region of
@@ -133,7 +135,6 @@ export default function AboutMe() {
             <b> spent with the people who matter most to me. </b>
           </p>
           <img src={mockupAsset} alt="ADD ALT" className="about-me-body-asset"></img>
-          <i>17th of June, 2023 / Mexico</i>
         </div>
       )}
     </article>
