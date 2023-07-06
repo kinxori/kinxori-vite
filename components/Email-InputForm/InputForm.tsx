@@ -101,19 +101,6 @@ export default function InputForm() {
         <button type="submit" className="mainButton form-button-CTA">
           Submit
         </button>
-        <h4>Send an email:</h4>
-        <p ref={textToClipBoard}>gustavoq26@gmail.com</p>
-        <Button onClick={handleClipboardState} className="form-button-CTA">
-          {clipboardIsCopy ? (
-            <>
-              Copied&nbsp;&nbsp;<i className="fa-solid fa-check"></i>
-            </>
-          ) : (
-            <>
-              Copy&nbsp;&nbsp;<i className="fa-regular fa-clipboard"></i>
-            </>
-          )}
-        </Button>
       </div>
 
       {popUp && (
