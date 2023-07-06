@@ -4,13 +4,14 @@ import Button from "@components/Buttons/Button";
 import DemoCard from "@components/DemoCard/DemoCard";
 import mainMotionProjectsAsset from "@src/assets/motion-projects-asset.png";
 import mrBureacucracy from "@src/assets/3D-works/ChincheTV_final_comp_PNG_v2.png";
-import mayaLogo from "@src/assets/autodesk-maya-logo.png";
-import arnoldRenderLogo from "@src/assets/arnold-renderer-logo.png";
+import mayaLogo from "@src/assets/Logos/autodesk-maya-logo.png";
+import arnoldRenderLogo from "@src/assets/Logos/arnold-renderer-logo.png";
 import goldenKemonito from "@src/assets/3D-works/golden-kemonito-v2.png";
 import huitziTemple from "@src/assets/3D-works/huitzi_render_comp_v2.png";
-import magicalVoxelLogo from "@src/assets/magical-voxel-logo.png";
+import magicalVoxelLogo from "@src/assets/Logos/magical-voxel-logo.png";
 import gatoCalzon from "@src/assets/3D-works/gato-render-resize.png";
-import zbrushLogo from "@src/assets/zbrush-logo.png";
+import zbrushLogo from "@src/assets/Logos/zbrush-logo.png";
+import afterEffectsLogo from "@src/assets/Logos/Adobe_After_Effects_CC_icon.png";
 
 const VideoLoader = lazy(() => import("@components/VideoLoader/VideoLoader"));
 
@@ -98,7 +99,7 @@ export default function MotionProjects() {
                 fallback={<h3 className="motion-projects-card-asset-loader">Loading video...</h3>}
               >
                 <VideoLoader
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/BEEZY%20BEEZ%20-%20ANIMATION%20ADS%20-%20CONCEPT%202_version2.mp4?alt=media&token=ab532dc9-c4bb-4bc5-9b0c-4e39b117159a"
                   controls={true}
                   autoPlay={false}
                   preload="auto"
@@ -107,7 +108,19 @@ export default function MotionProjects() {
                   className="motion-projects-card-body-video"
                 />
               </Suspense>
-              <h2>Under construction ⚙️</h2>
+              <h2>Beezy Beez</h2>
+              <p>
+                Short AD for Beezy Beez showcasing one of their products which is a healthy treats
+                for pets.
+              </p>
+              <h3>Technologies 💡</h3>
+              <ul>
+                <li>
+                  <img src={afterEffectsLogo} alt="After Effects logo - kinxori.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
+                </li>
+              </ul>
+              <i>- 5 December 2021</i>
             </div>
           </DemoCard>
           <DemoCard

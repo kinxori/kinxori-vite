@@ -3,8 +3,8 @@ import "./_webProjects.css";
 import Button from "@components/Buttons/Button";
 import DemoCard from "@components/DemoCard/DemoCard";
 import mainProjectsAsset from "@src/assets/projects-asset.png";
-import typescriptLogo from "@src/assets/typescript-png-logo-500x500-white.png";
-import tailwindLogo from "@src/assets/tailwindcss-png-logo-500x500-white.png";
+import typescriptLogo from "@src/assets/Logos/typescript-png-logo-500x500-white.png";
+import tailwindLogo from "@src/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 
 const VideoLoader = lazy(() => import("@components/VideoLoader/VideoLoader"));
 

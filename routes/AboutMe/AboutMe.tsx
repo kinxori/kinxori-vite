@@ -68,7 +68,6 @@ export default function AboutMe() {
               className="about-me-body-asset"
             ></VideoLoader>
           </Suspense>
-
           <h3>Personality? 💆</h3>
           <p>
             I'm a person who enjoys a <b> balanced lifestyle. </b> While I'm not necessarily
@@ -80,7 +79,7 @@ export default function AboutMe() {
             <b> study and listen to music. </b> I strive to live a meaningful life, and I'm
             <b> always looking for ways to improve myself </b> and my surroundings.
           </p>
-          <img src={mockupAsset} alt="ADD ALT"></img>
+          <img src={mockupAsset} alt="ADD ALT" className="about-me-body-asset"></img>
           <h3>Career? 👨‍🎓</h3>
           <p>
             Throughout my career path, I have pursued my
@@ -102,7 +101,7 @@ export default function AboutMe() {
             grew, and in <b> January 2023, </b> I made the decision to
             <b> pursue web development as a full-time job. </b>
           </p>
-          <img src={mockupAsset} alt="ADD ALT"></img>
+          <img src={mockupAsset} alt="ADD ALT" className="about-me-body-asset"></img>
           <p>
             Currently, I am focusing on developing myself as a<b> Front-End Developer, </b> and I am
             determined to become a<b> Full-Stack Developer </b> in the near future. My career
@@ -120,7 +119,7 @@ export default function AboutMe() {
             market. Overall, I'm someone who likes to
             <b> keep learning and enjoy life's simple pleasures. </b>
           </p>
-          <img src={mockupAsset} alt="ADD ALT"></img>
+          <img src={mockupAsset} alt="ADD ALT" className="about-me-body-asset"></img>
           <h3>Aspirations? ⏳</h3>
           <p>
             My main aspiration in life is to <b> achieve financial freedom, </b> not just for
@@ -133,7 +132,7 @@ export default function AboutMe() {
             where I can enjoy the simple things in life and cherish the moments
             <b> spent with the people who matter most to me. </b>
           </p>
-          <img src={mockupAsset} alt="ADD ALT"></img>
+          <img src={mockupAsset} alt="ADD ALT" className="about-me-body-asset"></img>
           <i>17th of June, 2023 / Mexico</i>
         </div>
       )}
