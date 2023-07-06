@@ -209,7 +209,7 @@ export default function MotionProjects() {
                 effectively communicates the essence of Body Restore's Shower Steamers, inviting
                 viewers to indulge in a moment of relaxation and self-care.
               </p>
-              <i>- 26 May 2022</i>
+              <i>- 11 February 2022</i>
             </div>
           </DemoCard>
           <DemoCard
