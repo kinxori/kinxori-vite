@@ -82,7 +82,11 @@ export default function AboutMe() {
             <b> study and listen to music. </b> I strive to live a meaningful life, and I'm
             <b> always looking for ways to improve myself </b> and my surroundings.
           </p>
-          <img src={mockupAsset} alt="ADD ALT" className="about-me-body-asset"></img>
+          <iframe
+            src="https://giphy.com/embed/l4FGJW0n38F5Yco6I"
+            className="about-me-body-asset"
+          ></iframe>
+
           <h3>Career? 👨‍🎓</h3>
           <p>
             Throughout my career path, I have pursued my
@@ -94,7 +98,7 @@ export default function AboutMe() {
             agency in <b> August, 2021. </b>
           </p>
           <p>
-            Although I had a successful career in the visual arts industry,
+            Although I had a great career in the visual arts industry,
             <b>I felt the need to learn new skills and broaden my horizons.</b>
             This is why in
             <b> October 2022, </b> I decided to
