@@ -17,7 +17,6 @@ const VideoLoader = lazy(() => import("@src/components/VideoLoader/VideoLoader")
 
 export default function MotionProjects() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
-  const [isLoadingVideo, setLoadingVideo] = useState(true);
   const [isActive, setIsActive] = useState(() => {
     const storedState = localStorage.getItem("StoredMotionProjects");
     return storedState ? storedState === "true" : false;
@@ -50,6 +49,7 @@ export default function MotionProjects() {
       <div className="motion-projects-content">
         <img
           src={mainMotionProjectsAsset}
+          className="motino-projects-main-asset"
           alt="Purple bulb illustration with a melting like effect running - Kinxori Motion Design Projects Route"
         />
         <div className="motion-projects-copy">
