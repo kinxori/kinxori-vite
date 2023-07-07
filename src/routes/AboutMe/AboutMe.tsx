@@ -4,6 +4,7 @@ import Button from "@src/components/Buttons/Button";
 import mainAboutMeAsset from "@src/assets/AboutmeAsset.png";
 import imgAssetPFP from "@src/assets/new-pfp-for-social-network.jpg";
 import mockupAsset from "@src/assets/hey-asset-on-black.png";
+import dogoCodingAsset from "@src/assets/Dog-Using-Laptop.jpg";
 
 const VideoLoader = lazy(() => import("@src/components/VideoLoader/VideoLoader"));
 
@@ -103,7 +104,6 @@ export default function AboutMe() {
             grew, and in <b> January 2023, </b> I made the decision to
             <b> pursue web development as a full-time job. </b>
           </p>
-          <img src={mockupAsset} alt="ADD ALT" className="about-me-body-asset"></img>
           <p>
             Currently, I am focusing on developing myself as a<b> Front-End Developer, </b> and I am
             determined to become a<b> Full-Stack Developer </b> in the near future. My career
@@ -111,6 +111,7 @@ export default function AboutMe() {
             future holds as I continue to
             <b> grow and evolve as a developer. </b>
           </p>
+          <img src={dogoCodingAsset} alt="ADD ALT" className="about-me-body-asset"></img>
           <h3>Hobbies? 🍿</h3>
           <p>
             Talking about hobbies, <b> biking and tennis are my favorite sport activities, </b> I
