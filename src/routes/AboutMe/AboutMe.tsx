@@ -76,17 +76,23 @@ export default function AboutMe() {
             I'm a person who enjoys a <b> balanced lifestyle. </b> While I'm not necessarily
             extroverted, I enjoy my time at home. I find peace and serenity in my surroundings and
             like to
-            <b> make the most of it. </b> However, that doesn't mean I don't like going out.
-            <b> I enjoy having dinner with friends </b> and engaging in deep conversations. When I'm
-            not socializing, I like to
+            <b> make the most of it. </b> When I'm not socializing, I like to
             <b> study and listen to music. </b> I strive to live a meaningful life, and I'm
-            <b> always looking for ways to improve myself </b> and my surroundings.
+            <b> always looking for ways to improve myself </b> and my surroundings. However, that
+            doesn't mean I don't like going out. <b> I enjoy having dinner with friends </b> and
+            engaging in deep conversations.
           </p>
-          <iframe
-            src="https://giphy.com/embed/l4FGJW0n38F5Yco6I"
-            className="about-me-body-asset"
-          ></iframe>
-
+          <Suspense fallback={<h3 className="about-me-asset-loader">Loading video...</h3>}>
+            <VideoLoader
+              src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
+              loop={true}
+              preload="auto"
+              autoPlay={true}
+              controls={false}
+              muted={true}
+              className="about-me-body-asset"
+            ></VideoLoader>
+          </Suspense>
           <h3>Career? 👨‍🎓</h3>
           <p>
             Throughout my career path, I have pursued my
