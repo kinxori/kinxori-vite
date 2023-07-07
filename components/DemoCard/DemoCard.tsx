@@ -2,7 +2,7 @@ import "./_demoCard.css";
 
 export default function DemoCard({ header, children, isActive, onClick }: any) {
   return (
-    <div className={isActive === true ? "card-root-open" : "card-root-close"}>
+    <div className={isActive === true ? "card-root-open" : "card-root-close"} onClick={onClick}>
       <div className="card-headline">
         <h3 className="card-headline-title">{header}</h3>
         <div>
