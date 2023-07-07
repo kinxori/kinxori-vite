@@ -38,10 +38,14 @@ export default function Projects() {
   };
 
   return (
-    <article className="projects-root">
-      <div className="projects-content">
-        <img src={mainProjectsAsset} alt="purple notebook with pencil - Kinxori Projects Route" />
-        <div className="projects-copy">
+    <article className="web-projects-root">
+      <div className="web-projects-content">
+        <img
+          src={mainProjectsAsset}
+          alt="purple notebook with pencil - Kinxori Projects Route"
+          className="web-projects-main-asset"
+        />
+        <div className="web-projects-copy">
           <h2>
             Check out <b>web developer</b> projects in action! 💻
           </h2>
@@ -50,7 +54,7 @@ export default function Projects() {
             <b> improving </b>
             along my <b>web developer career.</b>
           </p>
-          <div className="projects-CTA">
+          <div className="web-projects-CTA">
             <Button onClick={() => setIsActive(!isActive)} variant="secButton">
               {isActive === false ? "Open Projects" : "Close Projects"}
             </Button>
@@ -58,17 +62,20 @@ export default function Projects() {
         </div>
       </div>
       {isActive === true && (
-        <section className="projects-display-projects-cards">
+        <section className="web-projects-display-projects-cards">
           {fullScreenAsset !== "" && (
             <>
               <Button
-                className="projects-full-screen-close-button"
+                className="web-projects-full-screen-close-button"
                 variant="linkButton"
                 onClick={() => handleFullScreen("")}
               >
                 <i className="fa-regular fa-circle-xmark"></i>
               </Button>
-              <div className="projects-full-screen-bg" onClick={() => handleFullScreen("")}></div>
+              <div
+                className="web-projects-full-screen-bg"
+                onClick={() => handleFullScreen("")}
+              ></div>
             </>
           )}
           <DemoCard
@@ -80,13 +87,15 @@ export default function Projects() {
             isActive={cardClicked === "features-card"}
             onClick={() => handleCardClick("features-card")}
           >
-            <div className="projects-display-card-body">
-              <Suspense fallback={<h4 className="projects-card-asset-loader">Loading video...</h4>}>
+            <div className="web-projects-display-card-body">
+              <Suspense
+                fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
+              >
                 <VideoLoader
                   className={
                     fullScreenAsset === "shopping-card-asset"
-                      ? "projects-full-screen-img-open"
-                      : "projects-full-screen-img-close"
+                      ? "web-projects-full-screen-img-open"
+                      : "web-projects-full-screen-img-close"
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
                   loop={true}
@@ -139,7 +148,7 @@ export default function Projects() {
                 <li>Improve user experience with better organization of information</li>
                 <li>Integratation with external APIs to retrieve and update product information</li>
               </ul>
-              <div className="projects-display-card-CTA">
+              <div className="web-projects-display-card-CTA">
                 <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
                 </Button>
@@ -153,13 +162,15 @@ export default function Projects() {
               </div>
             </div>
             <hr></hr>
-            <div className="projects-display-card-body">
-              <Suspense fallback={<h4 className="projects-card-asset-loader">Loading video...</h4>}>
+            <div className="web-projects-display-card-body">
+              <Suspense
+                fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
+              >
                 <VideoLoader
                   className={
                     fullScreenAsset === "search-bar-asset"
-                      ? "projects-full-screen-img-open"
-                      : "projects-full-screen-img-close"
+                      ? "web-projects-full-screen-img-open"
+                      : "web-projects-full-screen-img-close"
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
                   loop={true}
@@ -213,7 +224,7 @@ export default function Projects() {
                 <li>Handling large datasets</li>
                 <li>Accessibility</li>
               </ul>
-              <div className="projects-display-card-CTA">
+              <div className="web-projects-display-card-CTA">
                 <Button to="https://kinxori.github.io/react-practice-5/" target="_blank">
                   Live Project
                 </Button>
@@ -227,13 +238,15 @@ export default function Projects() {
               </div>
             </div>
             <hr></hr>
-            <div className="projects-display-card-body">
-              <Suspense fallback={<h4 className="projects-card-asset-loader">Loading video...</h4>}>
+            <div className="web-projects-display-card-body">
+              <Suspense
+                fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
+              >
                 <VideoLoader
                   className={
                     fullScreenAsset === "fetch-api-asset"
-                      ? "projects-full-screen-img-open"
-                      : "projects-full-screen-img-close"
+                      ? "web-projects-full-screen-img-open"
+                      : "web-projects-full-screen-img-close"
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
                   loop={true}
@@ -286,7 +299,7 @@ export default function Projects() {
                 <li>Working with external APIs and handling response data</li>
                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
               </ul>
-              <div className="projects-display-card-CTA">
+              <div className="web-projects-display-card-CTA">
                 <Button to="https://kinxori.github.io/react-practice-4/" target="_blank">
                   Live Project
                 </Button>
@@ -309,8 +322,10 @@ export default function Projects() {
             isActive={cardClicked === "web-projects-card"}
             onClick={() => handleCardClick("web-projects-card")}
           >
-            <div className="projects-display-card-body">
-              <Suspense fallback={<h4 className="projects-card-asset-loader">Loading video...</h4>}>
+            <div className="web-projects-display-card-body">
+              <Suspense
+                fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
+              >
                 <VideoLoader
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
                   controls={true}
@@ -318,7 +333,7 @@ export default function Projects() {
                   preload="auto"
                   disablePictureInPicture
                   controlsList="nodownload noplaybackrate"
-                  className="projects-display-card-body-video"
+                  className="web-projects-display-card-body-video"
                 />
               </Suspense>
               <h2>Music Media Player</h2>
@@ -375,7 +390,7 @@ export default function Projects() {
                 <li>Audio Playback and Compatibility</li>
                 <li>Integration with External APIs</li>
               </ul>
-              <div className="projects-display-card-CTA">
+              <div className="web-projects-display-card-CTA">
                 <Button to="https://kinxori.github.io/react-media-player-practice/" target="_blank">
                   Live Project
                 </Button>
