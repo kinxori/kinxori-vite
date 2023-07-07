@@ -132,7 +132,12 @@ export default function AboutMe() {
             market. Overall, I'm someone who likes to
             <b> keep learning and enjoy life's simple pleasures. </b>
           </p>
-          <img src={mockupAsset} alt="ADD ALT" className="about-me-body-asset"></img>
+          <img
+            src="https://i.giphy.com/media/iqRgU7mFDGeUU/giphy.webp"
+            alt="ADD ALT"
+            className="about-me-body-asset"
+          ></img>
+
           <h3>Aspirations? ⏳</h3>
           <p>
             My main aspiration in life is to <b> achieve financial freedom, </b> not just for
@@ -156,6 +161,7 @@ export default function AboutMe() {
               className="about-me-body-asset"
             ></VideoLoader>
           </Suspense>
+          <h4>The end</h4>
         </div>
       )}
     </article>
