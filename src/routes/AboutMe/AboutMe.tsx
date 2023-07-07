@@ -145,7 +145,17 @@ export default function AboutMe() {
             where I can enjoy the simple things in life and cherish the moments
             <b> spent with the people who matter most to me. </b>
           </p>
-          <img src={mockupAsset} alt="ADD ALT" className="about-me-body-asset"></img>
+          <Suspense fallback={<h3 className="about-me-asset-loader">Loading video...</h3>}>
+            <VideoLoader
+              src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
+              loop={true}
+              preload="auto"
+              autoPlay={true}
+              controls={false}
+              muted={true}
+              className="about-me-body-asset"
+            ></VideoLoader>
+          </Suspense>
         </div>
       )}
     </article>
