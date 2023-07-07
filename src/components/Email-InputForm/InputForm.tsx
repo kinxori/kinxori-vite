@@ -1,0 +1,116 @@
+import { useEffect, useRef, useState } from "react";
+import "./_inputForm.css";
+import Button from "@src/components/Buttons/Button";
+import emailAsset from "@src/assets/email-sent-asset.png";
+
+export default function InputForm() {
+  const [emailInput, setEmailInput] = useState("");
+  const [subjectInput, setSubjectInput] = useState("");
+  const [messageInput, setMessageInput] = useState("");
+  const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
+  const [popUp, setPopUp] = useState(false);
+
+  const EmojiAPI =
+    "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
+
+  useEffect(() => {
+    const fetchEmojiData = async () => {
+      const response = await fetch(EmojiAPI);
+      const emojiData = await response.json();
+      const randomEmojiIndex = Math.floor(Math.random() * emojiData.length);
+      const randomEmojiSelected = emojiData[randomEmojiIndex];
+      const emoji = String.fromCodePoint(parseInt(randomEmojiSelected.codePoint, 16));
+      console.log(emoji);
+      setRandomEmojiGenerated(emoji);
+    };
+    fetchEmojiData();
+  }, [emailInput]);
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+    const { target } = event;
+    const form = {
+      email: target.email.value,
+      message: target.message.value,
+      subject: target.subject.value,
+      emoji: randomEmojiGenerated,
+    };
+
+    const result = await fetch(
+      "https://us-central1-myportfolio-70cb1.cloudfunctions.net/formFunction",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...form }),
+      }
+    );
+    setPopUp(true);
+    setTimeout(() => {
+      setPopUp(false);
+    }, 10000);
+    setEmailInput("");
+    setMessageInput("");
+  };
+
+  const handlePopUp = () => {
+    setPopUp(false);
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="form-root">
+      <div className="form-content">
+        <div className="form-content-inputs">
+          <div>
+            <h4>Email:</h4>
+            <input
+              type="email"
+              value={emailInput}
+              name="email"
+              onChange={(event) => setEmailInput(event.target.value)}
+              required
+              placeholder="example@email.com"
+            />
+          </div>
+          <div>
+            <h4>Subject</h4>
+            <input
+              type="text"
+              value={subjectInput}
+              name="subject"
+              onChange={(event) => setSubjectInput(event.target.value)}
+              required
+              placeholder="Enter your subject"
+            />
+          </div>
+        </div>
+        <div className="form-content-textareas">
+          <h4>Message:</h4>
+          <textarea
+            required
+            value={messageInput}
+            name="message"
+            onChange={(event) => setMessageInput(event.target.value)}
+            placeholder="Enter your message here"
+          />
+        </div>
+        <button type="submit" className="mainButton form-button-CTA">
+          Submit
+        </button>
+      </div>
+      {popUp && (
+        <div className="email-pop-up-root">
+          <div className="email-pop-up-content">
+            <img src={emailAsset} alt=""></img>
+            <h2>Email sent! 👨‍💻</h2>
+            <Button variant="mainButton" onClick={handlePopUp}>
+              Close
+            </Button>
+          </div>
+          <div className="email-pop-up-background" onClick={handlePopUp}></div>
+        </div>
+      )}
+    </form>
+  );
+}

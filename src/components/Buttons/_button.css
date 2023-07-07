@@ -1,0 +1,136 @@
+.mainButton {
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  min-width: 120px;
+  font-weight: bold;
+  color: var(--textMainColor);
+  border: 1px solid white;
+  background: var(--mainColor);
+  transition: all 0.2s ease-in-out;
+}
+
+.secButton {
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  min-width: 120px;
+  font-weight: bold;
+  color: var(--textMainColor);
+  border: 1px solid var(--mainColor);
+  background: var(--secColor);
+  transition: all 0.2s ease-in-out;
+}
+
+.ghostButton {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  min-width: 120px;
+  font-weight: bold;
+  background: none;
+  color: var(--textMainColor);
+  transition: all 0.2s ease-in-out;
+}
+
+.linkButton {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  min-width: 120px;
+  background: none;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--mainColor);
+  text-decoration-line: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+.mainButton:hover {
+  scale: 1.02;
+  opacity: 0.95;
+}
+
+.secButton:hover {
+  scale: 1.02;
+  opacity: 0.95;
+}
+
+.ghostButton:hover {
+  scale: 1.02;
+  opacity: 0.95;
+}
+
+.linkButton:hover {
+  scale: 1.02;
+  opacity: 0.95;
+}
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+@media (min-width: 601px) {
+  .mainButton {
+    padding: 16px 24px;
+    border-radius: 16px;
+    font-size: 18px;
+    min-width: 140px;
+  }
+
+  .secButton {
+    padding: 16px 24px;
+    border-radius: 16px;
+    font-size: 18px;
+    border: 2px solid var(--mainColor);
+    min-width: 140px;
+  }
+
+  .ghostButton {
+    padding: 16px 24px;
+    border-radius: 16px;
+    font-size: 18px;
+    min-width: 140px;
+  }
+
+  .linkButton {
+    padding: 16px 24px;
+    border-radius: 16px;
+    font-size: 18px;
+    min-width: 140px;
+  }
+}
+
+/* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
+
+@media (min-width: 1181px) {
+  .mainButton {
+    padding: 18px 24px;
+    border-radius: 18px;
+    font-size: 20px;
+    min-width: 160px;
+  }
+
+  .secButton {
+    padding: 18px 24px;
+    border-radius: 18px;
+    font-size: 20px;
+    border: 2px solid var(--mainColor);
+    min-width: 160px;
+  }
+
+  .ghostButton {
+    padding: 18px 24px;
+    border-radius: 18px;
+    font-size: 20px;
+    min-width: 160px;
+  }
+
+  .linkButton {
+    padding: 18px 24px;
+    border-radius: 18px;
+    font-size: 20px;
+    min-width: 160px;
+  }
+}
