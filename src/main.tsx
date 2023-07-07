@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./../_index.css";
-import Error404 from "@components/Error404/Error404";
-import Home from "@routes/Home/Home";
-import AboutMe from "@routes/AboutMe/AboutMe";
-import WebProjects from "@routes/webProjects/WebProjects";
-import MotionProjects from "@routes/motionProjects/MotionProjects";
-import Contact from "@routes/Contact/Contact";
+import Error404 from "@src/components/Error404/Error404";
+import Home from "@src/routes/Home/Home";
+import AboutMe from "@src/routes/AboutMe/AboutMe";
+import WebProjects from "@src/routes/webProjects/WebProjects";
+import MotionProjects from "@src/routes/motionProjects/MotionProjects";
+import Contact from "@src/routes/Contact/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
