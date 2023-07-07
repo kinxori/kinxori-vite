@@ -9,6 +9,7 @@ export default function LandingPage() {
         <img
           src={mainLandingPageAsset}
           alt="Purple Astro riding a bike - Kinxori landing page asset"
+          className="landingPage-main-asset"
         />
         <div className="landingPage-copy">
           <h2>

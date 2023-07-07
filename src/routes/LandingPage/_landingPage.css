@@ -12,15 +12,16 @@
   flex-direction: column;
 }
 
-.landingPage-content img {
-  height: 250px;
+.landingPage-main-asset {
+  width: 250px;
+  margin: 0 auto;
   object-fit: contain;
   animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-  transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
+  transition: all 0.2s cubic-bezier(0.5, 0.27, 0.45, 0.87);
 }
 
-.landingPage-content img:hover {
-  transform: rotate(10deg) scale(1.1);
+.landingPage-main-asset:hover {
+  transform: scale(1.05);
 }
 
 .landingPage-copy {
@@ -68,8 +69,8 @@
     margin-bottom: 15%;
   }
 
-  .landingPage-content img {
-    height: 400px;
+  .landingPage-main-asset {
+    width: 400px;
   }
 
   .landingPage-copy {
@@ -111,16 +112,9 @@
     justify-content: space-between;
   }
 
-  .landingPage-content img {
-    height: 100%;
-    width: 40%;
-    object-fit: contain;
-    animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-    transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-  }
-
-  .landingPage-content img:hover {
-    transform: rotate(10deg) scale(1.1);
+  .landingPage-main-asset {
+    width: 450px;
+    margin: 0;
   }
 
   .landingPage-copy {
