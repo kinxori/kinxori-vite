@@ -24,7 +24,7 @@ export default function AboutMe() {
         <img
           src={mainAboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori about page"
-          className="about-me-asset"
+          className="about-me-main-asset"
         />
         <div className="aboutMe-copy">
           <h2>

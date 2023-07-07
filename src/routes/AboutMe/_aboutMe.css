@@ -12,15 +12,16 @@
   flex-direction: column;
 }
 
-.aboutMe-content img {
-  height: 250px;
+.about-me-main-asset {
+  width: 250px;
+  margin: 0 auto;
   object-fit: contain;
   animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-  transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
+  transition: all 0.2s cubic-bezier(0.5, 0.27, 0.45, 0.87);
 }
 
-.aboutMe-content img:hover {
-  transform: rotate(10deg) scale(1.1);
+.about-me-main-asset:hover {
+  transform: scale(1.05);
 }
 
 .aboutMe-copy {
@@ -150,8 +151,8 @@
     margin-bottom: 15%;
   }
 
-  .aboutMe-content img {
-    height: 400px;
+  .about-me-main-asset {
+    width: 400px;
   }
 
   .aboutMe-copy {
@@ -244,16 +245,9 @@
     justify-content: space-between;
   }
 
-  .aboutMe-content img {
-    height: 100%;
-    width: 40%;
-    object-fit: contain;
-    animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-    transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-  }
-
-  .aboutMe-content img:hover {
-    transform: rotate(10deg) scale(1.1);
+  .about-me-main-asset {
+    width: 450px;
+    margin: 0;
   }
 
   .aboutMe-copy {
