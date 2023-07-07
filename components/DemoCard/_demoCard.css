@@ -31,14 +31,14 @@
   scale: 1.01;
   opacity: 0.95;
   cursor: pointer;
-  box-shadow: 0px 0px 15px 0px var(--mainColor);
+  box-shadow: 0px 0px 5px 0px var(--mainColor);
 }
 
 .card-root-open:hover {
   scale: 1.01;
   opacity: 0.95;
   cursor: pointer;
-  box-shadow: 0px 0px 20px 0px var(--mainColor);
+  box-shadow: 0px 0px 5px 0px var(--mainColor);
 }
 
 .card-headline {
@@ -124,6 +124,14 @@
     border-radius: 16px;
   }
 
+  .card-root-close:hover {
+    box-shadow: 0px 0px 10px 0px var(--mainColor);
+  }
+
+  .card-root-open:hover {
+    box-shadow: 0px 0px 15px 0px var(--mainColor);
+  }
+
   .card-headline {
     height: 60px;
     padding: 0px 25px;
@@ -167,6 +175,14 @@
   .card-root-close {
     border: 2px solid var(--mainColor);
     border-radius: 18px;
+  }
+
+  .card-root-close:hover {
+    box-shadow: 0px 0px 15px 0px var(--mainColor);
+  }
+
+  .card-root-open:hover {
+    box-shadow: 0px 0px 15px 0px var(--mainColor);
   }
 
   .card-headline {
