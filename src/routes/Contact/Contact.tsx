@@ -44,7 +44,11 @@ export default function Contact() {
   return (
     <article className="contact-root">
       <div className="contact-content">
-        <img src={contactAsset} alt="Purple mailbox receiving an email - Kinxori Contact Route" />
+        <img
+          src={contactAsset}
+          className="contact-main-asset"
+          alt="Purple mailbox receiving an email - Kinxori Contact Route"
+        />
         <div className="contact-copy">
           <h2>
             <b>Hey there!</b> Thanks for stopping by ☕️
