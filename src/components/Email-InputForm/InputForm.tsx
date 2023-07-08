@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./_inputForm.css";
 import Button from "@src/components/Buttons/Button";
-import emailAsset from "@src/assets/email-sent-asset.png";
+import emailAsset from "@src/assets/AboutmeAsset.png";
 
 export default function InputForm() {
   const [emailInput, setEmailInput] = useState("");

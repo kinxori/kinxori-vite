@@ -1,3 +1,5 @@
+import "./_videoLoader.css";
+
 export default function VideoLoader({
   src,
   loop,

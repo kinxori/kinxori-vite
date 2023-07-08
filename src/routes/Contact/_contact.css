@@ -291,7 +291,7 @@
     gap: 20px;
   }
 
-  /* -------------------- contact card styles for img FullScreen open ---------------*/
+  /* -------------------- handle FullScreen open ---------------*/
 
   .contact-full-screen-asset-open {
     width: 100vw;
@@ -305,6 +305,10 @@
   }
 
   .contact-full-screen-asset-open:hover {
+    cursor: pointer;
+  }
+
+  .contact-full-screen-img-close:hover {
     cursor: pointer;
   }
 

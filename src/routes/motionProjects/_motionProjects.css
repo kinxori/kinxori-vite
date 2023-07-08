@@ -175,6 +175,10 @@
   cursor: pointer;
 }
 
+.motion-projects-full-screen-img-close:hover {
+  cursor: pointer;
+}
+
 .motion-projects-full-screen-close-button {
   z-index: 600;
   top: 0;

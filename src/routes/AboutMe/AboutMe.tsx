@@ -1,10 +1,9 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import "./_aboutMe.css";
 import Button from "@src/components/Buttons/Button";
-import mainAboutMeAsset from "@src/assets/AboutmeAsset.png";
 import imgAssetPFP from "@src/assets/new-pfp-for-social-network.jpg";
-import mockupAsset from "@src/assets/hey-asset-on-black.png";
 import dogoCodingAsset from "@src/assets/Dog-Using-Laptop.jpg";
+import mainAboutMeAsset from "@src/assets/email-sent-asset.png";
 
 const VideoLoader = lazy(() => import("@src/components/VideoLoader/VideoLoader"));
 
