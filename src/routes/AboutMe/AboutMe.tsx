@@ -63,7 +63,6 @@ export default function AboutMe() {
             <VideoLoader
               src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
               loop={true}
-              preload="auto"
               autoPlay={true}
               controls={false}
               muted={true}
@@ -85,7 +84,6 @@ export default function AboutMe() {
             <VideoLoader
               src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
               loop={true}
-              preload="auto"
               autoPlay={true}
               controls={false}
               muted={true}
@@ -153,7 +151,6 @@ export default function AboutMe() {
             <VideoLoader
               src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
               loop={true}
-              preload="auto"
               autoPlay={true}
               controls={false}
               muted={true}
