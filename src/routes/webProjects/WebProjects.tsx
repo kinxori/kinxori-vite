@@ -93,7 +93,7 @@ export default function Projects() {
                 fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-functionality-video.mov?alt=media&token=324db9e4-dc38-4227-a574-a3a9080f2797"
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-asset-with-logo.mp4?alt=media&token=cf0b4218-1581-4944-b0a6-b5bf0df2bd99"
                   loop={true}
                   preload="auto"
                   autoPlay={true}
@@ -173,7 +173,7 @@ export default function Projects() {
                       ? "web-projects-card-img-open"
                       : "web-projects-card-img-close"
                   }
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search-bar-asset-with-logo.mp4?alt=media&token=036c614d-e7b2-42eb-984d-9663e09c0e74"
                   loop={true}
                   preload="auto"
                   autoPlay={true}
@@ -249,7 +249,7 @@ export default function Projects() {
                       ? "web-projects-card-img-open"
                       : "web-projects-card-img-close"
                   }
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-API-asset-with-logo.mp4?alt=media&token=42709b9f-dcf2-42d1-ab42-e78d8744a729"
                   loop={true}
                   preload="auto"
                   autoPlay={true}
@@ -329,7 +329,7 @@ export default function Projects() {
                 fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/MusicMediaPlayer.mp4?alt=media&token=555773ff-7e57-420a-903f-9bcee942ca63"
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/media-music-player-asset-with-logo.mp4?alt=media&token=ade6f55d-0f5e-41df-b1ff-f91095bfd87e"
                   controls={true}
                   autoPlay={false}
                   preload="auto"
