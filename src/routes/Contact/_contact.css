@@ -60,6 +60,7 @@
   width: 100%;
   margin-bottom: 20%;
   gap: 10px;
+  margin: 0 auto;
 }
 
 .contact-card-body {
@@ -163,7 +164,6 @@
   }
 
   .contact-CTA {
-    gap: 20px;
     margin-top: 10%;
   }
 
@@ -206,7 +206,6 @@
   }
 
   .contact-content {
-    width: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
     flex-direction: row-reverse;
@@ -234,16 +233,12 @@
   }
 
   .contact-CTA {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    margin-right: auto;
     width: 100%;
-    gap: 20px;
     margin-top: 5%;
   }
 
   .contact-cards {
-    margin: 0 auto;
     width: 70%;
     margin-bottom: 10%;
   }
