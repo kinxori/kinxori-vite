@@ -86,6 +86,7 @@ export default function Projects() {
             }
             isActive={cardClicked === "features-card"}
             onClick={() => handleCardClick("features-card")}
+            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
             <div className="web-projects-display-card-body">
               <Suspense
@@ -321,6 +322,7 @@ export default function Projects() {
             }
             isActive={cardClicked === "web-projects-card"}
             onClick={() => handleCardClick("web-projects-card")}
+            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
             <div className="web-projects-display-card-body">
               <Suspense

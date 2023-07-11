@@ -95,6 +95,7 @@ export default function MotionProjects() {
             }
             isActive={cardClicked === "motion-desing-card"}
             onClick={() => handleCardClick("motion-desing-card")}
+            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
             <div className="motion-projects-card-body">
               <Suspense
