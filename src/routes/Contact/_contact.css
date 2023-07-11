@@ -91,7 +91,7 @@
   height: 100vh;
   object-fit: contain;
   top: 0;
-  left: 0px;
+  left: 0;
   z-index: 550;
   position: fixed;
 }

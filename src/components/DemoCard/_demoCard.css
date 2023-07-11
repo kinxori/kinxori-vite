@@ -33,7 +33,9 @@
 }
 
 .card-root-idle:hover {
-  pointer-events: none;
+  scale: none;
+  opacity: none;
+  box-shadow: none;
 }
 
 .card-headline {

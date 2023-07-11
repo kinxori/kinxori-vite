@@ -47,6 +47,8 @@ export default function Contact() {
     setPopUp(value);
   };
 
+  console.log("👀", fullScreenAsset);
+
   return (
     <article className="contact-root">
       <div className="contact-content">
@@ -212,7 +214,7 @@ export default function Contact() {
               </Button>
             </div>
           </DemoCard>
-          <DemoCard
+          {/* <DemoCard
             header={
               <>
                 <i className="fa-regular fa-envelope"></i>&nbsp;&nbsp;Send email
@@ -240,7 +242,7 @@ export default function Contact() {
               </div>
               <div className="email-pop-up-background" onClick={() => setPopUp(false)}></div>
             </div>
-          )}
+          )} */}
         </section>
       )}
     </article>
