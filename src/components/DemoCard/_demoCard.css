@@ -1,4 +1,4 @@
-.card-root {
+.card-root-active {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -12,10 +12,14 @@
   transition: all 0.2s ease-in-out;
 }
 
-.card-root:hover {
+.card-root-active:hover {
   scale: 1.01;
   opacity: 0.95;
   box-shadow: 0px 0px 5px 0px var(--mainColor);
+}
+
+.card-root-idle:hover {
+  pointer-events: none;
 }
 
 .card-headline {
@@ -95,12 +99,12 @@
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
-  .card-root {
+  .card-root-active {
     border: 2px solid var(--mainColor);
     border-radius: 16px;
   }
 
-  .card-root:hover {
+  .card-root-active:hover {
     box-shadow: 0px 0px 10px 0px var(--mainColor);
   }
 
@@ -139,16 +143,12 @@
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
 @media (min-width: 1181px) {
-  .card-root {
+  .card-root-active {
     border: 2px solid var(--mainColor);
     border-radius: 18px;
   }
 
-  .card-root-close:hover {
-    box-shadow: 0px 0px 15px 0px var(--mainColor);
-  }
-
-  .card-root-open:hover {
+  .card-root-active:hover {
     box-shadow: 0px 0px 15px 0px var(--mainColor);
   }
 

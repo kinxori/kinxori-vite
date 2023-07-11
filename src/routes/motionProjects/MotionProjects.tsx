@@ -44,6 +44,8 @@ export default function MotionProjects() {
     setCardClicked((currentValue) => (currentValue !== id ? id : ""));
   };
 
+  console.log("🗿", fullScreenAsset);
+
   return (
     <article className="motion-projects-root">
       <div className="motion-projects-content">
@@ -268,7 +270,7 @@ export default function MotionProjects() {
             }
             isActive={cardClicked === "3d-modeling-card"}
             onClick={() => handleCardClick("3d-modeling-card")}
-            fullScreenAsset
+            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
             <div className="motion-projects-card-body">
               <img
