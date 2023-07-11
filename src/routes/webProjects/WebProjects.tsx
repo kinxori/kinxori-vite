@@ -88,7 +88,7 @@ export default function Projects() {
             onClick={() => handleCardClick("features-card")}
             fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
-            <div className="web-projects-display-card-body">
+            <div className="web-projects-card-body">
               <Suspense
                 fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
               >
@@ -101,8 +101,8 @@ export default function Projects() {
                   muted={true}
                   className={
                     fullScreenAsset === "shopping-card-asset"
-                      ? "web-projects-full-screen-img-open"
-                      : "web-projects-full-screen-img-close"
+                      ? "web-projects-card-img-open"
+                      : "web-projects-card-img-close"
                   }
                   onClick={() => handleFullScreen("shopping-card-asset")}
                 />
@@ -149,7 +149,7 @@ export default function Projects() {
                 <li>Improve user experience with better organization of information</li>
                 <li>Integratation with external APIs to retrieve and update product information</li>
               </ul>
-              <div className="web-projects-display-card-CTA">
+              <div className="web-projects-card-CTA">
                 <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
                 </Button>
@@ -163,15 +163,15 @@ export default function Projects() {
               </div>
             </div>
             <hr></hr>
-            <div className="web-projects-display-card-body">
+            <div className="web-projects-card-body">
               <Suspense
                 fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
                   className={
                     fullScreenAsset === "search-bar-asset"
-                      ? "web-projects-full-screen-img-open"
-                      : "web-projects-full-screen-img-close"
+                      ? "web-projects-card-img-open"
+                      : "web-projects-card-img-close"
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search%20bar%20edited.mov?alt=media&token=4cf3a15b-8a9d-4548-8590-9602af1d62d4"
                   loop={true}
@@ -225,7 +225,7 @@ export default function Projects() {
                 <li>Handling large datasets</li>
                 <li>Accessibility</li>
               </ul>
-              <div className="web-projects-display-card-CTA">
+              <div className="web-projects-card-CTA">
                 <Button to="https://kinxori.github.io/react-practice-5/" target="_blank">
                   Live Project
                 </Button>
@@ -239,15 +239,15 @@ export default function Projects() {
               </div>
             </div>
             <hr></hr>
-            <div className="web-projects-display-card-body">
+            <div className="web-projects-card-body">
               <Suspense
                 fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
                   className={
                     fullScreenAsset === "fetch-api-asset"
-                      ? "web-projects-full-screen-img-open"
-                      : "web-projects-full-screen-img-close"
+                      ? "web-projects-card-img-open"
+                      : "web-projects-card-img-close"
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-api-edited.mov?alt=media&token=daa9385e-2ee5-492e-9d6f-42b8865a65eb"
                   loop={true}
@@ -300,7 +300,7 @@ export default function Projects() {
                 <li>Working with external APIs and handling response data</li>
                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
               </ul>
-              <div className="web-projects-display-card-CTA">
+              <div className="web-projects-card-CTA">
                 <Button to="https://kinxori.github.io/react-practice-4/" target="_blank">
                   Live Project
                 </Button>
@@ -324,7 +324,7 @@ export default function Projects() {
             onClick={() => handleCardClick("web-projects-card")}
             fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
-            <div className="web-projects-display-card-body">
+            <div className="web-projects-card-body">
               <Suspense
                 fallback={<h4 className="web-projects-card-asset-loader">Loading video...</h4>}
               >
@@ -335,7 +335,7 @@ export default function Projects() {
                   preload="auto"
                   disablePictureInPicture
                   controlsList="nodownload noplaybackrate"
-                  className="web-projects-display-card-body-video"
+                  className="web-projects-card-body-video"
                 />
               </Suspense>
               <h2>Music Media Player</h2>
@@ -392,7 +392,7 @@ export default function Projects() {
                 <li>Audio Playback and Compatibility</li>
                 <li>Integration with External APIs</li>
               </ul>
-              <div className="web-projects-display-card-CTA">
+              <div className="web-projects-card-CTA">
                 <Button to="https://kinxori.github.io/react-media-player-practice/" target="_blank">
                   Live Project
                 </Button>
