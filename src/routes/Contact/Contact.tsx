@@ -65,7 +65,7 @@ export default function Contact() {
         </div>
       </div>
       {isActive === true && (
-        <section className="contact-options-cards">
+        <section className="contact-cards">
           {fullScreenAsset !== "" && (
             <>
               <Button
@@ -86,13 +86,14 @@ export default function Contact() {
             }
             isActive={cardClicked === "linkedin-card"}
             onClick={() => handleCardClick("linkedin-card")}
+            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
-            <div className="contact-display-card-body">
+            <div className="contact-card-body">
               <img
                 className={
                   fullScreenAsset === "linkedin-card-img"
-                    ? "contact-full-screen-img-open"
-                    : "contact-full-screen-img-close"
+                    ? "contact-card-img-open"
+                    : "contact-card-img-close"
                 }
                 onClick={() => handleFullScreen("linkedin-card-img")}
                 src={linkedinSS}
@@ -103,7 +104,7 @@ export default function Contact() {
                 to="https://www.linkedin.com/in/quinchori/"
                 target="_blank"
                 variant="mainButton"
-                className="contact-display-card-CTA"
+                className="contact-card-body-CTA"
               >
                 Go LinkedIn
               </Button>
@@ -117,13 +118,14 @@ export default function Contact() {
             }
             isActive={cardClicked === "resume-card"}
             onClick={() => handleCardClick("resume-card")}
+            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
-            <div className="contact-display-card-body">
+            <div className="contact-card-body">
               <img
                 className={
                   fullScreenAsset === "resume-card-img-asset"
-                    ? "contact-full-screen-img-open"
-                    : "contact-full-screen-img-close"
+                    ? "contact-card-img-open"
+                    : "contact-card-img-close"
                 }
                 onClick={() => handleFullScreen("resume-card-img-asset")}
                 src={resumeSS}
@@ -134,7 +136,7 @@ export default function Contact() {
                 href={resumeFilePDF}
                 download
                 variant="mainButton"
-                className="contact-display-card-CTA"
+                className="contact-card-body-CTA"
               >
                 Download Resume
               </ButtonAnchor>
@@ -148,15 +150,16 @@ export default function Contact() {
             }
             isActive={cardClicked === "github-card"}
             onClick={() => handleCardClick("github-card")}
+            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
-            <div className="contact-display-card-body">
+            <div className="contact-card-body">
               <img
                 src={githubSS}
                 alt="screenshot of Kinxori's github profile"
                 className={
                   fullScreenAsset === "github-card-img-asset"
-                    ? "contact-full-screen-img-open"
-                    : "contact-full-screen-img-close"
+                    ? "contact-card-img-open"
+                    : "contact-card-img-close"
                 }
                 onClick={() => handleFullScreen("github-card-img-asset")}
               ></img>
@@ -165,7 +168,7 @@ export default function Contact() {
                 to="https://github.com/kinxori"
                 target="_blank"
                 variant="mainButton"
-                className="contact-display-card-CTA"
+                className="contact-card-body-CTA"
               >
                 Go Github
               </Button>
@@ -179,16 +182,17 @@ export default function Contact() {
             }
             isActive={cardClicked === "twitter-card"}
             onClick={() => handleCardClick("twitter-card")}
+            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
-            <div className="contact-display-card-body">
+            <div className="contact-card-body">
               <img
                 src={twitterSS}
                 alt="screenshot of Kinxori's twitter profile"
                 onClick={() => handleFullScreen("twitter-card-img-asset")}
                 className={
                   fullScreenAsset === "twitter-card-img-asset"
-                    ? "contact-full-screen-img-open"
-                    : "contact-full-screen-img-close"
+                    ? "contact-card-img-open"
+                    : "contact-card-img-close"
                 }
               ></img>
               <h4>Follow me on Twitter and let's share thoughts! 🐦</h4>
@@ -196,7 +200,7 @@ export default function Contact() {
                 to="https://twitter.com/intent/tweet?text=@kinxori%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
                 target="_blank"
                 variant="mainButton"
-                className="contact-display-card-CTA"
+                className="contact-card-body-CTA"
               >
                 Go Twitter
               </Button>
@@ -210,8 +214,9 @@ export default function Contact() {
             }
             isActive={cardClicked === "email-card"}
             onClick={() => handleCardClick("email-card")}
+            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
           >
-            <div className="contact-display-card-body">
+            <div className="contact-card-body">
               <InputForm />
             </div>
           </DemoCard>

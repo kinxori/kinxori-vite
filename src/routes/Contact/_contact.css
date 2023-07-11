@@ -54,7 +54,7 @@
   animation-fill-mode: backwards;
 }
 
-.contact-options-cards {
+.contact-cards {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -62,7 +62,7 @@
   gap: 10px;
 }
 
-.contact-display-card-body {
+.contact-card-body {
   width: 100%;
   padding: 20px;
   gap: 20px;
@@ -72,24 +72,21 @@
   flex-direction: column;
 }
 
-.contact-display-card-body h4 {
+.contact-card-body h4 {
   font-size: 20px;
   text-align: center;
   font-weight: 700;
   width: 100%;
 }
 
-.contact-display-card-CTA {
+.contact-card-body-CTA {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 0;
-  gap: 10px;
+  margin: 10px auto;
 }
 
 /* -------------------- handle FullScreen  ---------------*/
 
-.contact-full-screen-img-open {
+.contact-card-img-open {
   width: 100vw;
   height: 100vh;
   object-fit: contain;
@@ -99,14 +96,13 @@
   position: fixed;
 }
 
-.contact-full-screen-img-close {
+.contact-card-img-close {
   width: 100%;
-  height: 100%;
   object-fit: contain;
   border-radius: 12px;
 }
 
-.contact-full-screen-img-open:hover {
+.contact-card-img-open:hover {
   cursor: pointer;
 }
 
@@ -167,27 +163,27 @@
     margin-top: 10%;
   }
 
-  .contact-options-cards {
+  .contact-cards {
     margin-bottom: 15%;
     gap: 15px;
   }
 
-  .contact-display-card-body {
+  .contact-card-body {
     padding: 40px;
     gap: 30px;
   }
 
-  .contact-display-card-body h4 {
+  .contact-card-body h4 {
     font-size: 24px;
   }
 
-  .contact-display-card-CTA {
+  .contact-card-body-CTA {
     margin: 20px 0;
   }
 
   /* -------------------- contact card styles for img FullScreen open ---------------*/
 
-  .contact-full-screen-img-close {
+  .contact-card-img-close {
     border-radius: 12px;
   }
 
@@ -258,7 +254,7 @@
     animation-fill-mode: backwards;
   }
 
-  .contact-options-cards {
+  .contact-cards {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -266,7 +262,7 @@
     margin-bottom: 10%;
   }
 
-  .contact-display-card-body {
+  .contact-card-body {
     width: 100%;
     padding: 40px;
     gap: 30px;
@@ -276,14 +272,14 @@
     flex-direction: column;
   }
 
-  .contact-display-card-body h4 {
+  .contact-card-body h4 {
     font-size: 28px;
     text-align: center;
     font-weight: 700;
     width: 100%;
   }
 
-  .contact-display-card-CTA {
+  .contact-card-body-CTA {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -298,7 +294,7 @@
     height: 100vh;
     top: 0;
     left: 0px;
-    z-index: 1000;
+    z-index: 550;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -308,7 +304,7 @@
     cursor: pointer;
   }
 
-  .contact-full-screen-img-close:hover {
+  .contact-card-img-close:hover {
     cursor: pointer;
   }
 
@@ -319,7 +315,7 @@
     position: absolute;
   }
 
-  .contact-full-screen-asset-open .contact-display-card-body-asset {
+  .contact-full-screen-asset-open .contact-card-body-asset {
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -348,7 +344,7 @@
   .contact-full-screen-asset-close .contact-full-screen-asset-button {
     display: none;
   }
-  .contact-full-screen-asset-close .contact-display-card-body-asset {
+  .contact-full-screen-asset-close .contact-card-body-asset {
     width: 100%;
     height: 100%;
     object-fit: contain;
