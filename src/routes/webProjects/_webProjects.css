@@ -4,7 +4,6 @@
 }
 
 .web-projects-content {
-  height: 100%;
   width: 100%;
   margin-top: 20%;
   margin-bottom: 20%;
@@ -59,6 +58,7 @@
   width: 100%;
   gap: 10px;
   margin-bottom: 20%;
+  margin: 0 auto;
 }
 
 .web-projects-display-cards hr {
@@ -139,6 +139,7 @@
   width: 100%;
   height: 150px;
   border: 3px dotted var(--mainColor);
+  margin: 0 auto;
   color: var(--mainColor);
   display: flex;
   justify-content: center;
@@ -229,8 +230,8 @@
   }
 
   .web-projects-CTA {
-    gap: 20px;
     margin-top: 10%;
+    margin-left: auto;
   }
 
   .web-projects-display-cards {
@@ -318,16 +319,11 @@
 @media (min-width: 1181px) {
   .web-projects-root {
     width: 80%;
-    height: min-content;
-    margin: 0 auto;
   }
 
   .web-projects-content {
-    height: 100%;
-    width: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
-    display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
@@ -342,67 +338,39 @@
     width: 55%;
     padding-top: 0%;
     gap: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
   }
 
   .web-projects-copy h2 {
     font-size: 46px;
-    text-align: left;
-    font-weight: 700;
-    animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   }
   .web-projects-copy p {
     font-size: 20px;
-    font-weight: normal;
-    text-align: justify;
-    animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   }
 
   .web-projects-CTA {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
-    gap: 20px;
     margin-top: 5%;
-    animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
+    margin-right: auto;
   }
 
   .web-projects-display-cards {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
     width: 70%;
     margin-bottom: 10%;
   }
 
   .web-projects-display-cards hr {
     width: 90%;
-    border-radius: 100%;
     margin: 20px auto;
   }
 
   .web-projects-card-body {
-    width: 100%;
     padding: 40px;
     gap: 30px;
-    height: fit-content;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
   }
 
   .web-projects-card-body h2 {
     font-size: 46px;
-    text-align: center;
-    font-weight: 700;
-    width: 100%;
     padding: 30px 0;
-    text-decoration: underline;
   }
 
   .web-projects-card-body i {
@@ -411,44 +379,27 @@
 
   .web-projects-card-body h4 {
     font-size: 28px;
-    text-align: left;
-    font-weight: 700;
-    width: 100%;
   }
 
   .web-projects-card-body p {
-    text-align: justify;
     font-size: 16px;
-    width: 100%;
   }
 
   .web-projects-card-body ul {
-    text-align: left;
     width: 100%;
     padding-left: 50px;
-    box-sizing: border-box;
   }
 
   .web-projects-card-body li {
     width: 100%;
-    height: min-content;
-    text-align: left;
-    position: relative;
-    box-sizing: border-box;
   }
 
   .web-projects-card-body li > img {
     height: 16px;
-    object-fit: contain;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   .web-projects-card-CTA {
-    display: flex;
     flex-direction: row;
-    align-items: center;
     margin: 20px auto;
     gap: 20px;
   }
@@ -457,10 +408,6 @@
     width: 100%;
     height: 450px;
     border: 3px dotted var(--mainColor);
-    color: var(--mainColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .web-projects-card-body-video {
