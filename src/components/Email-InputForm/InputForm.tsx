@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import "./_inputForm.css";
+import emailAsset from "@src/assets/AboutmeAsset.png";
+import Button from "../Buttons/Button";
 
-export default function InputForm({ handlePopUp }: any) {
+export default function InputForm({ handlePopUp, popUp }: any) {
   const [emailInput, setEmailInput] = useState("");
   const [subjectInput, setSubjectInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
@@ -52,6 +54,8 @@ export default function InputForm({ handlePopUp }: any) {
     setSubjectInput("");
   };
 
+  console.log(popUp);
+
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-content">
@@ -93,6 +97,21 @@ export default function InputForm({ handlePopUp }: any) {
           Submit
         </button>
       </div>
+      {popUp === true && (
+        <div className="email-pop-up-root">
+          <div className="email-pop-up-content">
+            <img
+              src={emailAsset}
+              alt="purple cup of coffee with a delivery backpack riding a scooter with glasses on its way to deliver something - Kinxori.com"
+            ></img>
+            <h2>Email sent! 👨‍💻</h2>
+            <Button variant="mainButton" onClick={() => handlePopUp(false)}>
+              Close
+            </Button>
+          </div>
+          <div className="email-pop-up-background" onClick={() => handlePopUp(false)}></div>
+        </div>
+      )}
     </form>
   );
 }

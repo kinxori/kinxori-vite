@@ -10,7 +10,6 @@ import linkedinSS from "@src/assets/linkedin-profile-ss.png";
 import resumeSS from "@src/assets/resume-ss.png";
 import githubSS from "@src/assets/github-profile-ss.png";
 import twitterSS from "@src/assets/twitter-profile-ss.png";
-import emailAsset from "@src/assets/AboutmeAsset.png";
 
 export default function Contact() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
@@ -47,8 +46,7 @@ export default function Contact() {
     setPopUp(value);
   };
 
-  console.log("👀", fullScreenAsset);
-
+  console.log("🥲", popUp);
   return (
     <article className="contact-root">
       <div className="contact-content">
@@ -214,7 +212,7 @@ export default function Contact() {
               </Button>
             </div>
           </DemoCard>
-          {/* <DemoCard
+          <DemoCard
             header={
               <>
                 <i className="fa-regular fa-envelope"></i>&nbsp;&nbsp;Send email
@@ -228,21 +226,6 @@ export default function Contact() {
               <InputForm handlePopUp={handlePopUp} popUp={popUp} />
             </div>
           </DemoCard>
-          {popUp === true && (
-            <div className="email-pop-up-root">
-              <div className="email-pop-up-content">
-                <img
-                  src={emailAsset}
-                  alt="purple cup of coffee with a delivery backpack riding a scooter with glasses on its way to deliver something - Kinxori.com"
-                ></img>
-                <h2>Email sent! 👨‍💻</h2>
-                <Button variant="mainButton" onClick={handlePopUp}>
-                  Close
-                </Button>
-              </div>
-              <div className="email-pop-up-background" onClick={() => setPopUp(false)}></div>
-            </div>
-          )} */}
         </section>
       )}
     </article>

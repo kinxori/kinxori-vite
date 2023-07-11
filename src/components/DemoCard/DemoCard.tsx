@@ -1,7 +1,6 @@
 import "./_demoCard.css";
 
 export default function DemoCard({ header, children, isActive, onClick, fullScreen }: any) {
-  console.log("🤥", fullScreen);
   return (
     <div className={fullScreen ? "card-root-idle" : "card-root-active"}>
       <div className="card-headline" onClick={onClick}>
