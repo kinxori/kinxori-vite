@@ -378,7 +378,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     margin-bottom: 10%;
   }
 
@@ -473,6 +473,8 @@
 
   .web-projects-card-img-close {
     border-radius: 18px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .web-projects-full-screen-close-button button {

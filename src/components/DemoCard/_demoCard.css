@@ -136,7 +136,7 @@
   }
 
   .card-body-open {
-    max-height: 400px;
+    max-height: 350px;
   }
 }
 
@@ -198,23 +198,6 @@
   }
 
   .card-body-open {
-    max-height: 500px;
-  }
-
-  .card-body-open::-webkit-scrollbar {
-    width: 9px;
-  }
-
-  .card-body-open::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  .card-body-open::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, 0.3);
-    border-radius: 9px;
-  }
-
-  .card-body-open::-webkit-scrollbar-thumb:hover {
-    background-color: hsla(266deg, 99%, 60%, 1);
+    max-height: 450px;
   }
 }
