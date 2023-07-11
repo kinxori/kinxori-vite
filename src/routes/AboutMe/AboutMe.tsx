@@ -42,8 +42,8 @@ export default function AboutMe() {
         </div>
       </div>
       {isReadMore === true && (
-        <div className="about-me-read-more-content">
-          <div className="aboutme-copy-PFP">
+        <div className="about-me-read-more-body">
+          <div className="about-me-body-PFP">
             <img src={imgAssetPFP} alt="Gustavo Quiroz - Kinxori"></img>
           </div>
           <h2>Gustavo Q. O.</h2>

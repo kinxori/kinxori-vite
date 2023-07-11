@@ -4,7 +4,6 @@
 }
 
 .aboutMe-content {
-  height: 100%;
   width: 100%;
   margin-top: 20%;
   margin-bottom: 20%;
@@ -54,7 +53,7 @@
   animation-fill-mode: backwards;
 }
 
-.about-me-read-more-content {
+.about-me-read-more-body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +63,7 @@
   gap: 20px;
 }
 
-.aboutme-copy-PFP {
+.about-me-body-PFP {
   height: 150px;
   width: 150px;
   border-radius: 100%;
@@ -77,19 +76,18 @@
   justify-content: center;
 }
 
-.aboutme-copy-PFP:hover {
-  scale: 1.1;
-  border: 5px solid var(--mainColor);
-}
-
-.aboutme-copy-PFP img {
+.about-me-body-PFP img {
   height: 350px;
   object-fit: contain;
   position: relative;
-  top: 30%;
 }
 
-.about-me-read-more-content h2 {
+.about-me-body-PFP:hover {
+  scale: 1.1;
+  border: 6px solid var(--mainColor);
+}
+
+.about-me-read-more-body h2 {
   font-size: 32px;
   text-align: center;
   font-weight: 700;
@@ -97,7 +95,7 @@
   text-decoration: underline;
 }
 
-.about-me-read-more-content i {
+.about-me-read-more-body i {
   font-size: 10px;
   text-align: right;
   width: 100%;
@@ -105,14 +103,14 @@
   opacity: 0.6;
 }
 
-.about-me-read-more-content h3 {
+.about-me-read-more-body h3 {
   font-size: 20px;
   text-align: left;
   font-weight: 700;
   width: 100%;
 }
 
-.about-me-read-more-content p {
+.about-me-read-more-body p {
   text-align: justify;
   font-size: 16px;
   width: 100%;
@@ -126,6 +124,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .about-me-body-asset {
@@ -173,40 +172,40 @@
     margin-top: 10%;
   }
 
-  .about-me-read-more-content {
+  .about-me-read-more-body {
     margin-bottom: 15%;
     gap: 30px;
   }
 
-  .aboutme-copy-PFP {
+  .about-me-body-PFP {
     height: 250px;
     width: 250px;
-    border: 7px solid white;
+    border: 6px solid white;
   }
 
-  .aboutme-copy-PFP:hover {
-    border: 7px solid var(--mainColor);
-  }
-
-  .aboutme-copy-PFP img {
+  .about-me-body-PFP img {
     height: 500px;
     top: 25%;
   }
 
-  .about-me-read-more-content h2 {
+  .about-me-body-PFP:hover {
+    border: 7px solid var(--mainColor);
+  }
+
+  .about-me-read-more-body h2 {
     font-size: 42px;
   }
 
-  .about-me-read-more-content i {
+  .about-me-read-more-body i {
     font-size: 12px;
     margin-top: 30px;
   }
 
-  .about-me-read-more-content h3 {
+  .about-me-read-more-body h3 {
     font-size: 28px;
   }
 
-  .about-me-read-more-content p {
+  .about-me-read-more-body p {
     font-size: 16px;
   }
 
@@ -221,7 +220,7 @@
   }
 
   .about-me-body-asset:hover {
-    box-shadow: 0px 0px 15px 0px hsla(266deg, 99%, 60%, 0.4);
+    box-shadow: 0px 0px 10px 0px hsla(266deg, 99%, 60%, 0.4);
   }
 }
 
@@ -230,16 +229,11 @@
 @media (min-width: 1181px) {
   .aboutMe-root {
     width: 80%;
-    height: min-content;
-    margin: 0 auto;
   }
 
   .aboutMe-content {
-    height: 100%;
-    width: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
-    display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
@@ -254,104 +248,65 @@
     width: 55%;
     padding-top: 0%;
     gap: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
   }
 
   .aboutMe-copy h2 {
     font-size: 46px;
-    text-align: left;
-    font-weight: 700;
-    animation: opacity-translation-Y-in 0.7s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   }
 
   .aboutMe-copy p {
     font-size: 20px;
-    font-weight: normal;
-    text-align: justify;
-    animation: opacity-translation-Y-in 0.8s cubic-bezier(0.48, 0.23, 0.61, 0.93);
   }
 
   .aboutMe-CTA {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: 20px;
     margin-top: 5%;
-    animation: opacity-in 0.4s cubic-bezier(0.48, 0.23, 0.61, 0.93);
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
   }
 
-  .about-me-read-more-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .about-me-read-more-body {
     width: 70%;
-    margin: 0 auto;
     margin-bottom: 10%;
     gap: 30px;
   }
 
-  .aboutme-copy-PFP {
+  .about-me-body-PFP {
     height: 350px;
     width: 350px;
     border-radius: 100%;
     margin-bottom: 10%;
-    border: 7px solid white;
-    transition: all 0.2s ease-in-out;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 8px solid white;
   }
 
-  .aboutme-copy-PFP:hover {
-    scale: 1.1;
-    border: 7px solid var(--mainColor);
-  }
-
-  .aboutme-copy-PFP img {
+  .about-me-body-PFP img {
     height: 700px;
-    object-fit: contain;
-    position: relative;
-    top: 25%;
   }
 
-  .about-me-read-more-content h2 {
+  .about-me-body-PFP:hover {
+    scale: 1.05;
+    border: 9px solid var(--mainColor);
+  }
+
+  .about-me-read-more-body h2 {
     font-size: 58px;
   }
 
-  .about-me-read-more-content i {
+  .about-me-read-more-body i {
     font-size: 14px;
-    text-align: right;
     margin-top: 50px;
-    width: 100%;
   }
 
-  .about-me-read-more-content h3 {
+  .about-me-read-more-body h3 {
     font-size: 32px;
-    text-align: left;
-    font-weight: 700;
-    width: 100%;
   }
 
-  .about-me-read-more-content p {
-    text-align: justify;
+  .about-me-read-more-body p {
     font-size: 16px;
-    width: 100%;
   }
 
   .about-me-asset-loader {
-    width: 100%;
     height: 450px;
     border: 3px dotted var(--mainColor);
-    color: var(--mainColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .about-me-body-asset {
@@ -360,6 +315,6 @@
   }
 
   .about-me-body-asset:hover {
-    box-shadow: 0px 0px 20px 0px hsla(266deg, 99%, 60%, 0.5);
+    box-shadow: 0px 0px 15px 0px hsla(266deg, 99%, 60%, 0.5);
   }
 }
