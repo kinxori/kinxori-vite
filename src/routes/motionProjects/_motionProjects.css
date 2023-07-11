@@ -146,20 +146,17 @@
 }
 
 .motion-projects-card-body-video {
-  width: 70%;
+  width: 100%;
   object-fit: contain;
   border-radius: 12px;
-  margin: 0 auto;
 }
 
 /* -------------------- Handle FullScreen  ---------------*/
 
 .motion-projects-full-screen-img-close {
-  width: 70%;
-  height: 100%;
+  width: 100%;
   object-fit: contain;
   border-radius: 12px;
-  margin: 0 auto;
 }
 
 .motion-projects-full-screen-img-open {
@@ -379,7 +376,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     margin-bottom: 10%;
   }
 

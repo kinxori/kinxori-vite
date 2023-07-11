@@ -147,7 +147,6 @@
 
 .web-projects-card-body-video {
   width: 100%;
-  height: 100%;
   object-fit: contain;
   border-radius: 12px;
 }
@@ -156,7 +155,6 @@
 
 .web-projects-card-img-close {
   width: 100%;
-  height: 100%;
   object-fit: contain;
   border-radius: 12px;
 }
@@ -473,8 +471,6 @@
 
   .web-projects-card-img-close {
     border-radius: 18px;
-    width: 90%;
-    margin: 0 auto;
   }
 
   .web-projects-full-screen-close-button button {
