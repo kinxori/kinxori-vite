@@ -1,10 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "./_inputForm.css";
-import Button from "@src/components/Buttons/Button";
-import emailAsset from "@src/assets/AboutmeAsset.png";
-import DemoCard from "../DemoCard/DemoCard";
 
-export default function InputForm({ handlePopUp, popUp }: any) {
+export default function InputForm({ handlePopUp }: any) {
   const [emailInput, setEmailInput] = useState("");
   const [subjectInput, setSubjectInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
@@ -49,14 +46,11 @@ export default function InputForm({ handlePopUp, popUp }: any) {
     handlePopUp(true);
     setTimeout(() => {
       handlePopUp(false);
-      setEmailInput("");
-      setMessageInput("");
-      setSubjectInput("");
-    }, 10000);
+    }, 5000);
+    setEmailInput("");
+    setMessageInput("");
+    setSubjectInput("");
   };
-
-  console.log("🗿", handlePopUp);
-  console.log("💡", popUp);
 
   return (
     <form onSubmit={handleSubmit} className="form-root">
@@ -99,18 +93,6 @@ export default function InputForm({ handlePopUp, popUp }: any) {
           Submit
         </button>
       </div>
-      {popUp === true && (
-        <div className="email-pop-up-root">
-          <div className="email-pop-up-content">
-            <img src={emailAsset} alt=""></img>
-            <h2>Email sent! 👨‍💻</h2>
-            <Button variant="mainButton" onClick={handlePopUp(false)}>
-              Close
-            </Button>
-          </div>
-          <div className="email-pop-up-background" onClick={handlePopUp(false)}></div>
-        </div>
-      )}
     </form>
   );
 }

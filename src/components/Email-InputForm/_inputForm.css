@@ -56,7 +56,7 @@
 }
 
 .form-content textarea {
-  min-height: 100px;
+  min-height: 125px;
   width: 100%;
   font-size: 16px;
   padding: 10px 10px;
@@ -71,66 +71,6 @@
 .form-button-CTA {
   width: fit-content;
   margin: 10px auto;
-}
-
-/* -----------------------  pop-up styles ------------  */
-
-.email-pop-up-root {
-  z-index: 1000;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.email-pop-up-content {
-  position: relative;
-  height: 300px;
-  width: 300px;
-  border-radius: 12px;
-  z-index: 1;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--mainColor);
-  background-color: var(--secColor);
-}
-
-.email-pop-up-content h2 {
-  font-size: 24px;
-}
-
-.email-pop-up-content img {
-  width: 80px;
-  margin: 20px auto;
-  object-fit: contain;
-  animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-  transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-}
-
-.email-pop-up-content img:hover {
-  transform: scale(1.05);
-}
-
-.email-pop-up-content span {
-  margin: 10px auto;
-}
-
-.email-pop-up-background {
-  position: fixed;
-  background-color: var(--secColor);
-  z-index: 0;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  opacity: 0.9;
 }
 
 /* ---------------------------------------- Tablet media query -----------------------------------------------------------------------*/
@@ -194,7 +134,7 @@
   }
 
   .form-content textarea {
-    min-height: 100px;
+    min-height: 150px;
     width: 100%;
     font-size: 16px;
     padding: 10px 10px;
@@ -208,39 +148,6 @@
 
   .form-button-CTA {
     width: fit-content;
-    margin: 20px auto;
-  }
-
-  /* -----------------------  pop-up styles ------------  */
-
-  .email-pop-up-content {
-    position: relative;
-    height: 350px;
-    width: 450px;
-    border-radius: 16px;
-    z-index: 1;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--mainColor);
-    background-color: var(--secColor);
-  }
-
-  .email-pop-up-content h2 {
-    font-size: 28px;
-  }
-
-  .email-pop-up-content img {
-    width: 100px;
-    margin: 30px auto;
-    object-fit: contain;
-    animation: scale-opacity-in 0.7s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-    transition: all 0.4s cubic-bezier(0.5, 0.27, 0.45, 0.87);
-  }
-
-  .email-pop-up-content span {
     margin: 20px auto;
   }
 }
@@ -306,7 +213,7 @@
   }
 
   .form-content textarea {
-    min-height: 150px;
+    min-height: 175px;
     width: 100%;
     font-size: 16px;
     padding: 10px 10px;
@@ -321,29 +228,5 @@
   .form-button-CTA {
     width: fit-content;
     margin: 30px auto;
-  }
-
-  /* -----------------------  pop-up styles ------------  */
-
-  .email-pop-up-content {
-    height: 350px;
-    width: 500px;
-    border-radius: 18px;
-    z-index: 1;
-    gap: 0px;
-    border: 2px solid var(--mainColor);
-  }
-
-  .email-pop-up-content h2 {
-    font-size: 30px;
-  }
-
-  .email-pop-up-content img {
-    width: 130px;
-    margin: 30px auto;
-  }
-
-  .email-pop-up-content span {
-    margin: 15px auto;
   }
 }
