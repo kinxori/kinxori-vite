@@ -95,7 +95,6 @@ export default function Projects() {
                 <VideoLoader
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/shopping-cart-asset-with-logo.mp4?alt=media&token=cf0b4218-1581-4944-b0a6-b5bf0df2bd99"
                   loop={true}
-                  preload="auto"
                   autoPlay={true}
                   controls={false}
                   muted={true}
@@ -175,7 +174,6 @@ export default function Projects() {
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/search-bar-asset-with-logo.mp4?alt=media&token=036c614d-e7b2-42eb-984d-9663e09c0e74"
                   loop={true}
-                  preload="auto"
                   autoPlay={true}
                   controls={false}
                   muted={true}
@@ -251,7 +249,6 @@ export default function Projects() {
                   }
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-API-asset-with-logo.mp4?alt=media&token=42709b9f-dcf2-42d1-ab42-e78d8744a729"
                   loop={true}
-                  preload="auto"
                   autoPlay={true}
                   controls={false}
                   muted={true}
@@ -332,7 +329,6 @@ export default function Projects() {
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/media-music-player-asset-with-logo.mp4?alt=media&token=ade6f55d-0f5e-41df-b1ff-f91095bfd87e"
                   controls={true}
                   autoPlay={false}
-                  preload="auto"
                   disablePictureInPicture
                   controlsList="nodownload noplaybackrate"
                   className="web-projects-card-body-video"

@@ -103,7 +103,6 @@ export default function MotionProjects() {
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/beezy-beez-asset-with-logo.mp4?alt=media&token=de3b3d31-ff68-44a3-b823-4890bdd18f22"
                   controls={true}
                   autoPlay={false}
-                  preload="auto"
                   disablePictureInPicture
                   controlsList="nodownload noplaybackrate"
                   className="motion-projects-card-body-video"
@@ -141,7 +140,6 @@ export default function MotionProjects() {
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/apricoat-asset-with-logo.mp4?alt=media&token=d46c58cf-7076-4c6f-8685-bf600f110aed"
                   controls={true}
                   autoPlay={false}
-                  preload="auto"
                   disablePictureInPicture
                   controlsList="nodownload noplaybackrate"
                   className="motion-projects-card-body-video"
@@ -182,7 +180,6 @@ export default function MotionProjects() {
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/pocket-charger-asset-with-logo.mp4?alt=media&token=430f0dcb-7fdb-4f3b-b74d-d1d10305e3c3"
                   controls={true}
                   autoPlay={false}
-                  preload="auto"
                   disablePictureInPicture
                   controlsList="nodownload noplaybackrate"
                   className="motion-projects-card-body-video"
@@ -230,7 +227,6 @@ export default function MotionProjects() {
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/body-restore-asset-with-logo.mp4?alt=media&token=7795c12b-6673-418c-a486-be60a4e24437"
                   controls={true}
                   autoPlay={false}
-                  preload="auto"
                   disablePictureInPicture
                   controlsList="nodownload noplaybackrate"
                   className="motion-projects-card-body-video"
