@@ -1,4 +1,4 @@
-.card-root-open {
+.card-root {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -12,34 +12,11 @@
   transition: all 0.2s ease-in-out;
 }
 
-.card-root-close {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--mainColor);
-  border-radius: 12px;
-  position: relative;
-  overflow: hidden;
-  background-color: none;
-  transition: all 0.2s ease-in-out;
-}
-
-/* .card-root-close:hover {
+.card-root:hover {
   scale: 1.01;
   opacity: 0.95;
-  cursor: pointer;
   box-shadow: 0px 0px 5px 0px var(--mainColor);
 }
-
-.card-root-open:hover {
-  scale: 1.01;
-  opacity: 0.95;
-  cursor: pointer;
-  box-shadow: 0px 0px 5px 0px var(--mainColor);
-} */
 
 .card-headline {
   width: 100%;
@@ -50,6 +27,10 @@
   background-color: var(--mainColor);
   padding: 0px 20px;
   box-sizing: border-box;
+}
+
+.card-headline:hover {
+  cursor: pointer;
 }
 
 .card-headline-title {
@@ -93,7 +74,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.card-root-close .card-body {
+.card-body-close {
   width: 100%;
   max-height: 0px;
   opacity: 0;
@@ -102,7 +83,7 @@
   overflow: hidden scroll;
 }
 
-.card-root-open .card-body {
+.card-body-open {
   width: 100%;
   max-height: 300px;
   opacity: 1;
@@ -114,22 +95,13 @@
 /* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
 
 @media (min-width: 601px) {
-  .card-root-open {
+  .card-root {
     border: 2px solid var(--mainColor);
     border-radius: 16px;
   }
 
-  .card-root-close {
-    border: 2px solid var(--mainColor);
-    border-radius: 16px;
-  }
-
-  .card-root-close:hover {
+  .card-root:hover {
     box-shadow: 0px 0px 10px 0px var(--mainColor);
-  }
-
-  .card-root-open:hover {
-    box-shadow: 0px 0px 15px 0px var(--mainColor);
   }
 
   .card-headline {
@@ -155,11 +127,11 @@
     width: 40px;
   }
 
-  .card-root-close .card-body {
+  .card-body-close {
     max-height: 0px;
   }
 
-  .card-root-open .card-body {
+  .card-body-open {
     max-height: 400px;
   }
 }
@@ -167,12 +139,7 @@
 /* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
 
 @media (min-width: 1181px) {
-  .card-root-open {
-    border: 2px solid var(--mainColor);
-    border-radius: 18px;
-  }
-
-  .card-root-close {
+  .card-root {
     border: 2px solid var(--mainColor);
     border-radius: 18px;
   }
@@ -226,28 +193,28 @@
     cursor: pointer;
   }
 
-  .card-root-close .card-body {
+  .card-body-close {
     max-height: 0px;
   }
 
-  .card-root-open .card-body {
+  .card-body-open {
     max-height: 500px;
   }
 
-  .card-root-open .card-body::-webkit-scrollbar {
+  .card-body-open::-webkit-scrollbar {
     width: 9px;
   }
 
-  .card-root-open .card-body::-webkit-scrollbar-track {
+  .card-body-open::-webkit-scrollbar-track {
     background-color: transparent;
   }
 
-  .card-root-open .card-body::-webkit-scrollbar-thumb {
+  .card-body-open::-webkit-scrollbar-thumb {
     background-color: hsla(0, 0%, 100%, 0.3);
     border-radius: 9px;
   }
 
-  .card-root-open .card-body::-webkit-scrollbar-thumb:hover {
+  .card-body-open::-webkit-scrollbar-thumb:hover {
     background-color: hsla(266deg, 99%, 60%, 1);
   }
 }

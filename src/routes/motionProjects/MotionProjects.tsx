@@ -268,6 +268,7 @@ export default function MotionProjects() {
             }
             isActive={cardClicked === "3d-modeling-card"}
             onClick={() => handleCardClick("3d-modeling-card")}
+            fullScreenAsset
           >
             <div className="motion-projects-card-body">
               <img
