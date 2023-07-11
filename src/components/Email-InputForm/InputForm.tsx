@@ -54,8 +54,6 @@ export default function InputForm({ handlePopUp, popUp }: any) {
     setSubjectInput("");
   };
 
-  console.log(popUp);
-
   return (
     <form onSubmit={handleSubmit} className="form-root">
       <div className="form-content">

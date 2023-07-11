@@ -46,7 +46,6 @@ export default function Contact() {
     setPopUp(value);
   };
 
-  console.log("🥲", popUp);
   return (
     <article className="contact-root">
       <div className="contact-content">

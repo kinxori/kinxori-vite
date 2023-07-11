@@ -94,6 +94,24 @@
   transition: all 0.3s ease-in-out;
 }
 
+.card-root-chevron-open:hover {
+  height: 32px;
+  width: 32px;
+  color: white;
+  background-color: var(--mainColor);
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.card-root-chevron-close:hover {
+  height: 32px;
+  width: 32px;
+  color: white;
+  background-color: var(--mainColor);
+  border: 1px solid white;
+  cursor: pointer;
+}
+
 .card-body-close {
   width: 100%;
   max-height: 0px;
@@ -147,6 +165,18 @@
     width: 40px;
   }
 
+  .card-root-chevron-open:hover {
+    height: 42px;
+    width: 42px;
+    border: 2px solid white;
+  }
+
+  .card-root-chevron-close:hover {
+    height: 42px;
+    width: 42px;
+    border: 2px solid white;
+  }
+
   .card-body-close {
     max-height: 0px;
   }
@@ -186,27 +216,23 @@
     width: 40px;
     transition: all 0.3s ease-in-out;
   }
-  .card-root-chevron-open:hover {
-    height: 42px;
-    width: 42px;
-    color: white;
-    background-color: var(--mainColor);
-    border: 2px solid white;
-    cursor: pointer;
-  }
 
   .card-root-chevron-close {
     height: 40px;
     width: 40px;
     transition: all 0.3s ease-in-out;
   }
+
+  .card-root-chevron-open:hover {
+    height: 42px;
+    width: 42px;
+    border: 2px solid white;
+  }
+
   .card-root-chevron-close:hover {
     height: 42px;
     width: 42px;
-    color: white;
-    background-color: var(--mainColor);
     border: 2px solid white;
-    cursor: pointer;
   }
 
   .card-body-close {
