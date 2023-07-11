@@ -22,21 +22,4 @@
     top: 80px;
     left: 0;
   }
-
-  .rootHome::-webkit-scrollbar {
-    width: 9px;
-  }
-
-  .rootHome::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  .rootHome::-webkit-scrollbar-thumb {
-    background-color: hsla(0, 0%, 100%, 0.3);
-    border-radius: 9px;
-  }
-
-  .rootHome::-webkit-scrollbar-thumb:hover {
-    background-color: hsla(266deg, 99%, 60%, 1);
-  }
 }
