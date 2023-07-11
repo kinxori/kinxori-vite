@@ -28,7 +28,7 @@ export default function DesktopNav() {
             About
           </Button>
           <ButtonAnchor variant="ghostButton" href={resumeFilePDF} download>
-            Resume
+            Download CV
           </ButtonAnchor>
         </div>
       </div>
