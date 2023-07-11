@@ -44,8 +44,6 @@ export default function MotionProjects() {
     setCardClicked((currentValue) => (currentValue !== id ? id : ""));
   };
 
-  console.log("🗿", fullScreenAsset);
-
   return (
     <article className="motion-projects-root">
       <div className="motion-projects-content">

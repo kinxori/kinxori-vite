@@ -146,13 +146,21 @@
 }
 
 .motion-projects-card-body-video {
-  width: 100%;
-  height: 100%;
+  width: 70%;
   object-fit: contain;
   border-radius: 12px;
+  margin: 0 auto;
 }
 
 /* -------------------- Handle FullScreen  ---------------*/
+
+.motion-projects-full-screen-img-close {
+  width: 70%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 0 auto;
+}
 
 .motion-projects-full-screen-img-open {
   width: 100vw;
@@ -162,13 +170,6 @@
   z-index: 550;
   position: fixed;
   object-fit: contain;
-}
-
-.motion-projects-full-screen-img-close {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 12px;
 }
 
 .motion-projects-full-screen-img-open:hover {
