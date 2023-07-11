@@ -13,6 +13,8 @@ import twitterSS from "@src/assets/twitter-profile-ss.png";
 
 export default function Contact() {
   const [fullScreenAsset, setFullScreenAsset] = useState("");
+  const [popUp, setPopUp] = useState(true);
+  console.log("👺", popUp);
   const [isActive, setActive] = useState(() => {
     const storedState = localStorage.getItem("StoredOptionsButton");
     return storedState ? storedState === "true" : false;
@@ -39,6 +41,10 @@ export default function Contact() {
 
   const handleCardClick = (id: string) => {
     setCardClicked((currentValue) => (currentValue !== id ? id : ""));
+  };
+
+  const handlePopUp = (value: boolean) => {
+    setPopUp(value);
   };
 
   return (
@@ -214,10 +220,10 @@ export default function Contact() {
             }
             isActive={cardClicked === "email-card"}
             onClick={() => handleCardClick("email-card")}
-            fullScreen={fullScreenAsset !== "" && "fullScreen-active"}
+            fullScreen={popUp && "fullScreen-active"}
           >
             <div className="contact-card-body">
-              <InputForm />
+              <InputForm handlePopUp={handlePopUp} popUp={popUp} />
             </div>
           </DemoCard>
         </section>

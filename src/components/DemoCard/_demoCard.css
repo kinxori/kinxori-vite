@@ -12,6 +12,20 @@
   transition: all 0.2s ease-in-out;
 }
 
+.card-root-idle {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--mainColor);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
 .card-root-active:hover {
   scale: 1.01;
   opacity: 0.95;

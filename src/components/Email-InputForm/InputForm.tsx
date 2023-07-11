@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import "./_inputForm.css";
 import Button from "@src/components/Buttons/Button";
 import emailAsset from "@src/assets/AboutmeAsset.png";
+import DemoCard from "../DemoCard/DemoCard";
 
-export default function InputForm() {
+export default function InputForm({ handlePopUp, popUp }: any) {
   const [emailInput, setEmailInput] = useState("");
   const [subjectInput, setSubjectInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
-  const [popUp, setPopUp] = useState(false);
 
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
@@ -46,17 +46,17 @@ export default function InputForm() {
         body: JSON.stringify({ ...form }),
       }
     );
-    setPopUp(true);
+    handlePopUp(true);
     setTimeout(() => {
-      setPopUp(false);
+      handlePopUp(false);
+      setEmailInput("");
+      setMessageInput("");
+      setSubjectInput("");
     }, 10000);
-    setEmailInput("");
-    setMessageInput("");
   };
 
-  const handlePopUp = () => {
-    setPopUp(false);
-  };
+  console.log("🗿", handlePopUp);
+  console.log("💡", popUp);
 
   return (
     <form onSubmit={handleSubmit} className="form-root">
@@ -99,16 +99,16 @@ export default function InputForm() {
           Submit
         </button>
       </div>
-      {popUp && (
+      {popUp === true && (
         <div className="email-pop-up-root">
           <div className="email-pop-up-content">
             <img src={emailAsset} alt=""></img>
             <h2>Email sent! 👨‍💻</h2>
-            <Button variant="mainButton" onClick={handlePopUp}>
+            <Button variant="mainButton" onClick={handlePopUp(false)}>
               Close
             </Button>
           </div>
-          <div className="email-pop-up-background" onClick={handlePopUp}></div>
+          <div className="email-pop-up-background" onClick={handlePopUp(false)}></div>
         </div>
       )}
     </form>
