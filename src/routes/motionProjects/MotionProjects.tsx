@@ -3,13 +3,13 @@ import "./_motionProjects.css";
 import Button from "@src/components/Buttons/Button";
 import DemoCard from "@src/components/DemoCard/DemoCard";
 import mainMotionProjectsAsset from "@src/assets/motion-projects-asset.png";
-import mrBureacucracy from "@src/assets/3D-works/ChincheTV_final_comp_PNG_v2.png";
+import mrBureacucracy from "@src/assets/3D-works/ChincheTV-resize.png";
+import goldenKemonito from "@src/assets/3D-works/golden-kemonito-resize.png";
+import huitziTemple from "@src/assets/3D-works/huitzi_render-resize.png";
+import gatoCalzon from "@src/assets/3D-works/gato-render-resize.png";
 import mayaLogo from "@src/assets/Logos/autodesk-maya-logo.png";
 import arnoldRenderLogo from "@src/assets/Logos/arnold-renderer-logo.png";
-import goldenKemonito from "@src/assets/3D-works/golden-kemonito-v2.png";
-import huitziTemple from "@src/assets/3D-works/huitzi_render_comp_v2.png";
 import magicalVoxelLogo from "@src/assets/Logos/magical-voxel-logo.png";
-import gatoCalzon from "@src/assets/3D-works/gato-render-resize.png";
 import zbrushLogo from "@src/assets/Logos/zbrush-logo.png";
 import afterEffectsLogo from "@src/assets/Logos/Adobe_After_Effects_CC_icon.png";
 
