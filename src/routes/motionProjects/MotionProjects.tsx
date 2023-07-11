@@ -100,7 +100,7 @@ export default function MotionProjects() {
                 fallback={<h4 className="motion-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/BEEZY%20BEEZ%20-%20ANIMATION%20ADS%20-%20CONCEPT%202_version2.mp4?alt=media&token=ab532dc9-c4bb-4bc5-9b0c-4e39b117159a"
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/beezy-beez-asset-with-logo.mp4?alt=media&token=de3b3d31-ff68-44a3-b823-4890bdd18f22"
                   controls={true}
                   autoPlay={false}
                   preload="auto"
@@ -138,7 +138,7 @@ export default function MotionProjects() {
                 fallback={<h4 className="motion-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/Apricoat_Round38_Video2.mp4?alt=media&token=da9a7ae6-e071-49df-92f7-79bdaed0fe84"
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/apricoat-asset-with-logo.mp4?alt=media&token=d46c58cf-7076-4c6f-8685-bf600f110aed"
                   controls={true}
                   autoPlay={false}
                   preload="auto"
@@ -172,53 +172,14 @@ export default function MotionProjects() {
                 line.
               </p>
             </div>
+
             <hr></hr>
             <div className="motion-projects-card-body">
               <Suspense
                 fallback={<h4 className="motion-projects-card-asset-loader">Loading video...</h4>}
               >
                 <VideoLoader
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/BodyRestore_Round31_concept_27.mp4?alt=media&token=b597b3a1-90b3-48fc-aaae-65418596666e"
-                  controls={true}
-                  autoPlay={false}
-                  preload="auto"
-                  disablePictureInPicture
-                  controlsList="nodownload noplaybackrate"
-                  className="motion-projects-card-body-video"
-                />
-              </Suspense>
-              <h2>Body Restore</h2>
-              <i>11 February 2022</i>
-              <p>
-                The Shower Steamers by Body Restore offer a delightful addition to your shower
-                routine. Infused with soothing essential oils, these convenient companions release
-                aromatic scents when exposed to water, creating a spa-like experience in the comfort
-                of your own bathroom.
-              </p>
-              <h4>Technologies 💡</h4>
-              <ul>
-                <li>
-                  <img src={afterEffectsLogo} alt="After Effects logo - kinxori.com"></img>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
-                </li>
-              </ul>
-              <h4>Story 📖</h4>
-              <p>
-                For this project, following the brand's guidelines and using their provided assets,
-                I crafted an enchanting visual experience that showcased the product's benefits.
-                Using After Effects, I brought the script to life with seamless transitions,
-                captivating visuals, and a captivating soundtrack. The result is an engaging AD that
-                effectively communicates the essence of Body Restore's Shower Steamers, inviting
-                viewers to indulge in a moment of relaxation and self-care.
-              </p>
-            </div>
-            <hr></hr>
-            <div className="motion-projects-card-body">
-              <Suspense
-                fallback={<h4 className="motion-projects-card-asset-loader">Loading video...</h4>}
-              >
-                <VideoLoader
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/Task_3_Pocket_charger_WithSound_MASTER_V2.mp4?alt=media&token=a998af4c-5410-47f5-b995-ddca7a2a0c70"
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/pocket-charger-asset-with-logo.mp4?alt=media&token=430f0dcb-7fdb-4f3b-b74d-d1d10305e3c3"
                   controls={true}
                   autoPlay={false}
                   preload="auto"
@@ -258,6 +219,46 @@ export default function MotionProjects() {
                 From crafting custom assets to meticulously composing and editing the final
                 animation, I aimed to capture the essence of the product's functionality and
                 versatility.
+              </p>
+            </div>
+            <hr></hr>
+            <div className="motion-projects-card-body">
+              <Suspense
+                fallback={<h4 className="motion-projects-card-asset-loader">Loading video...</h4>}
+              >
+                <VideoLoader
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/body-restore-asset-with-logo.mp4?alt=media&token=7795c12b-6673-418c-a486-be60a4e24437"
+                  controls={true}
+                  autoPlay={false}
+                  preload="auto"
+                  disablePictureInPicture
+                  controlsList="nodownload noplaybackrate"
+                  className="motion-projects-card-body-video"
+                />
+              </Suspense>
+              <h2>Body Restore</h2>
+              <i>11 February 2022</i>
+              <p>
+                The Shower Steamers by Body Restore offer a delightful addition to your shower
+                routine. Infused with soothing essential oils, these convenient companions release
+                aromatic scents when exposed to water, creating a spa-like experience in the comfort
+                of your own bathroom.
+              </p>
+              <h4>Technologies 💡</h4>
+              <ul>
+                <li>
+                  <img src={afterEffectsLogo} alt="After Effects logo - kinxori.com"></img>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After Effects
+                </li>
+              </ul>
+              <h4>Story 📖</h4>
+              <p>
+                For this project, following the brand's guidelines and using their provided assets,
+                I crafted an enchanting visual experience that showcased the product's benefits.
+                Using After Effects, I brought the script to life with seamless transitions,
+                captivating visuals, and a captivating soundtrack. The result is an engaging AD that
+                effectively communicates the essence of Body Restore's Shower Steamers, inviting
+                viewers to indulge in a moment of relaxation and self-care.
               </p>
             </div>
           </DemoCard>
