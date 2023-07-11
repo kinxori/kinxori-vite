@@ -99,7 +99,7 @@ export default function Contact() {
                 src={linkedinSS}
                 alt="screenshot of Kinxori's linkedin profile"
               ></img>
-              <h4>Click the button below to visit my LinkedIn profile! 💻</h4>
+              <h4>Click the button below to visit my LinkedIn profile. Let's connect! 💻</h4>
               <Button
                 to="https://www.linkedin.com/in/quinchori/"
                 target="_blank"
@@ -163,7 +163,7 @@ export default function Contact() {
                 }
                 onClick={() => handleFullScreen("github-card-img-asset")}
               ></img>
-              <h4>Take a look at my github! I'm sure you will find something of value 📖</h4>
+              <h4>Take a look at my Github! I'm sure you will find something of value 📖</h4>
               <Button
                 to="https://github.com/kinxori"
                 target="_blank"
