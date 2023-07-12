@@ -1,5 +1,5 @@
 import "./_landingPage.css";
-import Button from "@src/components/Buttons/Button";
+import LinkButton from "@src/components/Buttons/LinkButton";
 import mainLandingPageAsset from "@src/assets/AstroAssets.png";
 
 export default function LandingPage() {
@@ -20,9 +20,9 @@ export default function LandingPage() {
             <b> web developer</b> and <b>motion designer.</b> Take a deep dive into my work!
           </p>
           <div className="landingPage-CTA">
-            <Button variant="secButton" to="/webprojects">
+            <LinkButton variant="secButton" to="/webprojects">
               Web projects
-            </Button>
+            </LinkButton>
           </div>
         </div>
       </div>

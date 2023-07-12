@@ -1,6 +1,7 @@
 import { useEffect, useState, Suspense, lazy } from "react";
 import "./_webProjects.css";
 import Button from "@src/components/Buttons/Button";
+import ButtonAnchor from "@src/components/Buttons/ButtonAnchor";
 import DemoCard from "@src/components/DemoCard/DemoCard";
 import mainProjectsAsset from "@src/assets/projects-asset.png";
 import typescriptLogo from "@src/assets/Logos/typescript-png-logo-500x500-white.png";
@@ -149,16 +150,16 @@ export default function Projects() {
                 <li>Integratation with external APIs to retrieve and update product information</li>
               </ul>
               <div className="web-projects-card-CTA">
-                <Button to="https://kinxori.github.io/react-shopping-cart/" target="_blank">
+                <ButtonAnchor href="https://kinxori.github.io/react-shopping-cart/" target="_blank">
                   Live Project
-                </Button>
-                <Button
-                  to="https://github.com/kinxori/react-shopping-cart"
+                </ButtonAnchor>
+                <ButtonAnchor
+                  href="https://github.com/kinxori/react-shopping-cart"
                   variant="secButton"
                   target="_blank"
                 >
                   Github Repo
-                </Button>
+                </ButtonAnchor>
               </div>
             </div>
             <hr></hr>
@@ -224,16 +225,16 @@ export default function Projects() {
                 <li>Accessibility</li>
               </ul>
               <div className="web-projects-card-CTA">
-                <Button to="https://kinxori.github.io/react-practice-5/" target="_blank">
+                <ButtonAnchor href="https://kinxori.github.io/react-practice-5/" target="_blank">
                   Live Project
-                </Button>
-                <Button
-                  to="https://github.com/kinxori/react-practice-5"
+                </ButtonAnchor>
+                <ButtonAnchor
+                  href="https://github.com/kinxori/react-practice-5"
                   variant="secButton"
                   target="_blank"
                 >
                   Github Repo
-                </Button>
+                </ButtonAnchor>
               </div>
             </div>
             <hr></hr>
@@ -298,16 +299,16 @@ export default function Projects() {
                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
               </ul>
               <div className="web-projects-card-CTA">
-                <Button to="https://kinxori.github.io/react-practice-4/" target="_blank">
+                <ButtonAnchor href="https://kinxori.github.io/react-practice-4/" target="_blank">
                   Live Project
-                </Button>
-                <Button
-                  to="https://github.com/kinxori/react-practice-4"
+                </ButtonAnchor>
+                <ButtonAnchor
+                  href="https://github.com/kinxori/react-practice-4"
                   variant="secButton"
                   target="_blank"
                 >
                   Github Repo
-                </Button>
+                </ButtonAnchor>
               </div>
             </div>
           </DemoCard>
@@ -389,16 +390,19 @@ export default function Projects() {
                 <li>Integration with External APIs</li>
               </ul>
               <div className="web-projects-card-CTA">
-                <Button to="https://kinxori.github.io/react-media-player-practice/" target="_blank">
+                <ButtonAnchor
+                  href="https://kinxori.github.io/react-media-player-practice/"
+                  target="_blank"
+                >
                   Live Project
-                </Button>
-                <Button
-                  to="https://github.com/kinxori/react-media-player-practice/tree/master"
+                </ButtonAnchor>
+                <ButtonAnchor
+                  href="https://github.com/kinxori/react-media-player-practice/tree/master"
                   variant="secButton"
                   target="_blank"
                 >
                   Github Repo
-                </Button>
+                </ButtonAnchor>
               </div>
             </div>
           </DemoCard>

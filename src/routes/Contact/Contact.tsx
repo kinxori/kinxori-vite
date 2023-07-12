@@ -105,14 +105,14 @@ export default function Contact() {
                 alt="screenshot of Kinxori's linkedin profile"
               ></img>
               <h4>Click the button below to visit my LinkedIn profile. Let's connect! 💻</h4>
-              <Button
-                to="https://www.linkedin.com/in/quinchori/"
+              <ButtonAnchor
+                href="https://www.linkedin.com/in/quinchori/"
                 target="_blank"
                 variant="mainButton"
                 className="contact-card-body-CTA"
               >
                 Go LinkedIn
-              </Button>
+              </ButtonAnchor>
             </div>
           </DemoCard>
           <DemoCard
@@ -169,14 +169,14 @@ export default function Contact() {
                 onClick={() => handleFullScreen("github-card-img-asset")}
               ></img>
               <h4>Take a look at my Github! I'm sure you will find something of value 📖</h4>
-              <Button
-                to="https://github.com/kinxori"
+              <ButtonAnchor
+                href="https://github.com/kinxori"
                 target="_blank"
                 variant="mainButton"
                 className="contact-card-body-CTA"
               >
                 Go Github
-              </Button>
+              </ButtonAnchor>
             </div>
           </DemoCard>
           <DemoCard
@@ -201,14 +201,14 @@ export default function Contact() {
                 }
               ></img>
               <h4>Follow me on Twitter and let's share thoughts! 🐦</h4>
-              <Button
-                to="https://twitter.com/intent/tweet?text=@kinxori%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
+              <ButtonAnchor
+                href="https://twitter.com/intent/tweet?text=@kinxori%20Hi!%20I%20saw%20your%20webpage%20and%20I%20would%20like%20to%20get%20in%20touch%20with%20you!%20🤝"
                 target="_blank"
                 variant="mainButton"
                 className="contact-card-body-CTA"
               >
                 Go Twitter
-              </Button>
+              </ButtonAnchor>
             </div>
           </DemoCard>
           <DemoCard
