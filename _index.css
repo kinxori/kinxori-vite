@@ -87,7 +87,7 @@
 @keyframes scale-opacity-in {
   from {
     transform: scale(120%);
-    opacity: 0.2;
+    opacity: 0;
   }
   to {
     transform: scale(100%);
