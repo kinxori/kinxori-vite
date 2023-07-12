@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
 import "./_button.css";
 
 export default function Button({
   children,
   className,
-  to,
   onClick,
-  target,
   variant = "mainButton",
   type,
 }: any) {
@@ -19,11 +16,9 @@ export default function Button({
 
   return (
     <span className={className}>
-      <Link to={to} target={target}>
-        <button className={classes[variant]} onClick={onClick} type={type}>
-          {children}
-        </button>
-      </Link>
+      <button className={classes[variant]} onClick={onClick} type={type}>
+        {children}
+      </button>
     </span>
   );
 }

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./_NavBar.css";
-import Button from "@src/components/Buttons/Button";
+import LinkButton from "@src/components/Buttons/LinkButton";
 import ButtonAnchor from "@src/components/Buttons/ButtonAnchor";
 import resumeFilePDF from "@src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
 
@@ -12,21 +12,21 @@ export default function DesktopNav() {
           <h1>Kinxori</h1>
         </Link>
         <div className="desktopNavBar-CTA-buttons">
-          <Button variant="ghostButton" to="/" className>
+          <LinkButton variant="ghostButton" to="/" className>
             Home
-          </Button>
-          <Button variant="ghostButton" to="/webprojects">
+          </LinkButton>
+          <LinkButton variant="ghostButton" to="/webprojects">
             Web Projects
-          </Button>
-          <Button variant="ghostButton" to="/motionprojects">
+          </LinkButton>
+          <LinkButton variant="ghostButton" to="/motionprojects">
             Motion Projects
-          </Button>
-          <Button variant="ghostButton" to="/contact">
+          </LinkButton>
+          <LinkButton variant="ghostButton" to="/contact">
             Contact
-          </Button>
-          <Button variant="ghostButton" to="/about">
+          </LinkButton>
+          <LinkButton variant="ghostButton" to="/about">
             About
-          </Button>
+          </LinkButton>
           <ButtonAnchor variant="ghostButton" href={resumeFilePDF} download>
             Download CV
           </ButtonAnchor>

@@ -80,6 +80,7 @@
   height: 350px;
   object-fit: contain;
   position: relative;
+  top: 40px;
 }
 
 .about-me-body-PFP:hover {
