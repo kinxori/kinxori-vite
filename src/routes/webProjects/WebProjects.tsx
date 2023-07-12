@@ -150,11 +150,14 @@ export default function Projects() {
                 <li>Integratation with external APIs to retrieve and update product information</li>
               </ul>
               <div className="web-projects-card-CTA">
-                <ButtonAnchor href="https://kinxori.github.io/react-shopping-cart/" target="_blank">
+                <ButtonAnchor
+                  href="https://kinxori.github.io/Shopping-cart-PRACTICE/"
+                  target="_blank"
+                >
                   Live Project
                 </ButtonAnchor>
                 <ButtonAnchor
-                  href="https://github.com/kinxori/react-shopping-cart"
+                  href="https://github.com/kinxori/Shopping-cart-PRACTICE"
                   variant="secButton"
                   target="_blank"
                 >
@@ -299,11 +302,14 @@ export default function Projects() {
                 <li>Implementing efficient and performant rendering and updating of UI elements</li>
               </ul>
               <div className="web-projects-card-CTA">
-                <ButtonAnchor href="https://kinxori.github.io/react-practice-4/" target="_blank">
+                <ButtonAnchor
+                  href="https://kinxori.github.io/FAQ-Component-PRACTICE/"
+                  target="_blank"
+                >
                   Live Project
                 </ButtonAnchor>
                 <ButtonAnchor
-                  href="https://github.com/kinxori/react-practice-4"
+                  href="https://github.com/kinxori/FAQ-Component-PRACTICE"
                   variant="secButton"
                   target="_blank"
                 >
@@ -391,13 +397,13 @@ export default function Projects() {
               </ul>
               <div className="web-projects-card-CTA">
                 <ButtonAnchor
-                  href="https://kinxori.github.io/react-media-player-practice/"
+                  href="https://kinxori.github.io/Music-Media-Player-PRACTICE/"
                   target="_blank"
                 >
                   Live Project
                 </ButtonAnchor>
                 <ButtonAnchor
-                  href="https://github.com/kinxori/react-media-player-practice/tree/master"
+                  href="https://github.com/kinxori/Music-Media-Player-PRACTICE"
                   variant="secButton"
                   target="_blank"
                 >
