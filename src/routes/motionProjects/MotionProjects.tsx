@@ -1,7 +1,7 @@
 import { useEffect, useState, lazy, Suspense } from "react";
 import "./_motionProjects.css";
 import Button from "@src/components/Buttons/Button";
-import DemoCard from "@src/components/DemoCard/DemoCard";
+import DemoCard from "@src/components/CardDisplay/CardDisplay";
 import mainMotionProjectsAsset from "@src/assets/motion-projects-asset.png";
 import mrBureacucracy from "@src/assets/3D-works/ChincheTV-resize.png";
 import goldenKemonito from "@src/assets/3D-works/golden-kemonito-resize.png";

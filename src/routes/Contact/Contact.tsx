@@ -3,7 +3,7 @@ import "./_contact.css";
 import Button from "@src/components/Buttons/Button";
 import ButtonAnchor from "@src/components/Buttons/ButtonAnchor";
 import InputForm from "@src/components/Email-InputForm/InputForm";
-import DemoCard from "@src/components/DemoCard/DemoCard";
+import DemoCard from "@src/components/CardDisplay/CardDisplay";
 import contactAsset from "@src/assets/contactAsset.png";
 import resumeFilePDF from "@src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
 import linkedinSS from "@src/assets/linkedin-profile-ss.png";

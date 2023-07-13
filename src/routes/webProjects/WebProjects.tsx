@@ -2,7 +2,7 @@ import { useEffect, useState, Suspense, lazy } from "react";
 import "./_webProjects.css";
 import Button from "@src/components/Buttons/Button";
 import ButtonAnchor from "@src/components/Buttons/ButtonAnchor";
-import DemoCard from "@src/components/DemoCard/DemoCard";
+import DemoCard from "@src/components/CardDisplay/CardDisplay";
 import mainProjectsAsset from "@src/assets/projects-asset.png";
 import typescriptLogo from "@src/assets/Logos/typescript-png-logo-500x500-white.png";
 import tailwindLogo from "@src/assets/Logos/tailwindcss-png-logo-500x500-white.png";
