@@ -1,0 +1,245 @@
+.card-root-active {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--mainColor);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-root-idle {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--mainColor);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-root-active:hover {
+  scale: 1.01;
+  opacity: 0.95;
+  box-shadow: 0px 0px 5px 0px var(--mainColor);
+}
+
+.card-root-idle:hover {
+  scale: none;
+  opacity: none;
+  box-shadow: none;
+}
+
+.card-headline {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mainColor);
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.card-headline:hover {
+  cursor: pointer;
+}
+
+.card-headline-title {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 700;
+  width: 100%;
+}
+
+.fa-chevron-right {
+  font-size: 14px;
+}
+
+.card-root-chevron-open {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  background-color: var(--textMainColor);
+  color: var(--mainColor);
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-root-chevron-close {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  background-color: var(--textMainColor);
+  color: var(--mainColor);
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-root-chevron-open:hover {
+  height: 32px;
+  width: 32px;
+  color: white;
+  background-color: var(--mainColor);
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.card-root-chevron-close:hover {
+  height: 32px;
+  width: 32px;
+  color: white;
+  background-color: var(--mainColor);
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.card-body-close {
+  width: 100%;
+  max-height: 0px;
+  opacity: 0;
+  background-color: var(--secColor);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden scroll;
+}
+
+.card-body-open {
+  width: 100%;
+  max-height: 300px;
+  opacity: 1;
+  background-color: var(--secColor);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden scroll;
+}
+
+/* --------------------------------------------------------------------- Tablet media query -----------------------------------------------------------------------*/
+
+@media (min-width: 601px) {
+  .card-root-active {
+    border: 2px solid var(--mainColor);
+    border-radius: 16px;
+  }
+
+  .card-root-active:hover {
+    box-shadow: 0px 0px 10px 0px var(--mainColor);
+  }
+
+  .card-headline {
+    height: 60px;
+    padding: 0px 25px;
+  }
+
+  .card-headline-title {
+    font-size: 28px;
+  }
+
+  .fa-chevron-right {
+    font-size: 20px;
+  }
+
+  .card-root-chevron-open {
+    height: 40px;
+    width: 40px;
+  }
+
+  .card-root-chevron-close {
+    height: 40px;
+    width: 40px;
+  }
+
+  .card-root-chevron-open:hover {
+    height: 42px;
+    width: 42px;
+    border: 2px solid white;
+  }
+
+  .card-root-chevron-close:hover {
+    height: 42px;
+    width: 42px;
+    border: 2px solid white;
+  }
+
+  .card-body-close {
+    max-height: 0px;
+  }
+
+  .card-body-open {
+    max-height: 350px;
+  }
+}
+
+/* --------------------------------------------------------------------- Desktop media query -----------------------------------------------------------------------*/
+
+@media (min-width: 1181px) {
+  .card-root-active {
+    border: 2px solid var(--mainColor);
+    border-radius: 18px;
+  }
+
+  .card-root-active:hover {
+    box-shadow: 0px 0px 15px 0px var(--mainColor);
+  }
+
+  .card-headline {
+    height: 70px;
+    padding: 0px 30px;
+  }
+
+  .card-headline-title {
+    font-size: 28px;
+  }
+
+  .fa-chevron-right {
+    font-size: 20px;
+  }
+
+  .card-root-chevron-open {
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-root-chevron-close {
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-root-chevron-open:hover {
+    height: 42px;
+    width: 42px;
+    border: 2px solid white;
+  }
+
+  .card-root-chevron-close:hover {
+    height: 42px;
+    width: 42px;
+    border: 2px solid white;
+  }
+
+  .card-body-close {
+    max-height: 0px;
+  }
+
+  .card-body-open {
+    max-height: 450px;
+  }
+}
