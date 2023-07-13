@@ -3,7 +3,7 @@ import "./_contact.css";
 import Button from "@src/components/Buttons/Button";
 import ButtonAnchor from "@src/components/Buttons/ButtonAnchor";
 import InputForm from "@src/components/Email-InputForm/InputForm";
-import DemoCard from "@src/components/CardDisplay/CardDisplay";
+import CardDisplay from "@src/components/CardDisplay/CardDisplay";
 import contactAsset from "@src/assets/contactAsset.png";
 import resumeFilePDF from "@src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
 import linkedinSS from "@src/assets/linkedin-profile-ss.png";
@@ -83,7 +83,7 @@ export default function Contact() {
               <div className="contact-full-screen-bg" onClick={() => handleFullScreen("")}></div>
             </>
           )}
-          <DemoCard
+          <CardDisplay
             header={
               <>
                 <i className="fa-brands fa-linkedin"></i>&nbsp;&nbsp;LinkedIn
@@ -114,8 +114,8 @@ export default function Contact() {
                 Go LinkedIn
               </ButtonAnchor>
             </div>
-          </DemoCard>
-          <DemoCard
+          </CardDisplay>
+          <CardDisplay
             header={
               <>
                 <i className="fa-solid fa-download"></i>&nbsp;&nbsp;Resume/CV
@@ -146,8 +146,8 @@ export default function Contact() {
                 Download Resume
               </ButtonAnchor>
             </div>
-          </DemoCard>
-          <DemoCard
+          </CardDisplay>
+          <CardDisplay
             header={
               <>
                 <i className="fa-brands fa-github"></i>&nbsp;&nbsp;Github
@@ -178,8 +178,8 @@ export default function Contact() {
                 Go Github
               </ButtonAnchor>
             </div>
-          </DemoCard>
-          <DemoCard
+          </CardDisplay>
+          <CardDisplay
             header={
               <>
                 <i className="fa-brands fa-twitter"></i>&nbsp;&nbsp;Twitter
@@ -210,8 +210,8 @@ export default function Contact() {
                 Go Twitter
               </ButtonAnchor>
             </div>
-          </DemoCard>
-          <DemoCard
+          </CardDisplay>
+          <CardDisplay
             header={
               <>
                 <i className="fa-regular fa-envelope"></i>&nbsp;&nbsp;Send email
@@ -224,7 +224,7 @@ export default function Contact() {
             <div className="contact-card-body">
               <InputForm handlePopUp={handlePopUp} popUp={popUp} />
             </div>
-          </DemoCard>
+          </CardDisplay>
         </section>
       )}
     </article>
