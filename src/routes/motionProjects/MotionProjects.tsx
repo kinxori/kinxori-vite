@@ -1,7 +1,7 @@
 import { useEffect, useState, lazy, Suspense } from "react";
 import "./_motionProjects.css";
 import Button from "@src/components/Buttons/Button";
-import DemoCard from "@src/components/CardDisplay/CardDisplay";
+import CardDisplay from "@src/components/CardDisplay/CardDisplay";
 import mainMotionProjectsAsset from "@src/assets/motion-projects-asset.png";
 import mrBureacucracy from "@src/assets/3D-works/ChincheTV-resize.png";
 import goldenKemonito from "@src/assets/3D-works/golden-kemonito-resize.png";
@@ -85,7 +85,7 @@ export default function MotionProjects() {
               ></div>
             </>
           )}
-          <DemoCard
+          <CardDisplay
             header={
               <>
                 <i className="fa-solid fa-video"></i>&nbsp;&nbsp;Motion Design
@@ -257,8 +257,8 @@ export default function MotionProjects() {
                 viewers to indulge in a moment of relaxation and self-care.
               </p>
             </div>
-          </DemoCard>
-          <DemoCard
+          </CardDisplay>
+          <CardDisplay
             header={
               <>
                 <i className="fa-solid fa-cube"></i>&nbsp;&nbsp;3D Modeling
@@ -420,7 +420,7 @@ export default function MotionProjects() {
                 playfully acknowledging the humorous assumptions often made about them.
               </p>
             </div>
-          </DemoCard>
+          </CardDisplay>
         </section>
       )}
     </article>
